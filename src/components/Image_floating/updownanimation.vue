@@ -1,6 +1,6 @@
 <template>
   <div class="image-container">
-    <img ref="floatingImage" src="../../assets/Homepage/mobilemockup.png" alt="Floating" class="floating-img" />
+    <img  ref="floatingImage" src="../../assets/Homepage/testvector.svg" alt="Floating" class="floating-img" />
   </div>
 </template>
 
@@ -36,5 +36,7 @@ onMounted(() => {
 .floating-img {
   width: 100%;
   height: auto;
+
+  
 }
 </style>
