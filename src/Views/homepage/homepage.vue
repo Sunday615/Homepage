@@ -58,311 +58,315 @@ const autoplayDelay = 3000
 </script>
 
 <template>
-    <div class="memberlogin">
-        <div class="centercontainer">
-            <div class="locationcompany">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Kaysone Phomvihane Avenue, Vientiane, Laos</p>
-            </div>
-            <div class="contact">
-                <div class="socialicon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-solid fa-globe"></i>
+    <div class="containerhiden">
+        <div class="memberlogin">
+            <div class="centercontainer">
+                <div class="locationcompany">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Kaysone Phomvihane Avenue, Vientiane, Laos</p>
                 </div>
-                <div class="registercontainer">
-                    <i class="fa-solid fa-user"></i>
-                    <p>Register</p>
-                </div>
-                <div class="logincontainer">
-                    <i class="fa-solid fa-lock"></i>
-                    <p>Login</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="backgroundimg">
-        <img id="backgroundhomepage" src="../../assets/Homepage/bg-page1.png" alt="">
-        <div class="navbar">
-            <div class="logolapnet">
-                <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="LapnetLogo">
-            </div>
-            <div class="navbarlist">
-                <ul>
-                    <li>
-                        <productDropdown></productDropdown>
-                    </li>
-                    <li>
-                        <memberdropdown></memberdropdown>
-                    </li>
-                    <li>ຂ່າວ ແລະ ກິດຈະກຳ</li>
-                    <li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
-                    <li>
-                        <aboutusdropdown></aboutusdropdown>
-                    </li>
-                    <li>ຕິດຕໍ່ພວກເຮົາ</li>
-                </ul>
-            </div>
-            <div class="searchbar">
-                <a style=" padding-right: 10px; margin-left: 60px;" href="">EN</a>
-                <p>/</p>
-                <a style=" padding-left: 10px;" href="">LA</a>
-                <search style="padding-left: 20px;"></search>
-            </div>
-
-        </div>
-        <div class="titlecontent">
-            <h1>ການຊຳລະເງິນຂ້າມ <br> ທະນາຄານຜ່ານ QR</h1>
-            <p>ການຊໍາລະຂ້າມທະນາຄານຜ່ານ LAPNet QRPay ໂດຍນຳໃຊ້ລະບົບ LMPS ໃນການເຊື່ອມໂຍງຜ່ານ<br> Applications
-                ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ໃຫ້ສາມາດນຳໃຊ້ຟັງຊັ່ນການ <br> ດຳເນີນທຸລະກຳຊໍາລະຜ່ານ QR
-                ຂອງທະນາຄານອື່ນໄດ້.
-
-            </p>
-            <!-- HTML !-->
-            <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-                ການບໍລິການ</button>
-        </div>
-
-    </div>
-    <div class="containerhomepage2">
-        <div class="missionimgcontainer">
-            <img src="../../assets/Homepage/newmission-2.png" alt="">
-
-        </div>
-        <div class="titlemission">
-            <div class="textaligh">
-                <div class="titleinfo">
-                    <h1>ວິໄສທັດ ແລະ ພາລະກິດ ຂອງພວກເຮົາ</h1>
-                </div>
-                <div class="missionbox">
-                    <div class="number">
-                        <h1>01</h1>
+                <div class="contact">
+                    <div class="socialicon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-solid fa-globe"></i>
                     </div>
-                    <div class="infovision">
-                        <h1>ວິໄສທັດ</h1>
-                        <p>ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການ<br>ຊໍາລະ ທັງພາຍໃນ
-                            ແລະ ສາກົນ, ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ,<br> ທັນສະໄໝ, ປອດໄພ,
-                            ຕົ້ນທືນຕໍາ ແລະ ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການ<br>ຊໍາລະໃນ ສປປ ລາວ.</p>
+                    <div class="registercontainer">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Register</p>
                     </div>
-                </div>
-                <div class="missionbox1">
-                    <div class="number">
-                        <h1>02</h1>
-                    </div>
-                    <div class="infovision">
-                        <h1>ພາລະກິດ</h1>
-                        <p>ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ, ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
-                            ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
-                            ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ
-                            ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
-                            ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
-                            ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
-                            ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
-                            ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
-                            ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.
-
-                        </p>
+                    <div class="logincontainer">
+                        <i class="fa-solid fa-lock"></i>
+                        <p>Login</p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </div>
-    <div class="homepagecontent3">
-        <vdo></vdo>
-    </div>
-    <div class="homepagecontent4">
-
-        <img id="pdcontent4" src="../../assets/Homepage/pdcontent4-2.png" alt="">
-        <div class="center">
-
-        </div>
-        <div class="mockuppd4">
-            <img src="../../assets/Homepage/mobilemockup4-2.png" alt="">
-        </div>
-        <div class="titlepd4">
-            <h1>ໂອນເງິນຂ້າມທະນາຄານ<br>ເທິງມືຖືຜ່ານແອັບ</h1>
-            <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile Application) <br> ໂດຍນຳໃຊ້ລະບົບ LMPS
-                ໃນການເຊື່ອມໂຍງຜ່ານ Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກ <br> ຂອງບໍລິສັດລາວ ເນເຊີນນໍເພເມັ້ນ
-                ເນັດເວີກ
-                ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນເງິນຂ້າມທະນາຄານໄດ້.</p>
-            <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-                ການບໍລິການ</button>
-        </div>
-
-    </div>
-    <memberscrolling></memberscrolling>
-
-    <div class="container-blog">
-        <div class="upsideblog">
-            <img id="blogupperimg" src="../../assets/Homepage/blog-bg.png" alt="">
-            <div class="logoupperblog">
-                <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
-                <img src="../../assets/Logo-lapnet/textlogo.PNG" alt="">
-            </div>
-            <div class="title-blog">
-
-                <div data-aos="zoom-out">
-                    <p>ຂ່າວສານ ແລະ ກິດຈະກຳ</p>
+        <div class="backgroundimg">
+            <img id="backgroundhomepage" src="../../assets/Homepage/bg-page1.png" alt="">
+            <div class="navbar">
+                <div class="logolapnet">
+                    <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="LapnetLogo">
+                </div>
+                <div class="navbarlist">
+                    <ul>
+                        <li>
+                            <productDropdown></productDropdown>
+                        </li>
+                        <li>
+                            <memberdropdown></memberdropdown>
+                        </li>
+                        <li>ຂ່າວ ແລະ ກິດຈະກຳ</li>
+                        <li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
+                        <li>
+                            <aboutusdropdown></aboutusdropdown>
+                        </li>
+                        <li>ຕິດຕໍ່ພວກເຮົາ</li>
+                    </ul>
+                </div>
+                <div class="searchbar">
+                    <a style=" padding-right: 10px; margin-left: 60px;" href="">EN</a>
+                    <p>/</p>
+                    <a style=" padding-left: 10px;" href="">LA</a>
+                    <search style="padding-left: 20px;"></search>
                 </div>
 
             </div>
-            <div class="downblog">
-                <!-- <blogviewhomepage></blogviewhomepage> -->
-                <div class="news-swiper-container">
-                    <Swiper :modules="[Navigation, Autoplay]" :slides-per-view="2" :space-between="30" :loop="true"
-                        :autoplay="{
-                            delay: autoplayDelay,
-                            disableOnInteraction: false
-                        }" navigation class="news-swiper">
-                        <SwiperSlide v-for="(item, index) in newsItems" :key="index" class="news-card">
-                            <div class="card">
-                                <img :src="item.image" alt="news" class="card-img" />
-                                <div class="card-content">
-                                    <p class="date">{{ item.date }}</p>
-                                    <h3 class="title">{{ item.title }}</h3>
-                                    <a :href="item.link" class="read-more" target="_blank">
-                                        ອ່ານເພີ່ມເຕີ່ມ →
-                                    </a>
+            <div class="titlecontent">
+                <h1>ການຊຳລະເງິນຂ້າມ <br> ທະນາຄານຜ່ານ QR</h1>
+                <p>ການຊໍາລະຂ້າມທະນາຄານຜ່ານ LAPNet QRPay ໂດຍນຳໃຊ້ລະບົບ LMPS ໃນການເຊື່ອມໂຍງຜ່ານ<br> Applications
+                    ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ໃຫ້ສາມາດນຳໃຊ້ຟັງຊັ່ນການ <br> ດຳເນີນທຸລະກຳຊໍາລະຜ່ານ QR
+                    ຂອງທະນາຄານອື່ນໄດ້.
+
+                </p>
+                <!-- HTML !-->
+                <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+                    ການບໍລິການ</button>
+            </div>
+
+        </div>
+        <div class="containerhomepage2">
+            <div class="missionimgcontainer">
+                <img src="../../assets/Homepage/newmission-2.png" alt="">
+
+            </div>
+            <div class="titlemission">
+                <div class="textaligh">
+                    <div class="titleinfo">
+                        <h1>ວິໄສທັດ ແລະ ພາລະກິດ ຂອງພວກເຮົາ</h1>
+                    </div>
+                    <div class="missionbox">
+                        <div class="number">
+                            <h1>01</h1>
+                        </div>
+                        <div class="infovision">
+                            <h1>ວິໄສທັດ</h1>
+                            <p>ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການ<br>ຊໍາລະ
+                                ທັງພາຍໃນ
+                                ແລະ ສາກົນ, ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ,<br> ທັນສະໄໝ, ປອດໄພ,
+                                ຕົ້ນທືນຕໍາ ແລະ ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການ<br>ຊໍາລະໃນ ສປປ ລາວ.</p>
+                        </div>
+                    </div>
+                    <div class="missionbox1">
+                        <div class="number">
+                            <h1>02</h1>
+                        </div>
+                        <div class="infovision">
+                            <h1>ພາລະກິດ</h1>
+                            <p>ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ, ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
+                                ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
+                                ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ
+                                ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
+                                ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
+                                ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
+                                ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
+                                ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
+                                ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="homepagecontent3">
+            <vdo></vdo>
+        </div>
+        <div class="homepagecontent4">
+
+            <img id="pdcontent4" src="../../assets/Homepage/pdcontent4-2.png" alt="">
+            <div class="center">
+
+            </div>
+            <div class="mockuppd4">
+                <img src="../../assets/Homepage/mobilemockup4-2.png" alt="">
+            </div>
+            <div class="titlepd4">
+                <h1>ໂອນເງິນຂ້າມທະນາຄານ<br>ເທິງມືຖືຜ່ານແອັບ</h1>
+                <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile Application) <br> ໂດຍນຳໃຊ້ລະບົບ LMPS
+                    ໃນການເຊື່ອມໂຍງຜ່ານ Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກ <br> ຂອງບໍລິສັດລາວ ເນເຊີນນໍເພເມັ້ນ
+                    ເນັດເວີກ
+                    ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນເງິນຂ້າມທະນາຄານໄດ້.</p>
+                <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+                    ການບໍລິການ</button>
+            </div>
+
+        </div>
+        <memberscrolling></memberscrolling>
+
+        <div class="container-blog">
+            <div class="upsideblog">
+                <img id="blogupperimg" src="../../assets/Homepage/blog-bg.png" alt="">
+                <div class="logoupperblog">
+                    <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
+                    <img src="../../assets/Logo-lapnet/textlogo.PNG" alt="">
+                </div>
+                <div class="title-blog">
+
+                    <div data-aos="zoom-out">
+                        <p>ຂ່າວສານ ແລະ ກິດຈະກຳ</p>
+                    </div>
+
+                </div>
+                <div class="downblog">
+                    <!-- <blogviewhomepage></blogviewhomepage> -->
+                    <div class="news-swiper-container">
+                        <Swiper :modules="[Navigation, Autoplay]" :slides-per-view="2" :space-between="30" :loop="true"
+                            :autoplay="{
+                                delay: autoplayDelay,
+                                disableOnInteraction: false
+                            }" navigation class="news-swiper">
+                            <SwiperSlide v-for="(item, index) in newsItems" :key="index" class="news-card">
+                                <div class="card">
+                                    <img :src="item.image" alt="news" class="card-img" />
+                                    <div class="card-content">
+                                        <p class="date">{{ item.date }}</p>
+                                        <h3 class="title">{{ item.title }}</h3>
+                                        <a :href="item.link" class="read-more" target="_blank">
+                                            ອ່ານເພີ່ມເຕີ່ມ →
+                                        </a>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                </div>
+            </div>
+            <div class="boxcontianer"></div>
+
+        </div>
+        <div class="footercontainer">
+            <div class="upfooter">
+                <div class="logofooterimg">
+                    <div class="bg">
+                        <img src="../../assets/footer/footer-info.png" alt="">
+
+                        <div class="logoft">
+                            <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
+                            <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
+                        </div>
+                        <div class="infoft">
+                            <div class="block1">
+                                <div class="iconphone">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="titlephone">
+                                    <p>021 417915</p>
                                 </div>
                             </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </div>
-        </div>
-        <div class="boxcontianer"></div>
-
-    </div>
-    <div class="footercontainer">
-        <div class="upfooter">
-            <div class="logofooterimg">
-                <div class="bg">
-                    <img src="../../assets/footer/footer-info.png" alt="">
-
-                    <div class="logoft">
-                        <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
-                        <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
-                    </div>
-                    <div class="infoft">
-                        <div class="block1">
-                            <div class="iconphone">
-                                <i class="fa-solid fa-phone"></i>
+                            <div class="block1">
+                                <div class="iconemail">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="titleemail">
+                                    <p>info@lapnet.com.la</p>
+                                </div>
                             </div>
-                            <div class="titlephone">
-                                <p>021 417915</p>
-                            </div>
-                        </div>
-                        <div class="block1">
-                            <div class="iconemail">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="titleemail">
-                                <p>info@lapnet.com.la</p>
-                            </div>
-                        </div>
-                        <div class="block1">
-                            <div class="iconlocation">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="titlelocation">
-                                <p>XJHH+FFM, Vientiane</p>
+                            <div class="block1">
+                                <div class="iconlocation">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="titlelocation">
+                                    <p>XJHH+FFM, Vientiane</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="infofooter">
-                <img src="../../assets/footer/footerbg.png" alt="">
-                <div class="infoftleft">
-                    <div class="titlefooterleft">
-                        <p>ກ່ຽວກັບບໍລິສັດ</p>
-                    </div>
-                    <div class="infofooterleft">
-                        <ul>
-                            <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
-                            <li>ເບີໂທ: 030 568 7610</li>
-                            <li>ເບີໂທ: 021 417915</li>
-                            <li>ອີເມວ: info@lapnet.com.la</li>
+                <div class="infofooter">
+                    <img src="../../assets/footer/footerbg.png" alt="">
+                    <div class="infoftleft">
+                        <div class="titlefooterleft">
+                            <p>ກ່ຽວກັບບໍລິສັດ</p>
+                        </div>
+                        <div class="infofooterleft">
+                            <ul>
+                                <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
+                                <li>ເບີໂທ: 030 568 7610</li>
+                                <li>ເບີໂທ: 021 417915</li>
+                                <li>ອີເມວ: info@lapnet.com.la</li>
 
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="facebookbtnfooter">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span><a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank">Lao
+                                    National
+                                    Payment Network</a></span>
+                        </div>
                     </div>
-                    <div class="facebookbtnfooter">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span><a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank">Lao National
-                                Payment Network</a></span>
+                    <div class="infocenter">
+                        <div class="titlecenter">
+                            <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
+                        </div>
+                        <div class="menufootercenter">
+                            <router-link to="/products-service/products-1">
+                                <div class="menubox" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ກວດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                            <router-link to="/products-service/products-2">
+                                <div class="menubox" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                            <router-link to="/products-service/products-3">
+                                <div class="menubox" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                            <router-link to="/products-service/products-4">
+                                <div class="menubox" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                            <router-link to="/products-service/products-5">
+                                <div class="menubox" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                            <router-link to="/products-service/products-6">
+                                <div class="menuboxnonline" @click="goTop()">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <span>
+                                        <p>ຊຳລະຂ້າມແດນຜ່ານ QR</p>
+                                    </span>
+                                </div>
+                            </router-link>
+                        </div>
+
+
+                    </div>
+                    <div class="infofright">
+                        <div class="titlecenter">
+                            <p>ເມນູ</p>
+                        </div>
+                        <div class="menufootercenter">
+
+                            <footerdropdown></footerdropdown>
+                        </div>
+
                     </div>
                 </div>
-                <div class="infocenter">
-                    <div class="titlecenter">
-                        <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
-                    </div>
-                    <div class="menufootercenter">
-                        <router-link to="/products-service/products-1">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ກວດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-2">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-3">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-4">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-5">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-6">
-                            <div class="menuboxnonline" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ຊຳລະຂ້າມແດນຜ່ານ QR</p>
-                                </span>
-                            </div>
-                        </router-link>
-                    </div>
 
-
+                <div class="copyright">
+                    <p>Copright © 2020 LAPNet Co., Ltd.</p>
                 </div>
-                <div class="infofright">
-                    <div class="titlecenter">
-                        <p>ເມນູ</p>
-                    </div>
-                    <div class="menufootercenter">
-
-                        <footerdropdown></footerdropdown>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>Copright © 2020 LAPNet Co., Ltd.</p>
             </div>
         </div>
     </div>
@@ -370,6 +374,11 @@ const autoplayDelay = 3000
 
 
 <style scoped>
+.containerhiden{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
 .copyright {
     width: 80%;
     height: 130px;

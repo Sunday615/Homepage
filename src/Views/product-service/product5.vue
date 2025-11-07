@@ -20,206 +20,215 @@ onMounted(() => {
 
 
 <template>
-    <navbarview2></navbarview2>
-    <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
+    <div class="containerhiden">
+        <navbarview2></navbarview2>
+        <div class="navigatorcontent">
+            <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="">
+            <div class="navigator-info-container">
+                <div class="titlenavigator">
+                    <div data-aos="zoom-in-down" data-aos-duration="1000">
+                        <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
+                    </div>
                 </div>
-            </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ <span
-                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                        </span>ການຊໍາລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
+                <div class="navigatorlink">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000">
+                        <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                    class="fa-solid fa-chevron-right"></i></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ <span
+                                style="padding-right: 40px; padding-left: 40px;"><i
+                                    class="fa-solid fa-chevron-right"></i>
+                            </span>ການຊໍາລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="boxpadding"></div>
+        <div class="conatinerproduct1-page1">
+            <img id="bgproductpage1" src="../../assets/products/product5/product5bg.png" alt="">
+            <div class="containerframe1">
+                <div class="leftcontentpage1">
+                    <div class="producttitlepage1">
+                        <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
+                    </div>
+                    <div class="headerproductpage1">
+                        <p> ການຊໍາລະເງິນຂ້າມ<br>ທະນາຄານຜ່ານ QR</p>
+                    </div>
+                    <div class="titleinfopage1">
+                        <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile <br> Application) ໂດຍນຳໃຊ້ລະບົບ LMPS
+                            ໃນການເຊື່ອມໂຍງຜ່ານ<br>Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດລາວ <br>
+                            ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນ <br>ເງິນຂ້າມທະນາຄານໄດ້.</p>
+                    </div>
+                    <div class="btnproduct">
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <button class="button-66" role="button"> <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ
+                                ແລະ
+                                ການບໍລິການ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcontentpage1">
+                    <div data-aos="fade-left" data-aos-duration="1400">
+                        <img id="topbg" src="../../assets/products/product5/toppd5.png" alt="">
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1200">
+                        <img id="atmmachine" src="../../assets/products/product5/mobilemockuppd5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentproduct1-page2">
+            <img id="bgpd1-page2" src="../../assets/products/product5/modernnew.png" alt="">
+            <div class="headerpage2-box1">
+                <div data-aos-duration="1000" data-aos="zoom-in-down">
+                    <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
+                    <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
+                    <p>ຊ່ວຍຫຼຸດຜ່ອນຕົ້ນທຶນທາງດ້ານບຸກຄະລາກອນທີ່ໃຫ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານໜ່ວຍງານບໍລິການ ຫຼື ຕູ້ ATM
+                        ຂອງແຕ່ລະ<br>ທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ນັ້ນ, ໃຫ້ລູກຄ້າຫັນມານຳໃຊ້
+                        ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື ໃນການ<br>ດຳເນີນທຸລະກຳ.
+
+                    </p>
+                </div>
+            </div>
+            <div class="headerpage2-box1">
+                <div data-aos-duration="1000" data-aos="zoom-in-down">
+                    <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
+                    <p>ຜະລິດຕະພັນ ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນີ້
+                        ຈະຊ່ວຍອຳນວຍຄວາມສະດວກໃຫ້ແກ່ມວນຊົນໃນການດຳເນີນທຸລະກຳທາງການເງິນ<br>ຢູ່ເທິງມືຖືໄດ້ງ່າຍ ແລະ ວ່ອງໄວຂື້ນ
+                        ໂດຍນຳໃຊ້ Applications ຂອງແຕ່ລະທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet,<br>
+                        ຕາມຄຳຂວັນທີ່ກ່າວໄວ້ວ່າ:
+                        “ ທຸກທີ່ ທຸກເວລາ ທຸກຊ່ອງທາງການຊຳລະ”
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="memberservice">
+            <img id="bgmember" src="../../assets/products/product5/product5-bg-2.png" alt="">
+            <div data-aos="zoom-out-up" data-aos-duration="1000">
+                <h1>ທະນາຄານທີ່ເປັນສະມາຊິກຂອງການບໍລິການ<br>ຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ LAPNet QR Payment</h1>
+            </div>
+
+            <div class="logoboxcontainer">
+
+                <div class="logoline1">
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width: 160px;" src="../../assets/Logomember- retangle/bcelretangle.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:195px" src="../../assets/Logomember- retangle/ldbwithborder.png" alt="">
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:150px" src="../../assets/Logomember- retangle/apbpng.png" alt="">
+
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/jdb.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:180px" src="../../assets/Logomember- retangle/MARU.jpg" alt=""></img>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/LVB.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="800">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/BIC.png" alt=""></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="logoline2">
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/ICBC.svg.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/bboc.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px"
+                                src="../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/IB.png" alt=""></img>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/aceleda.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <div class="logobox">
+                            <img style="width:190px" src="../../assets/Logomember- retangle/sacombank.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="logoline3">
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="logobox">
+                            <img style="width:160px" src="../../assets/Logomember- retangle/Stbretangle.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="logobox">
+                            <img style="width:160px" src="../../assets/Logomember- retangle/kbank.jpg" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="logobox">
+                            <img style="width:160px" src="../../assets/Logomember- retangle/bflbank.png" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="logobox">
+                            <img style="width:180px" src="../../assets/Logomember- retangle/psvb.PNG" alt="">
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
+                        <div class="logobox">
+                            <img style="width:170px" src="../../assets/Logomember- retangle/mbbgblue.jpg" alt=""></img>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <mainfooter></mainfooter>
     </div>
-    <div class="boxpadding"></div>
-    <div class="conatinerproduct1-page1">
-        <img id="bgproductpage1" src="../../assets/products/product5/product5bg.png" alt="">
-        <div class="containerframe1">
-            <div class="leftcontentpage1">
-                <div class="producttitlepage1">
-                    <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
-                </div>
-                <div class="headerproductpage1">
-                    <p> ການຊໍາລະເງິນຂ້າມ<br>ທະນາຄານຜ່ານ QR</p>
-                </div>
-                <div class="titleinfopage1">
-                    <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile <br> Application) ໂດຍນຳໃຊ້ລະບົບ LMPS
-                        ໃນການເຊື່ອມໂຍງຜ່ານ<br>Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດລາວ <br>
-                        ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນ <br>ເງິນຂ້າມທະນາຄານໄດ້.</p>
-                </div>
-                <div class="btnproduct">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <button class="button-66" role="button"> <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ
-                            ການບໍລິການ</button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightcontentpage1">
-                <div data-aos="fade-left" data-aos-duration="1400">
-                    <img id="topbg" src="../../assets/products/product5/toppd5.png" alt="">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1200">
-                    <img id="atmmachine" src="../../assets/products/product5/mobilemockuppd5.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/products/product5/modernnew.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos-duration="1000" data-aos="zoom-in-down">
-                <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
-                <p>ຊ່ວຍຫຼຸດຜ່ອນຕົ້ນທຶນທາງດ້ານບຸກຄະລາກອນທີ່ໃຫ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານໜ່ວຍງານບໍລິການ ຫຼື ຕູ້ ATM
-                    ຂອງແຕ່ລະ<br>ທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ນັ້ນ, ໃຫ້ລູກຄ້າຫັນມານຳໃຊ້
-                    ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື ໃນການ<br>ດຳເນີນທຸລະກຳ.
-
-                </p>
-            </div>
-        </div>
-        <div class="headerpage2-box1">
-            <div data-aos-duration="1000" data-aos="zoom-in-down">
-                <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
-                <p>ຜະລິດຕະພັນ ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນີ້
-                    ຈະຊ່ວຍອຳນວຍຄວາມສະດວກໃຫ້ແກ່ມວນຊົນໃນການດຳເນີນທຸລະກຳທາງການເງິນ<br>ຢູ່ເທິງມືຖືໄດ້ງ່າຍ ແລະ ວ່ອງໄວຂື້ນ
-                    ໂດຍນຳໃຊ້ Applications ຂອງແຕ່ລະທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet,<br>
-                    ຕາມຄຳຂວັນທີ່ກ່າວໄວ້ວ່າ:
-                    “ ທຸກທີ່ ທຸກເວລາ ທຸກຊ່ອງທາງການຊຳລະ”
-
-                </p>
-            </div>
-        </div>
-
-    </div>
-    <div class="memberservice">
-        <img id="bgmember" src="../../assets/products/product5/product5-bg-2.png" alt="">
-        <div data-aos="zoom-out-up" data-aos-duration="1000">
-            <h1>ທະນາຄານທີ່ເປັນສະມາຊິກຂອງການບໍລິການ<br>ຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ LAPNet QR Payment</h1>
-        </div>
-
-        <div class="logoboxcontainer">
-
-            <div class="logoline1">
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width: 160px;" src="../../assets/Logomember- retangle/bcelretangle.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:195px" src="../../assets/Logomember- retangle/ldbwithborder.png" alt="">
-
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:150px" src="../../assets/Logomember- retangle/apbpng.png" alt="">
-
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/jdb.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:180px" src="../../assets/Logomember- retangle/MARU.jpg" alt=""></img>
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/LVB.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="800">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/BIC.png" alt=""></img>
-                    </div>
-                </div>
-            </div>
-            <div class="logoline2">
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/ICBC.svg.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/bboc.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px"
-                            src="../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png"
-                            alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/IB.png" alt=""></img>
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/aceleda.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
-                    <div class="logobox">
-                        <img style="width:190px" src="../../assets/Logomember- retangle/sacombank.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="logoline3">
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="logobox">
-                        <img style="width:160px" src="../../assets/Logomember- retangle/Stbretangle.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="logobox">
-                        <img style="width:160px" src="../../assets/Logomember- retangle/kbank.jpg" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="logobox">
-                        <img style="width:160px" src="../../assets/Logomember- retangle/bflbank.png" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="logobox">
-                        <img style="width:180px" src="../../assets/Logomember- retangle/psvb.PNG" alt="">
-                    </div>
-                </div>
-                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="900">
-                    <div class="logobox">
-                        <img style="width:170px" src="../../assets/Logomember- retangle/mbbgblue.jpg" alt=""></img>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <mainfooter></mainfooter>
-
 
 </template>
 
 
 
 <style scoped>
+.containerhiden{
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+}
+
 #bgpd1-page2 {
     width: 100%;
     height: 900px;

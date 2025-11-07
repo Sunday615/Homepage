@@ -2,7 +2,7 @@
 
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import pagination from '../../../components/pagination/paginationmember1.vue';
-
+import mainfooter from '../../../components/footer/mainfooter.vue';
 import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
 
 import { onMounted } from 'vue';
