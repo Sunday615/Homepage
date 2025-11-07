@@ -59,6 +59,7 @@ function playAnimation() {
   line-height: 1.3;
   font-family: "Noto Sans Lao", sans-serif;
   padding-bottom: 90px;
+      font-weight: bold;
 }
 .titleproduct{
   width: 55%;

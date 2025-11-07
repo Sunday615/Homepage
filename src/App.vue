@@ -1,13 +1,12 @@
-<script setup >
-import homepage from './Views/homepage/homepage.vue'
+<script setup>
+
 
 </script>
 
 <template>
-  <homepage></homepage>
+    <RouterView></RouterView>
+
 
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
