@@ -10,10 +10,10 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
 
-  window.scrollTo({
-    top: 660, 
-    behavior: 'smooth'
-  })
+    window.scrollTo({
+        top: 660,
+        behavior: 'smooth'
+    })
 })
 </script>
 
@@ -22,55 +22,83 @@ onMounted(() => {
 <template>
 
     <navbarview2></navbarview2>
+   <div class="navigatorcontent">
+        <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
+        <div class="navigator-info-container">
+            <div class="titlenavigator">
+                <div data-aos="zoom-in-down" data-aos-duration="1000">
+                    <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+            <div class="navigatorlink">
+                <div data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                class="fa-solid fa-chevron-right"></i></span> ສະມາຊິກ<span
+                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                        </span> ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
     <div class="cardviewcontainer">
         <div class="leftsidecontainer">
-           <div data-aos="fade-right" data-aos-duration="600">
-            <div class="cardmember-sacom">
-                <div class="logobox-sacom">
-                    <img src="../../../assets/Logomember- retangle/sacombank.png" alt="">
-                </div>
-                <div class="cardnamestyle nameofbank-sacom">
+            <div data-aos="fade-right" data-aos-duration="600">
+                <div class="cardmember-sacom">
+                    <div class="logobox-sacom">
+                        <img src="../../../assets/Logomember- retangle/sacombank.png" alt="">
+                    </div>
+                    <div class="cardnamestyle nameofbank-sacom">
 
-                    <h1>ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ </h1>
-                    <p>Saigon Thuong Tin Commercial Joint Stock Bank</p>
+                        <h1>ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ </h1>
+                        <p>Saigon Thuong Tin Commercial Joint Stock Bank</p>
+                    </div>
                 </div>
             </div>
-            </div>
-             <div data-aos="fade-right" data-aos-duration="800">
-            <div class="cardmember-stb">
-                <div class="logobox-stb">
-                    <img src="../../../assets/Logomember- retangle/STB.jpg" alt="">
-                </div>
-                <div class="nameofbank-stb cardnamestyle">
-                    <h1>ທະນາຄານ ເອັສທີ ຈຳກັດ</h1>
-                    <p>ST Bank Limited</p>
-                </div>
-            </div>
-            </div>
-                 <div data-aos="fade-right" data-aos-duration="900">
-            <div class="cardmember-kbank">
-                <div class="logobox-kbank">
-                    <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
-                </div>
-                <div class="nameofbank-kbank cardnamestyle">
-                    <h1>ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ</h1>
-                    <p>KASIKORNBANK Public Company Limited</p>
-                </div>
-            </div></div>
-                    <div data-aos="fade-right" data-aos-duration="1000">
-            <div class="cardmember-pub">
-                <div class="logobox-pub">
-                    <img src="../../../assets/logomember-circle/public-bank-logo-png-transparent-2.png" alt="">
-                </div>
-                <div class="nameofbank-pub cardnamestyle">
-                    <h1>ທະນາຄານ ພາບລິກ </h1>
-                    <p>PUBLIC Bank</p>
+            <div data-aos="fade-right" data-aos-duration="800">
+                <div class="cardmember-stb">
+                    <div class="logobox-stb">
+                        <img src="../../../assets/Logomember- retangle/STB.jpg" alt="">
+                    </div>
+                    <div class="nameofbank-stb cardnamestyle">
+                        <h1>ທະນາຄານ ເອັສທີ ຈຳກັດ</h1>
+                        <p>ST Bank Limited</p>
+                    </div>
                 </div>
             </div>
-            
-        </div></div>
+            <div data-aos="fade-right" data-aos-duration="900">
+                <div class="cardmember-kbank">
+                    <div class="logobox-kbank">
+                        <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
+                    </div>
+                    <div class="nameofbank-kbank cardnamestyle">
+                        <h1>ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ</h1>
+                        <p>KASIKORNBANK Public Company Limited</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="cardmember-pub">
+                    <div class="logobox-pub">
+                        <img src="../../../assets/logomember-circle/public-bank-logo-png-transparent-2.png" alt="">
+                    </div>
+                    <div class="nameofbank-pub cardnamestyle">
+                        <h1>ທະນາຄານ ພາບລິກ </h1>
+                        <p>PUBLIC Bank</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <div class="rightsidecontainer">
-           <div class="searchbar">
+            <div class="searchbar">
                 <div class="searchblog">
                     <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
                 </div>
@@ -90,15 +118,15 @@ onMounted(() => {
                         <div class="boxcheck"></div>
                         <p>All</p>
                     </div>
-                     <div class="checkbox1">
+                    <div class="checkbox1">
                         <div class="boxcheck"></div>
                         <p>ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
                     </div>
-                     <div class="checkbox1">
+                    <div class="checkbox1">
                         <div class="boxcheck"></div>
                         <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
                     </div>
-                     <div class="checkbox1">
+                    <div class="checkbox1">
                         <div class="boxcheck"></div>
                         <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
                     </div>
@@ -106,22 +134,22 @@ onMounted(() => {
                         <div class="boxcheck"></div>
                         <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
                     </div>
-                     <div class="checkbox1">
+                    <div class="checkbox1">
                         <div class="boxcheck"></div>
                         <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
                     </div>
-                     <div class="checkbox1">
+                    <div class="checkbox1">
                         <div class="boxcheck"></div>
                         <p>ຊຳລະຂ້າມແດນຜ່ານ QR Code</p>
                     </div>
                 </div>
-               
+
             </div>
         </div>
-      
+
     </div>
     <div class="pagination">
-            <pagination></pagination>
+        <pagination></pagination>
     </div>
     <footerLogoMember1></footerLogoMember1>
     <mainfooter></mainfooter>
@@ -130,78 +158,126 @@ onMounted(() => {
 
 
 <style scoped>
-.pagination{
+.navigatorcontent {
+    width: 100%;
+    height: 470px;
+
+
+}
+
+.navigator-info-container {
+    width: 1000px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navigator-img {
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    z-index: -1;
+}
+
+.titlenavigator p {
+    font-size: 70px;
+    color: #fff;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.navigatorlink p {
+    color: #fff;
+    font-size: 20px;
+
+    font-family: "Noto Sans Lao", sans-serif;
+}
+.pagination {
     width: 100%;
     height: 190px;
 
     margin-bottom: 30px;
 }
 
-.boxcheck{
+.boxcheck {
     width: 30px;
     height: 30px;
     border: 1px solid #433bff;
     border-radius: 5px;
     margin-left: 20px;
 }
-.checkbox1 p{
+
+.checkbox1 p {
     padding-left: 20px;
     font-size: 22px;
     color: #0000009c;
 }
 
-.checkbox1{
+.checkbox1 {
     width: 470px;
     margin-left: 50px;
     display: flex;
     align-items: center;
     background-color: #fff;
     height: 80px;
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
+
     border-radius: 7px;
     margin-bottom: 20px;
 }
-.checkboxshort{
+
+.checkboxshort {
     width: 100%;
     height: 800px;
     margin-top: 60px;
-  
+
     display: inline;
-    
- 
+
+
 }
 
-.title-group h1{
+.title-group h1 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-left: 40px;
     padding-top: 30px;
     color: #040072;
 }
-.title-group{
+
+.title-group {
     width: 100%;
     height: 100px;
 
     margin-bottom: 30px;
 }
-.groupshortmember{
+
+.groupshortmember {
     width: 100%;
     height: 1000px;
     background-color: #ebebeb;
     margin-top: 60px;
     border-radius: 15px;
 }
-.searchbar{
+
+.searchbar {
     width: 100%;
     height: 240px;
     background-color: #ebebeb;
     border-radius: 15px;
 }
-.btnsubmit i{
+
+.btnsubmit i {
     font-size: 35px;
     color: white;
 }
-.btnsubmit{
+
+.btnsubmit {
     width: 110px;
     height: 100%;
     background-color: #433bff;
@@ -211,36 +287,43 @@ onMounted(() => {
     align-items: center;
     border-bottom-right-radius: 20px;
 }
-.inputsearchblog input::placeholder{
+
+.inputsearchblog input::placeholder {
     padding-left: 30px;
     font-size: 20px;
 }
-.inputsearchblog input{
+
+.inputsearchblog input {
     width: 500px;
     height: 100%;
     border-bottom-left-radius: 7px;
     border-top-left-radius: 7px;
     background-color: #fff;
 }
-.inputsearchblog{
+
+.inputsearchblog {
     width: 80%;
     margin: 0 auto;
     height: 80px;
     margin-top: 20px;
     display: flex;
 }
-.searchblog h4{
+
+.searchblog h4 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-top: 30px;
     padding-left: 40px;
     color: #040072;
 }
-.searchblog{
+
+.searchblog {
     width: 100%;
     height: 35%;
 
 }
+
 .nameofbank-sacom {
     width: 750px;
     height: 200px;
@@ -287,7 +370,7 @@ onMounted(() => {
     height: 300px;
     display: flex;
     align-items: center;
-   
+
     margin-bottom: 10px;
 
 }
@@ -467,7 +550,8 @@ onMounted(() => {
     padding-left: 140px;
     font-size: 30px;
     margin-top: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     color: #fff;
 
 }
@@ -601,7 +685,7 @@ onMounted(() => {
 .rightsidecontainer {
     width: 38%;
     height: 1400px;
-   
+
     margin-left: 2%;
     margin-top: 100px;
 }
@@ -609,7 +693,7 @@ onMounted(() => {
 .leftsidecontainer {
     width: 60%;
     height: 1400px;
-    
+
     margin-top: 100px;
 }
 
@@ -619,7 +703,7 @@ onMounted(() => {
     height: auto;
     margin: 0 auto;
     height: 1500px;
- 
+
 
 
 }

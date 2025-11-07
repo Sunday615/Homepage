@@ -5,25 +5,25 @@
     <div class="button-group">
       <!-- ปุ่ม Page 1 -->
       <router-link
-        to="/member1"
+        to="/membercard/member1"
         class="btn"
-        :class="{ active: $route.path === '/member1' }"
+        :class="{ active: $route.path === '/membercard/member1' }"
       >
         Page 1
       </router-link>
 
       <!-- ปุ่ม Page 2 -->
       <router-link
-        to="/member1_2"
+        to="/membercard/member2"
         class="btn"
-        :class="{ active: $route.path === '/member1_2' }"
+        :class="{ active: $route.path === '/membercard/member2' }"
       >
         Page 2
       </router-link>
       <router-link
-        to="/member1_3"
+        to="/membercard/member3"
         class="btn"
-        :class="{ active: $route.path === '/member1_3' }"
+        :class="{ active: $route.path === '/membercard/member3' }"
       >
         Page 3
       </router-link>
@@ -40,7 +40,7 @@ const router = useRouter()
 const route = useRoute()
 
 // รายชื่อ path
-const pages = ['/member1' ,'/member1_2','/member1_3']
+const pages = ['/membercard/member1' ,'/membercard/member2','/membercard/member3']
 
 
 function nextPage() {

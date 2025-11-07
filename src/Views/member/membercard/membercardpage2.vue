@@ -9,10 +9,10 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
 
-  window.scrollTo({
-    top: 660, 
-    behavior: 'smooth'
-  })
+    window.scrollTo({
+        top: 660,
+        behavior: 'smooth'
+    })
 })
 </script>
 
@@ -21,9 +21,35 @@ onMounted(() => {
 <template>
 
     <navbarview2></navbarview2>
+   <div class="navigatorcontent">
+        <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
+        <div class="navigator-info-container">
+            <div class="titlenavigator">
+                <div data-aos="zoom-in-down" data-aos-duration="1000">
+                    <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+            <div class="navigatorlink">
+                <div data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                class="fa-solid fa-chevron-right"></i></span> ສະມາຊິກ<span
+                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                        </span> ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
     <div class="cardviewcontainer">
         <div class="leftsidecontainer">
-            <div data-aos="fade-right" data-aos-duration="200" >
+            <div data-aos="fade-right" data-aos-duration="200">
                 <div class="cardmember-icbc">
                     <div class="logobox-icbc">
                         <img src="../../../assets/logomember-circle/icbc-bg.png" alt="">
@@ -35,7 +61,7 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="400" >
+            <div data-aos="fade-right" data-aos-duration="400">
                 <div class="cardmember-boc">
                     <div class="logobox-boc">
                         <img src="../../../assets/logomember-circle/boc-bg.png" alt="">
@@ -46,7 +72,7 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="500" >
+            <div data-aos="fade-right" data-aos-duration="500">
                 <div class="cardmember-vtb">
                     <div class="logobox-vtb">
                         <img src="../../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png"
@@ -58,7 +84,7 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="700" >
+            <div data-aos="fade-right" data-aos-duration="700">
                 <div class="cardmember-ib">
                     <div class="logobox-ib">
                         <img src="../../../assets/logomember-circle/IBbankk.JPG" alt="">
@@ -69,7 +95,7 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="900" >
+            <div data-aos="fade-right" data-aos-duration="900">
                 <div class="cardmember-acl">
                     <div class="logobox-acl">
                         <img src="../../../assets/Logomember- retangle/aceleda.png" alt="">
@@ -80,7 +106,7 @@ onMounted(() => {
                     </div>
                 </div>
             </div>
-            <div data-aos="fade-right" data-aos-duration="1100" >
+            <div data-aos="fade-right" data-aos-duration="1100">
                 <div class="cardmember-bic">
                     <div class="logobox-bic">
                         <img src="../../../assets/logomember-circle/BIC.jpg" alt="">
@@ -152,6 +178,45 @@ onMounted(() => {
 
 
 <style scoped>
+.navigatorcontent {
+    width: 100%;
+    height: 470px;
+
+
+}
+
+.navigator-info-container {
+    width: 1000px;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#navigator-img {
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    z-index: -1;
+}
+
+.titlenavigator p {
+    font-size: 70px;
+    color: #fff;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.navigatorlink p {
+    color: #fff;
+    font-size: 20px;
+
+    font-family: "Noto Sans Lao", sans-serif;
+}
 .pagination {
     width: 100%;
     height: 300px;
@@ -179,7 +244,7 @@ onMounted(() => {
     align-items: center;
     background-color: #fff;
     height: 80px;
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
     border-radius: 7px;
     margin-bottom: 20px;
 }
@@ -196,7 +261,8 @@ onMounted(() => {
 
 .title-group h1 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-left: 40px;
     padding-top: 30px;
     color: #040072;
@@ -263,7 +329,8 @@ onMounted(() => {
 
 .searchblog h4 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-top: 30px;
     padding-left: 40px;
     color: #040072;
@@ -500,7 +567,8 @@ onMounted(() => {
     padding-left: 140px;
     font-size: 30px;
     margin-top: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     color: #fff;
 
 }

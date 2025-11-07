@@ -2,7 +2,7 @@
 
 <template>
     <div class="logo-box">
-        <img id="bg" src="../../assets/footer-assets/footerasset.png" alt="">
+        <img id="bg" src="../../../assets/footer/footerasset.png" alt="">
         <div class="title">
             <div data-aos="zoom-out-up" data-aos-duration="1000">
                       <h1>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</h1>
@@ -11,53 +11,53 @@
         </div>
         <div class="logo">
             <div class="row1">
-                <div class="boxlogo1"><img  style="width: 170px; height:110px;"  src="../../assets/Logomember- retangle/bcelretangle.png" alt=""></div>
+                <div class="boxlogo1"><img  style="width: 170px; height:110px;"  src="../../../assets/Logomember- retangle/bcelretangle.png" alt=""></div>
                 <div class="boxlogo2">
-                    <img style="width: 195px; " src="../../assets//Logomember- retangle/ldbwithborder.png" alt="">
+                    <img style="width: 195px; " src="../../../assets//Logomember- retangle/ldbwithborder.png" alt="">
                 </div>
-                <div class="boxlogo3"><img style="width: 140px; height:140px" src="../../assets/Logomember- retangle/apbpng.png" alt=""></div>
+                <div class="boxlogo3"><img style="width: 140px; height:140px" src="../../../assets/Logomember- retangle/apbpng.png" alt=""></div>
                 <div class="boxlogo4">
-                    <img style="width: 190px;" src="../../assets/Logomember- retangle/jdb.png" alt="">
+                    <img style="width: 190px;" src="../../../assets/Logomember- retangle/jdb.png" alt="">
                 </div>
                 <div class="boxlogo5">
-                    <img style="width: 180px; height:180px" src="../../assets/Logomember- retangle/MARU.jpg" alt="">
+                    <img style="width: 180px; height:180px" src="../../../assets/Logomember- retangle/MARU.jpg" alt="">
                 </div>
                 <div class="boxlogo6">
-                    <img style="width: 190px;"  src="../../assets/Logomember- retangle/LVB.png" alt="">
+                    <img style="width: 190px;"  src="../../../assets/Logomember- retangle/LVB.png" alt="">
                 </div>
             </div>
             <div class="row1">
                 <div class="boxlogo7">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/ICBC.svg.png" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/ICBC.svg.png" alt="">
                 </div>
                 <div class="boxlogo8">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/bboc.png" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/bboc.png" alt="">
                 </div>
                 <div class="boxlogo9">
-                    <img style="width:190px ; padding-bottom: 30px;" src="../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png" alt="">
+                    <img style="width:190px ; padding-bottom: 30px;" src="../../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png" alt="">
                 </div>
                 <div class="boxlogo10">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/IB.png" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/IB.png" alt="">
                 </div>
                 <div class="boxlogo11">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/logo-share.jpg" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/logo-share.jpg" alt="">
                 </div>
                 <div class="boxlogo12">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/BIC.png" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/BIC.png" alt="">
                 </div>
             </div>
             <div class="row1">
                 <div class="boxlogo13">
-                    <img style="width:190px" src="../../assets/Logomember- retangle/sacombankretangle.jpeg" alt="">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/sacombankretangle.jpeg" alt="">
                 </div>
                 <div class="boxlogo14">
-                    <img style="width:170px" src="../../assets/Logomember- retangle/Stbretangle.png" alt="">
+                    <img style="width:170px" src="../../../assets/Logomember- retangle/Stbretangle.png" alt="">
                 </div>
                 <div class="boxlogo15">
-                    <img style="width:150px" src="../../assets/Logomember- retangle/kbank.jpg" alt="">
+                    <img style="width:150px" src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
                 </div>
                 <div class="boxlogo16">
-                    <img style="width:180px" src="../../assets/logomember-circle/public-bank-logo-png-transparent-2.png" alt="">
+                    <img style="width:180px" src="../../../assets/logomember-circle/public-bank-logo-png-transparent-2.png" alt="">
                 </div>
               
             </div>
@@ -99,7 +99,8 @@
 }
 .title h1{
     font-size: 80px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     text-align: center;
 }
 .logo{

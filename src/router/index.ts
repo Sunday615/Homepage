@@ -9,6 +9,7 @@ import Product6 from '../Views/product-service/product6.vue'
 import Membercardpage1 from '../Views/member/membercard/membercardpage1.vue'
 import Membercardpage2 from '../Views/member/membercard/membercardpage2.vue'
 import Membercardpage3 from '../Views/member/membercard/membercarpage3.vue'
+import Contact from '../Views/Contact/contact.vue'
 // import Membercardpage2_1 from '../Views/member/membermobilebanking/membercardpage2_1.vue'
 
 
@@ -29,8 +30,8 @@ const routes = [
   { path: '/membercard/member3', name: 'member3', component: Membercardpage3 },
 
   // { path: '/membermobilebanking/member2_1', name: 'member3', component: Membercardpage2_1 },
-
-
+  //######################## Contact Us ###########################
+  { path: '/contact', name: 'contact', component: Contact },
 ]
 
 
