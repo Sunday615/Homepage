@@ -5,7 +5,7 @@
     </button>
     <ul v-if="isOpen" class="dropdown-menu">
       <li> <router-link to="/membercard/member1"> {{products[0]}}</router-link></li>
-       <li> <router-link to="/member2_1"> {{products[1]}}</router-link></li>
+       <li> <router-link to="/membermobilebanking/member2_1"> {{products[1]}}</router-link></li>
     </ul>
   </div>
 </template>

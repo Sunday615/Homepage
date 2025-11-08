@@ -1,18 +1,18 @@
 <script setup lang="ts">
 
-import nav_with_imgnavigator2 from '../../Navbar-footer/nav_with_imgnavigator_member2.vue';
-import ft from '../../Navbar-footer/ft.vue';
-import paginationmember2 from './paginationmember2.vue';
-import footerLogoMember2 from '../../Navbar-footer/footer-logo-member2.vue';
+import navbarview2 from '../../../components/navbar/navbarview2.vue';
+import mainfooter from '../../../components/footer/mainfooter.vue';
+import paginationmember2 from '../../../components/pagination/paginationmember2.vue';
+import footerLogoMember2 from '../../../components/footer/memberfooter/footer-logo-member2.vue';
 
 import { onMounted } from 'vue';
 
 onMounted(() => {
 
-  window.scrollTo({
-    top: 660, 
-    behavior: 'smooth'
-  })
+    window.scrollTo({
+        top: 660,
+        behavior: 'smooth'
+    })
 })
 </script>
 
@@ -20,7 +20,33 @@ onMounted(() => {
 
 <template>
 
-    <nav_with_imgnavigator2></nav_with_imgnavigator2>
+    <navbarview2></navbarview2>
+    <div class="navigatorcontent">
+        <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
+        <div class="navigator-info-container">
+            <div class="titlenavigator">
+                <div data-aos="zoom-in-down" data-aos-duration="1000">
+                    <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+            <div class="navigatorlink">
+                <div data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                class="fa-solid fa-chevron-right"></i></span> ສະມາຊິກ<span
+                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                        </span> ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
     <div class="cardviewcontainer">
         <div class="leftsidecontainer">
             <div data-aos="fade-right" data-aos-duration="800">
@@ -146,7 +172,7 @@ onMounted(() => {
         <paginationmember2></paginationmember2>
     </div>
     <footer-logo-member2></footer-logo-member2>
-    <ft></ft>
+    <mainfooter></mainfooter>
 </template>
 
 
@@ -179,7 +205,7 @@ onMounted(() => {
     align-items: center;
     background-color: #fff;
     height: 80px;
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
     border-radius: 7px;
     margin-bottom: 20px;
 }
@@ -196,7 +222,8 @@ onMounted(() => {
 
 .title-group h1 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-left: 40px;
     padding-top: 30px;
     color: #040072;
@@ -263,7 +290,8 @@ onMounted(() => {
 
 .searchblog h4 {
     font-size: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-top: 30px;
     padding-left: 40px;
     color: #040072;
@@ -500,7 +528,8 @@ onMounted(() => {
     padding-left: 140px;
     font-size: 30px;
     margin-top: 30px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     color: #fff;
 
 }

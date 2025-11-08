@@ -96,7 +96,7 @@ const autoplayDelay = 3000
                             <memberdropdown></memberdropdown>
                         </li>
                         <li>ຂ່າວ ແລະ ກິດຈະກຳ</li>
-                        <li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
+                        <router-link to="/joinus" ><li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li></router-link>
                         <li>
                             <aboutusdropdown></aboutusdropdown>
                         </li>
