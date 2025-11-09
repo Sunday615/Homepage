@@ -27,7 +27,7 @@ import updownanimation from '../../components/Image_floating/updownanimation.vue
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
 
-const videoSrc = '/videos/background.mp4' // change to your video path
+const videoSrc = '/videos/testvdo1.mp4' // change to your video path
 const videoRef = ref(null)
 const titleRef = ref(null)
 const subtitleRef = ref(null)

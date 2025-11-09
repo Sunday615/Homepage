@@ -8,10 +8,10 @@ import { onMounted } from 'vue';
 
 onMounted(() => {
 
-  window.scrollTo({
-    top: 660, 
-    behavior: 'smooth'
-  })
+    window.scrollTo({
+        top: 660,
+        behavior: 'smooth'
+    })
 })
 </script>
 
@@ -20,164 +20,176 @@ onMounted(() => {
 <template>
 
     <navbarview2></navbarview2>
-     <div class="navigatorcontent">
-        <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+    <div class="containerhiden">
+        <div class="navigatorcontent">
+            <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
+            <div class="navigator-info-container">
+                <div class="titlenavigator">
+                    <div data-aos="zoom-in-down" data-aos-duration="1000">
+                        <p>ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື</p>
+                    </div>
+
+
+
+
                 </div>
+                <div class="navigatorlink">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000">
+                        <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                    class="fa-solid fa-chevron-right"></i></span> ສະມາຊິກ<span
+                                style="padding-right: 40px; padding-left: 40px;"><i
+                                    class="fa-solid fa-chevron-right"></i>
+                            </span> ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
+                    </div>
 
 
 
 
-            </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ສະມາຊິກ<span
-                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                        </span> ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
                 </div>
-
-
-
-
             </div>
         </div>
-    </div>
-    <div class="cardviewcontainer">
-        <div class="leftsidecontainer">
-            <div data-aos="fade-right" data-aos-duration="800">
-                <div class="cardmember-sacom">
-                    <div class="logobox-sacom">
-                        <img src="../../../assets/Logomember- retangle/sacombank.png" alt="">
-                    </div>
-                    <div class="cardnamestyle nameofbank-sacom">
+        <div class="cardviewcontainer">
+            <div class="leftsidecontainer">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <div class="cardmember-sacom">
+                        <div class="logobox-sacom">
+                            <img src="../../../assets/Logomember- retangle/sacombank.png" alt="">
+                        </div>
+                        <div class="cardnamestyle nameofbank-sacom">
 
-                        <h1>ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ </h1>
-                        <p>Saigon Thuong Tin Commercial Joint Stock Bank</p>
+                            <h1>ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ </h1>
+                            <p>Saigon Thuong Tin Commercial Joint Stock Bank</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="500">
-                <div class="cardmember-stb">
-                    <div class="logobox-stb">
-                        <img src="../../../assets/Logomember- retangle/STB.jpg" alt="">
-                    </div>
-                    <div class="nameofbank-stb cardnamestyle">
-                        <h1>ທະນາຄານ ເອັສທີ ຈຳກັດ</h1>
-                        <p>ST Bank Limited</p>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="700">
-                <div class="cardmember-kbank">
-                    <div class="logobox-kbank">
-                        <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
-                    </div>
-                    <div class="nameofbank-kbank cardnamestyle">
-                        <h1>ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ</h1>
-                        <p>KASIKORNBANK Public Company Limited</p>
+                <div data-aos="fade-right" data-aos-duration="500">
+                    <div class="cardmember-stb">
+                        <div class="logobox-stb">
+                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="">
+                        </div>
+                        <div class="nameofbank-stb cardnamestyle">
+                            <h1>ທະນາຄານ ເອັສທີ ຈຳກັດ</h1>
+                            <p>ST Bank Limited</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="800">
-                <div class="cardmember-bfl">
-                    <div class="logobox-bfl">
-                        <img src="../../../assets/Logomember- retangle/bflbank.png" alt="">
-                    </div>
-                    <div class="nameofbank-bfl cardnamestyle">
-                        <h1>ທະນາຄານ ລາວ-ຝລັ່ງ ຈຳກັດ</h1>
-                        <p>Banque Franco-Lao</p>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="900">
-                <div class="cardmember-psvb">
-                    <div class="logobox-psvb">
-                        <img src="../../../assets/Logomember- retangle/psvb.PNG" alt="">
-                    </div>
-                    <div class="nameofbank-psvb cardnamestyle">
-                        <h1>ທະນາຄານ ພົງສະຫວັນ ຈໍາກັດ</h1>
-                        <p>Phongsavanh Bank</p>
+                <div data-aos="fade-right" data-aos-duration="700">
+                    <div class="cardmember-kbank">
+                        <div class="logobox-kbank">
+                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
+                        </div>
+                        <div class="nameofbank-kbank cardnamestyle">
+                            <h1>ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ</h1>
+                            <p>KASIKORNBANK Public Company Limited</p>
+                        </div>
                     </div>
                 </div>
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <div class="cardmember-bfl">
+                        <div class="logobox-bfl">
+                            <img src="../../../assets/Logomember- retangle/bflbank.png" alt="">
+                        </div>
+                        <div class="nameofbank-bfl cardnamestyle">
+                            <h1>ທະນາຄານ ລາວ-ຝລັ່ງ ຈຳກັດ</h1>
+                            <p>Banque Franco-Lao</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="900">
+                    <div class="cardmember-psvb">
+                        <div class="logobox-psvb">
+                            <img src="../../../assets/Logomember- retangle/psvb.PNG" alt="">
+                        </div>
+                        <div class="nameofbank-psvb cardnamestyle">
+                            <h1>ທະນາຄານ ພົງສະຫວັນ ຈໍາກັດ</h1>
+                            <p>Phongsavanh Bank</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="cardmember-mb">
+                        <div class="logobox-mb">
+                            <img src="../../../assets/Logomember- retangle/mbbank.png" alt="">
+                        </div>
+                        <div class="nameofbank-mb cardnamestyle">
+                            <h1>ທະນາຄານ ຫຸ້ນສ່ວນການຄ້າທະຫານ ສາຂາລາວ</h1>
+                            <p>Military Commercial Joint Stock Bank</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div data-aos="fade-right" data-aos-duration="1000">
-                <div class="cardmember-mb">
-                    <div class="logobox-mb">
-                        <img src="../../../assets/Logomember- retangle/mbbank.png" alt="">
+            <div class="rightsidecontainer">
+                <div class="searchbar">
+                    <div class="searchblog">
+                        <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
                     </div>
-                    <div class="nameofbank-mb cardnamestyle">
-                        <h1>ທະນາຄານ ຫຸ້ນສ່ວນການຄ້າທະຫານ ສາຂາລາວ</h1>
-                        <p>Military Commercial Joint Stock Bank</p>
+                    <div class="inputsearchblog">
+                        <input type="text" placeholder="Search">
+                        <div class="btnsubmit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
                     </div>
+                </div>
+                <div class="groupshortmember">
+                    <div class="title-group">
+                        <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
+                    </div>
+                    <div class="checkboxshort">
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>All</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
+                        </div>
+                        <div class="checkbox1">
+                            <div class="boxcheck"></div>
+                            <p>ຊຳລະຂ້າມແດນຜ່ານ QR Code</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
-        <div class="rightsidecontainer">
-            <div class="searchbar">
-                <div class="searchblog">
-                    <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
-                </div>
-                <div class="inputsearchblog">
-                    <input type="text" placeholder="Search">
-                    <div class="btnsubmit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="groupshortmember">
-                <div class="title-group">
-                    <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
-                </div>
-                <div class="checkboxshort">
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>All</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
-                    </div>
-                    <div class="checkbox1">
-                        <div class="boxcheck"></div>
-                        <p>ຊຳລະຂ້າມແດນຜ່ານ QR Code</p>
-                    </div>
-                </div>
-
-            </div>
+        <div class="pagination">
+            <paginationmember2></paginationmember2>
         </div>
-
+        <footer-logo-member2></footer-logo-member2>
+        <mainfooter></mainfooter>
     </div>
-    <div class="pagination">
-        <paginationmember2></paginationmember2>
-    </div>
-    <footer-logo-member2></footer-logo-member2>
-    <mainfooter></mainfooter>
 </template>
 
 
 
 <style scoped>
+.containerhiden{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.titlenavigator p {
+    font-size: 65px;
+}
+
 .nameofbank-bfl {
     width: 750px;
     height: 200px;
@@ -363,7 +375,7 @@ onMounted(() => {
     align-items: center;
     background-color: #fff;
     height: 80px;
-   font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
     border-radius: 7px;
     margin-bottom: 20px;
 }

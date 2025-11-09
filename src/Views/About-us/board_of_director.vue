@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import navbartemplete from '../Navbar-footer/navbartemplete.vue';
-import ft from '../Navbar-footer/ft.vue';
-import navbar from './navbarboarddirector/navbardirector.vue';
+import navbarview2 from '../../components/navbar/navbarview2.vue';
+import mainfooter from '../../components/footer/mainfooter.vue';
+import navbardirector from '../../components/navbarboarddirector/navbardirector.vue';
 </script>
 
 
 <template>
 
 
-    <navbartemplete></navbartemplete>
+    <navbarview2></navbarview2>
     <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Vision-bg/navigatormission-bg.png" alt="">
+        <img id="navigator-img" src="../../assets/Aboutus/Board_of_director/navigatormission-bg.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
                       <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -26,19 +26,13 @@ import navbar from './navbarboarddirector/navbardirector.vue';
         </div>
     </div>
     <div class="nav_board_of_derictor">
-        <navbar></navbar>
-        <!-- <ul>
-            <li><a href="#">ຄະນະສະພາຜູ້ບໍລິຫານ</a></li>
-            <li><a href="#">ຄະນະກຳມະການກວດກາ</a></li>
-            <li><a href="#">ຄະນະກຳມະການຄົ້ນຄວ້ານະໂຍບາຍ</a></li>
-            <li><a href="#">ຄະນະກຳມະການຄຸ້ມຄອງຄວາມສ່ຽງ</a></li>
-            <li><a href="#">ຄະນະກຳມະການຕິດຕາມການພັດທະນາລະບົບ</a></li>
-        </ul> -->
+        <navbardirector></navbardirector>
+  
     </div>
     <div class="boardofdirectorimg">
-        <img src="../../assets/Aboutusasset/director-2.png" alt="">
+        <img src="../../assets/Aboutus/Board_of_director/director-2.png" alt="">
     </div>
-    <ft></ft>
+    <mainfooter></mainfooter>
 </template>
 
 
@@ -65,7 +59,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 
-    font-family: notosanlao;
+       font-family: "Noto Sans Lao", sans-serif;
     font-size: 19px;
     color: #000;
     display: inline-block;
@@ -111,7 +105,7 @@ a:hover:after {
 
 .box_navbar h1 {
     font-size: 19px;
-    font-family: notosanlao;
+       font-family: "Noto Sans Lao", sans-serif;
     cursor: pointer;
 }
 
@@ -167,7 +161,8 @@ a:hover:after {
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-    font-family: notosanlao-bold;
+       font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-bottom: 70px;
 }
 
@@ -175,6 +170,6 @@ a:hover:after {
     color: #fff;
     font-size: 20px;
 
-    font-family: notosanlao;
+       font-family: "Noto Sans Lao", sans-serif;
 }
 </style>

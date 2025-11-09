@@ -15,6 +15,10 @@ import Membercardpage2_2 from '../Views/member/membermobilebanking/membercardpag
 import membercardpage2_3 from '../Views/member/membermobilebanking/membercarpage2_3.vue'
 import Joinus from '../Views/joinus/joinus.vue'
 import Vision_mission from '../Views/About-us/vision_mission.vue'
+import Role from '../Views/About-us/Role.vue'
+
+import Board_of_director from '../Views/About-us/board_of_director.vue'
+import History from '../Views/About-us/History.vue'
 
 
 
@@ -47,6 +51,12 @@ const routes = [
 
    //######################## About Us ###########################
   { path: '/vision_mission', name: 'vision_mission', component: Vision_mission },
+  { path: '/role', name: 'role', component: Role },
+  { path: '/History', name: 'History', component: History },
+
+  { path: '/board_of_director', name: 'history', component: Board_of_director },
+
+
   
 ]
 

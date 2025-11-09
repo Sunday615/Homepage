@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import navbartemplete from '../Navbar-footer/navbartemplete.vue';
-import ft from '../Navbar-footer/ft.vue';
+import navbarview2 from '../../components/navbar/navbarview2.vue';
+import mainfooter from '../../components/footer/mainfooter.vue';
 </script>
 
 <template>
 
 
-    <navbartemplete></navbartemplete>
+    <navbarview2></navbarview2>
     <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Vision-bg/navigatormission-bg.png" alt="">
+        <img id="navigator-img" src="../../assets/Aboutus/History/navigatormission-bg.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
                 <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -298,13 +298,13 @@ import ft from '../Navbar-footer/ft.vue';
 
             <div class="graphpercent">
                 <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-                    <img src="../../assets/Aboutusasset/piechart.png" alt="">
+                    <img src="../../assets/Aboutus/History/piechart.png" alt="">
                 </div>
             </div>
 
         </div>
     </div>
-    <ft></ft>
+    <mainfooter></mainfooter>
 </template>
 
 
@@ -321,7 +321,8 @@ import ft from '../Navbar-footer/ft.vue';
 .nameofbank h1 {
     font-size: 27px;
     color: #fff;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
 }
 
 .nameofbank {
@@ -446,7 +447,8 @@ import ft from '../Navbar-footer/ft.vue';
 
 .partner-header h1 {
     font-size: 80px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     color: #0092db;
     background-image: linear-gradient(45deg, #0092db, #0059ff 100%);
     background-clip: text;
@@ -486,12 +488,13 @@ import ft from '../Navbar-footer/ft.vue';
 
     font-size: 19px;
 
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
 }
 
 .title-description h1 {
     font-size: 32px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     color: #040072;
 
 }
@@ -558,13 +561,15 @@ import ft from '../Navbar-footer/ft.vue';
 
 .titleheader p {
     font-size: 40px;
+    
     font-weight: bold;
     text-align: center;
 }
 
 .titleheader h1 {
     font-size: 65px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -884,7 +889,7 @@ mark {
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-    font-family: notosanlao-bold;
+        font-weight: bold;
     padding-bottom: 70px;
 }
 
@@ -892,6 +897,6 @@ mark {
     color: #fff;
     font-size: 20px;
 
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
 }
 </style>

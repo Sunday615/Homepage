@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import navbartemplete from '../Navbar-footer/navbartemplete.vue';
-import ft from '../Navbar-footer/ft.vue';
-import typing from '../Typingfunction/typing.vue';
+import navbarview2 from '../../components/navbar/navbarview2.vue';
+import mainfooter from '../../components/footer/mainfooter.vue';
+import typing from '../../components/Typingfunction/typing.vue';
 
 
 </script>
@@ -9,28 +9,28 @@ import typing from '../Typingfunction/typing.vue';
 
 <template>
 
-    <navbartemplete></navbartemplete>
+    <navbarview2></navbarview2>
     <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Vision-bg/navigatormission-bg.png" alt="">
+        <img id="navigator-img" src="../../assets/Aboutus/Role/navigatormission-bg.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
-                    <div data-aos="zoom-in-down" data-aos-duration="1000">
-                         <p>ພາລະບົດບາດ</p>
-                    </div>
-               
+                <div data-aos="zoom-in-down" data-aos-duration="1000">
+                    <p>ພາລະບົດບາດ</p>
+                </div>
+
             </div>
             <div class="navigatorlink">
-                  <div data-aos="zoom-out-up" data-aos-duration="1000">
-                <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                            class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
-                        style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                    </span> ພາລະບົດບາດ</p>
-                    </div>
+                <div data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
+                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                        </span> ພາລະບົດບາດ</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="inforole">
-        <img id="bg-role" src="../../assets/Aboutusasset/3.png" alt="">
+        <img id="bg-role" src="../../assets/Aboutus/Role/3.png" alt="">
         <div class="gradient-border" id="box">
             <div class="titlebox">
                 <h1>ພາລະບົດບາດ</h1>
@@ -52,16 +52,14 @@ import typing from '../Typingfunction/typing.vue';
                 </div>
                 <div class="productlist">
                     <ul>
-                                    <typing></typing>
-                    
-                   
+                        <typing></typing>
                     </ul>
-             
+
                 </div>
             </div>
         </div>
     </div>
-    <ft></ft>
+    <mainfooter></mainfooter>
 </template>
 
 
@@ -71,7 +69,7 @@ import typing from '../Typingfunction/typing.vue';
 }
 
 .productlist ul li {
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
     font-size: 27px;
     margin-bottom: 20px;
 }
@@ -84,7 +82,8 @@ import typing from '../Typingfunction/typing.vue';
 
 .headerproduct h1 {
     font-size: 35px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
 }
 
 .headerproduct {
@@ -106,7 +105,7 @@ import typing from '../Typingfunction/typing.vue';
 
 .inforolep p {
     font-size: 23px;
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
     padding-bottom: 40px;
 }
 
@@ -121,7 +120,8 @@ import typing from '../Typingfunction/typing.vue';
 
 .titlebox h1 {
     font-size: 60px;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     text-align: center;
 
 
@@ -137,7 +137,7 @@ import typing from '../Typingfunction/typing.vue';
 }
 
 #box {
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
     width: 95%;
     height: 90%;
     color: white;
@@ -258,14 +258,14 @@ import typing from '../Typingfunction/typing.vue';
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-    font-family: notosanlao-bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-bottom: 70px;
 }
 
 .navigatorlink p {
     color: #fff;
     font-size: 20px;
-
-    font-family: notosanlao;
+    font-family: "Noto Sans Lao", sans-serif;
 }
 </style>

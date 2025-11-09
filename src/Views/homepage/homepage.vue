@@ -6,6 +6,8 @@ import footerdropdown from '../../components/footer/footerdropdown.vue';
 import productDropdown from './navbar-homepage/product-dropdown.vue';
 import memberdropdown from './navbar-homepage/memberdropdown.vue';
 import aboutusdropdown from './navbar-homepage/aboutusdropdown.vue';
+import vdocontainer4 from './vdocontainer4.vue';
+import homepageproduct from '../../components/autoscrolling/homepageproduct.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Autoplay } from 'swiper/modules';
 
@@ -96,7 +98,9 @@ const autoplayDelay = 3000
                             <memberdropdown></memberdropdown>
                         </li>
                         <li>ຂ່າວ ແລະ ກິດຈະກຳ</li>
-                        <router-link to="/joinus" ><li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li></router-link>
+                        <router-link to="/joinus">
+                            <li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
+                        </router-link>
                         <li>
                             <aboutusdropdown></aboutusdropdown>
                         </li>
@@ -124,73 +128,66 @@ const autoplayDelay = 3000
             </div>
 
         </div>
+
         <div class="containerhomepage2">
-            <div class="missionimgcontainer">
-                <img src="../../assets/Homepage/newmission-2.png" alt="">
-
+            <div class="cardview">
+                <img src="../../assets/Homepage/newmission-2.png" alt=""></img>
             </div>
-            <div class="titlemission">
-                <div class="textaligh">
-                    <div class="titleinfo">
-                        <h1>ວິໄສທັດ ແລະ ພາລະກິດ ຂອງພວກເຮົາ</h1>
+            <div class="titlecontainer">
+                <div class="header">
+                    <h1>ວິໄສທັດຂອງພວກເຮົາ</h1>
+                </div>
+                <div class="boxinfo" style="margin-top: 80px;">
+                    <div class="number">
+                        <p>01</p>
                     </div>
-                    <div class="missionbox">
-                        <div class="number">
-                            <h1>01</h1>
-                        </div>
-                        <div class="infovision">
-                            <h1>ວິໄສທັດ</h1>
-                            <p>ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການ<br>ຊໍາລະ
-                                ທັງພາຍໃນ
-                                ແລະ ສາກົນ, ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ,<br> ທັນສະໄໝ, ປອດໄພ,
-                                ຕົ້ນທືນຕໍາ ແລະ ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການ<br>ຊໍາລະໃນ ສປປ ລາວ.</p>
-                        </div>
+                    <div class="infovision">
+                        <h2>ວິໄສທັດ</h2>
+                        <p style="color: #000;">ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການຊໍາລະ
+                            ທັງພາຍໃນ ແລະ
+                            ສາກົນ,
+                            ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ, ທັນສະໄໝ, ປອດໄພ, ຕົ້ນທືນຕໍາ ແລະ
+                            ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການຊໍາລະໃນ ສປປ ລາວ.</p>
                     </div>
-                    <div class="missionbox1">
-                        <div class="number">
-                            <h1>02</h1>
-                        </div>
-                        <div class="infovision">
-                            <h1>ພາລະກິດ</h1>
-                            <p>ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ, ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
-                                ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
-                                ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ
-                                ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
-                                ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
-                                ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
-                                ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
-                                ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
-                                ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.
-
-                            </p>
-                        </div>
+                </div>
+                <div class="boxinfo2"  >
+                    <div class="number">
+                        <p>02</p>
+                    </div>
+                    <div class="infovision">
+                        <h2>ພາລະກິດ</h2>
+                        <p style="color: #000;">ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ,
+                            ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
+                            ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
+                            ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ
+                            ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
+                            ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
+                            ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
+                            ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
+                            ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
+                            ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.</p>
                     </div>
                 </div>
             </div>
-
         </div>
+
+
+
         <div class="homepagecontent3">
             <vdo></vdo>
         </div>
+        <div class="allproducts">
+
+
+            <!-- #all product now! -->
+             <homepageproduct></homepageproduct>
+
+
+        </div>
         <div class="homepagecontent4">
 
-            <img id="pdcontent4" src="../../assets/Homepage/pdcontent4-2.png" alt="">
-            <div class="center">
-
-            </div>
-            <div class="mockuppd4">
-                <img src="../../assets/Homepage/mobilemockup4-2.png" alt="">
-            </div>
-            <div class="titlepd4">
-                <h1>ໂອນເງິນຂ້າມທະນາຄານ<br>ເທິງມືຖືຜ່ານແອັບ</h1>
-                <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile Application) <br> ໂດຍນຳໃຊ້ລະບົບ LMPS
-                    ໃນການເຊື່ອມໂຍງຜ່ານ Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກ <br> ຂອງບໍລິສັດລາວ ເນເຊີນນໍເພເມັ້ນ
-                    ເນັດເວີກ
-                    ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນເງິນຂ້າມທະນາຄານໄດ້.</p>
-                <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-                    ການບໍລິການ</button>
-            </div>
-
+           
+            <vdocontainer4></vdocontainer4>
         </div>
         <memberscrolling></memberscrolling>
 
@@ -209,7 +206,7 @@ const autoplayDelay = 3000
 
                 </div>
                 <div class="downblog">
-                    <!-- <blogviewhomepage></blogviewhomepage> -->
+
                     <div class="news-swiper-container">
                         <Swiper :modules="[Navigation, Autoplay]" :slides-per-view="2" :space-between="30" :loop="true"
                             :autoplay="{
@@ -374,11 +371,127 @@ const autoplayDelay = 3000
 
 
 <style scoped>
-.containerhiden{
+.allproducts{
+    width: 100%;
+    height: 850px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infovision p {
+    font-size: 19px;
+    font-family: "Noto Sans Lao", sans-serif;
+    padding-top: 20px;
+    line-height: 1.7;
+
+}
+
+.infovision h2 {
+    font-size: 29px;
+    color: #00089b;
+    font-weight: bold;
+    font-family: "Noto Sans Lao", sans-serif;
+}
+
+.number p {
+    width: 100%;
+    height: 100%;
+    background: #0432C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(153deg, rgba(4, 50, 198, 1) 0%, rgba(2, 24, 96, 1) 100%);
+}
+
+.header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 30px;
+    font-family: "Noto Sans Lao", sans-serif;
+    color: #000CF0;
+    background-image: linear-gradient(360deg, #0043fa, #0080ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.infovision {
+    width: 720px;
+    height: 300px;
+    margin-left: 30px;
+
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+
+
+}
+.boxinfo2{
+     width: 800px;
+    height: 300px;
+    display: flex;
+    
+}
+.boxinfo {
+    width: 800px;
+    height: 240px;
+    display: flex;
+    
+}
+
+.header {
+    width: 800px;
+    height: 100px;
+
+}
+
+.cardview img {
+    width: 700px;
+    height: 700px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.titlecontainer {
+    width: 50%;
+    height: 100%;
+    margin-left: 3rem;
+    margin-top: 50px;
+
+}
+
+.cardview {
+    width: 45%;
+    height: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.containerhomepage2 {
+    width: 100%;
+    height: 950px;
+    display: flex;
+
+}
+
+.containerhiden {
     width: 100%;
     overflow: hidden;
     height: auto;
 }
+
 .copyright {
     width: 80%;
     height: 130px;
@@ -903,7 +1016,7 @@ const autoplayDelay = 3000
 }
 
 .homepagecontent4 {
-    width: 90%;
+    width: 100%;
     height: 900px;
     display: flex;
 
@@ -918,94 +1031,8 @@ const autoplayDelay = 3000
 
 }
 
-.infovision p {
-    color: #000000;
-    font-family: "Noto Sans Lao", sans-serif;
-}
-
-.infovision h1 {
-    font-size: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    color: #2200e3;
-    font-weight: bold;
-}
-
-.infovision {
-    width: 600px;
-    height: 200px;
-    border: 1px solid red;
-}
-
-.number {
-    width: 90px;
-    display: flex;
-    color: #fff;
-    justify-content: center;
-    margin-right: 30px;
-    align-items: center;
-    font-weight: bold;
-    height: 90px;
-    font-size: 29px;
-    font-family: "Inter", sans-serif;
-    background: linear-gradient(153deg, rgb(6, 0, 187) 0%, rgba(2, 24, 96, 1) 100%);
-
-}
-
-.titleinfo h1 {
-    font-size: 55px;
-    font-family: "Noto Sans Lao", sans-serif;
-    color: #2200e3;
-    font-weight: bold;
-}
-
-.missionbox1 {
-    width: 95%;
-    height: 200px;
-
-    display: flex;
-}
-
-.missionbox {
-    width: 95%;
-    height: 200px;
-    margin-top: 50px;
-    display: flex;
-}
-
-.textaligh {
-    width: 90%;
-
-    height: 700px;
-    border: 1px solid blue;
-
-}
-
-.titlemission {
-    width: 50%;
-    height: 100%;
-    border: 1px solid red;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.missionimgcontainer img {
-    width: 650px;
-    height: 700px;
-    border-radius: 30px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.missionimgcontainer {
-    width: 50%;
-    height: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 
-}
 
 .containerhomepage2 {
     width: 100%;
