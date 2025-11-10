@@ -1,6 +1,6 @@
 <script setup>
 import homepageproduct from './components/autoscrolling/homepageproduct.vue';
-// import testcardview from './components/autoscrolling/testcardview.vue';
+import gridblog from './Views/Blog/gridblog/gridblogpage1.vue';
 
 </script>
 

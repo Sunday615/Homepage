@@ -59,7 +59,7 @@ const newsItems = [
 const autoplayDelay = 3000
 
 function goTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
 
@@ -101,14 +101,18 @@ function goTop() {
                         <li @click="goTop()">
                             <memberdropdown></memberdropdown>
                         </li>
-                        <li @click="goTop()">ຂ່າວ ແລະ ກິດຈະກຳ</li>
+                        <router-link to="/page/1">
+                            <li @click="goTop()">ຂ່າວ ແລະ ກິດຈະກຳ</li>
+                        </router-link>
                         <router-link to="/joinus">
                             <li @click="goTop()" style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
                         </router-link>
                         <li @click="goTop()">
                             <aboutusdropdown></aboutusdropdown>
                         </li>
-                         <router-link to="/contact"><li>ຕິດຕໍ່ພວກເຮົາ</li></router-link>
+                        <router-link to="/contact">
+                            <li>ຕິດຕໍ່ພວກເຮົາ</li>
+                        </router-link>
                     </ul>
                 </div>
                 <div class="searchbar">
@@ -1027,7 +1031,7 @@ function goTop() {
 .mockuppd4 {
     width: 45%;
     height: 100%;
- 
+
 
 
 }
@@ -1062,7 +1066,7 @@ function goTop() {
     width: 100%;
     height: 900px;
     display: flex;
-   
+
 }
 
 .button-36 {
@@ -1117,7 +1121,7 @@ function goTop() {
 .titlecontent {
     width: 900px;
     height: 700px;
-  
+
     position: relative;
     top: 90px;
     left: 170px;
@@ -1142,7 +1146,7 @@ p {
     height: 100%;
     align-items: center;
     padding-left: 20px;
-   
+
 }
 
 .navbarlist ul li {
@@ -1179,7 +1183,7 @@ p {
 .logolapnet {
     width: 140px;
     height: 100%;
- 
+
 }
 
 #backgroundhomepage {

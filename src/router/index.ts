@@ -20,7 +20,8 @@ import Role from '../Views/About-us/Role.vue'
 import Board_of_director from '../Views/About-us/board_of_director.vue'
 import History from '../Views/About-us/History.vue'
 import companystructure from '../Views/About-us/companystructure.vue'
-
+import gridblogpage1 from '../Views/Blog/gridblog/gridblogpage1.vue'
+import gridblogpage2 from '../Views/Blog/gridblog/gridblogpage2.vue'
 
 
 
@@ -60,9 +61,12 @@ const routes = [
   { path: '/companystructure', name: 'company', component: companystructure },
 
 
-  //######################## BlogNews ###########################
-  
 
+  //######################## BlogNews ###########################
+
+
+  { path: '/page/1', name: 'gridblogpage1', component: gridblogpage1 },
+  { path: '/page/2', name: 'page/2', component: gridblogpage2 },
 
 
 ]
