@@ -708,9 +708,14 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     align-items: center;
 }
 
+   
+
+   
+
+
 .date p {
     font-size: 20px;
-    color: #fff;
+    color: #313131;
 }
 
 .date h1 {
@@ -718,14 +723,14 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     font-weight: 500;
     font-family: "Inter";
     margin-top: 10px;
-    color: #fff;
+    color: #313131;
 }
 
 .date {
     text-align: center;
     width: 100px;
     height: 100%;
-    background-color: #433BFF;
+    background-color: #f6f6f6;
     margin-left: 50px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
