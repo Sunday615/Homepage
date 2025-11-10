@@ -142,8 +142,13 @@ onMounted(() => {
     width: 100%;
     height: 100%;
     display: block;
+ 
     text-decoration: none;
     color: inherit;
+}
+.image-wrapper img{
+       object-fit: cover;
+    object-position: top;
 }
 
 .slide-img {

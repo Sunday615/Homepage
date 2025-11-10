@@ -23,6 +23,7 @@ import companystructure from '../Views/About-us/companystructure.vue'
 
 
 
+
 const routes = [
   //#################### Products Path #####################
   { path: '/', name: 'Home', component: homepage },
@@ -50,7 +51,7 @@ const routes = [
   { path: '/joinus', name: 'joinus', component: Joinus },
 
 
-   //######################## About Us ###########################
+  //######################## About Us ###########################
   { path: '/vision_mission', name: 'vision_mission', component: Vision_mission },
   { path: '/role', name: 'role', component: Role },
   { path: '/History', name: 'History', component: History },
@@ -59,8 +60,11 @@ const routes = [
   { path: '/companystructure', name: 'company', component: companystructure },
 
 
-
+  //######################## BlogNews ###########################
   
+
+
+
 ]
 
 

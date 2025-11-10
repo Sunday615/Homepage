@@ -57,6 +57,10 @@ const newsItems = [
 ]
 
 const autoplayDelay = 3000
+
+function goTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -91,20 +95,20 @@ const autoplayDelay = 3000
                 </div>
                 <div class="navbarlist">
                     <ul>
-                        <li>
+                        <li @click="goTop()">
                             <productDropdown></productDropdown>
                         </li>
-                        <li>
+                        <li @click="goTop()">
                             <memberdropdown></memberdropdown>
                         </li>
-                        <li>ຂ່າວ ແລະ ກິດຈະກຳ</li>
+                        <li @click="goTop()">ຂ່າວ ແລະ ກິດຈະກຳ</li>
                         <router-link to="/joinus">
-                            <li style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
+                            <li @click="goTop()" style="padding-left: 25px;">ຮ່ວມງານກັບເຮົາ</li>
                         </router-link>
-                        <li>
+                        <li @click="goTop()">
                             <aboutusdropdown></aboutusdropdown>
                         </li>
-                        <li>ຕິດຕໍ່ພວກເຮົາ</li>
+                         <router-link to="/contact"><li>ຕິດຕໍ່ພວກເຮົາ</li></router-link>
                     </ul>
                 </div>
                 <div class="searchbar">
