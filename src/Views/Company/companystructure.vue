@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import navbarview2 from '../../components/navbar/navbarview2.vue';
-import mainfooter from '../../components/footer/mainfooter.vue';
+
+import navbartemplete from '../Navbar-footer/navbartemplete.vue';
+import ft from '../Navbar-footer/ft.vue';
 </script>
 
 <template>
 
 
 
-    <navbarview2></navbarview2>
+    <navbartemplete></navbartemplete>
     <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Aboutus/Company/navigatormission-bg.png" alt="">
+        <img id="navigator-img" src="../../assets/Vision-bg/navigatormission-bg.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
                 <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -28,9 +29,9 @@ import mainfooter from '../../components/footer/mainfooter.vue';
     </div>
     <div class="companystructure">
           <div data-aos="fade-up" data-aos-duration="1200">
-        <img src="../../assets/Aboutus/Company/companystructure-2.png" alt=""></div>
+        <img src="../../assets/Aboutusasset/companystructure-2.png" alt=""></div>
     </div>
-    <mainfooter></mainfooter>
+    <ft></ft>
 </template>
 
 
@@ -75,8 +76,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-        font-family: "Noto Sans Lao", sans-serif;
-        font-weight: bold;
+    font-family: notosanlao-bold;
     padding-bottom: 70px;
 }
 
@@ -84,6 +84,6 @@ import mainfooter from '../../components/footer/mainfooter.vue';
     color: #fff;
     font-size: 20px;
 
-        font-family: "Noto Sans Lao", sans-serif;
+    font-family: notosanlao;
 }
 </style>

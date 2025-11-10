@@ -3,28 +3,19 @@
     <button class="nav-btn" @click="prevPage">Prev</button>
 
     <div class="button-group">
-      <!-- ปุ่ม Page 1 -->
-      <router-link
-        to="/membermobilebanking/member2_1"
-        class="btn"
-        :class="{ active: $route.path === '/membermobilebanking/member2_1' }"
-      >
+
+      <router-link to="/membermobilebanking/member2_1" class="btn"
+        :class="{ active: $route.path === '/membermobilebanking/member2_1' }">
         Page 1
       </router-link>
 
-      <!-- ปุ่ม Page 2 -->
-      <router-link
-        to="/membermobilebanking/member2_2"
-        class="btn"
-        :class="{ active: $route.path === '/membermobilebanking/member2_2' }"
-      >
+
+      <router-link to="/membermobilebanking/member2_2" class="btn"
+        :class="{ active: $route.path === '/membermobilebanking/member2_2' }">
         Page 2
       </router-link>
-      <router-link
-        to="/membermobilebanking/member2_3"
-        class="btn"
-        :class="{ active: $route.path === '/membermobilebanking/member2_3' }"
-      >
+      <router-link to="/membermobilebanking/member2_3" class="btn"
+        :class="{ active: $route.path === '/membermobilebanking/member2_3' }">
         Page 3
       </router-link>
     </div>
@@ -39,8 +30,8 @@ import { useRouter, useRoute } from 'vue-router'
 const router = useRouter()
 const route = useRoute()
 
-// รายชื่อ path
-const pages = ['/membermobilebanking/member2_1' ,'/membermobilebanking/member2_2','/membermobilebanking/member2_3']
+
+const pages = ['/membermobilebanking/member2_1', '/membermobilebanking/member2_2', '/membermobilebanking/member2_3']
 
 
 function nextPage() {
@@ -68,14 +59,14 @@ function prevPage() {
 
 }
 
-/* กลุ่มปุ่ม */
+
 .button-group {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* ปุ่ม router-link */
+
 .btn {
   background: transparent;
   border: 2px solid #433bff;
@@ -98,19 +89,19 @@ function prevPage() {
   border-right: 2px solid #433bff;
 }
 
-/* hover */
+
 .btn:hover {
   background: #433bff;
   color: white;
 }
 
-/* active (หน้าอยู่ปัจจุบัน) */
+
 .btn.active {
   background: #433bff;
   color: white;
 }
 
-/* ปุ่ม Prev / Next */
+
 .nav-btn {
   background: #433bff;
   color: white;

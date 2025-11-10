@@ -19,6 +19,7 @@ import Role from '../Views/About-us/Role.vue'
 
 import Board_of_director from '../Views/About-us/board_of_director.vue'
 import History from '../Views/About-us/History.vue'
+import companystructure from '../Views/About-us/companystructure.vue'
 
 
 
@@ -55,6 +56,8 @@ const routes = [
   { path: '/History', name: 'History', component: History },
 
   { path: '/board_of_director', name: 'history', component: Board_of_director },
+  { path: '/companystructure', name: 'company', component: companystructure },
+
 
 
   

@@ -115,17 +115,26 @@ const autoplayDelay = 3000
                 </div>
 
             </div>
-            <div class="titlecontent">
-                <h1>ການຊຳລະເງິນຂ້າມ <br> ທະນາຄານຜ່ານ QR</h1>
-                <p>ການຊໍາລະຂ້າມທະນາຄານຜ່ານ LAPNet QRPay ໂດຍນຳໃຊ້ລະບົບ LMPS ໃນການເຊື່ອມໂຍງຜ່ານ<br> Applications
-                    ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ໃຫ້ສາມາດນຳໃຊ້ຟັງຊັ່ນການ <br> ດຳເນີນທຸລະກຳຊໍາລະຜ່ານ QR
-                    ຂອງທະນາຄານອື່ນໄດ້.
 
-                </p>
+            <div class="titlecontent">
+                <div data-aos="fade-right" data-aos-duration="800">
+                    <h1>ການຊຳລະເງິນຂ້າມ <br> ທະນາຄານຜ່ານ QR</h1>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    <p>ການຊໍາລະຂ້າມທະນາຄານຜ່ານ LAPNet QRPay ໂດຍນຳໃຊ້ລະບົບ LMPS ໃນການເຊື່ອມໂຍງຜ່ານ<br> Applications
+                        ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ໃຫ້ສາມາດນຳໃຊ້ຟັງຊັ່ນການ <br>
+                        ດຳເນີນທຸລະກຳຊໍາລະຜ່ານ QR
+                        ຂອງທະນາຄານອື່ນໄດ້.
+
+                    </p>
+                </div>
                 <!-- HTML !-->
-                <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-                    ການບໍລິການ</button>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+                        ການບໍລິການ</button>
+                </div>
             </div>
+
 
         </div>
 
@@ -135,37 +144,45 @@ const autoplayDelay = 3000
             </div>
             <div class="titlecontainer">
                 <div class="header">
-                    <h1>ວິໄສທັດຂອງພວກເຮົາ</h1>
-                </div>
-                <div class="boxinfo" style="margin-top: 80px;">
-                    <div class="number">
-                        <p>01</p>
-                    </div>
-                    <div class="infovision">
-                        <h2>ວິໄສທັດ</h2>
-                        <p style="color: #000;">ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການຊໍາລະ
-                            ທັງພາຍໃນ ແລະ
-                            ສາກົນ,
-                            ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ, ທັນສະໄໝ, ປອດໄພ, ຕົ້ນທືນຕໍາ ແລະ
-                            ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການຊໍາລະໃນ ສປປ ລາວ.</p>
+                    <div data-aos="fade-right" data-aos-duration="800">
+                        <h1>ວິໄສທັດຂອງພວກເຮົາ</h1>
                     </div>
                 </div>
-                <div class="boxinfo2"  >
-                    <div class="number">
-                        <p>02</p>
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    <div class="boxinfo" style="margin-top: 80px;">
+
+                        <div class="number">
+                            <p>01</p>
+                        </div>
+                        <div class="infovision">
+                            <h2>ວິໄສທັດ</h2>
+                            <p style="color: #000;">
+                                ພັດທະນາລະບົບການຊໍາລະທຸລະກຳຍ່ອຍໃຫ້ເປັນສູນກາງການຊໍາລະຂອງບັນດາຜູ້ໃຫ້ບໍລິການຊໍາລະ
+                                ທັງພາຍໃນ ແລະ
+                                ສາກົນ,
+                                ແນໃສ່ໃຫ້ປະຊາຊົນລາງໄດ້ໃຊ້ບໍລິການຊໍາລະທີ່ສະດວກວ່ອງໄວ, ທັນສະໄໝ, ປອດໄພ, ຕົ້ນທືນຕໍາ ແລະ
+                                ເພື່ອໃຫ້ບໍລິສັດການເປັນໂຄງຮ່າງພື້ນຖານໃຫ້ແກ່ການຊໍາລະໃນ ສປປ ລາວ.</p>
+                        </div>
                     </div>
-                    <div class="infovision">
-                        <h2>ພາລະກິດ</h2>
-                        <p style="color: #000;">ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ,
-                            ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
-                            ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
-                            ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ
-                            ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
-                            ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
-                            ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
-                            ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
-                            ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
-                            ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.</p>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1200">
+                    <div class="boxinfo2">
+                        <div class="number">
+                            <p>02</p>
+                        </div>
+                        <div class="infovision">
+                            <h2>ພາລະກິດ</h2>
+                            <p style="color: #000;">ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ,
+                                ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
+                                ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech
+                                ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ
+                                ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
+                                ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
+                                ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
+                                ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
+                                ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
+                                ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,13 +197,13 @@ const autoplayDelay = 3000
 
 
             <!-- #all product now! -->
-             <homepageproduct></homepageproduct>
+            <homepageproduct></homepageproduct>
 
 
         </div>
         <div class="homepagecontent4">
 
-           
+
             <vdocontainer4></vdocontainer4>
         </div>
         <memberscrolling></memberscrolling>
@@ -371,7 +388,7 @@ const autoplayDelay = 3000
 
 
 <style scoped>
-.allproducts{
+.allproducts {
     width: 100%;
     height: 850px;
     background-color: #fff;
@@ -379,6 +396,7 @@ const autoplayDelay = 3000
     justify-content: center;
     align-items: center;
 }
+
 .infovision p {
     font-size: 19px;
     font-family: "Noto Sans Lao", sans-serif;
@@ -434,17 +452,19 @@ const autoplayDelay = 3000
 
 
 }
-.boxinfo2{
-     width: 800px;
+
+.boxinfo2 {
+    width: 800px;
     height: 300px;
     display: flex;
-    
+
 }
+
 .boxinfo {
     width: 800px;
     height: 240px;
     display: flex;
-    
+
 }
 
 .header {
@@ -986,7 +1006,7 @@ const autoplayDelay = 3000
 .titlepd4 {
     width: 60%;
     height: 100%;
-    border: 1px solid blue;
+
     padding-left: 50px;
 
 }
@@ -1003,7 +1023,7 @@ const autoplayDelay = 3000
 .mockuppd4 {
     width: 45%;
     height: 100%;
-    border: 1px solid red;
+ 
 
 
 }
@@ -1038,7 +1058,7 @@ const autoplayDelay = 3000
     width: 100%;
     height: 900px;
     display: flex;
-    border: 1px solid red;
+   
 }
 
 .button-36 {
@@ -1093,7 +1113,7 @@ const autoplayDelay = 3000
 .titlecontent {
     width: 900px;
     height: 700px;
-    border: 1px solid red;
+  
     position: relative;
     top: 90px;
     left: 170px;
@@ -1118,7 +1138,7 @@ p {
     height: 100%;
     align-items: center;
     padding-left: 20px;
-    border: 1px solid blue;
+   
 }
 
 .navbarlist ul li {
@@ -1142,7 +1162,7 @@ p {
 .navbarlist {
     width: 1150px;
     height: 100%;
-    border: 1px solid green;
+
 
 }
 
@@ -1155,7 +1175,7 @@ p {
 .logolapnet {
     width: 140px;
     height: 100%;
-    border: 1px solid blue;
+ 
 }
 
 #backgroundhomepage {
@@ -1171,7 +1191,7 @@ p {
     width: 100%;
     height: 963px;
     overflow: hidden;
-    border: 1px solid blue;
+
 }
 
 .navbar {
@@ -1180,7 +1200,7 @@ p {
     display: flex;
     position: relative;
     top: 20px;
-    border: 1px solid red;
+
     margin: 0 auto;
 }
 
@@ -1237,7 +1257,7 @@ p {
 .centercontainer {
     width: 90%;
     height: 100%;
-    border: 1px solid red;
+
     margin: 0 auto;
     display: flex;
 

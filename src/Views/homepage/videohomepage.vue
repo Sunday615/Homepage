@@ -7,17 +7,22 @@
     </video>
 
     <!-- Overlay -->
-   
+
 
     <!-- Center Content -->
     <div class="content">
-        <div class="titleproduct">
+      <div class="titleproduct">
+        <div data-aos="fade-right" data-aos-duration="1000">
           <h1>ການຊຳລະເງິນຂ້າມແດນ <br> ໃນຮູບແບບ QR CODE <br> ລະຫວ່າງປະເທດ</h1>
-           <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</button>
         </div>
-        <div class="mobilemockup">
-           <updownanimation></updownanimation>
+        <div data-aos="fade-right" data-aos-duration="1200">
+          <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+            ການບໍລິການ</button>
         </div>
+      </div>
+      <div class="mobilemockup">
+        <updownanimation></updownanimation>
+      </div>
     </div>
   </div>
 </template>
@@ -53,57 +58,59 @@ function playAnimation() {
 </script>
 
 <style scoped>
-.titleproduct h1{
+.titleproduct h1 {
   padding-top: 100px;
   font-size: 90px;
   line-height: 1.3;
   font-family: "Noto Sans Lao", sans-serif;
   padding-bottom: 90px;
-      font-weight: bold;
-}
-.titleproduct{
-  width: 55%;
-  height: 100%;
- 
+  font-weight: bold;
 }
 
-.mobilemockup{
+.titleproduct {
+  width: 55%;
+  height: 100%;
+
+}
+
+.mobilemockup {
   width: 45%;
   height: 100%;
 
 
 }
+
 .button-36 {
-    background-image: linear-gradient(92.88deg, #ffffff 9.16%, #ffffff 43.89%, #ffffff 64.72%);
-    border-radius: 8px;
-    border-style: none;
-    box-sizing: border-box;
-    color: #0c2a6a;
-    font-weight: 600;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-size: 19px;
-    font-weight: bold;
-    height: 4rem;
-    padding: 0 1.6rem;
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    transition: all .5s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  background-image: linear-gradient(92.88deg, #ffffff 9.16%, #ffffff 43.89%, #ffffff 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #0c2a6a;
+  font-weight: 600;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .button-36:hover {
-    box-shadow: rgba(173, 173, 173, 0.5) 0 1px 30px;
-    transition-duration: .1s;
+  box-shadow: rgba(173, 173, 173, 0.5) 0 1px 30px;
+  transition-duration: .1s;
 }
 
 @media (min-width: 768px) {
-    .button-36 {
-        padding: 0 2.6rem;
-    }
+  .button-36 {
+    padding: 0 2.6rem;
+  }
 }
 
 
@@ -140,8 +147,4 @@ function playAnimation() {
 
   display: flex;
 }
-
-
-
-
 </style>

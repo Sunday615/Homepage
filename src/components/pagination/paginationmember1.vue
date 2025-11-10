@@ -3,28 +3,16 @@
     <button class="nav-btn" @click="prevPage">Prev</button>
 
     <div class="button-group">
-      <!-- ปุ่ม Page 1 -->
-      <router-link
-        to="/membercard/member1"
-        class="btn"
-        :class="{ active: $route.path === '/membercard/member1' }"
-      >
+
+      <router-link to="/membercard/member1" class="btn" :class="{ active: $route.path === '/membercard/member1' }">
         Page 1
       </router-link>
 
-      <!-- ปุ่ม Page 2 -->
-      <router-link
-        to="/membercard/member2"
-        class="btn"
-        :class="{ active: $route.path === '/membercard/member2' }"
-      >
+
+      <router-link to="/membercard/member2" class="btn" :class="{ active: $route.path === '/membercard/member2' }">
         Page 2
       </router-link>
-      <router-link
-        to="/membercard/member3"
-        class="btn"
-        :class="{ active: $route.path === '/membercard/member3' }"
-      >
+      <router-link to="/membercard/member3" class="btn" :class="{ active: $route.path === '/membercard/member3' }">
         Page 3
       </router-link>
     </div>
@@ -40,7 +28,7 @@ const router = useRouter()
 const route = useRoute()
 
 // รายชื่อ path
-const pages = ['/membercard/member1' ,'/membercard/member2','/membercard/member3']
+const pages = ['/membercard/member1', '/membercard/member2', '/membercard/member3']
 
 
 function nextPage() {
@@ -68,14 +56,14 @@ function prevPage() {
 
 }
 
-/* กลุ่มปุ่ม */
+
 .button-group {
   display: flex;
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* ปุ่ม router-link */
+
 .btn {
   background: transparent;
   border: 2px solid #433bff;
@@ -104,13 +92,13 @@ function prevPage() {
   color: white;
 }
 
-/* active (หน้าอยู่ปัจจุบัน) */
+
 .btn.active {
   background: #433bff;
   color: white;
 }
 
-/* ปุ่ม Prev / Next */
+
 .nav-btn {
   background: #433bff;
   color: white;
