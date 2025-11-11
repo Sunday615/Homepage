@@ -25,9 +25,11 @@ import gridblogpage2 from '../Views/Blog/gridblog/gridblogpage2.vue'
 
 
 
+
 const routes = [
   //#################### Products Path #####################
   { path: '/', name: 'Home',component: homepage },
+
   { path: '/products-service/products-1', name: 'product1', component: product1 },
   { path: '/products-service/products-2', name: 'product2', component: product2 },
   { path: '/products-service/products-3', name: 'product3', component: product3 },
@@ -62,12 +64,17 @@ const routes = [
 
 
 
-  //######################## BlogNews ###########################
+  //######################## BlogNews Grid ###########################
 
 
   { path: '/page/1', name: 'gridblogpage1', component: gridblogpage1 },
   { path: '/page/2', name: 'page/2', component: gridblogpage2 },
 
+
+
+
+    //######################## BlogNews Grid ###########################
+     
 
 ]
 

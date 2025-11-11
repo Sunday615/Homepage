@@ -9,7 +9,7 @@
     </router-link>
 
     <div class="pages">
-      <router-link
+      <router-link 
         v-for="page in totalPages"
         :key="page"
         :to="getPageLink(page)"
@@ -22,9 +22,9 @@
 
     <router-link
       :to="getPageLink(currentPage + 1)"
-      class="nav-btn"
+      class="nav-btn " 
       :class="{ disabled: currentPage === totalPages }"
-    >
+      >
       Next
     </router-link>
   </div>
@@ -50,6 +50,10 @@ function getPageLink(page) {
   if (page < 1) return "/page/1";
   if (page > props.totalPages) return `/page/${props.totalPages}`;
   return `/page/${page}`;
+}
+
+function goTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 </script>
 

@@ -4,11 +4,24 @@
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
+import { onMounted } from 'vue';
+onMounted(() => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
+
 </script>
 
 <template>
     <navbarview2></navbarview2>
     <div class="navigatorcontent">
+        <div class="image-zoom" @mouseenter="zoomIn" @mouseleave="zoomOut" ref="container">
+            <img :src="src" :alt="alt" ref="image" />
+        </div>
         <img id="navigator-img" src="../../../assets/Blog/bgnewsgrid.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
@@ -32,45 +45,53 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     </div>
     <div class="containergridblog">
         <div class="cardviewleftcontent">
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <img src="../../../../public/images/1.jpg" alt="">
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>19</h1>
-                                <p>December</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2024</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Contract</h1>
-                                </div>
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
-                                </div>
-                            </div>
+            <router-link to="/blogdetail1">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img src="../../../../public/images/1.jpg" alt="Zoom Image" class="zoom-image" />
                         </div>
-                        <div class="headerblog">
-                            <h1>
-                                ພິທີລົງນາມເຊັນສັນຍາໂຄງການຊຳລະຂ້າມແດນລາວ-ຈີນ ຜ່ານ QR code
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
 
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>19</h1>
+                                    <p>December</p>
+                                </div>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2024</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Contract</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Meetings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ພິທີລົງນາມເຊັນສັນຍາໂຄງການຊຳລະຂ້າມແດນລາວ-ຈີນ ຜ່ານ QR code
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </router-link>
             <div class="blogcardview">
                 <div class="imgbox">
-                    <img src="../../../../public/images/2.png" alt="">
+                    <div class="image-container">
+                        <img src="../../../../public/images/2.png" alt="Zoom Image" class="zoom-image" />
+                    </div>
+
                     <div class="allinfo">
                         <div class="datetimecontainer">
                             <div class="date">
@@ -83,10 +104,10 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
                             </div>
                             <div class="tagblog">
                                 <div class="bordertag">
-                                    <h1>Notification</h1>
+                                    <h1>Notofication</h1>
                                 </div>
                                 <div class="bordertag">
-                                    <h1>Contract</h1>
+                                    <h1>Grand Openning</h1>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +127,10 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
             </div>
             <div class="blogcardview">
                 <div class="imgbox">
-                    <img src="../../../../public/images/3.jpg" alt="">
+                    <div class="image-container">
+                        <img src="../../../../public/images/3.jpg" alt="Zoom Image" class="zoom-image" />
+                    </div>
+
                     <div class="allinfo">
                         <div class="datetimecontainer">
                             <div class="date">
@@ -119,16 +143,16 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
                             </div>
                             <div class="tagblog">
                                 <div class="bordertag">
-                                    <h1>Notification</h1>
+                                    <h1>Contract</h1>
                                 </div>
                                 <div class="bordertag">
-                                    <h1>Contract</h1>
+                                    <h1>Meetings</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="headerblog">
                             <h1>
-                                ພິທີລົງນາມເຊັນສັນຍາໂຄງການຊຳລະຂ້າມແດນລາວ-ຈີນ ຜ່ານ QR code
+                                ແຈ້ງເຊີນປະມູນ ອຸປະກອນ Hardware ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNet
                             </h1>
                         </div>
                         <div class="btnblog">
@@ -140,6 +164,7 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
                     </div>
                 </div>
             </div>
+
             <div class="pagination">
                 <blogpagination></blogpagination>
             </div>
@@ -181,7 +206,7 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
                             <p>(02)</p>
                         </div>
                         <div class="shortbox">
-                            <p>Notofication</p>
+                            <p>Notification</p>
                             <p>(02)</p>
                         </div>
                     </div>
@@ -268,10 +293,54 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
 
 </template>
 <style scoped>
+.headerblog:hover h1 {
+    color: #433bff;
+    transition: 0.5s;
+
+}
+
+.blogcardview:hover .date p {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.blogcardview:hover .date h1 {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.blogcardview:hover .date {
+    transition: 0.5s;
+    background-color: #433bff;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.zoom-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Hover zoom effect */
+.blogcardview:hover .zoom-image {
+    transform: scale(1.15);
+    filter: brightness(1.0);
+}
+
 .pagination {
     width: 100%;
     height: 150px;
-    
+
 }
 
 .recenttimepost i {
@@ -320,6 +389,25 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.cardpostrecent:hover .recenttimepost {
+    color: #fff;
+}
+
+.cardpostrecent:hover h2 {
+    color: #fff;
+}
+
+
+.cardpostrecent:hover {
+    background-color: #433bff;
+    transition: 0.5s;
+
+}
+
+.cardpostrecent i {
+    color: #fff;
 }
 
 .cardpostrecent {
@@ -663,6 +751,12 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
 
 }
 
+.bordertag:hover {
+    background-color: #433bff;
+    color: #fff;
+    transition: 0.5s;
+}
+
 .bordertag {
     width: 170px;
     height: 50%;
@@ -682,6 +776,16 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     justify-content: space-around;
     align-items: center;
 
+}
+
+.postby:hover i {
+    color: #433bff;
+    transition: 0.5s;
+}
+
+.postby:hover p {
+    color: #433bff;
+    transition: 0.5s;
 }
 
 .postby p {
@@ -708,9 +812,9 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
     align-items: center;
 }
 
-   
 
-   
+
+
 
 
 .date p {
