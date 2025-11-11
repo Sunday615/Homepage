@@ -5,14 +5,7 @@ import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
 import { onMounted } from 'vue';
-onMounted(() => {
 
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
 
 </script>
 
@@ -45,7 +38,7 @@ onMounted(() => {
     </div>
     <div class="containergridblog">
         <div class="cardviewleftcontent">
-            <router-link to="/blogdetail1">
+            <router-link to="/blogdetail28">
                 <div class="blogcardview">
                     <div class="imgbox">
                         <div class="image-container">

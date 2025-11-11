@@ -5,14 +5,6 @@ import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
 import { onMounted } from 'vue';
-onMounted(() => {
-
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
 
 </script>
 
@@ -45,7 +37,7 @@ onMounted(() => {
     </div>
     <div class="containergridblog">
         <div class="cardviewleftcontent">
-            <router-link to="/blogdetail1">
+            <router-link to="/blogdetail22">
                 <div class="blogcardview">
                     <div class="imgbox">
                         <div class="image-container">
@@ -86,83 +78,87 @@ onMounted(() => {
                     </div>
                 </div>
             </router-link>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img src="../../../../public/images/23.png" alt="Zoom Image" class="zoom-image" />
-                    </div>
+            <router-link to="/blogdetail23">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img src="../../../../public/images/23.png" alt="Zoom Image" class="zoom-image" />
+                        </div>
 
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>22</h1>
-                                <p>October</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2020</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Activity</h1>
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>22</h1>
+                                    <p>October</p>
                                 </div>
-                              
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <h1>
-                          ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNET ຮ່ວມກັບ ກົມຄຸ້ມຄອງລະບົບຊຳລະສະສາງ
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2020</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Activity</h1>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNET ຮ່ວມກັບ ກົມຄຸ້ມຄອງລະບົບຊຳລະສະສາງ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img  style="object-position: center;" src="../../../../public/images/24/24.1.jpeg" alt="Zoom Image" class="zoom-image" />
-                    </div>
-
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>11</h1>
-                                <p>September</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2020</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
-                                </div>
-                                <div class="bordertag">
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
+            </router-link>
+            <router-link to="/blogdetail24">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img style="object-position: center;" src="../../../../public/images/24/24.1.jpeg"
+                                alt="Zoom Image" class="zoom-image" />
                         </div>
-                        <div class="headerblog">
-                            <h1>
-                              ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNET ຮ່ວມກັບ ທະນາຄານ JDB
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
 
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>11</h1>
+                                    <p>September</p>
+                                </div>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2020</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Meetings</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Contract</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNET ຮ່ວມກັບ ທະນາຄານ JDB
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </router-link>
             <div class="pagination">
                 <blogpagination></blogpagination>
             </div>
@@ -340,14 +336,16 @@ onMounted(() => {
     height: 150px;
 
 }
-.cardpostrecent:hover .recenttimepost i{
+
+.cardpostrecent:hover .recenttimepost i {
     color: #fff;
-    
+
 }
+
 .recenttimepost i {
     font-size: 19px;
     color: #0b092bbc;
-    
+
 }
 
 .recenttimepost {
@@ -448,15 +446,18 @@ onMounted(() => {
     font-size: 25px;
     color: #00000091;
 }
-.shortbox:hover p{
+
+.shortbox:hover p {
     color: #fff;
     transition: 0.5s;
 }
+
 .shortbox:hover {
     background-color: #433bff;
     transition: 0.5s;
-   
+
 }
+
 .shortbox {
     cursor: pointer;
     width: 100%;

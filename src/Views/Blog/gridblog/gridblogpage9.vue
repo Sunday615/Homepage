@@ -5,14 +5,6 @@ import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
 import { onMounted } from 'vue';
-onMounted(() => {
-
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
-})
 
 </script>
 
@@ -45,7 +37,7 @@ onMounted(() => {
     </div>
     <div class="containergridblog">
         <div class="cardviewleftcontent">
-            <router-link to="/blogdetail1">
+            <router-link to="/blogdetail25">
                 <div class="blogcardview">
                     <div class="imgbox">
                         <div class="image-container">
@@ -63,10 +55,10 @@ onMounted(() => {
                                     <p>Year 2020</p>
                                 </div>
                                 <div class="tagblog">
-                                      <div class="bordertag">
+                                    <div class="bordertag">
                                         <h1>Meetings</h1>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                             <div class="headerblog">
@@ -84,83 +76,87 @@ onMounted(() => {
                     </div>
                 </div>
             </router-link>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img src="../../../../public/images/26/26.jpg" alt="Zoom Image" class="zoom-image" />
-                    </div>
+            <router-link to="/blogdetail26">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img src="../../../../public/images/26/26.jpg" alt="Zoom Image" class="zoom-image" />
+                        </div>
 
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>14</h1>
-                                <p>January</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2020</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Notification</h1>
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>14</h1>
+                                    <p>January</p>
                                 </div>
-                              
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <h1>
-                          ແຈ້ງການປະມູນ
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2020</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Notification</h1>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ແຈ້ງການປະມູນ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img  style="object-position: center;" src="../../../../public/images/27/27.1.jpg" alt="Zoom Image" class="zoom-image" />
-                    </div>
-
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>25</h1>
-                                <p>November</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2019</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Grand Openning</h1>
-                                </div>
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
-                                </div>
-                            </div>
+            </router-link>
+            <router-link to="/blogdetail27">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img style="object-position: center;" src="../../../../public/images/27/27.1.jpg"
+                                alt="Zoom Image" class="zoom-image" />
                         </div>
-                        <div class="headerblog">
-                            <h1>
-                              ພິທີເປີດບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
 
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>25</h1>
+                                    <p>November</p>
+                                </div>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2019</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Grand Openning</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Meetings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ພິທີເປີດບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </router-link>
             <div class="pagination">
                 <blogpagination></blogpagination>
             </div>
@@ -338,14 +334,16 @@ onMounted(() => {
     height: 150px;
 
 }
-.cardpostrecent:hover .recenttimepost i{
+
+.cardpostrecent:hover .recenttimepost i {
     color: #fff;
-    
+
 }
+
 .recenttimepost i {
     font-size: 19px;
     color: #0b092bbc;
-    
+
 }
 
 .recenttimepost {
@@ -446,15 +444,18 @@ onMounted(() => {
     font-size: 25px;
     color: #00000091;
 }
-.shortbox:hover p{
+
+.shortbox:hover p {
     color: #fff;
     transition: 0.5s;
 }
+
 .shortbox:hover {
     background-color: #433bff;
     transition: 0.5s;
-   
+
 }
+
 .shortbox {
     cursor: pointer;
     width: 100%;

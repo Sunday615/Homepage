@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination">
+  <div class="pagination"  @click="goTop()">
     <router-link
       :to="getPageLink(currentPage - 1)"
       class="nav-btn"
@@ -8,7 +8,7 @@
       Prev
     </router-link>
 
-    <div class="pages">
+    <div class="pages" @click="goTop()">
       <router-link 
         v-for="page in totalPages"
         :key="page"
@@ -53,8 +53,9 @@ function getPageLink(page) {
 }
 
 function goTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    window.scrollTo({ top: 660, behavior: 'smooth' })
 }
+
 </script>
 
 <style scoped>
@@ -69,7 +70,7 @@ function goTop() {
 
 /* ปุ่ม prev/next */
 .nav-btn {
-  background: #6610f2;
+  background: #433bff;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -77,7 +78,7 @@ function goTop() {
   border-radius: 999px;
   transition: all 0.2s ease;
 }
-.nav-btn:hover { background: #520dc2; }
+.nav-btn:hover { background: #433bff; }
 .nav-btn.disabled { opacity: 0.5; pointer-events: none; }
 
 /* กล่องเลข */
@@ -105,7 +106,7 @@ function goTop() {
 }
 .page:hover { background: #e0e0e0; transform: translateY(-3px); }
 .page.active {
-  background: #6610f2;
+  background: #433bff;
   color: white;
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(102, 16, 242, 0.3);

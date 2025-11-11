@@ -16,8 +16,8 @@
           <h1>ການຊຳລະເງິນຂ້າມແດນ <br> ໃນຮູບແບບ QR CODE <br> ລະຫວ່າງປະເທດ</h1>
         </div>
         <div data-aos="fade-right" data-aos-duration="1200">
-          <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-            ການບໍລິການ</button>
+         <router-link to="/products-service/products-6"> <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+            ການບໍລິການ</button></router-link>
         </div>
       </div>
       <div class="mobilemockup">

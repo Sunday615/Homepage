@@ -138,8 +138,9 @@ function goTop() {
                 </div>
                 <!-- HTML !-->
                 <div data-aos="fade-up" data-aos-duration="1000">
-                    <button class="button-36" role="button"><i class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
-                        ການບໍລິການ</button>
+                    <router-link to="/products-service/products-5"><button class="button-36" role="button"><i
+                                class="fa-solid fa-caret-right"></i>ຜະລິດຕະພັນ ແລະ
+                            ການບໍລິການ</button></router-link>
                 </div>
             </div>
 

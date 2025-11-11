@@ -1,8 +1,8 @@
 <script setup>
-import homepageproduct from './components/autoscrolling/homepageproduct.vue';
-import gridblog from './Views/Blog/gridblog/gridblogpage1.vue';
+
 import { onMounted, ref } from 'vue'
-import gridblogpage10 from './Views/Blog/gridblog/gridblogpage10.vue'
+
+
 import gsap from 'gsap'
 
 
@@ -36,8 +36,6 @@ const leave = (el, done) => {
 
     <div ref="overlay" class="overlay"></div>
   </div>
-
-    
 
  
 
