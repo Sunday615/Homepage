@@ -1,6 +1,16 @@
 <script setup lang="ts">
 import navbarview2 from '../../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../../components/footer/mainfooter.vue';
+import { onMounted } from 'vue';
+onMounted(() => {
+
+    window.scrollTo({
+        top: 670,
+        left: 0,
+        behavior: 'smooth'
+    })
+})
+
 </script>
 
 
@@ -28,7 +38,7 @@ import mainfooter from '../../../../components/footer/mainfooter.vue';
     </div>
 
     <div class="backbtn">
-        <router-link to="/newsgridpage1"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
+        <router-link to="/page/1"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
                 ກັບຄືນ</button></router-link>
     </div>
   

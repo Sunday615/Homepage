@@ -28,7 +28,7 @@ import mainfooter from '../../../../components/footer/mainfooter.vue';
     </div>
 
     <div class="backbtn">
-        <router-link to="/newsgridpage1"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
+        <router-link to="/page/8"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
                 ກັບຄືນ</button></router-link>
     </div>
 
@@ -109,8 +109,12 @@ import mainfooter from '../../../../components/footer/mainfooter.vue';
             </div>
             <div data-aos="zoom-out-up" data-aos-duration="500" data-aos-once="true">
                 <div class="imageinfo">
-                    <img src="../../../../../public/images/21/2.jpg" alt="">
-                    <img src="../../../../../public/images/21/3.jpg" alt="">
+                    <img src="../../../../../public/images/22/22.2.jpeg" alt="">
+                    <img src="../../../../../public/images/22/22.3.jpeg" alt="">
+                    <img src="../../../../../public/images/22/22.4.jpeg" alt="">
+                    <img src="../../../../../public/images/22/22.5.jpeg" alt="">
+                    <img src="../../../../../public/images/22/22.6.jpeg" alt="">
+                
 
 
 

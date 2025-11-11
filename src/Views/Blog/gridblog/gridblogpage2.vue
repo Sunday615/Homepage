@@ -6,13 +6,6 @@ import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
 import { onMounted } from 'vue';
 
-onMounted(() => {
-
-    window.scrollTo({
-        top: 660,
-        behavior: 'smooth'
-    })
-})
 </script>
 
 <template>
@@ -44,126 +37,134 @@ onMounted(() => {
     </div>
     <div class="containergridblog">
         <div class="cardviewleftcontent">
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img src="../../../../public/images/4.png" alt="Zoom Image"
-                            class="zoom-image" />
-                    </div>
-                 
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>03</h1>
-                                <p>April</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2024</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Grand Openning</h1>
-                                </div>
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
-                                </div>
-                            </div>
+            <router-link to="/blogdetail4">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img src="../../../../public/images/4.png" alt="Zoom Image" class="zoom-image" />
                         </div>
-                        <div class="headerblog">
-                            <h1>
-                               ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງ ລາວ - ໄທ
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
 
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>03</h1>
+                                    <p>April</p>
+                                </div>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2024</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Grand Openning</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Contract</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງ ລາວ - ໄທ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img src="../../../../public/images/5.jpg" alt="Zoom Image"
-                            class="zoom-image" />
-                    </div>
-                 
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>14</h1>
-                                <p>March</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2024</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Contract</h1>
-                                </div>
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
-                                </div>
-                            </div>
+            </router-link>
+            <router-link to="/blogdetail5">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img src="../../../../public/images/5.jpg" alt="Zoom Image" class="zoom-image" />
                         </div>
-                        <div class="headerblog">
-                            <h1>
-                                ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR Code
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
 
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>14</h1>
+                                    <p>March</p>
+                                </div>
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2024</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Contract</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Meetings</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headerblog">
+                                <h1>
+                                    ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR CODE ລະຫວ່າງ
+                                    ສປປ
+                                    ລາວ ແລະ ປະເທດໄທ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogcardview">
-                <div class="imgbox">
-                    <div class="image-container">
-                        <img style="object-position: center;" src="../../../../public/images/6.jpg" alt="Zoom Image"
-                            class="zoom-image" />
-                    </div>
-                 
-                    <div class="allinfo">
-                        <div class="datetimecontainer">
-                            <div class="date">
-                                <h1>26</h1>
-                                <p>September</p>
-                            </div>
-                            <div class="postby">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>Year 2024</p>
-                            </div>
-                            <div class="tagblog">
-                                <div class="bordertag">
-                                    <h1>Meetings</h1>
+            </router-link>
+            <router-link to="/blogdetail6">
+                <div class="blogcardview">
+                    <div class="imgbox">
+                        <div class="image-container">
+                            <img style="object-position: center;" src="../../../../public/images/6.jpg" alt="Zoom Image"
+                                class="zoom-image" />
+                        </div>
+
+                        <div class="allinfo">
+                            <div class="datetimecontainer">
+                                <div class="date">
+                                    <h1>26</h1>
+                                    <p>September</p>
                                 </div>
-                              
+                                <div class="postby">
+                                    <i class="fa-solid fa-calendar"></i>
+                                    <p>Year 2023</p>
+                                </div>
+                                <div class="tagblog">
+                                    <div class="bordertag">
+                                        <h1>Contract</h1>
+                                    </div>
+                                    <div class="bordertag">
+                                        <h1>Meetings</h1>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="headerblog">
-                            <h1 style="font-size: 40px;">
-                                ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ ເດີນທາງໄປແລກປ່ຽນບົດຮຽນທາງດ້ານການໃຫ້ບໍລິການເງິນທີ່ປະເທດສິງກະໂປ
+                            <div class="headerblog">
+                                <h1>
+                                    ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
+                                    ເດີນທາງໄປແລກປ່ຽນບົດຮຽນທາງດ້ານການໃຫ້ບໍລິການເງິນທີ່ປະເທດສິງກະໂປ
+                                </h1>
+                            </div>
+                            <div class="btnblog">
+                                <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                            class="fa-solid fa-arrow-right"></i></span><span> <i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
 
-                            </h1>
-                        </div>
-                        <div class="btnblog">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-           
+            </router-link>
+
             <div class="pagination">
                 <blogpagination></blogpagination>
             </div>
@@ -205,7 +206,7 @@ onMounted(() => {
                             <p>(02)</p>
                         </div>
                         <div class="shortbox">
-                            <p>Notofication</p>
+                            <p>Notification</p>
                             <p>(02)</p>
                         </div>
                     </div>
@@ -216,7 +217,7 @@ onMounted(() => {
                     </div>
                     <div class="cardpostrecent">
                         <div class="imgrecentbox">
-                            <img src="../../../../public/images/2.png" alt="">
+                            <img src="../../../../public/images/2/2.png" alt="">
                         </div>
                         <div class="titlerecentbox">
                             <h2>ແຈ້ງເຊີນເຂົ້າຮ່ວມປະມູນຍື່ນຊອງລາຄາ ການບຳລຸງຮັກສາອຸປະກອນເຄືອຂ່າຍ</h2>
@@ -229,7 +230,7 @@ onMounted(() => {
 
                     <div class="cardpostrecent">
                         <div class="imgrecentbox">
-                            <img src="../../../../public/images/3.jpg" alt="">
+                            <img src="../../../../public/images/3/3.jpg" alt="">
                         </div>
                         <div class="titlerecentbox">
                             <h2>ແຈ້ງເຊີນປະມູນ ອຸປະກອນ HARDWARE ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNET</h2>
@@ -292,53 +293,65 @@ onMounted(() => {
 
 </template>
 <style scoped>
-.headerblog:hover h1{
+.headerblog:hover h1 {
     color: #433bff;
     transition: 0.5s;
+
 }
-.blogcardview:hover .date p{
+
+.blogcardview:hover .date p {
     color: #fff;
     transition: 0.5s;
 }
-.blogcardview:hover .date h1{
+
+.blogcardview:hover .date h1 {
     color: #fff;
-        transition: 0.5s;
+    transition: 0.5s;
 }
-.blogcardview:hover .date{
-        transition: 0.5s;
+
+.blogcardview:hover .date {
+    transition: 0.5s;
     background-color: #433bff;
 }
-.image-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 16px;
-  cursor: pointer;
 
-  transition: transform 0.3s ease;
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
 }
 
 .zoom-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease, filter 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.3s ease;
 }
 
 /* Hover zoom effect */
 .blogcardview:hover .zoom-image {
-  transform: scale(1.15);
-  filter: brightness(1.0);
+    transform: scale(1.15);
+    filter: brightness(1.0);
 }
+
 .pagination {
     width: 100%;
     height: 150px;
 
 }
 
+.cardpostrecent:hover .recenttimepost i {
+    color: #fff;
+
+}
+
 .recenttimepost i {
     font-size: 19px;
-    color: #433bff;
+    color: #0b092bbc;
+
 }
 
 .recenttimepost {
@@ -384,12 +397,29 @@ onMounted(() => {
     border-bottom-right-radius: 20px;
 }
 
+.cardpostrecent:hover .recenttimepost {
+    color: #fff;
+}
+
+.cardpostrecent:hover h2 {
+    color: #fff;
+}
+
+
+.cardpostrecent:hover {
+    background-color: #433bff;
+    transition: 0.5s;
+
+}
+
+
+
 .cardpostrecent {
     width: 90%;
     height: 150px;
     margin: 0 auto;
     display: flex;
-
+    border-top-left-radius: 20px;
     margin-bottom: 40px;
 
 
@@ -421,6 +451,17 @@ onMounted(() => {
 .shortbox p {
     font-size: 25px;
     color: #00000091;
+}
+
+.shortbox:hover p {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.shortbox:hover {
+    background-color: #433bff;
+    transition: 0.5s;
+
 }
 
 .shortbox {
@@ -724,11 +765,13 @@ onMounted(() => {
     margin-top: 20px;
 
 }
+
 .bordertag:hover {
-    background-color:#433bff;
+    background-color: #433bff;
     color: #fff;
     transition: 0.5s;
 }
+
 .bordertag {
     width: 170px;
     height: 50%;
@@ -749,14 +792,17 @@ onMounted(() => {
     align-items: center;
 
 }
-.postby:hover i{
+
+.postby:hover i {
     color: #433bff;
     transition: 0.5s;
 }
-.postby:hover p{
+
+.postby:hover p {
     color: #433bff;
     transition: 0.5s;
 }
+
 .postby p {
     font-size: 20px;
     font-family: "Inter";
