@@ -22,37 +22,37 @@ const newsItems = [
         image: '/images/1.jpg',
         date: '19 ທັນວາ 2024',
         title: 'ພິທີລົງນາມເຊັນສັນຍາໂຄງການຊຳລະຂ້າມແດນລາວ-ຈີນ',
-        link: '/news/1'
+        link: '/homepage/blogdetail1'
     },
     {
-        image: '/images/2.png',
-        date: '19 ສິງຫາ 2024',
+        image: '/images/2/2.png',
+        date: '12 ສິງຫາ 2024',
         title: 'ແຈ້ງເຊີນເຂົ້າຮ່ວມປະມູນຍື່ນຊອງລາຄາ ການບຳລຸງຮັກສາອຸປະກອນເຄືອຂ່າຍ',
-        link: '/news/2'
+        link: '/homepage/blogdetail2'
     },
     {
-        image: '/images/3.jpg',
-        date: '30 ພຶດສະພາ 2024',
+        image: '/images/3/3.jpg',
+        date: '15 ພຶດສະພາ 2024',
         title: 'ແຈ້ງເຊີນປະມູນ ອຸປະກອນ HARDWARE ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNET',
-        link: '/news/3'
+        link: '/homepage/blogdetail3'
     },
     {
         image: '/images/4.png',
         date: '03 ເມສາ 2024',
         title: 'ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງ ລາວ - ໄທ',
-        link: '/news/4'
+        link: '/homepage/blogdetail4'
     },
     {
         image: '/images/5.jpg',
         date: '14 ມີນາ 2024',
         title: 'ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR CODE ລະຫວ່າງ ສປປ ລາວ ແລະ ປະເທດໄທ',
-        link: '/news/5'
+        link: '/homepage/blogdetail5'
     },
     {
         image: '/images/6.jpg',
         date: '29 ກັນຍາ 2023',
         title: 'ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ ເດີນທາງໄປແລກປ່ຽນບົດຮຽນທາງດ້ານການໃຫ້ບໍລິການເງິນທີ່ປະເທດສິງກະໂປ',
-        link: '/news/6'
+        link: '/homepage/blogdetail6'
     }
 ]
 
@@ -884,6 +884,7 @@ function goTop() {
     width: 100%;
     height: 450px;
     object-fit: cover;
+    object-position: top;
 
 }
 

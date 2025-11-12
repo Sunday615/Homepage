@@ -1,6 +1,7 @@
 <script setup>
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
+import vdoproduct1 from '../../components/vdoproductbg/vdoproduct1.vue';
 import { onMounted } from 'vue';
 
 onMounted(() => {
@@ -88,33 +89,7 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/Products/product1/pd1page2.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-
-            </div>
-
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <p>ປະຢັດ​ເວລາ, ສະດວກ ໂດຍລູກຄ້າບໍ່ຕ້ອງລໍຖ້າການໃຊ້ບໍລິການ ຫຼື ຊອກຫາຕູ້​ເອທີ​ເອັມຂອງ ທະນາຄານຜູ້ອອກບັດ
-                    ກໍ່ສາມາດ<br>ກວດຍອດເງິນຜ່ານຕູ້​ເອທີ​ເອັມຂອງບັນດາທະນາຄານທຸກລະກິດທີ່ເຊື່ອມຕໍ່ກັບລະບົບແລັບ.​​
-
-                </p>
-            </div>
-
-        </div>
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1>​ເງື່ອນໄຂການໃຊ້ບໍລິການ</h1>
-                <p>ລູກຄ້າ​ທີ່ມີ​ບັດ​ເອທີເອັມຂອງ​ທະນາຄານ​ທີ່​ເປັນ​ສະມາຊິກ​ຂອງ ແລັບເນັດ, ໂດຍສາມາດສັງເກດໄດ້ຈາກ
-                    ສັນຍາ​ລັກແລັບເນັດທີ່<br>ຕິດຕາມຕູ້ເອທີເອັມ ກໍສາມາດໃຊ້ຮ່ວມກັນໄດ້.
-                    ເຊິ່ງການກວດຍອດເງິນຂ້າມຕູ້ເອທີເອັມນີ້ແມ່ນບໍ່ເສຍຄ່າທຳນຽມໃດໆທັງນັ້ນ.
-
-
-                </p>
-            </div>
-
-        </div>
+        <vdoproduct1></vdoproduct1>
     </div>
     <div class="memberservicepage">
         <img id="memberservice-bg" src="../../assets/Products/product1/bgmemberservice-logo.png" alt="">
@@ -257,7 +232,7 @@ onMounted(() => {
 
 .contentproduct1-page2 {
     width: 100%;
-    height: 800px;
+    height: 900px;
 
 }
 

@@ -2,6 +2,7 @@
 
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
+import vdoproduct2 from '../../components/vdoproductbg/vdoproduct2.vue'
 import infinitescrolling from '../../components/Infinitescrolling/infinitescrolling.vue';
 
 import { onMounted } from 'vue'
@@ -73,31 +74,7 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/products/product2/product2detailbg.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
-                <p>ປະຢັດຄ່າໃຊ້ຈ່າຍໃນການລົງທຶນເຊັ່ນ: ຫຼດຜ່ອນຄ່າໃຊ້ຈ່າຍໃນການຂະຫຍາຍຕູ້ ATM ແລະ
-                    ຄ່າບຳລຸງຮັກສາທີ່ຕິດພັນກັບການ<br>ຂະຫຍາຍຕູ້ ATM; ເພີ່ມຈຸດບໍລິການຕູ້ ATM
-                    ແກ່ລູກຄ້າຂອງທະນາຄານທີ່ເຂົ້າເປັນສະມາຊິກ ຊຶ່ງສາມາດບໍລິການລູກຄ້າໄດ້ທົ່ວປະເທດ<br>
-                    ດ້ວຍຄ່າໃຊ້ຈ່າຍໃນການລົງທຶນຕໍ່າ. </p>
-            </div>
-
-
-
-        </div>
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
-                <p>ລູກຄ້າສາມາດນໍາໃຊ້ຕູ້ ATM ຂອງທຸກທະນາຄານທີ່ເປັນສະມາຊິກ ຂອງລະບົບ LAPS
-                    ຊຶ່ງປັດຈຸບັນມີທະນາຄານສະມາຊິກທັງໝົດ<br>
-                    16 ທະນາຄານ ເປັນການອຳນວຍຄວາມສະດວກ ແລະ ປະຢັດເວລາ ໂດຍລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງລໍຖ້າການໃຊ້ບໍລິການ ຫຼື
-                    ຊອກຫາຕູ້ເອທີເອັມ<br>ຂອງທະນາຄານຜູ້ອອກບັດເທົ່ານັ້ນ.
-
-                </p>
-            </div>
-        </div>
+        <vdoproduct2></vdoproduct2>
 
     </div>
     <div class="condition">
@@ -298,7 +275,7 @@ onMounted(() => {
 
 .contentproduct1-page2 {
     width: 100%;
-    height: 800px;
+    height: 900px;
 
 }
 

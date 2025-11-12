@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
-import typing from '../../components/Typingfunction/typing.vue';
+
+import rolevdobg from '../../components/vdoproductbg/rolevdobg.vue';
 
 
 </script>
@@ -29,36 +30,7 @@ import typing from '../../components/Typingfunction/typing.vue';
             </div>
         </div>
     </div>
-    <div class="inforole">
-        <img id="bg-role" src="../../assets/Aboutus/Role/3.png" alt="">
-        <div class="gradient-border" id="box">
-            <div class="titlebox">
-                <h1>ພາລະບົດບາດ</h1>
-            </div>
-
-            <div class="inforolep">
-                <p>ບໍລິສັດ ລາວເນ ເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ (LAPNet) ເຊິ່ງບໍລິສັດ LAPNet ເປັນຜູ້ໃຫ້ບໍລິການລະບົບ
-                    ການຊໍາລະທຸລະກໍາຍ່ອຍ ຕາມທີ່ໄດ້ກໍານົດໄວ້ໃນກົດໝາຍວ່າດ້ວຍລະບົບ ການຊໍາລະ. ຊຶ່ງເຮັດໜ້າທີ່ເປັນໂຕກາງໃນການ
-                    ເຊື່ອມໂຍງກັບທຸກຂະແໜງການຊຳລະທີ່ເປັນທະນາຄານ, ສະຖາບັນການເງິນ ແລະ ຜູ້ໃຫ້ບໍລິການ ການຊຳລະແຫ່ງດຽວໃນ ສປປ
-                    ລາວ;</p>
-                <p>ເພື່ອອໍານວຍຄວາມສະດວກໃຫ້ລູກຄ້າຂອງບັນດາທະນາຄານທີ່ເຂົ້າມາເປັນສະມາຊິກສາມາດນໍາໃຊ້ບັດສິນເຊື່ອ, ບັດເງິນຝາກ
-                    ແລະ ບັດ ATM ໃນ ການເຮັດທຸລະກໍາດ້ານການເງິນຜ່ານຕູ້ ATM ແລະ ເຄື່ອງ (POS) ຮ່ວມກັນລະຫວ່າງທະນາຄານ,
-                    ໄດ້ຢ່າງສະດວກ ທຸກທີ່ ທຸກເວລາ.</p>
-            </div>
-
-            <div class="productreview">
-                <div class="headerproduct">
-                    <h1>ຜະລິດຕະພັນການໃຫ້ບໍລິການມີດັ່ງນີ້:</h1>
-                </div>
-                <div class="productlist">
-                    <ul>
-                        <typing></typing>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
+   <rolevdobg></rolevdobg>
     <mainfooter></mainfooter>
 </template>
 

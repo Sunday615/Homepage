@@ -1,9 +1,9 @@
 <script setup>
 
 import { onMounted, ref } from 'vue'
-
-
 import gsap from 'gsap'
+import vdoproduct2 from './components/vdoproductbg/vdoproduct2.vue'
+import rolevdobg from './components/vdoproductbg/rolevdobg.vue'
 
 
 const overlay = ref(null)
@@ -38,7 +38,6 @@ const leave = (el, done) => {
   </div>
 
  
-
 
 
 </template>

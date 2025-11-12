@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
+import vdoproduct6 from '../../components/vdoproductbg/vdoproduct6.vue'
 
 import { onMounted } from 'vue'
 
@@ -77,19 +78,7 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/products/product6/darkblue.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1 style="font-size: 80px;">ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <p style="font-size: 27px;"> ການເຊື່ອມໂຍງ ລະບົບການຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງປະເທດ
-                    ຈະອຳນວຍຄວາມສະດວກໃຫ້ກັບລູກຄ້າຂອງ<br>ທະນາຄານ ໃຫ້ສາມາດເຮັດທຸລະກຳຊຳລະຂ້າມແດນ ໄດ້ຢ່າງປອດໄພ ສະດວກສະບາຍ
-                    ວ່ອງໄວ ໂດຍສາມາດນຳໃຊ້ບັນຊີເງິນກີບໃນການ<br>ຊຳລະ ແລະ ຮ້ານຄ້າໃນ ສ ປປ ລາວ
-                    ກໍ່ສາມາດຮັບການສະແກນຈາກນັກທ່ອງທ່ຽວຕ່າງປະເທດໄດ້ ໂດຍຈະອຳນວຍຄວາມສະດວກໃນການ<br>ຮັບຊຳລະ
-                    ບໍ່ຫຍຸ້ງຍາກໃນການນຳໃຊ້ເງິນສົດ ແລະ ເງິນທອນຈາກຮ້ານຄ້າໃນເວລາຊຳລະເງິນ.
-
-                </p>
-            </div>
-        </div>
+       <vdoproduct6></vdoproduct6>
 
 
     </div>
@@ -105,7 +94,7 @@ onMounted(() => {
 .infomationcorss-border {
     width: 100%;
     height: 1900px;
-    border: 1px solid red;
+   
     margin-top: 20px;
 }
 
@@ -154,7 +143,7 @@ onMounted(() => {
 
 .contentproduct1-page2 {
     width: 100%;
-    height: 800px;
+    height: 700px;
 
 }
 

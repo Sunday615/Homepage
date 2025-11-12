@@ -1,56 +1,49 @@
 <template>
   <nav>
-    <a 
-      href="/director0"
-      :class="{ active: activeItem === 'Home' }"
-      @click.prevent="setActive('Home')"
+    <router-link 
+      to="/board_of_director"
+      class="nav-link"
+      active-class="active"
     >
       ຄະນະສະພາຜູ້ບໍລິຫານ
-    </a>
+    </router-link>
 
-    <a 
-      href="/director1"
-      :class="{ active: activeItem === 'director1' }"
-      @click.prevent="setActive('director1')"
+    <router-link 
+      to="/board_of_director/member1"
+      class="nav-link"
+      active-class="active"
     >
       ຄະນະກຳມະການກວດກາ
-    </a>
+    </router-link>
 
-    <a 
-      href="/director2"
-      :class="{ active: activeItem === 'director2' }"
-      @click.prevent="setActive('director2')"
+    <router-link 
+      to="/board_of_director/member2"
+      class="nav-link"
+      active-class="active"
     >
       ຄະນະກຳມະການຄົ້ນຄວ້ານະໂຍບາຍ
-    </a>
+    </router-link>
 
-    <a 
-      href="/director3"
-      :class="{ active: activeItem === 'director3' }"
-      @click.prevent="setActive('director3')"
+    <router-link 
+      to="/board_of_director/member3"
+      class="nav-link"
+      active-class="active"
     >
       ຄະນະກຳມະການຄຸ້ມຄອງຄວາມສ່ຽງ
-    </a>
-    <a 
-      href="/director4"
-      :class="{ active: activeItem === 'director4' }"
-      @click.prevent="setActive('director4')"
+    </router-link>
+
+    <router-link 
+      to="/board_of_director/member4"
+      class="nav-link"
+      active-class="active"
     >
       ຄະນະກຳມະການຕິດຕາມການພັດທະນາລະບົບ
-    </a>
+    </router-link>
   </nav>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
-const activeItem = ref('Home')
-
-function setActive(name) {
-  activeItem.value = name
-  // ตัวอย่าง: ถ้าอยากให้ไปหน้าจริงใน Vue Router
-  router.push(`/${name.toLowerCase()}`)
-}
+// ไม่ต้อง import useRouter/useRoute เพราะใช้ router-link แล้ว
 </script>
 
 <style scoped>
@@ -63,7 +56,8 @@ nav {
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-a {
+/* ตั้งชื่อ class ให้ router-link */
+.nav-link {
   position: relative;
   text-decoration: none;
   color: #333;
@@ -71,11 +65,11 @@ a {
   padding-bottom: 5px;
   transition: color 0.3s ease;
   font-size: 22px;
-     font-family: "Noto Sans Lao", sans-serif;
+  font-family: "Noto Sans Lao", sans-serif;
 }
 
-/* เส้น gradient */
-a::after {
+/* เส้น gradient ด้านล่าง */
+.nav-link::after {
   content: '';
   position: absolute;
   left: 0;
@@ -87,18 +81,17 @@ a::after {
   border-radius: 2px;
 }
 
-/* แสดงตอน hover */
-a:hover::after {
+/* Hover effect */
+.nav-link:hover::after {
   width: 100%;
 }
 
-/* แสดงตอน active */
-a.active::after {
+/* Active link */
+.nav-link.active::after {
   width: 100%;
 }
 
-/* เปลี่ยนสีข้อความเมื่อ hover */
-a:hover {
+.nav-link:hover {
   color: #002de3;
 }
 </style>

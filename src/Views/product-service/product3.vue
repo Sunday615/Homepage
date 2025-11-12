@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
+import vdoproduct3 from '../../components/vdoproductbg/vdoproduct3.vue'
 import infinitescrolling from '../../components/Infinitescrolling/infinitescrolling.vue';
 import tablefee from '../../components/table/tablefee.vue';
 import { onMounted } from 'vue'
@@ -72,30 +73,7 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/products/product2/product2detailbg.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
-                <p>ຫຼຸດຕົ້ນທຶນທາງດ້ານບຸກຂະລາກອນທີ່ໃຫ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານ Counter ຫຼື ປ່ອງບໍລິການຂອງທະນາຄານ
-                    ໃຫ້ລູກຄ້າ<br>ຫັນມານຳໃຊ້ຕູ້ ATM ໃນການເຮັດທຸລະກຳ ແລະ ຍັງສາມາດເພີ່ມຈຳນວນທຸລະກຳການໂອນ ເພາະສາມາດໂອນຢູ່ຕູ້
-                    ATM
-                    ຂອງທະນາຄານ<br>ໃດກໍ່ໄດ້ທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet.
-
-                </p>
-            </div>
-        </div>
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
-                <p>ເປັນການອຳນວຍຄວາມສະດວກ ແລະ ປະຢັດເວລາ
-                    ໂດຍລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງລໍຖ້າການໃຊ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານ<br>
-                    counter ຫຼື ປ່ອງບໍລິການຂອງທະນາຄານ; ລູກຄ້າສາມາດເຮັດທຸລະກຳໂອນເງິນຂ້າມທະນາຄານໄດ້ດ້ວຍຕົນເອງ
-                    ດ້ວຍການໂອນເງິນ<br>ທີ່ຕູ້ ATM ຂອງທະນາຄານສະມາຊິກ ຊຶ່ງປັດຈຸບັນມີ 13 ທະນາຄານທີ່ສາມາດໃຫ້ບໍລິການໄດ້.
-
-                </p>
-            </div>
-        </div>
+       <vdoproduct3></vdoproduct3>
 
     </div>
     <div class="condition">
@@ -407,7 +385,7 @@ p {
 
 .contentproduct1-page2 {
     width: 100%;
-    height: 800px;
+    height: 900px;
 
 }
 
