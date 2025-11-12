@@ -21,7 +21,7 @@ import navbardirector from '../../../components/navbarboarddirector/navbardirect
                 <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
                             class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
                         style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                    </span> ສະພາຜູ້ບໍລິຫານ </p></div>
+                    </span> ຄະນະສະພາຜູ້ບໍລິຫານ <i class="fa-solid fa-chevron-right" style="padding-left: 40px; padding-right: 40px;"></i> ຄະນະກຳມະການຄຸ້ມຄອງຄວາມສ່ຽງ</p></div>
             </div>
         </div>
     </div>
@@ -30,7 +30,8 @@ import navbardirector from '../../../components/navbarboarddirector/navbardirect
   
     </div>
     <div class="boardofdirectorimg">
-        <img src="../../../assets/Aboutus/Board_of_director/risk.png" alt="">
+        <div data-aos="fade-up" data-aos-duration="1200">
+        <img src="../../../assets/Aboutus/Board_of_director/risk.png" alt=""></div>
     </div>
     <mainfooter></mainfooter>
 </template>
