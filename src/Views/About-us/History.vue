@@ -561,7 +561,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
 
 .titleheader p {
     font-size: 40px;
-    
+
     font-weight: bold;
     text-align: center;
 }
@@ -889,7 +889,7 @@ mark {
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-        font-weight: bold;
+    font-weight: bold;
     padding-bottom: 70px;
 }
 

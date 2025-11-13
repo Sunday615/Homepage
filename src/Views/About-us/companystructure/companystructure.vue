@@ -31,8 +31,9 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
         <navbarcompanystructure></navbarcompanystructure>
     </div>
     <div class="companystructure">
-          <div data-aos="fade-up" data-aos-duration="1200">
-        <img src="../../../assets/Aboutus/Company/Companyconstruct-2.png" alt=""></div>
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <img src="../../../assets/Aboutus/Company/Companyconstruct-2.png" alt="">
+        </div>
     </div>
     <div class="boxpadding" style="width:100%; height:200px"></div>
     <mainfooter></mainfooter>
@@ -40,7 +41,7 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
 
 
 <style scoped>
-.navbarcompany{
+.navbarcompany {
     width: 100%;
     height: 170px;
 
@@ -48,10 +49,12 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
     align-items: center;
     justify-content: center;
 }
-.companystructure img{
+
+.companystructure img {
     width: 100%;
     height: 100%;
 }
+
 .companystructure {
     width: 100%;
     height: auto;
@@ -92,8 +95,8 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-        font-family: "Noto Sans Lao", sans-serif;
-        font-weight: bold;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: bold;
     padding-bottom: 70px;
 }
 
@@ -101,6 +104,6 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
     color: #fff;
     font-size: 20px;
 
-        font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
 }
 </style>

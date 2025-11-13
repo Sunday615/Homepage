@@ -66,7 +66,7 @@ onMounted(() => {
                 <div data-aos="fade-right" data-aos-duration="400">
                     <div class="cardmember-boc">
                         <div class="logobox-boc">
-                            <img src="../../../assets/logomember-circle/boc-bg.png" alt="">
+                            <img src="../../../assets/logomember-circle/BOC.png" alt="">
                         </div>
                         <div class="nameofbank-boc cardnamestyle">
                             <h1>ທະນາຄານແຫ່ງ ປະເທດຈີນ ຈຳກັດ </h1>

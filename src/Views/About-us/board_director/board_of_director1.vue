@@ -13,25 +13,29 @@ import navbardirector from '../../../components/navbarboarddirector/navbardirect
         <img id="navigator-img" src="../../../assets/Aboutus/Board_of_director/navigatormission-bg.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
-                      <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <p>ສະພາຜູ້ບໍລິຫານ</p></div>
+                <div data-aos="zoom-in-down" data-aos-duration="1000">
+                    <p>ສະພາຜູ້ບໍລິຫານ</p>
+                </div>
             </div>
             <div class="navigatorlink">
-                      <div data-aos="zoom-out-up" data-aos-duration="1000">
-                <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                            class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
-                        style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                    </span> ຄະນະສະພາຜູ້ບໍລິຫານ<i class="fa-solid fa-chevron-right" style="padding-left: 40px; padding-right: 40px;"></i> ຄະນະກຳມະການກວດກາ   </p></div>
+                <div data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
+                                class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
+                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                        </span> ຄະນະສະພາຜູ້ບໍລິຫານ<i class="fa-solid fa-chevron-right"
+                            style="padding-left: 40px; padding-right: 40px;"></i> ຄະນະກຳມະການກວດກາ </p>
+                </div>
             </div>
         </div>
     </div>
     <div class="nav_board_of_derictor">
         <navbardirector></navbardirector>
-  
+
     </div>
     <div class="boardofdirectorimg">
-                 <div data-aos="fade-up" data-aos-duration="1200">
-        <img src="../../../assets/Aboutus/Board_of_director/audit.png" alt=""></div>
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <img src="../../../assets/Aboutus/Board_of_director/audit.png" alt="">
+        </div>
     </div>
     <mainfooter></mainfooter>
 </template>
@@ -60,7 +64,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 
-       font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
     font-size: 19px;
     color: #000;
     display: inline-block;
@@ -106,7 +110,7 @@ a:hover:after {
 
 .box_navbar h1 {
     font-size: 19px;
-       font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
     cursor: pointer;
 }
 
@@ -162,7 +166,7 @@ a:hover:after {
 .titlenavigator p {
     font-size: 80px;
     color: #fff;
-       font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
     font-weight: bold;
     padding-bottom: 70px;
 }
@@ -171,6 +175,6 @@ a:hover:after {
     color: #fff;
     font-size: 20px;
 
-       font-family: "Noto Sans Lao", sans-serif;
+    font-family: "Noto Sans Lao", sans-serif;
 }
 </style>

@@ -4,6 +4,7 @@
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import blogpagination from '../../../components/pagination/blogpagination.vue';
+import sideblog from '../../../components/sidebloglink/sideblog.vue';
 import { onMounted } from 'vue';
 
 
@@ -209,74 +210,7 @@ import { onMounted } from 'vue';
                         </div>
                     </div>
                 </div>
-                <div class="postrecent">
-                    <div class="postrecenttitle">
-                        <h4>Post ລ່າສຸດ</h4>
-                    </div>
-                    <div class="cardpostrecent">
-                        <div class="imgrecentbox">
-                            <img src="../../../../public/images/2/2.png" alt="">
-                        </div>
-                        <div class="titlerecentbox">
-                            <h2>ແຈ້ງເຊີນເຂົ້າຮ່ວມປະມູນຍື່ນຊອງລາຄາ ການບຳລຸງຮັກສາອຸປະກອນເຄືອຂ່າຍ</h2>
-                            <div class="recenttimepost">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>12 August 2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cardpostrecent">
-                        <div class="imgrecentbox">
-                            <img src="../../../../public/images/3/3.jpg" alt="">
-                        </div>
-                        <div class="titlerecentbox">
-                            <h2>ແຈ້ງເຊີນປະມູນ ອຸປະກອນ HARDWARE ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNET</h2>
-                            <div class="recenttimepost">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>15 May 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardpostrecent">
-                        <div class="imgrecentbox">
-                            <img src="../../../../public/images/4.png" alt="">
-                        </div>
-                        <div class="titlerecentbox">
-                            <h2>ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງ ລາວ - ໄທ</h2>
-                            <div class="recenttimepost">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>03 April 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardpostrecent">
-                        <div class="imgrecentbox">
-                            <img src="../../../../public/images/5.jpg" alt="">
-                        </div>
-                        <div class="titlerecentbox">
-                            <h2>ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR CODE ລະຫວ່າງ ສປປ
-                                ລາວ ແລະ ປະເທດໄທ</h2>
-                            <div class="recenttimepost">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>14 March 2024</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardpostrecent">
-                        <div class="imgrecentbox">
-                            <img src="../../../../public/images/6.jpg" alt="">
-                        </div>
-                        <div class="titlerecentbox">
-                            <h2>ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
-                                ເດີນທາງໄປແລກປ່ຽນບົດຮຽນທາງດ້ານການໃຫ້ບໍລິການເງິນທີ່ປະເທດສິງກະໂປ</h2>
-                            <div class="recenttimepost">
-                                <i class="fa-solid fa-calendar"></i>
-                                <p>26 September 2023</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <sideblog></sideblog>
 
             </div>
         </div>
