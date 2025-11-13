@@ -3,6 +3,12 @@
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import paginationmember from '../../../components/pagination/paginationmember1.vue';
+import boxmembericbc from '../../../components/boxmember/boxmembericbc.vue'
+import boxmemberboc from '../../../components/boxmember/boxmemberboc.vue'
+import boxmembervtb from '../../../components/boxmember/boxmembervtb.vue'
+import boxmemberib from '../../../components/boxmember/boxmemberib.vue'
+import boxmemberaceleda from '../../../components/boxmember/boxmemberaceleda.vue'
+import boxmemberbic from '../../../components/boxmember/boxmemberbic.vue'
 import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
 
 import { onMounted } from 'vue';
@@ -52,72 +58,24 @@ onMounted(() => {
         <div class="cardviewcontainer">
             <div class="leftsidecontainer">
                 <div data-aos="fade-right" data-aos-duration="200">
-                    <div class="cardmember-icbc">
-                        <div class="logobox-icbc">
-                            <img src="../../../assets/logomember-circle/icbc-bg.png" alt="">
-                        </div>
-                        <div class="cardnamestyle nameofbank-icbc">
-
-                            <h1>ທະນາຄານ ອຸດສະຫະກໍາ ແລະ ການຄ້າຈີນ ຈຳກັດ </h1>
-                            <p>Industrial and Commercial Bank of China Limited</p>
-                        </div>
-                    </div>
+                  <boxmembericbc image="/Logomember/ICBC.png" link1="https://www.facebook.com/icbcglobal/" link2="https://vientiane.icbc.com.cn/en/column/1438058341816746015.html"></boxmembericbc>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="400">
-                    <div class="cardmember-boc">
-                        <div class="logobox-boc">
-                            <img src="../../../assets/logomember-circle/BOC.png" alt="">
-                        </div>
-                        <div class="nameofbank-boc cardnamestyle">
-                            <h1>ທະນາຄານແຫ່ງ ປະເທດຈີນ ຈຳກັດ </h1>
-                            <p>Bank of China</p>
-                        </div>
-                    </div>
+                   <boxmemberboc image="/Logomember/bboc.png" link1="https://www.facebook.com/profile.php?id=100066833677650" link2="https://www.boc.cn/en/"></boxmemberboc>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="500">
-                    <div class="cardmember-vtb">
-                        <div class="logobox-vtb">
-                            <img src="../../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png"
-                                alt="">
-                        </div>
-                        <div class="nameofbank-vtb cardnamestyle">
-                            <h1>ທະນາຄານ ຫວຽດຕິນ ລາວ ຈຳກັດ</h1>
-                            <p>VietinBank</p>
-                        </div>
-                    </div>
+                    <boxmembervtb image="/Logomember/vtb.png" link1="https://www.facebook.com/vtblao" link2="https://laoefast.vietinbank.com.la"></boxmembervtb>
+                    
                 </div>
                 <div data-aos="fade-right" data-aos-duration="700">
-                    <div class="cardmember-ib">
-                        <div class="logobox-ib">
-                            <img src="../../../assets/logomember-circle/IBbankk.JPG" alt="">
-                        </div>
-                        <div class="nameofbank-ib cardnamestyle">
-                            <h1>ທະນາຄານ ອິນໂດຈີນ ຈຳກັດ </h1>
-                            <p>Indochina Bank</p>
-                        </div>
-                    </div>
+
+                    <boxmemberib image="/Logomember/IBbankk.JPG" link1="https://www.facebook.com/indochina.bank.page" link2="https://iblaos.com"></boxmemberib>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="900">
-                    <div class="cardmember-acl">
-                        <div class="logobox-acl">
-                            <img src="../../../assets/Logomember- retangle/aceleda.png" alt="">
-                        </div>
-                        <div class="nameofbank-acl cardnamestyle">
-                            <h1>ທະນາຄານ ເອຊີລີດາລາວ ຈໍາກັດ</h1>
-                            <p>ACLEDA BANK </p>
-                        </div>
-                    </div>
+                    <boxmemberaceleda image="/Logomember/ACL-bg.png" link1="https://www.facebook.com/acledabanklao" link2="https://www.acledabank.com.la/la/lao/"></boxmemberaceleda>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1100">
-                    <div class="cardmember-bic">
-                        <div class="logobox-bic">
-                            <img src="../../../assets/logomember-circle/BIC.jpg" alt="">
-                        </div>
-                        <div class="nameofbank-bic cardnamestyle">
-                            <h1>ທະນາຄານ ບີໄອຊີ ລາວ ຈໍາກັດ</h1>
-                            <p>BIC Bank Lao</p>
-                        </div>
-                    </div>
+                    <boxmemberbic image="/Logomember/BIC.png" link1="https://www.facebook.com/BICBANKLAO" link2="https://www.biclaos.com"></boxmemberbic>
                 </div>
             </div>
             <div class="rightsidecontainer">

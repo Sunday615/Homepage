@@ -1,6 +1,6 @@
 <template>
   <div class="image-container">
-    <img  ref="floatingImage" src="../../assets/Homepage/mobilemockup4-2.png" alt="Floating" class="floating-img" />
+    <img  ref="floatingImage" src="../../assets/Homepage/mbmockup_tinypng.png" alt="Floating" class="floating-img" />
   </div>
 </template>
 

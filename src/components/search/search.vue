@@ -38,15 +38,15 @@
 
                         <div class="button-group">
                             <button @click="submit" class="primary-btn">Search</button>
-                            <button @click="close" class="secondary-btn">Close</button>
+                            <button id="close-btn" @click="close" class="secondary-btn">ປິດ</button>
                         </div>
                     </div>
 
                     <div class="suggestions">
-                        <button class="tag">Design</button>
-                        <button class="tag">Vue</button>
-                        <button class="tag">GSAP</button>
-                        <button class="tag">Components</button>
+                        <button class="tag">ຜະລິດຕະພັນ ແລະ ການບໍລິການ<i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="tag">ຂ່າວ ແລະ ກິດຈະກຳ<i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="tag">ກ່ຽວກັບພວກເຮົາ<i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="tag">ຕິດຕໍ່ພວກເຮົາ<i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -104,6 +104,9 @@ export default {
 </script>
 
 <style scoped>
+#close-btn{
+        font-family: "Noto Sans Lao", sans-serif;
+}
 .search-button {
     display: inline-flex;
     align-items: center;
@@ -240,7 +243,13 @@ export default {
 .secondary-btn:hover {
     background: #f3f4f6;
 }
-
+.suggestions i{
+    padding-left: 5px;
+}
+.suggestions button{
+     font-family: "Noto Sans Lao", sans-serif;
+    
+}
 .suggestions {
     margin-top: 24px;
     display: flex;

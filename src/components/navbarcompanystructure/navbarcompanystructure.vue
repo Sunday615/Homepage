@@ -8,7 +8,7 @@
       ໂຄງຮ່າງການຈັດຕັ້ງ
     </router-link>
      <router-link 
-      to="/companystructure/ceo"
+      to="/companystructure/ceo-coo"
       class="nav-link"
       active-class="active"
     >

@@ -68,22 +68,32 @@ function goTop() {
         <div class="memberlogin">
             <div class="centercontainer">
                 <div class="locationcompany">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Kaysone Phomvihane Avenue, Vientiane, Laos</p>
+
+
+                    <a href="https://maps.app.goo.gl/SnCm8XWGRpsd4wja8" target="_blank"
+                        style="display:flex;     align-items: center;"> <i class="fa-solid fa-location-dot"></i>
+                        <p>Kaysone Phomvihane Avenue, Vientiane, Laos</p>
+                    </a>
                 </div>
                 <div class="contact">
                     <div class="socialicon">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-solid fa-globe"></i>
+                        <a style="display: flex;   align-items: center;"
+                            href="https://web.facebook.com/laonationalpaymentnetwork" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="/" style="display: flex;   align-items: center;">
+                            <i class="fa-solid fa-globe"></i></a>
                     </div>
                     <div class="registercontainer">
                         <i class="fa-solid fa-user"></i>
                         <p>Register</p>
                     </div>
-                    <div class="logincontainer">
-                        <i class="fa-solid fa-lock"></i>
-                        <p>Login</p>
-                    </div>
+                    <router-link to="/">
+                        <div class="logincontainer">
+                            <i class="fa-solid fa-lock"></i>
+                            <p>Login</p>
+                        </div>
+                    </router-link>
+
                 </div>
             </div>
         </div>
@@ -149,7 +159,8 @@ function goTop() {
 
         <div class="containerhomepage2">
             <div class="cardview">
-                <img src="../../assets/Homepage/newmission-2.png" alt=""></img>
+                <div data-aos="zoom-in-right" data-aos-duration="1200">
+                <img src="../../assets/Homepage/newmission-2.png" alt=""></img></div>
             </div>
             <div class="titlecontainer">
                 <div class="header">
@@ -399,6 +410,8 @@ function goTop() {
 <style scoped>
 .allproducts {
     width: 100%;
+
+
     height: 850px;
     background-color: #fff;
     display: flex;
@@ -1215,9 +1228,12 @@ p {
 }
 
 .logincontainer {
-    width: 30%;
-    height: 40%;
+    width: 170px;
+    height: 80px;
+    cursor: pointer;
 
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

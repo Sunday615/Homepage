@@ -77,6 +77,7 @@ import Companystructure_finance from '../Views/About-us/companystructure/company
 import Companystructure_it from '../Views/About-us/companystructure/companystructure_it.vue'
 import Companystructure_operation from '../Views/About-us/companystructure/companystructure_operation.vue'
 import Companystructure_audit from '../Views/About-us/companystructure/companystructure_audit.vue'
+import Companystructure_ceo from '../Views/About-us/companystructure/companystructure_ceo.vue'
 
 
 
@@ -198,6 +199,7 @@ const router = createRouter({
     { path: '/companystructure/it', name: '/companystructure/it', component: Companystructure_it },
     { path: '/companystructure/operation', name: '/companystructure/operation', component: Companystructure_operation },
     { path: '/companystructure/audit', name: '/companystructure/audit', component: Companystructure_audit },
+    { path: '/companystructure/ceo-coo', name: '/companystructure/ceo-coo', component: Companystructure_ceo },
 
   ],
 

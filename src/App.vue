@@ -4,7 +4,6 @@ import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
 
 
-
 const overlay = ref(null)
 
 // Called before new page enters
@@ -24,9 +23,12 @@ const leave = (el, done) => {
     .to(el, { opacity: 0, duration: 0.4 }, "<")
     .to(overlay.value, { opacity: 0, duration: 0.6, ease: "power2.inOut" }) // Fade back
 }
+
+
 </script>
 
 <template>
+  
   <div id="app">
     <transition @before-enter="beforeEnter" @enter="enter" @leave="leave" mode="out-in">
       <router-view    />
@@ -35,8 +37,6 @@ const leave = (el, done) => {
 
     <div ref="overlay" class="overlay"></div>
   </div>
-
- 
 
 
 
