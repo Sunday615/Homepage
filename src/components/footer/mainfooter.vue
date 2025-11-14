@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, createWebHashHistory } from 'vue-router';
+import { RouterLink,  } from 'vue-router';
 import footerdropdown from '../footer/footerdropdown.vue';
 
 function goTop() {
