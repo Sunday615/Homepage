@@ -2,18 +2,13 @@
   <div class="dropdown" ref="dropdownRef">
     <!-- Button -->
     <button class="dropdown-btn" @click="toggleDropdown">
-      {{ selected || "Select a country" }}
+      {{ selected || "ເລືອກເດືອນ" }}
       <span class="arrow" :class="{ open: isOpen }">▼</span>
     </button>
 
     <!-- Menu -->
     <ul v-if="isOpen" class="dropdown-menu">
-      <li
-        v-for="(country, index) in countries"
-        :key="index"
-        class="dropdown-item"
-        @click="selectCountry(country)"
-      >
+      <li v-for="(country, index) in countries" :key="index" class="dropdown-item" @click="selectCountry(country)">
         {{ country }}
       </li>
     </ul>
@@ -23,7 +18,7 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 
-const countries = ["ເດືອນ 1", "ເດືອນ 2", "ເດືອນ 3", "ເດືອນ 4","ເດືອນ 5", "ເດືອນ 6", "ເດືອນ 7", "ເດືອນ 8","ເດືອນ 9", "ເດືອນ 10", "ເດືອນ 11", "ເດືອນ 12",];
+const countries = ["ເດືອນ 1", "ເດືອນ 2", "ເດືອນ 3", "ເດືອນ 4", "ເດືອນ 5", "ເດືອນ 6", "ເດືອນ 7", "ເດືອນ 8", "ເດືອນ 9", "ເດືອນ 10", "ເດືອນ 11", "ເດືອນ 12",];
 
 const isOpen = ref(false);
 const selected = ref("");
@@ -50,29 +45,31 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
 </script>
 
 <style scoped>
+* {
+  font-family: "Noto Sans Lao", sans-serif;
 
-*{
-      font-family: notosanlao;
 }
+
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
-  font-family: Arial, sans-serif;
-  
+
+
 }
 
 /* Button styling */
 .dropdown-btn {
-    margin-top: 5px;
- font-family: notosanlao;
+  margin-top: 5px;
+  font-family: "Noto Sans Lao", sans-serif;
+  color: #000000d3;
   border: 1px solid #00000082;
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
-  width: 450px;
+  width: 345px;
   height: 70px;
-
+  font-size: 19px;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -89,6 +86,7 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   font-size: 10px;
   transition: transform 0.2s ease;
 }
+
 .arrow.open {
   transform: rotate(180deg);
 }

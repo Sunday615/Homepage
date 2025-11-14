@@ -129,6 +129,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 
 .headerposition h1 {
     font-size: 90px;
+        font-family: "Inter";
     font-weight: bold;
     color: #2855bf;
     background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
@@ -179,6 +180,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 }
 
 .headerswiper p {
+        font-family: "Inter";
     color: #2855bf;
     background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
     background-clip: text;
@@ -188,6 +190,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 }
 
 .headerswiper {
+        font-family: "Inter";
     padding-top: 50px;
     width: 350px;
     height: 300px;
@@ -207,6 +210,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .lifeatlapnetlogo p {
     font-size: 30px;
     color: #fff;
+        font-family: "Inter";
 }
 
 .lifeatlapnetlogo img {
@@ -279,7 +283,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .contact {
     width: 100%;
     height: 170px;
-
+    font-family: "Inter";
     margin-top: 60px;
 }
 
@@ -299,6 +303,8 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .header h1 {
     font-size: 100px;
     font-weight: bold;
+    font-family: "Inter";
+    font-weight: bold;
 
 }
 
@@ -312,6 +318,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .logo p {
     font-size: 25px;
     font-weight: bold;
+    font-family: "Inter";
 }
 
 .logo img {

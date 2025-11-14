@@ -2,18 +2,13 @@
   <div class="dropdown" ref="dropdownRef">
     <!-- Button -->
     <button class="dropdown-btn" @click="toggleDropdown">
-      {{ selected || "Select a country" }}
+      {{ selected || "ເລືອກປີ" }}
       <span class="arrow" :class="{ open: isOpen }">▼</span>
     </button>
 
     <!-- Menu -->
     <ul v-if="isOpen" class="dropdown-menu">
-      <li
-        v-for="(country, index) in countries"
-        :key="index"
-        class="dropdown-item"
-        @click="selectCountry(country)"
-      >
+      <li v-for="(country, index) in countries" :key="index" class="dropdown-item" @click="selectCountry(country)">
         {{ country }}
       </li>
     </ul>
@@ -51,26 +46,27 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
 
 <style scoped>
 /* Dropdown container */
-*{
-  font-family: notosanlao;
+* {
+  font-family: "Noto Sans Lao", sans-serif;
+
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
-  font-family: Arial, sans-serif;
 }
 
 /* Button styling */
 .dropdown-btn {
-
-    margin-top: 5px;
-  border: 1px solid #00000082;
+  color: #000000d3;
+  margin-top: 5px;
+  border: 1px solid #000000b0;
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
-  width: 400px;
+  width: 345px;
   height: 70px;
-
+  font-size: 19px;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -87,6 +83,7 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   font-size: 10px;
   transition: transform 0.2s ease;
 }
+
 .arrow.open {
   transform: rotate(180deg);
 }
