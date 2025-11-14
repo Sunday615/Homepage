@@ -45,7 +45,7 @@ onMounted(() => {
 
         <div class="left-blog-container">
             <div class="blogdetailimg">
-                <img src="../../../../../public/images/18/1.jpg" alt="">
+                <img src="/images/18/1.jpg" alt="">
             </div>
             <div class="aboutblog">
                 <span>
@@ -115,10 +115,10 @@ onMounted(() => {
             </div>
             <div data-aos="zoom-out-up" data-aos-duration="500" data-aos-once="true">
                 <div class="imageinfo">
-                    <img src="../../../../../public/images/18/2.jpg" alt="">
+                    <img src="/images/18/2.jpg" alt="">
                   
-                    <img src="../../../../../public/images/18/4.jpg" alt="">
-                    <img src="../../../../../public/images/18/5.jpg" alt="">
+                    <img src="/images/18/4.jpg" alt="">
+                    <img src="/images/18/5.jpg" alt="">
              
 
 
@@ -187,7 +187,7 @@ onMounted(() => {
                 </div>
                 <div class="cardpostrecent">
                     <div class="imgrecentbox">
-                        <img src="../../../../../public/images/2/2.png" alt="">
+                        <img src="/images/2/2.png" alt="">
                     </div>
                     <div class="titlerecentbox">
                         <h2>ແຈ້ງເຊີນເຂົ້າຮ່ວມປະມູນຍື່ນຊອງລາຄາ ການບຳລຸງຮັກສາອຸປະກອນເຄືອຂ່າຍ</h2>
@@ -200,7 +200,7 @@ onMounted(() => {
 
                 <div class="cardpostrecent">
                     <div class="imgrecentbox">
-                        <img src="../../../../../public/images/3/3.jpg" alt="">
+                        <img src="/images/3/3.jpg" alt="">
                     </div>
                     <div class="titlerecentbox">
                         <h2>ແຈ້ງເຊີນປະມູນ ອຸປະກອນ HARDWARE ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNET</h2>
@@ -212,7 +212,7 @@ onMounted(() => {
                 </div>
                 <div class="cardpostrecent">
                     <div class="imgrecentbox">
-                        <img src="../../../../../public/images/4.png" alt="">
+                        <img src="/images/4.png" alt="">
                     </div>
                     <div class="titlerecentbox">
                         <h2>ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງ ລາວ - ໄທ</h2>
@@ -224,7 +224,7 @@ onMounted(() => {
                 </div>
                 <div class="cardpostrecent">
                     <div class="imgrecentbox">
-                        <img src="../../../../../public/images/5.jpg" alt="">
+                        <img src="/images/5.jpg" alt="">
                     </div>
                     <div class="titlerecentbox">
                         <h2>ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR CODE ລະຫວ່າງ ສປປ ລາວ
@@ -237,7 +237,7 @@ onMounted(() => {
                 </div>
                 <div class="cardpostrecent">
                     <div class="imgrecentbox">
-                        <img src="../../../../../public/images/6.jpg" alt="">
+                        <img src="/images/6.jpg" alt="">
                     </div>
                     <div class="titlerecentbox">
                         <h2>ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
