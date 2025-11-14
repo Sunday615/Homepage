@@ -4,6 +4,12 @@ import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import paginationmember2 from '../../../components/pagination/paginationmember2.vue';
 import footerLogoMember2 from '../../../components/footer/memberfooter/footer-logo-member2.vue';
+import boxmemberbcel from '../../../components/boxmember/boxmemberbcel.vue';
+import boxmemberldb from '../../../components/boxmember/boxmemberldb.vue';
+import boxmemberapb from '../../../components/boxmember/boxmemberapb.vue';
+import boxmemberjdb from '../../../components/boxmember/boxmemberjdb.vue';
+import boxmembermaru from '../../../components/boxmember/boxmembermaru.vue';
+import boxmemberlvb from '../../../components/boxmember/boxmemberlvb.vue';
 
 import { onMounted } from 'vue';
 
@@ -52,71 +58,34 @@ onMounted(() => {
         <div class="cardviewcontainer">
             <div class="leftsidecontainer">
                 <div data-aos="fade-right" data-aos-duration="800">
-                    <div class="cardmember-bcel">
-                        <div class="logobox-bcel">
-                            <img src="../../../assets/logomember-circle/BCEL.png" alt="">
-                        </div>
-                        <div class="cardnamestyle nameofbank-bcel">
+                    <boxmemberbcel image="/Logomember/bcelretangle.png" link1="https://www.facebook.com/BCEL.Bank" link2="https://www.bcel.com.la"></boxmemberbcel>
+                </div>
 
-                            <h1>ທະນາຄານ ການຄ້າຕ່າງປະເທດລາວ ມະຫາຊົນ </h1>
-                            <p>Banque Pour Le Commerce Exterieur Lao Public</p>
-                        </div>
-                    </div>
+                <div data-aos="fade-right" data-aos-duration="400">
+                    <boxmemberldb image="/Logomember/ldb-gold.png"
+                    link2="https://www.ldblao.la/"
+                    link1="https://www.facebook.com/ldblao"
+                    ></boxmemberldb>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="500">
-                    <div class="cardmember-ldb">
-                        <div class="logobox-ldb">
-                            <img src="../../../assets/logomember-circle/ldb-gold.png" alt="">
-                        </div>
-                        <div class="nameofbank-ldb cardnamestyle">
-                            <h1>ທະນາຄານ ພັດທະນາລາວ ຈຳກັດ </h1>
-                            <p>Lao Development Bank </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="600">
-                    <div class="cardmember-apb">
-                        <div class="logobox-apb">
-                            <img src="../../../assets/Logomember- retangle/APB.jpeg" alt="">
-                        </div>
-                        <div class="nameofbank-apb cardnamestyle">
-                            <h1>ທະນາຄານ ສົ່ງເສີມກະສິກໍາ ຈຳກັດ </h1>
-                            <p>Agricultural Promotion Bank </p>
-                        </div>
-                    </div>
+                    <boxmemberapb image="/Logomember/APBB.PNG" 
+                    link1="https://www.facebook.com/APB.Bank/?locale=th_TH"
+                    link2="https://www.apb.com.la"
+                    ></boxmemberapb>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="700">
-                    <div class="cardmember-jdb">
-                        <div class="logobox-jdb">
-                            <img src="../../../assets/logomember-circle/JDBbank.png" alt="">
-                        </div>
-                        <div class="nameofbank-jdb cardnamestyle">
-                            <h1>ທະນາຄານ ຮ່ວມພັດທະນາ</h1>
-                            <p>Joint Development Bank </p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="800">
-                    <div class="cardmember-maru">
-                        <div class="logobox-maru">
-                            <img src="../../../assets/Logomember- retangle/MARU.jpg" alt="">
-                        </div>
-                        <div class="nameofbank-maru cardnamestyle">
-                            <h1>ທະນາຄານ ມາຣູຮານ ເຈແປນ ລາວ ຈຳກັດ </h1>
-                            <p>MARUHAN Japan Bank Lao </p>
-                        </div>
-                    </div>
+                    <boxmemberjdb image="/Logomember/JDBbank.png"
+                    link1="https://www.facebook.com/jdbbanklaos"
+                    link2="https://www.jdbbank.com.la/"
+                    ></boxmemberjdb>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="900">
-                    <div class="cardmember-lvb">
-                        <div class="logobox-lvb">
-                            <img src="../../../assets/logomember-circle/lvb.PNG" alt="">
-                        </div>
-                        <div class="nameofbank-lvb cardnamestyle">
-                            <h1>ທະນາຄານ ຮ່ວມທຸລະກິດ ລາວ-ຫວຽດ</h1>
-                            <p>Laos - Vietnam Joint Venture Bank</p>
-                        </div>
-                    </div>
+                   <boxmembermaru image="/Logomember/MARU.jpg" link1="https://www.facebook.com/MaruhanJapanBankLao/" link2="https://maruhanjapanbanklao.com" >
+
+                   </boxmembermaru>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1100">
+                   <boxmemberlvb image="/Logomember/LVB.png" link1="https://www.facebook.com/LaoVietBank" link2="https://www.laovietbank.com.la/la/"></boxmemberlvb>
                 </div>
             </div>
 

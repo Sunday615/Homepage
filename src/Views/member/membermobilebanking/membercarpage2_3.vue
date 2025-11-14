@@ -3,6 +3,12 @@ import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import mainfooter from '../../../components/footer/mainfooter.vue';
 import paginationmember2 from '../../../components/pagination/paginationmember2.vue';
 import footerLogoMember2 from '../../../components/footer/memberfooter/footer-logo-member2.vue';
+import boxmembersacom from '../../../components/boxmember/boxmembersacom.vue';
+import boxmemberstb from '../../../components/boxmember/boxmemberstb.vue';
+import boxmemberkbank from '../../../components/boxmember/boxmemberkbank.vue';
+import boxmemberbfl from '../../../components/boxmember/boxmemberbfl.vue'
+import boxmemberpsvb from '../../../components/boxmember/boxmemberpsvb.vue'
+import boxmembermb from '../../../components/boxmember/boxmembermb.vue'
 
 import { onMounted } from 'vue';
 
@@ -50,74 +56,27 @@ onMounted(() => {
         </div>
         <div class="cardviewcontainer">
             <div class="leftsidecontainer">
-                <div data-aos="fade-right" data-aos-duration="800">
-                    <div class="cardmember-sacom">
-                        <div class="logobox-sacom">
-                            <img src="../../../assets/Logomember- retangle/sacombank.png" alt="">
-                        </div>
-                        <div class="cardnamestyle nameofbank-sacom">
-
-                            <h1>ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ </h1>
-                            <p>Saigon Thuong Tin Commercial Joint Stock Bank</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="500">
-                    <div class="cardmember-stb">
-                        <div class="logobox-stb">
-                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="">
-                        </div>
-                        <div class="nameofbank-stb cardnamestyle">
-                            <h1>ທະນາຄານ ເອັສທີ ຈຳກັດ</h1>
-                            <p>ST Bank Limited</p>
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="700">
-                    <div class="cardmember-kbank">
-                        <div class="logobox-kbank">
-                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
-                        </div>
-                        <div class="nameofbank-kbank cardnamestyle">
-                            <h1>ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ</h1>
-                            <p>KASIKORNBANK Public Company Limited</p>
-                        </div>
-                    </div>
+                <div data-aos="fade-right" data-aos-duration="600">
+                   <boxmembersacom image="/Logomember/sacom.png" link1="https://www.facebook.com/SacombankLao" link2="https://www.sacombank.com.la"></boxmembersacom>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="800">
-                    <div class="cardmember-bfl">
-                        <div class="logobox-bfl">
-                            <img src="../../../assets/Logomember- retangle/bflbank.png" alt="">
-                        </div>
-                        <div class="nameofbank-bfl cardnamestyle">
-                            <h1>ທະນາຄານ ລາວ-ຝລັ່ງ ຈຳກັດ</h1>
-                            <p>Banque Franco-Lao</p>
-                        </div>
-                    </div>
+                    <boxmemberstb image="/Logomember/STB.jpg" link1="https://www.facebook.com/STBankLaos" link2="https://www.stbanklaos.la"></boxmemberstb>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="900">
-                    <div class="cardmember-psvb">
-                        <div class="logobox-psvb">
-                            <img src="../../../assets/Logomember- retangle/psvb.PNG" alt="">
-                        </div>
-                        <div class="nameofbank-psvb cardnamestyle">
-                            <h1>ທະນາຄານ ພົງສະຫວັນ ຈໍາກັດ</h1>
-                            <p>Phongsavanh Bank</p>
-                        </div>
-                    </div>
+                    <boxmemberkbank image="/Logomember/kbank.jpg" link1="https://www.facebook.com/KBankLaos/" link2="https://www.kasikornbank.com.la"></boxmemberkbank>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000">
-                    <div class="cardmember-mb">
-                        <div class="logobox-mb">
-                            <img src="../../../assets/Logomember- retangle/mbbank.png" alt="">
-                        </div>
-                        <div class="nameofbank-mb cardnamestyle">
-                            <h1>ທະນາຄານ ຫຸ້ນສ່ວນການຄ້າທະຫານ ສາຂາລາວ</h1>
-                            <p>Military Commercial Joint Stock Bank</p>
-                        </div>
-                    </div>
-                </div>
+                   <boxmemberbfl image="/Logomember/bflbank.png" link1="https://www.facebook.com/bflbank" link2="https://bfl-bred.com"></boxmemberbfl>
 
+                </div>
+                 <div data-aos="fade-right" data-aos-duration="1200">
+                   <boxmemberpsvb image="/Logomember/psvb.PNG" link1="https://www.facebook.com/phongsavanhbankltd" link2="https://www.phongsavanhbank.com"></boxmemberpsvb>
+
+                </div>
+                 <div data-aos="fade-right" data-aos-duration="1400">
+                   <boxmembermb image="/Logomember/mbbgblue.jpg" link1="https://www.facebook.com/MBBANKLAOS" link2="https://mbbank.com.la"></boxmembermb>
+
+                </div>
             </div>
             <div class="rightsidecontainer">
                 <div class="searchbar">

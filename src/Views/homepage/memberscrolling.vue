@@ -7,7 +7,7 @@
         <img src="../../assets/Logomember- retangle/BCEL.png" alt="">
       </div>
       <div class="itemLeft item2">
-        <img src="../../assets/Logomember- retangle/LDB.gif" alt="">
+        <img src="../../assets/logomember-circle/LDB.PNG" alt="">
       </div>
       <div class="itemLeft item3">
         <img src="../../assets/Logomember- retangle/APB.jpeg" alt="">
@@ -27,13 +27,19 @@
       <div class="itemLeft item8">
         <img src="../../assets/Logomember- retangle/bboc.png" alt="">
       </div>
+       <div class="itemLeft item9">
+        <img src="../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png" alt="">
+      </div>
+      <div class="itemLeft item10">
+        <img src="../../assets/Logomember- retangle/IB.png" alt="">
+      </div>
     </div>
     <div class="wrapper-right">
       <div class="itemRight item1-right">
-        <img src="../../assets/Logomember- retangle/y-nghia-sau-sac-dang-sau-thiet-ke-logo-vietinbank-0.png" alt="">
+        <img src="../../assets/Logomember- retangle/mmoney.png" alt="">
       </div>
       <div class="itemRight item2-right">
-        <img src="../../assets/Logomember- retangle/IB.png" alt="">
+        <img src="../../assets/Logomember- retangle/umoney.png" alt="">
       </div>
       <div class="itemRight item3-right">
         <img src="../../assets/Logomember- retangle/aceleda.png" alt="">
@@ -146,15 +152,18 @@
   border-radius: 6px;
   display: flex;
   justify-content: center;
+
   align-items: center;
   position: absolute;
   animation-timing-function: linear;
   animation-duration: 30s;
   animation-iteration-count: infinite;
 }
-
+.itemLeft {
+  padding-right: 60px;
+}
 .itemRight{
-  padding-right: 45px;
+  padding-right: 30px;
 }
 
 .itemLeft {
@@ -168,35 +177,43 @@
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(30s / 10 * (10 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(30s / 10 * (10 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(30s / 10 * (10 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(30s / 10 * (10 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(30s / 10 * (10 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(30s / 10 * (10 - 6) * -1);
 }
 
 .item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  animation-delay: calc(30s / 10 * (10 - 7) * -1);
 }
 
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  animation-delay: calc(30s / 10 * (10 - 8) * -1);
+}
+
+.item9 {
+  animation-delay: calc(30s / 10 * (10 - 9) * -1);
+}
+
+.item10 {
+  animation-delay: calc(30s / 10 * (10 - 10) * -1);
 }
 
 /*--------------------------------------leftside-----------------*/
@@ -252,8 +269,8 @@
 }
 
 .item2 img {
-  width: 200px;
-  height: 90px;
+  height: 100%;
+ 
 }
 
 .item3 img {
@@ -263,25 +280,32 @@
 
 .item4 img {
   width: 200px;
-  height: 90px;
+  
 }
 
 .item5 img {
-  width: 130px;
-  height: 120px;
+  width: 200px;
 }
 
 .item6 img {
   width: 200px;
-  height: 60px;
-  margin-right: 60px;
+
+  
 }
 
-.item8 img {
-  margin-left: 50px;
-}
+
 
  /* -----------------img-leftside-------------- */
+.item1-right img{
+  width: 55%;
+  border-radius: 10px;
+  
+}
+
+.item2-right img{
+  width: 80%;
+
+}
 
 .item6-right img{
   width: 150px;
