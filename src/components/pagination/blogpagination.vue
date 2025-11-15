@@ -35,7 +35,7 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const props = defineProps({
-  totalPages: { type: Number, default: 5 },
+  totalPages: { type: Number, default: 4 },
 });
 
 const route = useRoute();

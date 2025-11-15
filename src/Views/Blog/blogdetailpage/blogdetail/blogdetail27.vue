@@ -37,7 +37,7 @@ onMounted(() => {
     </div>
 
     <div class="backbtn">
-        <router-link to="/page/9"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
+        <router-link to="/page/3"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
                 ກັບຄືນ</button></router-link>
     </div>
 

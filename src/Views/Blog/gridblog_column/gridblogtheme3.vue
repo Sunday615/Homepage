@@ -1,10 +1,11 @@
 <script setup>
 
 
-import navbarview2 from '../../../../components/navbar/navbarview2.vue';
-import mainfooter from '../../../../components/footer/mainfooter.vue';
-import yeardropdown from '../../../../components/Dropdown/yeardropdown.vue';
-import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
+import navbarview2 from '../../../components/navbar/navbarview2.vue';
+import mainfooter from '../../../components/footer/mainfooter.vue';
+import yeardropdown from '../../../components/Dropdown/yeardropdown.vue';
+import Monthdropdown from '../../../components/Dropdown/monthdropdown.vue';
+import blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
 </script>
@@ -16,7 +17,7 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
         <div class="image-zoom" @mouseenter="zoomIn" @mouseleave="zoomOut" ref="container">
             <img :src="src" :alt="alt" ref="image" />
         </div>
-        <img id="navigator-img" src="../../../../assets/Blog/bgnewsgrid.png" alt="">
+        <img id="navigator-img" src="../../../assets/Blog/bgnewsgrid.png" alt="">
         <div class="navigator-info-container">
             <div class="titlenavigator">
                 <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -61,29 +62,30 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
         </div>
         <div class="gridblogcontainer">
             <div class="gridblogrow1">
+                <router-link to="/blogdetail19">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/1.jpg" alt="" class="zoom-image" />
+                        <img src="/images/19/1.png" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
                             <div class="date">
-                                <h1>19</h1>
-                                <h2>December</h2>
+                                <h1>17</h1>
+                                <h2>June</h2>
                             </div>
                             <div class="year">
                                 <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2024</h2>
+                                <h2>Year 2021</h2>
                             </div>
                             <div class="tags">
                                 <div class="border">
                                     <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
+                                    <h1>Notification</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="headerblog">
-                            <p>ພິທີລົງນາມເຊັນສັນຍາໂຄງການຊຳລະຂ້າມແດນລາວ-ຈີນ ຜ່ານ QR code.</p>
+                            <p>ລາຍຊື່ ຜູ້ຄວບຄຸມລະບົບການຊໍາລະທຸລະກຳຍ່ອຍ ຜູ້ໃຫ້ບໍລິການຊໍາລະ ທີ່ໄດ້ຮັບອະນຸຍາດ ຈາກ ທະນາຄານແຫ່ງ ສປປ ລາວ.</p>
                         </div>
                         <div class="buttonbar">
                             <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
@@ -95,230 +97,21 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail20">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/2/2.png" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>12</h1>
-                                <h2>August</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2024</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ແຈ້ງເຊີນເຂົ້າຮ່ວມປະມູນຍື່ນຊອງລາຄາ ການບຳລຸງຮັກສາອຸປະກອນເຄືອຂ່າຍ.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/3/3.jpg" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>16</h1>
-                                <h2>May</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2024</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ແຈ້ງເຊີນປະມູນ ອຸປະກອນ Hardware ເພື່ອສ້າງສູນສຳຮອງຂໍ້ມູນຂອງບໍລິສັດ LAPNet.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="gridblogrow1">
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/4.png" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>03</h1>
-                                <h2>April</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2024</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ພິທີເປີດໂຕການນຳໃຊ້ລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງ ລາວ - ໄທ.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/5.jpg" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>14</h1>
-                                <h2>March</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2024</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ພິທີ ເຊັນສັນຍາວ່າດ້ວຍການຮ່ວມມືທາງດ້ານການເຊື່ອມຕໍ່ລະບົບຊຳລະຂ້າມແດນ QR Code ລະຫວ່າງ ສປປ ລາວ
-                                ແລະ ປະເທດໄທ.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/6.jpg" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>26</h1>
-                                <h2>September</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2023</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Contract</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ
-                                ເດີນທາງໄປແລກປ່ຽນບົດຮຽນທາງດ້ານການໃຫ້ບໍລິການເງິນທີ່ປະເທດສິງກະໂປ.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="gridblogrow1">
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/7/F 1 -01.jpg" alt="" class="zoom-image" />
-                    </div>
-                    <div class="infocontainer">
-                        <div class="datebar">
-                            <div class="date">
-                                <h1>15</h1>
-                                <h2>September</h2>
-                            </div>
-                            <div class="year">
-                                <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2023</h2>
-                            </div>
-                            <div class="tags">
-                                <div class="border">
-                                    <i class="fa-solid fa-tag"></i>
-                                    <h1>Meetings</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="headerblog">
-                            <p>ກອງປະຊຸມ ປຶກສາຫາລືຄວາມເປັນໄປໄດ້ ໃນການເກັບລາຍຮັບຈາກການຊໍາລະຄ່າໄຟຟ້າ ຜ່ານລະບົບສູນກາງ
-                                ການຊຳລະທຸລະກຳຍ່ອຍ.</p>
-                        </div>
-                        <div class="buttonbar">
-                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
-                                        class="fa-solid fa-arrow-right"></i></span><span> <i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
-                        </div>
-
-                    </div>
-
-
-                </div>
-                <div class="cardview">
-                    <div class="mainblogimage">
-                        <img src="../../../../../public/images/8/1.jpg" alt="" class="zoom-image" />
+                        <img src="/images/20.jpeg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
                             <div class="date">
                                 <h1>30</h1>
-                                <h2>August</h2>
+                                <h2>April</h2>
                             </div>
                             <div class="year">
                                 <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2023</h2>
+                                <h2>Year 2021</h2>
                             </div>
                             <div class="tags">
                                 <div class="border">
@@ -328,7 +121,7 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
                             </div>
                         </div>
                         <div class="headerblog">
-                            <p>ກອງປະຊຸມ ທາບທາມການນຳສະເຫນີ ຂອງທະນາຄານທີ່ມີຄວາມພ້ອມ ແລະ ສະເໜີເປັນທະນາຄານຮັບຊຳລະ.</p>
+                            <p>ບໍລິສັດ LAPNet ໄດ້ຮັບມອບຜ້າປິດປາກ ຈາກບໍລິສັດ Viet Card International Technology Corporation.</p>
                         </div>
                         <div class="buttonbar">
                             <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
@@ -340,29 +133,105 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail21">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/9/1.jpg" alt="" class="zoom-image" />
+                        <img style="object-fit: cover; object-position: center;" src="/images/21/1.jpg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>12</h1>
+                                <h2>March</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2021</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1>Meetings</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>LAPNet ຈັດກອງປະຊຸມສະພາບໍລິຫານ ສະໄໝສາມັນ ແລະ ກອງປະຊຸມຜູ້ຖືຮຸ້ນ ສະໄໝສາມັນ ຄັ້ງທີ I ປະຈໍາປີ 2021.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
+            </div>
+            <div class="gridblogrow1">
+                <router-link to="/blogdetail22">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/22/22.7.jpeg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>08</h1>
+                                <h2>December</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2020</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1 style="font-size: 15px;">Grand Openning</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>ພິທີເປີດໂຕຜະລິດຕະພັນ ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
+                <router-link to="/blogdetail23">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/23.png" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
                             <div class="date">
                                 <h1>22</h1>
-                                <h2>August</h2>
+                                <h2>October</h2>
                             </div>
                             <div class="year">
                                 <i class="fa-solid fa-calendar"></i>
-                                <h2>Year 2023</h2>
+                                <h2>Year 2020</h2>
                             </div>
                             <div class="tags">
                                 <div class="border">
                                     <i class="fa-solid fa-tag"></i>
-                                    <h1>Meetings</h1>
+                                    <h1>Activity</h1>
                                 </div>
                             </div>
                         </div>
                         <div class="headerblog">
-                            <p>ເດີນທາງໄປແລກປ່ຽນບົດຮຽນຮ່ວມກັບ ທະນາຄານແຫ່ງລັດຫວຽດນາມ, ບໍລິສັດ ຫຸ້ນສ່ວນຊໍາລະແຫ່ງຊາດຫວຽດນາມ.</p>
+                            <p>ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNet ຮ່ວມກັບ ກົມຄຸ້ມຄອງລະບົບຊຳລະສະສາງ.</p>
                         </div>
                         <div class="buttonbar">
                             <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
@@ -374,9 +243,160 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail24">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/24/24.jpg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>11</h1>
+                                <h2>September</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2020</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1>Activity</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>ກິດຈະກຳກິລາບານເຕະມິດຕະພາບ ລະຫວ່າງບໍລິສັດ LAPNet ຮ່ວມກັບ ທະນາຄານ JDB.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
+
+            </div>
+   
+            <div class="gridblogrow1">
+                         <router-link to="/blogdetail25">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/25/25.jpg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>19</h1>
+                                <h2>June</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2020</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1>Meetings</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ ຕ້ອນຮັບຄະນະນັກສຶກສາ ຈາກວິທະຍາໄລສຸດສະກະ.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
+                <router-link to="/blogdetail26">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/26/26.jpg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>14</h1>
+                                <h2>January</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2020</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1>Notification</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>ແຈ້ງການປະມູນ.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
+                <router-link to="/blogdetail27">
+                <div class="cardview">
+                    <div class="mainblogimage">
+                        <img src="/images/27/27.1.jpg" alt="" class="zoom-image" />
+                    </div>
+                    <div class="infocontainer">
+                        <div class="datebar">
+                            <div class="date">
+                                <h1>25</h1>
+                                <h2>November</h2>
+                            </div>
+                            <div class="year">
+                                <i class="fa-solid fa-calendar"></i>
+                                <h2>Year 2019</h2>
+                            </div>
+                            <div class="tags">
+                                <div class="border">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <h1 style="font-size: 15px;">Grand Openning</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="headerblog">
+                            <p>ພິທີເປີດບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ.</p>
+                        </div>
+                        <div class="buttonbar">
+                            <button class="button-57" role="button"><span class="text">ອ່ານເພີ່ມເຕີ່ມ <i
+                                        class="fa-solid fa-arrow-right"></i></span><span> <i
+                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                </router-link>
             </div>
 
-        <div class="pagination_gridblog"></div> 
+        <div class="pagination_gridblog">
+            <blogpagination></blogpagination>
+        </div> 
         </div>
 
     </div>
@@ -399,8 +419,12 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
     display: flex;
     align-items: center;
 }
-
+.headerblog:hover p{
+    color: #413bff;
+    transition: 0.5s;
+}
 .headerblog p {
+    cursor: pointer;
     padding-top: 20px;
     font-family: "Noto Sans Lao", sans-serif;
     font-weight: 600;
@@ -415,7 +439,18 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
 
 
 }
-
+.border:hover h1{
+    color: #fff;
+    transition: 0.5s;
+}
+.border:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+.border:hover{
+    background-color: #433bff;
+    transition: 0.5s;
+}
 .border h1 {
     font-family: "Inter";
     font-size: 19px;
@@ -445,7 +480,14 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
     align-items: center;
 
 }
-
+.year:hover i{
+    color: #433bff;
+    transition: 0.5s;
+}
+.year:hover h2{
+    color: #433bff;
+        transition: 0.5s;
+}
 .year i {
     padding-right: 20px;
     font-size: 24px;
@@ -460,6 +502,7 @@ import Monthdropdown from '../../../../components/Dropdown/monthdropdown.vue';
 
 .year {
     width: 170px;
+    cursor: pointer;
     height: 100%;
     display: flex;
     align-items: center;

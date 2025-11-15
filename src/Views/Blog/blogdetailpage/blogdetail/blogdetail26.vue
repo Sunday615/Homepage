@@ -37,7 +37,7 @@ onMounted(() => {
     </div>
 
     <div class="backbtn">
-        <router-link to="/page/9"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
+        <router-link to="/page/3"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
                 ກັບຄືນ</button></router-link>
     </div>
 
@@ -147,7 +147,11 @@ For more information please contact us at Email: lapnet110@gmail.com Telephone 0
                         <p>(02)</p>
                     </div>
                     <div class="shortbox">
-                        <p>Notofication</p>
+                        <p>Notification</p>
+                        <p>(02)</p>
+                    </div>
+                    <div class="shortbox">
+                        <p>Events</p>
                         <p>(02)</p>
                     </div>
                 </div>
@@ -437,7 +441,7 @@ For more information please contact us at Email: lapnet110@gmail.com Telephone 0
 
 .groupblog {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #f6f6f6;
     margin-top: 25px;
     border-radius: 15px;

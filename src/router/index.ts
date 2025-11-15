@@ -20,17 +20,17 @@ import Role from '../Views/About-us/Role.vue'
 import Board_of_director from '../Views/About-us/board_director/board_of_director.vue'
 import History from '../Views/About-us/History.vue'
 import companystructure from '../Views/About-us/companystructure/companystructure.vue'
-import gridblogpage1 from '../Views/Blog/gridblog/gridblogpage1.vue'
+// import gridblogpage1 from '../Views/Blog/gridblog/gridblogpage1.vue'
 
-import gridblogpage2 from '../Views/Blog/gridblog/gridblogpage2.vue'
-import gridblogpage3 from '../Views/Blog/gridblog/gridblogpage3.vue'
-import gridblogpage4 from '../Views/Blog/gridblog/gridblogpage4.vue'
-import gridblogpage5 from '../Views/Blog/gridblog/gridblogpage5.vue'
-import gridblogpage6 from '../Views/Blog/gridblog/gridblogpage6.vue'
-import gridblogpage7 from '../Views/Blog/gridblog/gridblogpage7.vue'
-import gridblogpage8 from '../Views/Blog/gridblog/gridblogpage8.vue'
-import gridblogpage9 from '../Views/Blog/gridblog/gridblogpage9.vue'
-import gridblogpage10 from '../Views/Blog/gridblog/gridblogpage10.vue'
+// import gridblogpage2 from '../Views/Blog/gridblog/gridblogpage2.vue'
+// import gridblogpage3 from '../Views/Blog/gridblog/gridblogpage3.vue'
+// import gridblogpage4 from '../Views/Blog/gridblog/gridblogpage4.vue'
+// import gridblogpage5 from '../Views/Blog/gridblog/gridblogpage5.vue'
+// import gridblogpage6 from '../Views/Blog/gridblog/gridblogpage6.vue'
+// import gridblogpage7 from '../Views/Blog/gridblog/gridblogpage7.vue'
+// import gridblogpage8 from '../Views/Blog/gridblog/gridblogpage8.vue'
+// import gridblogpage9 from '../Views/Blog/gridblog/gridblogpage9.vue'
+// import gridblogpage10 from '../Views/Blog/gridblog/gridblogpage10.vue'
 import Blogdetail1 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail1.vue'
 import Blogdetail2 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail2.vue'
 import Blogdetail3 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail3.vue'
@@ -80,7 +80,8 @@ import Companystructure_audit from '../Views/About-us/companystructure/companyst
 import Companystructure_ceo from '../Views/About-us/companystructure/companystructure_ceo.vue'
 import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
 import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
-
+import Gridblogtheme3 from '../Views/Blog/gridblog_column/gridblogtheme3.vue'
+import Gridblogtheme4 from '../Views/Blog/gridblog_column/gridblogtheme4.vue'
 
 
 
@@ -134,6 +135,8 @@ const router = createRouter({
 
     { path: '/page/1', name: 'gridblogpage1', component: Gridblogtheme1 },
     { path: '/page/2', name: 'gridblogpage2', component: Gridblogtheme2 },
+    { path: '/page/3', name: 'gridblogpage3', component: Gridblogtheme3 },
+    { path: '/page/4', name: 'gridblogpage4', component: Gridblogtheme4 },
 
 
     // { path: '/page/2', name: 'gridblogpage2', component: gridblogpage2 },

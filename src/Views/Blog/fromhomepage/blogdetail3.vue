@@ -135,8 +135,12 @@ onMounted(() => {
                         <p>Activity</p>
                         <p>(02)</p>
                     </div>
+                     <div class="shortbox">
+                        <p>Notification</p>
+                        <p>(02)</p>
+                    </div>
                     <div class="shortbox">
-                        <p>Notofication</p>
+                        <p>Events</p>
                         <p>(02)</p>
                     </div>
                 </div>
@@ -425,7 +429,7 @@ onMounted(() => {
 
 .groupblog {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #f6f6f6;
     margin-top: 25px;
     border-radius: 15px;

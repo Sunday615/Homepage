@@ -37,7 +37,7 @@ onMounted(() => {
     </div>
 
     <div class="backbtn">
-        <router-link to="/page/10"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
+        <router-link to="/page/4"><button style="cursor:pointer;"><i class="fa-solid fa-angle-left" style=""></i>
                 ກັບຄືນ</button></router-link>
     </div>
 
@@ -95,17 +95,6 @@ onMounted(() => {
                 <div class="imageinfo">
                     <img src="/images/28/28.2.jpeg" alt="">
                     <img src="/images/28/28.3.jpeg" alt="">
-
-
-
-
-
-
-
-
-
-
-
                 </div>
             </div>
 
@@ -157,7 +146,11 @@ onMounted(() => {
                         <p>(02)</p>
                     </div>
                     <div class="shortbox">
-                        <p>Notofication</p>
+                        <p>Notification</p>
+                        <p>(02)</p>
+                    </div>
+                    <div class="shortbox">
+                        <p>Events</p>
                         <p>(02)</p>
                     </div>
                 </div>
@@ -447,7 +440,7 @@ onMounted(() => {
 
 .groupblog {
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-color: #f6f6f6;
     margin-top: 25px;
     border-radius: 15px;

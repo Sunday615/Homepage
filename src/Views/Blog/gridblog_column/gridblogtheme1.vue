@@ -63,9 +63,10 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
         </div>
         <div class="gridblogcontainer">
             <div class="gridblogrow1">
+                <router-link to="/blogdetail1">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/1.jpg" alt="" class="zoom-image" />
+                        <img src="/images/1.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -97,9 +98,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail2">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/2/2.png" alt="" class="zoom-image" />
+                        <img src="/images/2/2.png" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -131,9 +134,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail3">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/3/3.jpg" alt="" class="zoom-image" />
+                        <img src="/images/3/3.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -165,11 +170,14 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
             </div>
+            
             <div class="gridblogrow1">
+                <router-link to="/blogdetail4">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/4.png" alt="" class="zoom-image" />
+                        <img src="/images/4.png" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -200,10 +208,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
                     </div>
 
 
-                </div>
+                </div></router-link>
+                <router-link to="/blogdetail5">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/5.jpg" alt="" class="zoom-image" />
+                        <img src="/images/5.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -236,9 +245,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail6">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/6.jpg" alt="" class="zoom-image" />
+                        <img src="/images/6.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -271,11 +282,14 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
             </div>
+            
             <div class="gridblogrow1">
+                /<router-link to="/blogdetail7">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/7/F 1 -01.jpg" alt="" class="zoom-image" />
+                        <img src="/images/7/F 1 -01.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -308,9 +322,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail8">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/8/1.jpg" alt="" class="zoom-image" />
+                        <img src="/images/8/1.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -342,9 +358,11 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
+                <router-link to="/blogdetail9">
                 <div class="cardview">
                     <div class="mainblogimage">
-                        <img src="../../../../../public/images/9/1.jpg" alt="" class="zoom-image" />
+                        <img src="/images/9/1.jpg" alt="" class="zoom-image" />
                     </div>
                     <div class="infocontainer">
                         <div class="datebar">
@@ -376,6 +394,7 @@ import Blogpagination from '../../../components/pagination/blogpagination.vue';
 
 
                 </div>
+                </router-link>
             </div>
 
         <div class="pagination_gridblog">
