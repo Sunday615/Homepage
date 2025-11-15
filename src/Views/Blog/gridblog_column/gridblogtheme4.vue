@@ -114,7 +114,7 @@ import blogpagination from '../../../components/pagination/blogpagination.vue';
 .pagination_gridblog {
     width: 100%;
     margin-top: 100px;
-    border: 1px solid red;
+
     height: 120px;
 
 
