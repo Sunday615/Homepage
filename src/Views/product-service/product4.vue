@@ -70,7 +70,7 @@ onMounted(() => {
                     <img id="topbg" src="../../assets/products/product4/Rectangle 1.png" alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1200">
-                    <img id="mobile" src="../../assets/products/product4/mobile.png" alt="">
+                    <img id="mobile" src="../../assets/products/product4/ip16.webp" alt="">
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
-import testnewgridblog from './Views/Blog/blogdetailpage/testnewgridblog/testnewgridblog.vue'
+
 
 
 const overlay = ref(null)
@@ -38,6 +38,7 @@ const leave = (el, done) => {
 
     <div ref="overlay" class="overlay"></div>
   </div>
+
 
 
  

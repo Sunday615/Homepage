@@ -78,6 +78,8 @@ import Companystructure_it from '../Views/About-us/companystructure/companystruc
 import Companystructure_operation from '../Views/About-us/companystructure/companystructure_operation.vue'
 import Companystructure_audit from '../Views/About-us/companystructure/companystructure_audit.vue'
 import Companystructure_ceo from '../Views/About-us/companystructure/companystructure_ceo.vue'
+import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
+import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
 
 
 
@@ -130,16 +132,19 @@ const router = createRouter({
     //######################## BlogNews Grid ###########################
 
 
-    { path: '/page/1', name: 'gridblogpage1', component: gridblogpage1 },
-    { path: '/page/2', name: 'gridblogpage2', component: gridblogpage2 },
-    { path: '/page/3', name: 'gridblogpage3', component: gridblogpage3 },
-    { path: '/page/4', name: 'gridblogpage4', component: gridblogpage4 },
-    { path: '/page/5', name: 'gridblogpage5', component: gridblogpage5 },
-    { path: '/page/6', name: 'gridblogpage6', component: gridblogpage6 },
-    { path: '/page/7', name: 'gridblogpage7', component: gridblogpage7 },
-    { path: '/page/8', name: 'gridblogpage8', component: gridblogpage8 },
-    { path: '/page/9', name: 'gridblogpage9', component: gridblogpage9 },
-    { path: '/page/10', name: 'gridblogpage10', component: gridblogpage10 },
+    { path: '/page/1', name: 'gridblogpage1', component: Gridblogtheme1 },
+    { path: '/page/2', name: 'gridblogpage2', component: Gridblogtheme2 },
+
+
+    // { path: '/page/2', name: 'gridblogpage2', component: gridblogpage2 },
+    // { path: '/page/3', name: 'gridblogpage3', component: gridblogpage3 },
+    // { path: '/page/4', name: 'gridblogpage4', component: gridblogpage4 },
+    // { path: '/page/5', name: 'gridblogpage5', component: gridblogpage5 },
+    // { path: '/page/6', name: 'gridblogpage6', component: gridblogpage6 },
+    // { path: '/page/7', name: 'gridblogpage7', component: gridblogpage7 },
+    // { path: '/page/8', name: 'gridblogpage8', component: gridblogpage8 },
+    // { path: '/page/9', name: 'gridblogpage9', component: gridblogpage9 },
+    // { path: '/page/10', name: 'gridblogpage10', component: gridblogpage10 },
 
 
 

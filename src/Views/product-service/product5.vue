@@ -70,7 +70,7 @@ onMounted(() => {
                         <img id="topbg" src="../../assets/products/product5/toppd5.png" alt="">
                     </div>
                     <div data-aos="zoom-in" data-aos-duration="1200">
-                        <img id="atmmachine" src="../../assets/products/product5/mobilemockuppd5.png" alt="">
+                        <img id="atmmachine" src="../../assets/products/product5/ip16promax.webp" alt="">
                     </div>
                 </div>
             </div>
@@ -354,17 +354,19 @@ onMounted(() => {
 
 #atmmachine {
     width: 700px;
-    height: 800px;
+    height: 650px;
     position: relative;
     z-index: 1;
-    bottom: 580px;
-    right: 400px;
+    bottom: 480px;
+    right: 260px;
 
 }
 
 #topbg {
     width: 550px;
-    height: 550px;
+    height: 650px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 10px;
     position: relative;
     top: -70px;

@@ -33,7 +33,7 @@ import navbarcompanystructure from '../../../components/navbarcompanystructure/n
     </div>
     <div class="companystructure">
         <div data-aos="fade-up" data-aos-duration="1200">
-            <img src="../../../assets/Aboutus/Company/Operation.png" alt="">
+            <img src="../../../assets/Aboutus/Company/Oparation.png" alt="">
         </div>
     </div>
     <mainfooter></mainfooter>

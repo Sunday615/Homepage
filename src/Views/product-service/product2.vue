@@ -68,7 +68,7 @@ onMounted(() => {
                         alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1200">
-                    <img id="atmmachine" src="../../assets/products/product2/ATMproduct2.PNG" alt="">
+                    <img id="atmmachine" src="../../assets/products/product2/ATMpd2.webp" alt="">
                 </div>
             </div>
         </div>

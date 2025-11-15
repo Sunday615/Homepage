@@ -80,9 +80,9 @@ onMounted(() => {
             </div>
             <div class="rightcontentpage1">
                 <div data-aos="fade-left" data-aos-duration="1400"> <img id="topbg"
-                        src="../../assets/Products/product1/pd1bg.jpg" alt=""> </div>
+                        src="../../assets/Products/product1/pd1bg.webp" alt=""> </div>
                 <div data-aos="zoom-in" data-aos-duration="1200">
-                    <img id="atmmachine" src="../../assets/Products/product1/atmmachine.PNG" alt="">
+                    <img id="atmmachine" src="../../assets/Products/product1/atmpd1.webp" alt="">
                 </div>
 
             </div>
@@ -258,6 +258,7 @@ onMounted(() => {
     border-radius: 10px;
     position: relative;
     top: 30px;
+    object-fit: cover;
     right: -150px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
