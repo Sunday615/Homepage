@@ -98,7 +98,7 @@ function goTop() {
             </div>
         </div>
         <div class="backgroundimg">
-            <img id="backgroundhomepage" src="../../assets/Homepage/bg-page1.png" alt="">
+       
             <div class="navbar">
                 <div class="logolapnet">
                     <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="LapnetLogo">
@@ -505,6 +505,7 @@ function goTop() {
 .titlecontainer {
     width: 50%;
     height: 100%;
+
     margin-left: 3rem;
     margin-top: 50px;
 
@@ -523,8 +524,9 @@ function goTop() {
 
 .containerhomepage2 {
     width: 100%;
-    height: 950px;
+    height: 60rem;
     display: flex;
+    
 
 }
 
@@ -952,8 +954,11 @@ function goTop() {
 
 .boxcontianer {
     width: 100%;
-    height: 200px;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
     background-color: #fff;
+ 
 }
 
 .container-blog {
@@ -1005,6 +1010,7 @@ function goTop() {
 .downblog {
     width: 100%;
     height: 750px;
+
     margin-top: 60px;
 
 
@@ -1134,9 +1140,11 @@ function goTop() {
 }
 
 .titlecontent {
-    width: 900px;
-    height: 700px;
+    width: 56.5rem;
+    height: 44rem;
+    padding-left: 30px;
 
+    
     position: relative;
     top: 90px;
     left: 170px;
@@ -1183,7 +1191,8 @@ p {
 }
 
 .navbarlist {
-    width: 1150px;
+    width: 72rem;
+    padding-left: 30px;
     height: 100%;
 
 
@@ -1199,20 +1208,18 @@ p {
     width: 140px;
     height: 100%;
 
-}
-
-#backgroundhomepage {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-
 
 }
+
+
 
 .backgroundimg {
     width: 100%;
-    height: 963px;
+    height: 100vh;
+    background-image: url(./../../assets/Homepage/bg-page1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     overflow: hidden;
 
 }
@@ -1223,6 +1230,7 @@ p {
     display: flex;
     position: relative;
     top: 20px;
+
 
     margin: 0 auto;
 }
