@@ -22,7 +22,7 @@
       </div>
 
       <!-- Swap -->
-      <button @click="swap" class="swap-btn">↔</button>
+      <button @click="swap" class="swap-btn"><i class="fa-solid fa-repeat"></i></button>
 
       <!-- BLOCK 2 -->
       <div class="select-wrap">
@@ -57,12 +57,12 @@ const languages = [
     { code: "la", name: "ລາວ", flag: "https://flagcdn.com/la.svg" },
     { code: "kh", name: "ກຳປູເຈຍ", flag: "https://flagcdn.com/kh.svg" },
   { code: "th", name: "ໄທ", flag: "https://flagcdn.com/th.svg" },
-  { code: "th", name: "ຫວຽດນາມ", flag: "https://flagcdn.com/vn.svg" },
+  { code: "vn", name: "ຫວຽດນາມ", flag: "https://flagcdn.com/vn.svg" },
   { code: "ch", name: "ຈີນ", flag: "https://flagcdn.com/cn.svg" },
 ]
 
-const source = ref("la")
-const target = ref("kh")
+const source = ref("kh")
+const target = ref("la")
 
 // Dropdown open/close state
 const open1 = ref(false)
@@ -106,7 +106,7 @@ watch([source, target], () => {
 .lang-container {
     width: 700px;
     height: 100px;
-    border: 1px solid red;
+
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -119,7 +119,7 @@ watch([source, target], () => {
   padding: 42px 48px;
   border-radius: 25px;
   display: flex;
-  border: 1px solid red;
+
   align-items: center;
   gap: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);

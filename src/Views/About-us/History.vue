@@ -268,7 +268,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                             <h1>ທະນາຄານ ຮ່ວມພັດທະນາ ຈຳກັດ</h1>
                         </div>
                         <div class="logo">
-                            <img style="width: 100px;" src="../../assets/logomember-circle/JDBbank.png" alt="">
+                            <img style="width: 100px;" src="../../assets/logomember-circle/JDB.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -288,7 +288,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                             <h1>ທະນາຄານ ບີໄອຊີ ຈຳກັດ</h1>
                         </div>
                         <div class="logo">
-                            <img style="border-radius: 100%; width:100px;" src="../../assets/logomember-circle/BIC.jpg"
+                            <img style="border-radius: 100%; width:100px;" src="../../assets/logomember-circle/BIC.png"
                                 alt="">
                         </div>
                     </div>

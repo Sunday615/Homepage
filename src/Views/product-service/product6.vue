@@ -4,7 +4,7 @@ import mainfooter from "../../components/footer/mainfooter.vue";
 import vdoproduct6 from "../../components/vdoproductbg/vdoproduct6.vue";
 import crossborder from "../../components/Swipercrossborder/crossborder.vue";
 import routerbuttonarea from "../../components/Router Navigation/routerbuttonarea.vue";
-import testtextanimation from "../../components/textanimation/testtextanimation.vue";
+import vdoproductcrossborder6 from '../../components/vdoproductbg/crossborder/vdoproductcrossborder6.vue'
 
 import { onMounted } from "vue";
 
@@ -31,81 +31,96 @@ onMounted(() => {
                 <div data-aos="zoom-in" data-aos-duration="1200">
                     <p>
                         ໜ້າຫຼັກ
-                        <span style="padding-right: 40px; padding-left: 40px"><i class="fa-solid fa-chevron-right"></i
-                ></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ
-                        <span style="padding-right: 40px; padding-left: 40px"><i class="fa-solid fa-chevron-right"></i> </span
-                >ຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງປະເທດ
-              </p>
-              
+                        <span style="padding-right: 40px; padding-left: 40px"><i
+                                class="fa-solid fa-chevron-right"></i></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+                        <span style="padding-right: 40px; padding-left: 40px"><i class="fa-solid fa-chevron-right"></i>
+                        </span>ຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງປະເທດ
+                    </p>
+
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="boxpadding"></div>
-      <div class="conatinerproduct1-page1">
+    </div>
+    <div class="boxpadding"></div>
+    <div class="conatinerproduct1-page1">
         <img id="bgproductpage1" src="../../assets/products/product6/product6bg.png" alt="" />
         <div class="containerframe1">
-          <div class="leftcontentpage1">
-            <div class="producttitlepage1">
-              <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
+            <div class="leftcontentpage1">
+                <div class="producttitlepage1">
+                    <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
+                </div>
+                <div class="headerproductpage1">
+                    <p>ຊຳລະເງິນຂ້າມແດນໃນຮູບແບບ<br />QR Code ລະຫວ່າງປະເທດ</p>
+                </div>
+                <div class="titleinfopage1">
+                    <p>
+                        ບໍລິສັດ LAPNet ໄດ້ຕໍ່ຍອດການພັດທະນາລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື <br />(LMPS)
+                        ເພື່ອຂະຫຍາຍຜະລິດຕະພັນ ຊຳລະຂ້າມທະນາຄານ ໃຫ້ສາມາດຮອງຮັບການ<br />ຊຳລະ ຄ່າສິນຄ້າ -
+                        ບໍລິການ ລະຫວ່າງປະເທດ, ໂດຍຜູ້ໃຊ້ Mobile banking ຂອງ<br />ທະນາຄານທີ່ເຂົ້າຮ່ວມໂຄງການ
+                        ໃນ ສປປ ລາວ ສາມາດເຮັດທຸລະກຳ
+                        ຊຳລະຂ້າມແດນໄປຍັງປະເທດທີ່ເຮັດການເຊື່ອມໂຍງລະບົບຊຳລະຂ້າມແດນ ລະຫວ່າງກັນ ແລະ
+                        ຮ້ານຄ້າທີ່ເປີດບັນຊີນຳທະນາຄານທີ່ເຂົ້າຮ່ວມໂຄງການໃນ ສປປ ລາວ
+                        ກໍ່ສາມາດຮັບການຊຳລະຄ່າສິນຄ້າ - ບໍລິການ ຈາກນັກທ່ອງທ່ຽວຕ່າງປະເທດທີ່ເຂົ້າມາ ສ ປປ
+                        ລາວ, ປັດຈຸບັນ LAPNet ໄດ້ຮ່ວມໂຄງການກັບ 4 ປະເທດຄື: ປະເທດກຳປູເຈຍ, ປະເທດໄທ,
+                        ປະເທດຈີນ ແລະ ປະເທດຫວຽດນາມ.
+                    </p>
+                </div>
+                <div data></div>
+                <div class="btnproduct">
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <button class="button-66" role="button">
+                            <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="headerproductpage1">
-              <p>ຊຳລະເງິນຂ້າມແດນໃນຮູບແບບ<br />QR Code ລະຫວ່າງປະເທດ</p>
+            <div class="rightcontentpage1">
+                <div data-aos="fade-left" data-aos-duration="1400">
+                    <img id="topbg" src="../../assets/products/product6/topimg.png" alt="" />
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1200">
+                    <img id="atmmachine" src="../../assets/products/product6/mbmockup.png" alt="" />
+                </div>
             </div>
-            <div class="titleinfopage1">
-              <p>
-                ບໍລິສັດ LAPNet ໄດ້ຕໍ່ຍອດການພັດທະນາລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື <br />(LMPS)
-                ເພື່ອຂະຫຍາຍຜະລິດຕະພັນ ຊຳລະຂ້າມທະນາຄານ ໃຫ້ສາມາດຮອງຮັບການ<br />ຊຳລະ ຄ່າສິນຄ້າ -
-                ບໍລິການ ລະຫວ່າງປະເທດ, ໂດຍຜູ້ໃຊ້ Mobile banking ຂອງ<br />ທະນາຄານທີ່ເຂົ້າຮ່ວມໂຄງການ
-                ໃນ ສປປ ລາວ ສາມາດເຮັດທຸລະກຳ
-                ຊຳລະຂ້າມແດນໄປຍັງປະເທດທີ່ເຮັດການເຊື່ອມໂຍງລະບົບຊຳລະຂ້າມແດນ ລະຫວ່າງກັນ ແລະ
-                ຮ້ານຄ້າທີ່ເປີດບັນຊີນຳທະນາຄານທີ່ເຂົ້າຮ່ວມໂຄງການໃນ ສປປ ລາວ
-                ກໍ່ສາມາດຮັບການຊຳລະຄ່າສິນຄ້າ - ບໍລິການ ຈາກນັກທ່ອງທ່ຽວຕ່າງປະເທດທີ່ເຂົ້າມາ ສ ປປ
-                ລາວ, ປັດຈຸບັນ LAPNet ໄດ້ຮ່ວມໂຄງການກັບ 4 ປະເທດຄື: ປະເທດກຳປູເຈຍ, ປະເທດໄທ,
-                ປະເທດຈີນ ແລະ ປະເທດຫວຽດນາມ.
-              </p>
-            </div>
-            <div data></div>
-            <div class="btnproduct">
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <button class="button-66" role="button">
-                  <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ ການບໍລິການ
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="rightcontentpage1">
-            <div data-aos="fade-left" data-aos-duration="1400">
-              <img id="topbg" src="../../assets/products/product6/topimg.png" alt="" />
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="1200">
-              <img id="atmmachine" src="../../assets/products/product6/mbmockup.png" alt="" />
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="contentproduct1-page2">
+    </div>
+    <div class="contentproduct1-page2">
         <vdoproduct6></vdoproduct6>
-      </div>
-      <div class="infomationcorss-border">
+    </div>
+    <div class="infomationcorss-border">
         <div class="swiperinfo">
-          <crossborder></crossborder>
+            <crossborder></crossborder>
         </div>
         <div class="inputcontainer">
-          <h1>ທະນາຄານສະມາຊິກທີ່ເຂົ້າຮ່ວມ</h1>
-         <div class="buttonchange">
-            <routerbuttonarea></routerbuttonarea>
-         </div>
+            <h1>ທະນາຄານສະມາຊິກທີ່ເຂົ້າຮ່ວມ</h1>
+            <div class="buttonchange">
+                <routerbuttonarea></routerbuttonarea>
+            </div>
         </div>
-      </div>
-      <mainfooter></mainfooter>
+          <div class="videocorssbordershow">
+                <vdoproductcrossborder6></vdoproductcrossborder6>
+        </div>
+    </div>
+  
+    <mainfooter></mainfooter>
 </template>
 
 <style scoped>
+.videocorssbordershow {
+    margin-top: 40px;
+    width: 100%;
+    height: 830px;
+    border: 1px solid red;
+    
+  
+}
+
 .buttonchange {
+  
     width: 100%;
     display: flex;
     justify-content: center;
+
     align-items: center;
     height: 150px;
 }
@@ -114,9 +129,8 @@ onMounted(() => {
     font-size: 90px;
     font-family: "Noto Sans Lao", sans-serif;
     font-weight: 700;
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: center;
-    border: 1px solid red;
     color: #001072;
     background-image: linear-gradient(90deg, #001072 0%, #5ab3dd 89%);
     background-clip: text;
@@ -130,13 +144,12 @@ onMounted(() => {
 .inputcontainer {
     width: 100%;
     height: auto;
-    border: 1px solid salmon;
 }
 
 .swiperinfo {
     width: 100%;
     height: 600px;
-    border: 1px solid blue;
+
 }
 
 .countryswap {
@@ -145,13 +158,13 @@ onMounted(() => {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
+ 
 }
 
 .infomationcorss-border {
     width: 100%;
     height: 1900px;
-    border: 1px solid red;
+
     padding-bottom: 100px;
 }
 

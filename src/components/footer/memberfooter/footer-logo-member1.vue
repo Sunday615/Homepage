@@ -13,7 +13,7 @@
             <div class="row1">
                 <div class="boxlogo1"><img  style="width: 170px; height:110px;"  src="../../../assets/Logomember- retangle/bcelretangle.png" alt=""></div>
                 <div class="boxlogo2">
-                    <img style="width: 195px; " src="../../../assets//Logomember- retangle/ldbwithborder.png" alt="">
+                    <img style="width: 195px; " src="../../../assets/Logomember- retangle/ldbwithborder.png" alt="">
                 </div>
                 <div class="boxlogo3"><img style="width: 140px; height:140px" src="../../../assets/Logomember- retangle/apbpng.png" alt=""></div>
                 <div class="boxlogo4">
@@ -57,7 +57,7 @@
                     <img style="width:150px" src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
                 </div>
                 <div class="boxlogo16">
-                    <img style="width:180px" src="../../../assets/logomember-circle/public-bank-logo-png-transparent-2.png" alt="">
+                    <img style="width:180px" src="../../../assets/logomember-circle/Pub.png" alt="">
                 </div>
               
             </div>
