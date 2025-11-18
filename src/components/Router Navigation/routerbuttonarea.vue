@@ -104,16 +104,22 @@ watch([source, target], () => {
 
 <style scoped>
 .lang-container {
+    width: 700px;
+    height: 100px;
+    border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
 .lang-box {
+ 
+
   background: linear-gradient(135deg, #001072, #5ab3dd);
-  padding: 22px 28px;
+  padding: 42px 48px;
   border-radius: 25px;
   display: flex;
+  border: 1px solid red;
   align-items: center;
   gap: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
@@ -121,7 +127,8 @@ watch([source, target], () => {
 
 .select-wrap {
   position: relative;
-  width: 170px;
+  width: 250px;
+
 }
 
 .selected {
