@@ -30,11 +30,11 @@ import gsap from "gsap";
 
 // Your images
 const images = ref([
-  "/swiper/img1.png",
-  "/swiper/img2.png",
-  "/swiper/img3.png",
-  "/swiper/img4.png",
-  "/swiper/img4.png",
+  "/swiper/1.png",
+  "/swiper/2.png",
+  "/swiper/3.png",
+  "/swiper/4.png",
+  "/swiper/5.png",
   
 ]);
 
@@ -57,7 +57,7 @@ const fadeTo = (nextIndex) => {
 const startAutoPlay = () => {
   intervalID = setInterval(() => {
     nextImage(false);
-  }, 3000);
+  }, 4000);
 };
 
 const pauseAutoPlay = () => {
@@ -96,7 +96,7 @@ onMounted(() => {
 <style scoped>
 .slideshow-container {
   width: 100%;
-  height: 500px;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }

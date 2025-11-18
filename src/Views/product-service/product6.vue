@@ -2,7 +2,7 @@
 import navbarview2 from "../../components/navbar/navbarview2.vue";
 import mainfooter from "../../components/footer/mainfooter.vue";
 import vdoproduct6 from "../../components/vdoproductbg/vdoproduct6.vue";
-import cressborder from "../../components/Swipercrossborder/cressborder.vue";
+import crossborder from '../../components/Swipercrossborder/crossborder.vue'
 
 import { onMounted } from "vue";
 
@@ -88,16 +88,23 @@ onMounted(() => {
       </div>
       <div class="infomationcorss-border">
             <div class="swiperinfo">
-                    <cressborder></cressborder>
+                    <crossborder></crossborder>
             </div>
+            <div class="inputcontainer"></div>
       </div>
       <mainfooter></mainfooter>
 </template>
 
 <style scoped>
-.swiperinfo {
+.inputcontainer{
     width: 100%;
-    height: 500px;
+    height: 250px;
+    border: 1px solid salmon;
+}
+.swiperinfo {
+  
+    width: 100%;
+    height: 600px;
     border: 1px solid blue;
 }
 

@@ -63,7 +63,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <div class="icon">
 
-                            <i class="fa-solid fa-gift"></i>
+                       <i class="fa-solid fa-building-columns"></i>
                         </div>
                     </div>
                     <div class="description">
@@ -92,7 +92,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <div class="icon">
 
-                            <i class="fa-solid fa-circle-play"></i>
+                            <i class="fa-solid fa-power-off"></i>
                         </div>
                     </div>
                     <div class="description">
@@ -120,7 +120,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                 <div id="historybox">
                     <div data-aos="fade-up" data-aos-duration="1000">
                         <div class="icon">
-                            <i class="fa-solid fa-rotate"></i>
+                           <i class="fa-solid fa-arrows-spin"></i>
                         </div>
                     </div>
                     <div class="description">

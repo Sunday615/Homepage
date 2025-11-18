@@ -102,16 +102,39 @@ onMounted(() => {
             <infinitescrolling></infinitescrolling>
         </div>
     </div>
-    <div class="memberservicepage">
-        <img id="memberservice-bg" src="../../assets/products/product2/memberserviepd2.png" alt="">
-        <div class="leftbox-memberservice">
-
+ <div class="memberservicepage">
+        <div class="titleleftbox">
+            <h1>ຖອນເງິນສົດ</h1>
+            <h2>ຄ່າທຳນຽມ 2.000 ກີບ</h2>
         </div>
-        <div class="rightbox-memberservice">
-            <div class="titlememberservice">
-                <p>ທະນາຄານທີ່ໃຫ້ບໍລິການ</p>
+        <div class="memberbank">
+            <div class="titlemember">
+                <h1>ທະນາຄານທີ່ໃຫ້ບໍລິການ</h1>
             </div>
-
+            <div class="memberservice">
+                <div class="memberrow">
+                    <img src="../../assets/logomember-circle/BCEL.png" alt="" />
+                    <img src="../../assets//logomember-circle/LDB.PNG" alt="" />
+                    <img src="../../assets//logomember-circle/APBB.PNG" alt="" />
+                    <img src="../../assets//logomember-circle/JDB.png" alt="" />
+                    <img src="../../assets//logomember-circle/Maruhan.png" alt="" />
+                    <img src="../../assets/logomember-circle/LVB.PNG" alt="" />
+                </div>
+                <div class="memberrow">
+                    <img src="../../assets//logomember-circle/ICBC.png" alt="" />
+                    <img src="../../assets//logomember-circle/BOC.png" alt="" />
+                    <img src="../../assets//logomember-circle/VTB.png" alt="" />
+                    <img src="../../assets//logomember-circle/IB.png" alt="" />
+                    <img src="../../assets/logomember-circle/ACLB.png" alt="" />
+                    <img src="../../assets//logomember-circle/BIC.png" alt="" />
+                </div>
+                <div class="memberrow">
+                    <img src="../../assets//logomember-circle/scb.PNG" alt="" />
+                    <img src="../../assets//logomember-circle/STB.PNG" alt="" />
+                    <img src="../../assets//logomember-circle/Kasikorn.png" alt="" />
+                    <img src="../../assets/logomember-circle/PUB.png" alt="" />
+                </div>
+            </div>
         </div>
     </div>
     <mainfooter></mainfooter>
@@ -120,6 +143,83 @@ onMounted(() => {
 
 
 <style scoped>
+.titleleftbox h2 {
+    font-size: 5.2rem;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 50px;
+    font-family: "Noto Sans Lao", sans-serif;
+}
+
+.titleleftbox h1 {
+    font-size: 9.5rem;
+    color: #fff;
+    font-family: "Inter";
+    font-weight: bold;
+    padding-left: 50px;
+    padding-top: 170px;
+        font-family: "Noto Sans Lao", sans-serif;
+}
+
+.titleleftbox {
+    width: 45%;
+    line-height: 1.5;
+    height: 890px;
+}
+
+.memberrow img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.memberrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+
+.memberservice {
+    width: 80%;
+    height: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.titlemember h1 {
+    font-size: 89px;
+    background-image: linear-gradient(45deg, #0011ff, #00bfff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.titlemember {
+    width: 100%;
+    height: 10rem;
+}
+
+.memberbank {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.memberservicepage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50rem;
+
+  background-image: url(../../assets/Products/product1/bgofproduct.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .logomemberservice {
     width: 70%;
     margin-top: 80px;
