@@ -1,10 +1,9 @@
 <template>
   <div class="lang-container">
-
     <div class="lang-box">
 
       <!-- BLOCK 1 -->
-      <div class="select-wrap">
+      <div class="select-wrap" ref="leftBlock">
         <div class="selected" @click="open1 = !open1">
           <img :src="getFlag(source)" class="flag" />
           <span>{{ getName(source) }}</span>
@@ -22,10 +21,16 @@
       </div>
 
       <!-- Swap -->
-      <button @click="swap" class="swap-btn"><i class="fa-solid fa-repeat"></i></button>
+      <button 
+        @click="swap" 
+        class="swap-btn"
+        ref="swapBtn"
+      >
+        <i class="fa-solid fa-repeat"></i>
+      </button>
 
       <!-- BLOCK 2 -->
-      <div class="select-wrap">
+      <div class="select-wrap" ref="rightBlock">
         <div class="selected" @click="open2 = !open2">
           <img :src="getFlag(target)" class="flag" />
           <span>{{ getName(target) }}</span>
@@ -43,16 +48,15 @@
       </div>
 
     </div>
-
   </div>
 </template>
 
 <script setup>
-import { ref, watch, computed, onMounted } from "vue"
-import { useRouter, useRoute } from "vue-router"
+import { ref, watch, computed } from "vue"
+import { useRouter } from "vue-router"
+import { gsap } from "gsap"
 
 const router = useRouter()
-const route = useRoute()
 
 const languages = [
   { code: "la", name: "ລາວ", flag: "https://flagcdn.com/la.svg" },
@@ -68,11 +72,10 @@ const target = ref("la")
 const open1 = ref(false)
 const open2 = ref(false)
 
-// flag helpers
-const getFlag = (code) => languages.find(l => l.code === code)?.flag
-const getName = (code) => languages.find(l => l.code === code)?.name
+const leftBlock = ref(null)
+const rightBlock = ref(null)
+const swapBtn = ref(null)
 
-// dropdown filters
 const filteredSource = computed(() =>
   languages.filter(l => l.code !== target.value)
 )
@@ -81,7 +84,9 @@ const filteredTarget = computed(() =>
   languages.filter(l => l.code !== source.value)
 )
 
-// function for selecting
+const getFlag = (code) => languages.find(l => l.code === code).flag
+const getName = (code) => languages.find(l => l.code === code).name
+
 const selectSource = (code) => {
   source.value = code
   open1.value = false
@@ -92,81 +97,110 @@ const selectTarget = (code) => {
   open2.value = false
 }
 
-// -----------------------------------------------
-// ⛔ ป้องกัน sync ซ้ำซ้อน / ปัญหากดสองครั้ง
-// -----------------------------------------------
-const isUpdating = ref(false)
+// ฟังก์ชันรวม ใช้ update route ทุกครั้งที่ source/target เปลี่ยน
+const updateRoute = () => {
+  const path = `/crossborder/${source.value}-${target.value}`
 
-// -----------------------------------------------
-// ⭐ โหลดค่าจาก PATH มาตั้งค่าทันที
-// -----------------------------------------------
-const updateFromRoute = () => {
-  const id = route.params.id
-  if (!id) return
+  // ถ้า path เดิมแล้ว ไม่ต้อง push ซ้ำ (กัน error / navigation duplicated)
+  if (router.currentRoute.value.path === path) return
 
-  const [src, tar] = id.split("-")
-
-  if (languages.find(l => l.code === src) && languages.find(l => l.code === tar)) {
-    isUpdating.value = true  // กัน watch ด้านล่างทำงานซ้อน
-    source.value = src
-    target.value = tar
-    setTimeout(() => (isUpdating.value = false), 0)
-  }
+  router.push(path).catch((err) => {
+    // กัน log error แปลก ๆ อย่าง NavigationDuplicated
+    if (err && err.name !== "NavigationDuplicated") {
+      console.error(err)
+    }
+  })
 }
 
-onMounted(() => {
-  updateFromRoute()
-})
-
-// -----------------------------------------------
-// ⭐ ถ้า PATH เปลี่ยน (เช่นเปลี่ยนหน้า 1 → หน้า 2) อัปเดตทันที
-// -----------------------------------------------
-watch(
-  () => route.params.id,
-  () => updateFromRoute()
-)
-
-// -----------------------------------------------
-// ⭐ sync state → URL (แบบไม่ชนกับ update route)
-// -----------------------------------------------
-watch([source, target], ([newS, newT]) => {
-  if (isUpdating.value) return  // กันการยิงซ้ำจนต้องกดสองครั้ง
-
-  const newPath = `${newS}-${newT}`
-  const oldPath = route.params.id
-
-  if (newPath !== oldPath) {
-    router.replace(`/crossborder/${newPath}`)
-  }
-})
-
-// -----------------------------------------------
+// GSAP animated swap
 const swap = () => {
-  const t = source.value
-  source.value = target.value
-  target.value = t
+  const leftEl = leftBlock.value
+  const rightEl = rightBlock.value
+  const btnEl = swapBtn.value
+
+  if (!leftEl || !rightEl || !btnEl) {
+    const tmp = source.value
+    source.value = target.value
+    target.value = tmp
+    updateRoute()
+    return
+  }
+
+  const tl = gsap.timeline()
+
+  // หมุนปุ่ม
+  tl.to(btnEl, {
+    rotation: "+=180",
+    duration: 0.25,
+    ease: "power2.inOut",
+  })
+
+  // ขยับ block เข้าหากัน
+  tl.to(leftEl, {
+    x: 40,
+    scale: 0.97,
+    opacity: 0.85,
+    duration: 0.18,
+    ease: "power2.in",
+  }, "<")
+
+  tl.to(rightEl, {
+    x: -40,
+    scale: 0.97,
+    opacity: 0.85,
+    duration: 0.18,
+    ease: "power2.in",
+  }, "<")
+
+  // สลับค่าตรงกลาง animation
+  tl.add(() => {
+    const tmp = source.value
+    source.value = target.value
+    target.value = tmp
+    updateRoute()
+  })
+
+  // กลับที่ พร้อม bounce นิด ๆ
+  tl.to(leftEl, {
+    x: 0,
+    scale: 1,
+    opacity: 1,
+    duration: 0.22,
+    ease: "back.out(1.6)",
+  })
+
+  tl.to(rightEl, {
+    x: 0,
+    scale: 1,
+    opacity: 1,
+    duration: 0.22,
+    ease: "back.out(1.6)",
+  }, "<")
 }
+
+// ถ้าอยากให้เปลี่ยน path ตอนเปลี่ยนจาก dropdown ด้วย -> ใช้ watch นี้
+watch([source, target], () => {
+  updateRoute()
+})
 </script>
+
 
 <style scoped>
 .lang-container {
-    width: 700px;
-    height: 100px;
-
+  width: 700px;
+  height: 100px;
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
 .lang-box {
- 
-
   background: linear-gradient(135deg, #001072, #5ab3dd);
   padding: 42px 48px;
   border-radius: 25px;
   display: flex;
-
   align-items: center;
+  z-index: 999;
   gap: 20px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
@@ -174,7 +208,6 @@ const swap = () => {
 .select-wrap {
   position: relative;
   width: 250px;
-
 }
 
 .selected {
@@ -227,5 +260,10 @@ const swap = () => {
   height: 48px;
   border-radius: 14px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* so GSAP rotation looks centered */
+  transform-origin: center;
 }
 </style>

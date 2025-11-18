@@ -1,312 +1,305 @@
-<script setup lang="ts">
+<script lang="ts">
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
 </script>
 
 <template>
-
-
-    <navbarview2></navbarview2>
-    <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Aboutus/History/navigatormission-bg.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ຄວາມເປັນມາ</p>
-                </div>
+<navbarview2></navbarview2>
+<div class="navigatorcontent">
+    <img id="navigator-img" src="../../assets/Aboutus/History/navigatormission-bg.png" alt="">
+    <div class="navigator-info-container">
+        <div class="titlenavigator">
+            <div data-aos="zoom-in-down" data-aos-duration="1000">
+                <p>ຄວາມເປັນມາ</p>
             </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
-                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                        </span> ຄວາມເປັນມາ</p>
-                </div>
+        </div>
+        <div class="navigatorlink">
+            <div data-aos="zoom-out-up" data-aos-duration="1000">
+                <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
+                    </span> ຄວາມເປັນມາ</p>
             </div>
         </div>
     </div>
-    <div class="headercontainer">
-        <div class="box-bg"></div>
-        <div class="box-header-info">
-            <article class="card">
-                <div class="media-object">
-                    <div>
-                        <div class="flexdisplay">
-                            <div class="logolapnet">
+</div>
+<div class="headercontainer">
+    <div class="box-bg"></div>
+    <div class="box-header-info">
+        <article class="card">
+            <div class="media-object">
+                <div>
+                    <div class="flexdisplay">
+                        <div class="logolapnet">
 
-                                <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
+                            <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
 
+                            <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
 
-                                <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
-
-                            </div>
-                            <div class="titleheader">
-                                <div data-aos="fade-down" data-aos-duration="1300">
-                                    <h1>ຄວາມເປັນມາຂອງ</h1>
-                                    <p>LAO NATIONAL PAYMENT NETWORK</p>
-                                </div>
+                        </div>
+                        <div class="titleheader">
+                            <div data-aos="fade-down" data-aos-duration="1300">
+                                <h1>ຄວາມເປັນມາຂອງ</h1>
+                                <p>LAO NATIONAL PAYMENT NETWORK</p>
                             </div>
                         </div>
-
                     </div>
 
                 </div>
 
-            </article>
+            </div>
 
+        </article>
+
+    </div>
+</div>
+<div class="contianerhistorylist">
+    <div class="list_of_history">
+        <div data-aos="fade-right" data-aos-duration="1000">
+            <div id="historybox">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="title-description">
+                        <h1>ເລີ່ມກໍຕັ້ງບໍລິສັດ</h1>
+                    </div>
+                    <div class="description-text">
+                        <p>
+                            ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ ຫຼື LAPNet ດຳເນີນທຸລະກິດໃນຮູບແບບ ບໍລິສັດ
+                            ຈຳກັດ,
+                            ເຊິ່ງໄດ້ຮັບອະນຸຍາດເປັນຜູ້ຄວບຄຸມລະບົບບັດທະນາຄານຮ່ວມກັນ ຫຼື Lao ATM Pool Switching (LAPS)
+                            ໂດຍແມ່ນໂຄງການຊ່ວຍເຫຼືອລະຫວ່າງລັດຖະບານ ສປ ຈີນ ຕໍ່ກັບ ສປປ ລາວ ຕາມສານແລກປ່ຽນວ່າດ້ວຍລັດຖະບານ
+                            ສປ
+                            ຈີນ
+                            ເຫັນດີຊ່ວຍເຫຼືອລັດຖະບານ ສປປ ລາວ ປະຕິບັດ ‘’ໂຄງການລະບົບຊຳລະດ້ວຍບັດອັດຕະໂນມັດຂອງທະນາຄານ’’.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="contianerhistorylist">
-        <div class="list_of_history">
+    <div class="list_of_history">
+        <div data-aos="fade-right" data-aos-duration="1200">
+            <div id="historybox">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+
+                        <i class="fa-solid fa-power-off"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="title-description">
+                        <h1>ເປີດນຳໃຊ້ລະບົບຢ່າງເປັນທາງການ</h1>
+                    </div>
+                    <div class="description-text">
+                        <p>
+                            ໂຄງການດັ່ງກ່າວໄດ້ສຳເລັດ ແລະ ເປີດນຳໃຊ້ລະບົບຢ່າງເປັນທາງການໃນວັນທີ 01/12/2015
+                            ໂດຍຢູ່ພາຍໃຕ້ການບໍລິຫານຂອງ ທຫລ, ເຊິ່ງຂັ້ນເທິງ
+                            ໄດ້ເຫັນດີມອບໝາຍໃຫ້ກົມເຕັກໂນໂລຊີຂໍ້ມູນຂ່າວສານເປັນຜູ້ຈັດຕັ້ງປະຕິບັດ ແລະ
+                            ໄດ້ສ້າງຕັ້ງພະແນກຄຸ້ມຄອງບັດທະນາຄານຂຶ້ນມາເພື່ອຄຸ້ມຄອງ ແລະ ເຮັດວຽກງານດັ່ງກ່າວໂດຍກົງ,
+                            ເຊິ່ງທາງຝ່າຍຈີນ ຮັບຜິດ ຊອບໃນການບຳລຸງຮັກສາທາງດ້ານເຕັກນິກຂອງລະບົບໃຫ້ ສປປ ລາວ ລ້າ
+                            ເປັນໄລຍະເວລາ
+                            3
+                            ປີ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_of_history">
+        <div data-aos="fade-right" data-aos-duration="1400">
+            <div id="historybox">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="title-description">
+                        <h1>ຫັນປ່ຽນເປັນນິຕິບຸກຄົນ</h1>
+                    </div>
+                    <div class="description-text">
+                        <p>
+                            ຜ່ານການຈັດຕັ້ງປະຕິບັດຕົວຈິງເຫັນວ່າການນຳໃຊ້ລະບົບດັ່ງກ່າວແມ່ນຍັງບໍ່ເຕັມປະສິດທິພາບເທົ່າທີ່ຄວນ
+                            ເນື່ອງຈາກການດຳເນີນງານແມ່ນບໍ່ສອດຄ່ອງກັບພາລະບົດບາດຂອງ ທຫລ
+                            ທີ່ເປັນຜູ້ຄຸ້ມຄອງມະຫາພາກດ້ານການເງິນ-ເງິນຕາ, ທັງເປັນອົງກອນທີ່ບໍ່ສະແຫວງຫາຜົນກຳໄລ
+                            ຈຶ່ງເຮັດໃຫ້ການຄຸ້ມຄອງບໍລິຫານລະບົບດັ່ງ ກ່າວ ຍັງມີລັກສະນະ ‘’ນະໂຍບາຍ’’. ດັ່ງນັ້ນ, ຄະນະພັກ,
+                            ຄະນະຜູ້ວ່າການ ທຫລ ຈຶ່ງມີມະຕິຕົກລົງເຫັນດີໃຫ້ຫັນເອົາວຽກງານ LAPS
+                            ເປັນນິຕິບຸກຄົນຕາມມະຕິກອງປະຊຸມຄະນະປະຈຳພັກ-ຄະນະຜູ້ວ່າການ ທຫລ ປະຈຳເດືອນ ກຸມພາ 2016.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="list_of_history">
+        <div data-aos="fade-right" data-aos-duration="1600">
+            <div id="historybox">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="title-description">
+                        <h1>ການບຳລຸງຮັກສາລະບົບ</h1>
+                    </div>
+                    <div class="description-text">
+                        <p>ພາຍຫຼັງສິ້ນສຸດໄລຍະການບຳລຸງຮັກສາທາງດ້ານເຕັກນິກລ້າຈາກຝ່າຍຈີນໃນວັນທີ 01/12/2018, ສປປ ລາວ
+                            ຕ້ອງໄດ້ສືບຕໍ່ໃນການບໍາລຸງຮັກສາລະບົບເອງ. ໂດຍ ທຫລ ໄດ້ໂອນພາລະບົດບາດການດຳເນີນງານໃຫ້ບໍລິສັດ
+                            LAPNet
+                            ທີ່ຈະສ້າງຂຶ້ນ ເປັນຜູ້ສືບຕໍ່ດຳເນີນທຸລະກິດໃນການໃຫ້ບໍລິການລະບົບ LAPS ໃຫ້ມີປະສິດທິຜົນສູງສຸດ
+                            ແລະ
+                            ພັດທະນາໃຫ້ສາມາດເຊື່ອມໂຍງກັບພາກພື້ນ ແລະ ສາກົນ,
+                            ເພາະວ່າລະບົບຊຳລະທາງການເງິນແມ່ນຍິ່ງມີຄວາມສຳຄັນເປັນອັນດັບຕົ້ນໆຂອງຂະແໜງເສດຖະຖິດ-ການເງິນ
+                            ທີ່ຄວນໄດ້ຮັບການພັດທະນາໃຫ້ມີຄວາມ ເໝາະສົມ-ສອດຄ່ອງກັບຄວາມຕ້ອງການຂອງໜ່ວຍງານເສດຖະກິດ
+                            ທັງພາກລັດ
+                            ແລະ ເອກະຊົນ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="list_of_history">
+        <div data-aos="fade-right" data-aos-duration="1800">
+            <div id="historybox">
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="title-description">
+                        <h1>ອຳນວຍຄວາມສະດວກໃຫ້ແກ່ຜູ້ຊົມໃຊ້</h1>
+                    </div>
+                    <div class="description-text">
+                        <p>ບໍລິສັດລາວ ຈະເປັນສ່ວນໜຶ່ງໃນການປະກອບສ່ວນຊຸກຍູ້ເສດຖະກິດ ແລະ
+                            ໃຫ້ການສະໜັບສະໜູນບັນທະນາຄານທຸລະກິດໃຫ້ສາມາດເຊື່ອມໂຍງ ກັນໃຫ້ໄດ້ຫລາຍຊ່ອງທາງຂຶ້ນກວ່າເກົ່າ
+                            ເພື່ອເປັນການອຳນວຍຄວາມສະດວກໃຫ້ແກ່ຜູ້ຊົມໃຊ້ໄດ້ສາມາດດຳເນີນທຸລະກຳທາງດ້ານການເງິນໄດ້ “ ທຸກທີ່,
+                            ທຸກເວລາ, ທຸກຊ່ອງທາງການຊຳລະ” .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="partner-section">
+    <div class="partner-header">
+
+        <h1>ໂຄງສ້າງຜູ້ຖືຫຸ້ນຂອງບໍລິສັດ</h1>
+    </div>
+    <div class="partnergraph">
+        <div class="listpartner">
+            <div data-aos="fade-right" data-aos-duration="600">
+                <div class="box-membermb1">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານແຫ່ງ ສປປ ລາວ </h1>
+                    </div>
+                    <div class="logo">
+                        <img src="../../assets/logomember-circle/BOL.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="800">
+                <div class="box-membermb2">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານການຄ້າຕ່າງປະເທດລາວມະຫາຊົນ</h1>
+                    </div>
+                    <div class="logo">
+                        <img style="width: 110px;" src="../../assets/logomember-circle/BCEL.png" alt="">
+                    </div>
+                </div>
+            </div>
             <div data-aos="fade-right" data-aos-duration="1000">
-                <div id="historybox">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-
-                       <i class="fa-solid fa-building-columns"></i>
-                        </div>
+                <div class="box-membermb3">
+                    <div class="nameofbank">
+                        <h1>ບໍລິສັດ ຢູນຽນເພ ສາກົນ ຈຳກັດ </h1>
                     </div>
-                    <div class="description">
-                        <div class="title-description">
-                            <h1>ເລີ່ມກໍຕັ້ງບໍລິສັດ</h1>
-                        </div>
-                        <div class="description-text">
-                            <p>
-                                ບໍລິສັດ ລາວເນເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ ຫຼື LAPNet ດຳເນີນທຸລະກິດໃນຮູບແບບ ບໍລິສັດ
-                                ຈຳກັດ,
-                                ເຊິ່ງໄດ້ຮັບອະນຸຍາດເປັນຜູ້ຄວບຄຸມລະບົບບັດທະນາຄານຮ່ວມກັນ ຫຼື Lao ATM Pool Switching (LAPS)
-                                ໂດຍແມ່ນໂຄງການຊ່ວຍເຫຼືອລະຫວ່າງລັດຖະບານ ສປ ຈີນ ຕໍ່ກັບ ສປປ ລາວ ຕາມສານແລກປ່ຽນວ່າດ້ວຍລັດຖະບານ
-                                ສປ
-                                ຈີນ
-                                ເຫັນດີຊ່ວຍເຫຼືອລັດຖະບານ ສປປ ລາວ ປະຕິບັດ ‘’ໂຄງການລະບົບຊຳລະດ້ວຍບັດອັດຕະໂນມັດຂອງທະນາຄານ’’.
-
-                            </p>
-                        </div>
+                    <div class="logo">
+                        <img style="width: 110px;" src="../../assets/Logomember- retangle/unoinpay.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="list_of_history">
+            <div data-aos="fade-right" data-aos-duration="1100">
+                <div class="box-membermb4">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ພັດທະນາລາວ ຈຳກັດ</h1>
+                    </div>
+                    <div class="logo">
+                        <img style="width: 100px;" src="../../assets/logomember-circle/LDB.PNG" alt="">
+                    </div>
+                </div>
+            </div>
             <div data-aos="fade-right" data-aos-duration="1200">
-                <div id="historybox">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-
-                            <i class="fa-solid fa-power-off"></i>
-                        </div>
+                <div class="box-membermb5">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ສົ່ງເສີມກະສິກຳ ຈຳກັດ</h1>
                     </div>
-                    <div class="description">
-                        <div class="title-description">
-                            <h1>ເປີດນຳໃຊ້ລະບົບຢ່າງເປັນທາງການ</h1>
-                        </div>
-                        <div class="description-text">
-                            <p>
-                                ໂຄງການດັ່ງກ່າວໄດ້ສຳເລັດ ແລະ ເປີດນຳໃຊ້ລະບົບຢ່າງເປັນທາງການໃນວັນທີ 01/12/2015
-                                ໂດຍຢູ່ພາຍໃຕ້ການບໍລິຫານຂອງ ທຫລ, ເຊິ່ງຂັ້ນເທິງ
-                                ໄດ້ເຫັນດີມອບໝາຍໃຫ້ກົມເຕັກໂນໂລຊີຂໍ້ມູນຂ່າວສານເປັນຜູ້ຈັດຕັ້ງປະຕິບັດ ແລະ
-                                ໄດ້ສ້າງຕັ້ງພະແນກຄຸ້ມຄອງບັດທະນາຄານຂຶ້ນມາເພື່ອຄຸ້ມຄອງ ແລະ ເຮັດວຽກງານດັ່ງກ່າວໂດຍກົງ,
-                                ເຊິ່ງທາງຝ່າຍຈີນ ຮັບຜິດ ຊອບໃນການບຳລຸງຮັກສາທາງດ້ານເຕັກນິກຂອງລະບົບໃຫ້ ສປປ ລາວ ລ້າ
-                                ເປັນໄລຍະເວລາ
-                                3
-                                ປີ.
-                            </p>
-                        </div>
+                    <div class="logo">
+                        <img style="width:105px;" src="../../assets/logomember-circle/APBB.PNG" alt="">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="list_of_history">
+            <div data-aos="fade-right" data-aos-duration="1300">
+                <div class="box-membermb6">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ຮ່ວມທຸລະກິດລາວຫວຽດ ຈຳກັດ</h1>
+                    </div>
+                    <div class="logo">
+                        <img src="../../assets/logomember-circle/lvb.PNG" alt="">
+                    </div>
+                </div>
+            </div>
             <div data-aos="fade-right" data-aos-duration="1400">
-                <div id="historybox">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-                           <i class="fa-solid fa-arrows-spin"></i>
-                        </div>
+                <div class="box-membermb7">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ຮ່ວມພັດທະນາ ຈຳກັດ</h1>
                     </div>
-                    <div class="description">
-                        <div class="title-description">
-                            <h1>ຫັນປ່ຽນເປັນນິຕິບຸກຄົນ</h1>
-                        </div>
-                        <div class="description-text">
-                            <p>
-                                ຜ່ານການຈັດຕັ້ງປະຕິບັດຕົວຈິງເຫັນວ່າການນຳໃຊ້ລະບົບດັ່ງກ່າວແມ່ນຍັງບໍ່ເຕັມປະສິດທິພາບເທົ່າທີ່ຄວນ
-                                ເນື່ອງຈາກການດຳເນີນງານແມ່ນບໍ່ສອດຄ່ອງກັບພາລະບົດບາດຂອງ ທຫລ
-                                ທີ່ເປັນຜູ້ຄຸ້ມຄອງມະຫາພາກດ້ານການເງິນ-ເງິນຕາ, ທັງເປັນອົງກອນທີ່ບໍ່ສະແຫວງຫາຜົນກຳໄລ
-                                ຈຶ່ງເຮັດໃຫ້ການຄຸ້ມຄອງບໍລິຫານລະບົບດັ່ງ ກ່າວ ຍັງມີລັກສະນະ ‘’ນະໂຍບາຍ’’. ດັ່ງນັ້ນ, ຄະນະພັກ,
-                                ຄະນະຜູ້ວ່າການ ທຫລ ຈຶ່ງມີມະຕິຕົກລົງເຫັນດີໃຫ້ຫັນເອົາວຽກງານ LAPS
-                                ເປັນນິຕິບຸກຄົນຕາມມະຕິກອງປະຊຸມຄະນະປະຈຳພັກ-ຄະນະຜູ້ວ່າການ ທຫລ ປະຈຳເດືອນ ກຸມພາ 2016.
-                            </p>
-                        </div>
+                    <div class="logo">
+                        <img style="width: 100px;" src="../../assets/logomember-circle/JDB.png" alt="">
                     </div>
                 </div>
             </div>
-
-        </div>
-        <div class="list_of_history">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="box-membermb8">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ເອສທີ ຈຳກັດ</h1>
+                    </div>
+                    <div class="logo">
+                        <img style="width: 105px;" src="../../assets/logomember-circle/stb.png" alt="">
+                    </div>
+                </div>
+            </div>
             <div data-aos="fade-right" data-aos-duration="1600">
-                <div id="historybox">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-                            <i class="fa-solid fa-gears"></i>
-                        </div>
+                <div class="box-membermb9">
+                    <div class="nameofbank">
+                        <h1>ທະນາຄານ ບີໄອຊີ ຈຳກັດ</h1>
                     </div>
-                    <div class="description">
-                        <div class="title-description">
-                            <h1>ການບຳລຸງຮັກສາລະບົບ</h1>
-                        </div>
-                        <div class="description-text">
-                            <p>ພາຍຫຼັງສິ້ນສຸດໄລຍະການບຳລຸງຮັກສາທາງດ້ານເຕັກນິກລ້າຈາກຝ່າຍຈີນໃນວັນທີ 01/12/2018, ສປປ ລາວ
-                                ຕ້ອງໄດ້ສືບຕໍ່ໃນການບໍາລຸງຮັກສາລະບົບເອງ. ໂດຍ ທຫລ ໄດ້ໂອນພາລະບົດບາດການດຳເນີນງານໃຫ້ບໍລິສັດ
-                                LAPNet
-                                ທີ່ຈະສ້າງຂຶ້ນ ເປັນຜູ້ສືບຕໍ່ດຳເນີນທຸລະກິດໃນການໃຫ້ບໍລິການລະບົບ LAPS ໃຫ້ມີປະສິດທິຜົນສູງສຸດ
-                                ແລະ
-                                ພັດທະນາໃຫ້ສາມາດເຊື່ອມໂຍງກັບພາກພື້ນ ແລະ ສາກົນ,
-                                ເພາະວ່າລະບົບຊຳລະທາງການເງິນແມ່ນຍິ່ງມີຄວາມສຳຄັນເປັນອັນດັບຕົ້ນໆຂອງຂະແໜງເສດຖະຖິດ-ການເງິນ
-                                ທີ່ຄວນໄດ້ຮັບການພັດທະນາໃຫ້ມີຄວາມ ເໝາະສົມ-ສອດຄ່ອງກັບຄວາມຕ້ອງການຂອງໜ່ວຍງານເສດຖະກິດ
-                                ທັງພາກລັດ
-                                ແລະ ເອກະຊົນ.</p>
-                        </div>
+                    <div class="logo">
+                        <img style="border-radius: 100%; width:100px;" src="../../assets/logomember-circle/BIC.png" alt="">
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="list_of_history">
-            <div data-aos="fade-right" data-aos-duration="1800">
-                <div id="historybox">
-                    <div data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-                            <i class="fa-solid fa-people-group"></i>
-                        </div>
-                    </div>
-                    <div class="description">
-                        <div class="title-description">
-                            <h1>ອຳນວຍຄວາມສະດວກໃຫ້ແກ່ຜູ້ຊົມໃຊ້</h1>
-                        </div>
-                        <div class="description-text">
-                            <p>ບໍລິສັດລາວ ຈະເປັນສ່ວນໜຶ່ງໃນການປະກອບສ່ວນຊຸກຍູ້ເສດຖະກິດ ແລະ
-                                ໃຫ້ການສະໜັບສະໜູນບັນທະນາຄານທຸລະກິດໃຫ້ສາມາດເຊື່ອມໂຍງ ກັນໃຫ້ໄດ້ຫລາຍຊ່ອງທາງຂຶ້ນກວ່າເກົ່າ
-                                ເພື່ອເປັນການອຳນວຍຄວາມສະດວກໃຫ້ແກ່ຜູ້ຊົມໃຊ້ໄດ້ສາມາດດຳເນີນທຸລະກຳທາງດ້ານການເງິນໄດ້ “ ທຸກທີ່,
-                                ທຸກເວລາ, ທຸກຊ່ອງທາງການຊຳລະ” .</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+        <div class="graphpercent">
+            <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                <img src="../../assets/Aboutus/History/piechart.png" alt="">
+            </div>
         </div>
+
     </div>
-    <div class="partner-section">
-        <div class="partner-header">
-
-            <h1>ໂຄງສ້າງຜູ້ຖືຫຸ້ນຂອງບໍລິສັດ</h1>
-        </div>
-        <div class="partnergraph">
-            <div class="listpartner">
-                <div data-aos="fade-right" data-aos-duration="600">
-                    <div class="box-membermb1">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານແຫ່ງ ສປປ ລາວ </h1>
-                        </div>
-                        <div class="logo">
-                            <img src="../../assets/logomember-circle/BOL.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="800">
-                    <div class="box-membermb2">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານການຄ້າຕ່າງປະເທດລາວມະຫາຊົນ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width: 110px;" src="../../assets/logomember-circle/BCEL.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <div class="box-membermb3">
-                        <div class="nameofbank">
-                            <h1>ບໍລິສັດ ຢູນຽນເພ ສາກົນ ຈຳກັດ </h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width: 110px;" src="../../assets/Logomember- retangle/unoinpay.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1100">
-                    <div class="box-membermb4">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ພັດທະນາລາວ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width: 100px;" src="../../assets/logomember-circle/LDB.PNG" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1200">
-                    <div class="box-membermb5">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ສົ່ງເສີມກະສິກຳ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width:105px;" src="../../assets/logomember-circle/APBB.PNG" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1300">
-                    <div class="box-membermb6">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ຮ່ວມທຸລະກິດລາວຫວຽດ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img src="../../assets/logomember-circle/lvb.PNG" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1400">
-                    <div class="box-membermb7">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ຮ່ວມພັດທະນາ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width: 100px;" src="../../assets/logomember-circle/JDB.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1500">
-                    <div class="box-membermb8">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ເອສທີ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="width: 105px;" src="../../assets/logomember-circle/stb.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1600">
-                    <div class="box-membermb9">
-                        <div class="nameofbank">
-                            <h1>ທະນາຄານ ບີໄອຊີ ຈຳກັດ</h1>
-                        </div>
-                        <div class="logo">
-                            <img style="border-radius: 100%; width:100px;" src="../../assets/logomember-circle/BIC.png"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="graphpercent">
-                <div data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
-                    <img src="../../assets/Aboutus/History/piechart.png" alt="">
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <mainfooter></mainfooter>
+</div>
+<mainfooter></mainfooter>
 </template>
-
 
 <style scoped>
 .logo {
@@ -457,7 +450,6 @@ import mainfooter from '../../components/footer/mainfooter.vue';
     display: inline-block;
     margin-left: 180px;
 
-
 }
 
 .partner-header {
@@ -466,8 +458,6 @@ import mainfooter from '../../components/footer/mainfooter.vue';
     margin: 0 auto;
     border-bottom: 1px solid rgb(210, 210, 210);
     height: 150px;
-
-
 
 }
 
@@ -502,9 +492,6 @@ import mainfooter from '../../components/footer/mainfooter.vue';
 .title-description {
     width: 95%;
     height: 50px;
-
-
-
 
 }
 
@@ -699,8 +686,6 @@ html *::before {
     box-sizing: inherit;
 }
 
-
-
 .card {
     --text-color: #fff;
     --text-color-2: #f3f8fa;
@@ -864,7 +849,6 @@ mark {
 .navigatorcontent {
     width: 100%;
     height: 400px;
-
 
 }
 

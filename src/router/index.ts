@@ -82,8 +82,8 @@ import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
 import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
 import Gridblogtheme3 from '../Views/Blog/gridblog_column/gridblogtheme3.vue'
 import Gridblogtheme4 from '../Views/Blog/gridblog_column/gridblogtheme4.vue'
-import product6LAKH from '../Views/product-service/product6LA-KH.vue'
-import vdoproductcrossborderLA_KH from '../components/vdoproductbg/crossborder/vdoproductcrossborderLA_KH.vue'
+
+
 
 
 
@@ -212,9 +212,12 @@ const router = createRouter({
     { path: '/companystructure/ceo-coo', name: '/companystructure/ceo-coo', component: Companystructure_ceo },
      //######################## Cross Border ###########################
 
-     { path: '/crossborder/kh-la', name: '/crossborder/kh-la', component: Product6 },
+     { path: "/crossborder/kh-la", name: "crossborder-kh-la", component: Product6 },
+  { path: "/crossborder/la-kh", name: "crossborder-la-kh", component: Product6 },
+  { path: "/crossborder/th-la", name: "crossborder-th-la", component: Product6 },
+  { path: "/crossborder/la-th", name: "crossborder-la-th", component: Product6 },
  
-     { path: '/crossborder/la-kh', name: '/crossborder/la-kh', component: product6LAKH },
+     
   ],
 
 
