@@ -2,7 +2,9 @@
 import navbarview2 from "../../components/navbar/navbarview2.vue";
 import mainfooter from "../../components/footer/mainfooter.vue";
 import vdoproduct6 from "../../components/vdoproductbg/vdoproduct6.vue";
-import crossborder from '../../components/Swipercrossborder/crossborder.vue'
+import crossborder from "../../components/Swipercrossborder/crossborder.vue";
+import routerbuttonarea from "../../components/Router Navigation/routerbuttonarea.vue";
+import testtextanimation from "../../components/textanimation/testtextanimation.vue";
 
 import { onMounted } from "vue";
 
@@ -16,8 +18,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <navbarview2>
-    </navbarview2>
+    <navbarview2> </navbarview2>
     <div class="navigatorcontent">
         <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="" />
         <div class="navigator-info-container">
@@ -35,7 +36,7 @@ onMounted(() => {
                         <span style="padding-right: 40px; padding-left: 40px"><i class="fa-solid fa-chevron-right"></i> </span
                 >ຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງປະເທດ
               </p>
-              \
+              
             </div>
           </div>
         </div>
@@ -87,22 +88,52 @@ onMounted(() => {
         <vdoproduct6></vdoproduct6>
       </div>
       <div class="infomationcorss-border">
-            <div class="swiperinfo">
-                    <crossborder></crossborder>
-            </div>
-            <div class="inputcontainer"></div>
+        <div class="swiperinfo">
+          <crossborder></crossborder>
+        </div>
+        <div class="inputcontainer">
+          <h1>ທະນາຄານສະມາຊິກທີ່ເຂົ້າຮ່ວມ</h1>
+         <div class="buttonchange">
+            <routerbuttonarea></routerbuttonarea>
+         </div>
+        </div>
       </div>
       <mainfooter></mainfooter>
 </template>
 
 <style scoped>
-.inputcontainer{
+.buttonchange {
     width: 100%;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.inputcontainer h1 {
+    font-size: 90px;
+    font-family: "Noto Sans Lao", sans-serif;
+    font-weight: 700;
+    padding-top: 100px;
+    text-align: center;
+    border: 1px solid red;
+    color: #001072;
+    background-image: linear-gradient(90deg, #001072 0%, #5ab3dd 89%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inputcontainer {
+    width: 100%;
+    height: auto;
     border: 1px solid salmon;
 }
+
 .swiperinfo {
-  
     width: 100%;
     height: 600px;
     border: 1px solid blue;
