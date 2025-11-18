@@ -48,14 +48,15 @@
 </template>
 
 <script setup>
-import { ref, watch, computed } from "vue"
-import { useRouter } from "vue-router"
+import { ref, watch, computed, onMounted } from "vue"
+import { useRouter, useRoute } from "vue-router"
 
 const router = useRouter()
+const route = useRoute()
 
 const languages = [
-    { code: "la", name: "ລາວ", flag: "https://flagcdn.com/la.svg" },
-    { code: "kh", name: "ກຳປູເຈຍ", flag: "https://flagcdn.com/kh.svg" },
+  { code: "la", name: "ລາວ", flag: "https://flagcdn.com/la.svg" },
+  { code: "kh", name: "ກຳປູເຈຍ", flag: "https://flagcdn.com/kh.svg" },
   { code: "th", name: "ໄທ", flag: "https://flagcdn.com/th.svg" },
   { code: "vn", name: "ຫວຽດນາມ", flag: "https://flagcdn.com/vn.svg" },
   { code: "ch", name: "ຈີນ", flag: "https://flagcdn.com/cn.svg" },
@@ -64,11 +65,14 @@ const languages = [
 const source = ref("kh")
 const target = ref("la")
 
-// Dropdown open/close state
 const open1 = ref(false)
 const open2 = ref(false)
 
+// flag helpers
+const getFlag = (code) => languages.find(l => l.code === code)?.flag
+const getName = (code) => languages.find(l => l.code === code)?.name
 
+// dropdown filters
 const filteredSource = computed(() =>
   languages.filter(l => l.code !== target.value)
 )
@@ -77,9 +81,7 @@ const filteredTarget = computed(() =>
   languages.filter(l => l.code !== source.value)
 )
 
-const getFlag = (code) => languages.find(l => l.code === code).flag
-const getName = (code) => languages.find(l => l.code === code).name
-
+// function for selecting
 const selectSource = (code) => {
   source.value = code
   open1.value = false
@@ -90,16 +92,60 @@ const selectTarget = (code) => {
   open2.value = false
 }
 
-const swap = () => {
-  const tmp = source.value
-  source.value = target.value
-  target.value = tmp
+// -----------------------------------------------
+// ⛔ ป้องกัน sync ซ้ำซ้อน / ปัญหากดสองครั้ง
+// -----------------------------------------------
+const isUpdating = ref(false)
+
+// -----------------------------------------------
+// ⭐ โหลดค่าจาก PATH มาตั้งค่าทันที
+// -----------------------------------------------
+const updateFromRoute = () => {
+  const id = route.params.id
+  if (!id) return
+
+  const [src, tar] = id.split("-")
+
+  if (languages.find(l => l.code === src) && languages.find(l => l.code === tar)) {
+    isUpdating.value = true  // กัน watch ด้านล่างทำงานซ้อน
+    source.value = src
+    target.value = tar
+    setTimeout(() => (isUpdating.value = false), 0)
+  }
 }
 
-// Realtime update path
-watch([source, target], () => {
-  router.push(`/translate/${source.value}-${target.value}`)
+onMounted(() => {
+  updateFromRoute()
 })
+
+// -----------------------------------------------
+// ⭐ ถ้า PATH เปลี่ยน (เช่นเปลี่ยนหน้า 1 → หน้า 2) อัปเดตทันที
+// -----------------------------------------------
+watch(
+  () => route.params.id,
+  () => updateFromRoute()
+)
+
+// -----------------------------------------------
+// ⭐ sync state → URL (แบบไม่ชนกับ update route)
+// -----------------------------------------------
+watch([source, target], ([newS, newT]) => {
+  if (isUpdating.value) return  // กันการยิงซ้ำจนต้องกดสองครั้ง
+
+  const newPath = `${newS}-${newT}`
+  const oldPath = route.params.id
+
+  if (newPath !== oldPath) {
+    router.replace(`/crossborder/${newPath}`)
+  }
+})
+
+// -----------------------------------------------
+const swap = () => {
+  const t = source.value
+  source.value = target.value
+  target.value = t
+}
 </script>
 
 <style scoped>

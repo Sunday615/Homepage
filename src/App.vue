@@ -2,7 +2,6 @@
 
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
-import testtextanimation from './components/textanimation/testtextanimation.vue'
 
 
 const overlay = ref(null)
@@ -38,7 +37,6 @@ const leave = (el, done) => {
 
     <div ref="overlay" class="overlay"></div>
   </div>
-
 
 
 

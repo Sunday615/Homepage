@@ -13,13 +13,13 @@
             <div class="glass-card">
                 <div class="topcontainer">
                     <h1>
-                        ກຳປູເຈຍ <img src="https://flagcdn.com/kh.svg" alt="" /> ສະແກນ ລາວ
-                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວກຳປູເຈຍຈ່າຍຢູ່ລາວ
+                        ກຳປູເຈຍ <img src="https://flagcdn.com/kh.svg" alt="" /> ສະແກນຊຳລະ ລາວ
+                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວກຳປູເຈຍຊຳລະຢູ່ລາວ
                     </h1>
                 </div>
                 <div class="centercontainer">
                     <div class="headercondition">
-                        <p>ເບື້ອງລາວ (ຮັບການຈ່າຍ) : 11 ທະນາຄານສະມາຊິກ</p>
+                        <p>ເບື້ອງລາວ (ຮັບການຊຳລະ) : 11 ທະນາຄານສະມາຊິກ</p>
                     </div>
                     <div class="logomember">
                         <div class="row1">
@@ -40,7 +40,7 @@
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 25px">
-                            ເບື້ອງກຳປູເຈຍ (ສະແກນຈ່າຍ) : ຜ່ານເຄືອຂ່າຍ Bakong ປັດຈຸບັນມີ 59 ທະນາຄານ +, ແລະ
+                            ເບື້ອງກຳປູເຈຍ (ສະແກນຊຳລະ) : ຜ່ານເຄືອຂ່າຍ Bakong ປັດຈຸບັນມີ 59 ທະນາຄານ +, ແລະ
                             ທະນາຄານ ACLEDA (ໃຊ້ Mobile Banking ຂອງຕົນເອງ).
                         </p>
                     </div>

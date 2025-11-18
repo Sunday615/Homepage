@@ -4,9 +4,7 @@ import mainfooter from "../../components/footer/mainfooter.vue";
 import vdoproduct6 from "../../components/vdoproductbg/vdoproduct6.vue";
 import crossborder from "../../components/Swipercrossborder/crossborder.vue";
 import routerbuttonarea from "../../components/Router Navigation/routerbuttonarea.vue";
-import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborder/vdoproductcrossborderKH_LA.vue'
-
-
+import vdoproductcrossborderLA_KH from "../../components/vdoproductbg/crossborder/vdoproductcrossborderLA_KH.vue";
 </script>
 
 <template>
@@ -24,11 +22,11 @@ import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborde
                     <p>
                         ໜ້າຫຼັກ
                         <span style="padding-right: 40px; padding-left: 40px"><i
-                                class="fa-solid fa-chevron-right"></i></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+                                class="fa-solid fa-chevron-right"></i></span>
+                        ຜະລິດຕະພັນ ແລະ ການບໍລິການ
                         <span style="padding-right: 40px; padding-left: 40px"><i class="fa-solid fa-chevron-right"></i>
                         </span>ຊຳລະຂ້າມແດນໃນຮູບແບບ QR CODE ລະຫວ່າງປະເທດ
                     </p>
-
                 </div>
             </div>
         </div>
@@ -89,13 +87,12 @@ import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborde
                 <routerbuttonarea></routerbuttonarea>
             </div>
         </div>
-            <div class="videocorssbordershow">
 
-               
-                        <vdoproductcrossborderKH_LA></vdoproductcrossborderKH_LA>
-       
-
-            </div>
+        <div class="videocorssbordershow">
+           
+                <vdoproductcrossborderLA_KH></vdoproductcrossborderLA_KH>
+        
+        </div>
     </div>
 
     <mainfooter></mainfooter>
@@ -106,13 +103,9 @@ import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborde
     margin-top: 40px;
     width: 100%;
     height: 830px;
-
-
-
 }
 
 .buttonchange {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -145,7 +138,6 @@ import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborde
 .swiperinfo {
     width: 100%;
     height: 600px;
-
 }
 
 .countryswap {
@@ -154,7 +146,6 @@ import vdoproductcrossborderKH_LA from '../../components/vdoproductbg/crossborde
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .infomationcorss-border {
