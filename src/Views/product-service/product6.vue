@@ -158,12 +158,27 @@ watch(
 
             <component :is="currentVideoComponent" :key="$route.path" />
         </div>
+        <div class="descriptionforcustomer">
+            
+        </div>
     </div>
 
     <mainfooter></mainfooter>
 </template>
 
 <style scoped>
+
+
+
+.descriptionforcustomer {
+    width: 100%;
+    height: 800px;
+
+    border: 1px solid red;
+    margin-top: 50px;
+
+}
+
 .videocorssbordershow {
     margin-top: 40px;
     width: 100%;
@@ -221,9 +236,10 @@ watch(
 
 .infomationcorss-border {
     width: 100%;
-    height: 1900px;
+    height: auto;
 
-    padding-bottom: 100px;
+    border: 1px solid rgb(0, 13, 255);
+
 }
 
 #bgpd1-page2 {

@@ -1,6 +1,7 @@
-<script lang="ts">
+<script setup>
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
+
 </script>
 
 <template>

@@ -23,17 +23,17 @@
                     </div>
                     <div class="logomember">
                         <div class="row1">
-                            <img src="../../../assets/logomember-circle/BCEL.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
                           
-                            <img src="../../../assets/logomember-circle/APBB.PNG" alt="" />
+                            <img src="../../../assets/Logomember- retangle/APB.png" alt="" />
                      
                        
                           
-                            <img src="../../../assets/logomember-circle/ACLB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
             
-                            <img src="../../../assets/logomember-circle/scb.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/stb.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/mb.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
                         </div>
                     </div>
                 </div>

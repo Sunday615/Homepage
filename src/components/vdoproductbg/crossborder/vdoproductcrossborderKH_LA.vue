@@ -23,17 +23,17 @@
                     </div>
                     <div class="logomember">
                         <div class="row1">
-                            <img src="../../../assets/logomember-circle/BCEL.png" alt="" />
-                            <img src="../../../assets/logomember-circle/LDB.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/APBB.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/JDB.png" alt="" />
-                            <img src="../../../assets/logomember-circle/lvb.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/IB.png" alt="" />
-                            <img src="../../../assets/logomember-circle/ACLB.png" alt="" />
-                            <img src="../../../assets/logomember-circle/BIC.png" alt="" />
-                            <img src="../../../assets/logomember-circle/scb.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/stb.PNG" alt="" />
-                            <img src="../../../assets/logomember-circle/Kasikorn.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/APB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/IBbankk.JPG" alt="" />
+                            <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BICnew.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/Kbank.webp" alt="" />
                         </div>
                     </div>
                 </div>
