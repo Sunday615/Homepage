@@ -13,29 +13,32 @@
             <div class="glass-card">
                 <div class="topcontainer">
                     <h1>
-                        ໄທ  <img src="https://flagcdn.com/th.svg" alt="" /> ສະແກນຊຳລະ ລາວ
-                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວໄທຊຳລະຢູ່ລາວ
+                        ຫວຽດນາມ  <img src="https://flagcdn.com/vn.svg" alt="" /> ສະແກນຊຳລະ ລາວ
+                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວຫວຽດນາມຊຳລະຢູ່ລາວ
                     </h1>
                 </div>
                 <div class="centercontainer">
                     <div class="headercondition">
-                        <h1>VIETNAM BRO</h1>
-                        <p>ເບື້ອງໄທ (ສະແກນຊຳລະ) : 05 ທະນາຄານຫຼັກ.</p>
+                   
+                        <p>ເບື້ອງຫວຽດນາມ  (ສະແກນຊຳລະ) : 08 ທະນາຄານຫຼັກ.</p>
                     </div>
                     <div class="logomember">
                         <div class="row1">
-                            <img src="../../../assets/Logomember- retangle/krungsi.jpeg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/Kringthai.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/BBL-Logo-TH.jpg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
-                            <img  src="../../../assets/Logomember- retangle/SCB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/VTB.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BIDV.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/TPB.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/SHB.png" alt="" />
+                            <img  src="../../../assets/Logomember- retangle/NamA.jpeg" alt="" />
+                            <img  src="../../../assets/Logomember- retangle/BV.png" alt="" />
                         </div>
                     </div>
                 </div>
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 29px">
-                            ເບື້ອງລາວ (ຮັບການຊຳລະ) : 13 ສະມາຊິກ.
+                            ເບື້ອງລາວ (ຮັບການຊຳລະ) : 15 ທະນາຄານສະມາຊິກ.
                         </p>
                     </div>
                      <div class="logomember">
@@ -47,15 +50,19 @@
                             <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/BICnew.jpeg" alt="" />
                             <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                                  <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
+                            
                         </div>
                         <div class="row3" style="margin-top: 10px;">
                             
                             <img src="../../../assets/Logomember- retangle/IBbankk.JPG" alt="" />
-                            <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
-                             <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
+                      
                             <img src="../../../assets/Logomember- retangle/psvb.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/VTB.jpg" alt="" />
                            
                         </div>
                     </div>

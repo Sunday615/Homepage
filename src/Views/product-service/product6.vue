@@ -15,6 +15,10 @@ import vdoproductcrossborderLA_KH from "../../components/vdoproductbg/crossborde
 import vdoproductcrossborderTH_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderTH_LA.vue";
 import vdoproductcrossborderLA_TH from "../../components/vdoproductbg/crossborder/vdoproductcrossborderLA_TH.vue";
 import vdoproductcrossborderVN_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderVN_LA.vue";
+import vdoproductcrossborderCN_LA from '../../components/vdoproductbg/crossborder/vdoproductcrossborderCN_LA.vue'
+
+
+
 const route = useRoute();
 
 
@@ -35,6 +39,12 @@ const currentVideoComponent = computed(() => {
             return vdoproductcrossborderLA_TH;
         case "/crossborder/vn-la":
             return vdoproductcrossborderVN_LA;
+        case "/crossborder/la-vn":
+            return vdoproductcrossborderVN_LA;
+        case "/crossborder/ch-la":
+            return vdoproductcrossborderCN_LA;
+        case "/crossborder/la-ch":
+            return vdoproductcrossborderCN_LA;
         default:
             return vdoproductcrossborderKH_LA;
     }

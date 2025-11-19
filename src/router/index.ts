@@ -213,10 +213,17 @@ const router = createRouter({
      //######################## Cross Border ###########################
      { path: "/crossborder/kh-la", name: "crossborder-kh-la", component: Product6 },
   { path: "/crossborder/la-kh", name: "crossborder-la-kh", component: Product6 },
+
   { path: "/crossborder/th-la", name: "crossborder-th-la", component: Product6 },
   { path: "/crossborder/la-th", name: "crossborder-la-th", component: Product6 },
+
   { path: "/crossborder/vn-la", name: "/crossborder/vn-la", component: Product6 },
- 
+  
+  { path: "/crossborder/ch-la", name: "/crossborder/ch-la", component: Product6 },
+  
+  { path: "/crossborder/la-vn", name: "/crossborder/la-vn", component: Product6 },
+  { path: "/crossborder/la-ch", name: "/crossborder/la-ch", component: Product6 },
+
      
   ],
 

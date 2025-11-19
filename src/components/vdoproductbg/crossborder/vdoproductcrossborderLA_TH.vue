@@ -49,8 +49,9 @@
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 29px">
-                            ເບື້ອງໄທ  (ຮັບການຊຳລະ) : 05 ທະນາຄານຫຼັກ "ທຸກຮ້ານຄ້າທີ່ຮັບ Thai QR Payment".
+                            ເບື້ອງໄທ  (ຮັບການຊຳລະ) : 05 ທະນາຄານຫຼັກ "ທຸກຮ້ານຄ້າທີ່ຮັບ Thai QR Payment" :
                         </p>
+                        <img src="../../../assets/Logomember- retangle/THAIQR.png" alt="">
                     </div>
                      <div class="logomember">
                         <div class="row2">
@@ -64,7 +65,7 @@
                             <img  src="../../../assets/Logomember- retangle/SCB.png" alt="" />
 
 
-                            <img  src="../../../assets/Logomember- retangle/THAIQR.png" alt="" />
+                        
                         </div>
                         
                     </div>
@@ -147,6 +148,11 @@
     width: 100%;
     height: auto;
    
+}
+.headercondition img{
+    width: 120px;
+    margin-left: 20px;
+
 }
 
 .headercondition p {

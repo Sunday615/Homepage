@@ -13,52 +13,64 @@
             <div class="glass-card">
                 <div class="topcontainer">
                     <h1>
-                        ໄທ  <img src="https://flagcdn.com/th.svg" alt="" /> ສະແກນຊຳລະ ລາວ
-                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວໄທຊຳລະຢູ່ລາວ
+                        ຈີນ <img src="https://flagcdn.com/cn.svg" alt="" /> ສະແກນຊຳລະ ລາວ
+                        <img src="https://flagcdn.com/la.svg" alt="" />: ນັກທ່ອງທ່ຽວຈີນ (ແລະ ອື່ນໆ) ຊຳລະຢູ່ລາວ
                     </h1>
                 </div>
                 <div class="centercontainer">
                     <div class="headercondition">
-                        <p>ເບື້ອງໄທ (ສະແກນຊຳລະ) : 05 ທະນາຄານຫຼັກ.</p>
+
+                        <p>ເບື້ອງລາວ (ຮັບການຊຳລະ) : 10 ທະນາຄານສະມາຊິກ.</p>
                     </div>
                     <div class="logomember">
                         <div class="row1">
-                            <img src="../../../assets/Logomember- retangle/krungsi.jpeg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/Kringthai.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/BBL-Logo-TH.jpg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
-                            <img  src="../../../assets/Logomember- retangle/SCB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/APB.Png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/psvb.PNG" alt="" />
+                            <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
+
                         </div>
                     </div>
                 </div>
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 29px">
-                            ເບື້ອງລາວ (ຮັບການຊຳລະ) : 13 ທະນາຄານສະມາຊິກ.
+                            ເບື້ອງຈີນ/ສາກົນ (ສະແກນຊຳລະ) : ຜ່ານເຄືອຂ່າຍ UnionPay
+
                         </p>
+                        <img src="../../../assets/Logomember- retangle/UnionPay_logo.svg.png" alt="">
                     </div>
-                     <div class="logomember">
+                    <div class="logomember">
                         <div class="row2">
-                            <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/APB.Png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/BICnew.jpeg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/BOCB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/ICBCB.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/ABC.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/CCB.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/Pingan.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/hanapay.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/KBPAY.png" alt="" />
+
+
                         </div>
                         <div class="row3" style="margin-top: 10px;">
-                            
-                            <img src="../../../assets/Logomember- retangle/IBbankk.JPG" alt="" />
-                            <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
-                             <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/psvb.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
-                           
+                            <img src="../../../assets/Logomember- retangle/Npay.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/Woori.png" alt="" />
+
+                            <img src="../../../assets/Logomember- retangle/Shinhancard.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/DBS.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/boost.webp" alt="" />
+                            <img src="../../../assets/Logomember- retangle/GOPAY.png" alt="" />
+
+
                         </div>
                     </div>
-             
+
                 </div>
             </div>
         </div>
@@ -66,23 +78,25 @@
 </template>
 
 <style scoped>
-.imgqrpayment img{
+.imgqrpayment img {
     width: 100%;
     height: 100%;
 
 }
-.imgqrpayment{
+
+.imgqrpayment {
     width: 30%;
     height: 190px;
-    
+
     margin: 0 auto;
     margin-top: 20px;
 }
+
 .bottomcontainer {
     margin-top: 30px;
     width: 100%;
     height: 350px;
-   
+
 }
 
 .row3 img {
@@ -98,9 +112,10 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    
+
     margin: 0 auto;
 }
+
 .row2 img {
     width: 120px;
     height: 120px;
@@ -109,14 +124,15 @@
 
 .row2 {
     display: flex;
-   
+
     width: 100%;
     justify-content: center;
     align-items: center;
     height: auto;
-    
+
     margin: 0 auto;
 }
+
 .row1 img {
     width: 120px;
     height: 120px;
@@ -129,14 +145,14 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    
+
     margin: 0 auto;
 }
 
 .logomember {
     width: 100%;
     height: auto;
-   
+
 }
 
 .headercondition p {
@@ -145,8 +161,14 @@
     text-align: center;
 }
 
+.headercondition img {
+    width: 90px;
+    margin-left: 10px;
+}
+
 .headercondition {
     width: 100%;
+
     height: 80px;
     display: flex;
     justify-content: center;
