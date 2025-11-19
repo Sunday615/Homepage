@@ -211,7 +211,6 @@ const router = createRouter({
     { path: '/companystructure/audit', name: '/companystructure/audit', component: Companystructure_audit },
     { path: '/companystructure/ceo-coo', name: '/companystructure/ceo-coo', component: Companystructure_ceo },
      //######################## Cross Border ###########################
-
      { path: "/crossborder/kh-la", name: "crossborder-kh-la", component: Product6 },
   { path: "/crossborder/la-kh", name: "crossborder-la-kh", component: Product6 },
   { path: "/crossborder/th-la", name: "crossborder-th-la", component: Product6 },

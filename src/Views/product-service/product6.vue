@@ -9,7 +9,7 @@ import vdoproduct6 from "../../components/vdoproductbg/vdoproduct6.vue";
 import crossborder from "../../components/Swipercrossborder/crossborder.vue";
 import routerbuttonarea from "../../components/Router Navigation/routerbuttonarea.vue";
 
-// วิดีโอแต่ละ path
+
 import vdoproductcrossborderKH_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderKH_LA.vue";
 import vdoproductcrossborderLA_KH from "../../components/vdoproductbg/crossborder/vdoproductcrossborderLA_KH.vue";
 import vdoproductcrossborderTH_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderTH_LA.vue";
@@ -17,46 +17,46 @@ import vdoproductcrossborderLA_TH from "../../components/vdoproductbg/crossborde
 
 const route = useRoute();
 
-// ใช้ ref จับ div.videocorssbordershow
+
 const videoBox = ref<HTMLElement | null>(null);
 
-// เลือก component วิดีโอตาม path
-const currentVideoComponent = computed(() => {
-  const path = route.path;
 
-  switch (path) {
-    case "/crossborder/kh-la":
-      return vdoproductcrossborderKH_LA;
-    case "/crossborder/la-kh":
-      return vdoproductcrossborderLA_KH;
-    case "/crossborder/th-la":
-      return vdoproductcrossborderTH_LA;
-    case "/crossborder/la-th":
-      return vdoproductcrossborderLA_TH;
-    default:
-       return vdoproductcrossborderKH_LA;
-  }
+const currentVideoComponent = computed(() => {
+    const path = route.path;
+
+    switch (path) {
+        case "/crossborder/kh-la":
+            return vdoproductcrossborderKH_LA;
+        case "/crossborder/la-kh":
+            return vdoproductcrossborderLA_KH;
+        case "/crossborder/th-la":
+            return vdoproductcrossborderTH_LA;
+        case "/crossborder/la-th":
+            return vdoproductcrossborderLA_TH;
+        default:
+            return vdoproductcrossborderKH_LA;
+    }
 });
 
-// ดู path เปลี่ยน แล้วทำ animation fade-up แค่กล่องวิดีโอ
-watch(
-  () => route.path,
-  () => {
-    if (!videoBox.value) return;
 
-    // reset ก่อน แล้วค่อย animate
-    gsap.fromTo(
-      videoBox.value,
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 2.0,
-        ease: "power3.out",
-      }
-    );
-  },
-  { immediate: true } // ถ้าไม่อยากให้เล่นตอนเข้าเพจครั้งแรก ลบอันนี้ออกได้
+watch(
+    () => route.path,
+    () => {
+        if (!videoBox.value) return;
+
+
+        gsap.fromTo(
+            videoBox.value,
+            { opacity: 0, y: 40 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 2.0,
+                ease: "power3.out",
+            }
+        );
+    },
+    { immediate: true }
 );
 </script>
 
@@ -141,15 +141,11 @@ watch(
                 <routerbuttonarea></routerbuttonarea>
             </div>
         </div>
-        
-           <div class="videocorssbordershow" ref="videoBox">
- 
-    <component :is="currentVideoComponent" :key="$route.path" />
-</div>
 
-       
+        <div class="videocorssbordershow" ref="videoBox">
 
-
+            <component :is="currentVideoComponent" :key="$route.path" />
+        </div>
     </div>
 
     <mainfooter></mainfooter>
