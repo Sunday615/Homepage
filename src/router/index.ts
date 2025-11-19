@@ -215,6 +215,7 @@ const router = createRouter({
   { path: "/crossborder/la-kh", name: "crossborder-la-kh", component: Product6 },
   { path: "/crossborder/th-la", name: "crossborder-th-la", component: Product6 },
   { path: "/crossborder/la-th", name: "crossborder-la-th", component: Product6 },
+  { path: "/crossborder/vn-la", name: "/crossborder/vn-la", component: Product6 },
  
      
   ],

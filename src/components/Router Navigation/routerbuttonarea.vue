@@ -52,7 +52,7 @@
 </template>
 
 <script setup>
-import { ref, watch, computed } from "vue"
+import { ref, watch, computed, onMounted } from "vue"
 import { useRouter } from "vue-router"
 import { gsap } from "gsap"
 
@@ -66,6 +66,7 @@ const languages = [
   { code: "ch", name: "ຈີນ", flag: "https://flagcdn.com/cn.svg" },
 ]
 
+// ค่า default
 const source = ref("kh")
 const target = ref("la")
 
@@ -76,41 +77,93 @@ const leftBlock = ref(null)
 const rightBlock = ref(null)
 const swapBtn = ref(null)
 
-const filteredSource = computed(() =>
-  languages.filter(l => l.code !== target.value)
-)
+const isValidCode = (code) => languages.some(l => l.code === code)
+const getFlag = (code) => languages.find(l => l.code === code)?.flag || ""
+const getName = (code) => languages.find(l => l.code === code)?.name || ""
 
-const filteredTarget = computed(() =>
-  languages.filter(l => l.code !== source.value)
-)
 
-const getFlag = (code) => languages.find(l => l.code === code).flag
-const getName = (code) => languages.find(l => l.code === code).name
+const filteredSource = computed(() => {
+  if (target.value === "la") {
+
+    return languages.filter(l => l.code !== "la")
+  } else {
+   
+    return languages.filter(l => l.code === "la")
+  }
+})
+
+const filteredTarget = computed(() => {
+  if (source.value === "la") {
+  
+    return languages.filter(l => l.code !== "la")
+  } else {
+  
+    return languages.filter(l => l.code === "la")
+  }
+})
+
 
 const selectSource = (code) => {
-  source.value = code
+  if (!isValidCode(code)) return
+
+  if (code === "la") {
+   
+    source.value = "la"
+
+
+    if (target.value === "la") {
+   
+      const firstNonLa = languages.find(l => l.code !== "la")
+      if (firstNonLa) target.value = firstNonLa.code
+    }
+  } else {
+  
+    source.value = code
+    target.value = "la"
+  }
+
   open1.value = false
 }
 
+
 const selectTarget = (code) => {
-  target.value = code
+  if (!isValidCode(code)) return
+
+  if (code === "la") {
+  
+    target.value = "la"
+
+   
+    if (source.value === "la") {
+      const firstNonLa = languages.find(l => l.code !== "la")
+      if (firstNonLa) source.value = firstNonLa.code
+    }
+  } else {
+ 
+    target.value = code
+    source.value = "la"
+  }
+
   open2.value = false
 }
 
-// ฟังก์ชันรวม ใช้ update route ทุกครั้งที่ source/target เปลี่ยน
+
 const updateRoute = () => {
   const path = `/crossborder/${source.value}-${target.value}`
 
-  // ถ้า path เดิมแล้ว ไม่ต้อง push ซ้ำ (กัน error / navigation duplicated)
   if (router.currentRoute.value.path === path) return
 
   router.push(path).catch((err) => {
-    // กัน log error แปลก ๆ อย่าง NavigationDuplicated
     if (err && err.name !== "NavigationDuplicated") {
       console.error(err)
     }
   })
 }
+
+
+watch([source, target], () => {
+  updateRoute()
+})
 
 // GSAP animated swap
 const swap = () => {
@@ -118,24 +171,26 @@ const swap = () => {
   const rightEl = rightBlock.value
   const btnEl = swapBtn.value
 
+ 
   if (!leftEl || !rightEl || !btnEl) {
     const tmp = source.value
     source.value = target.value
     target.value = tmp
-    updateRoute()
+   
+    if (source.value !== "la" && target.value !== "la") {
+      target.value = "la"
+    }
     return
   }
 
   const tl = gsap.timeline()
 
-  // หมุนปุ่ม
   tl.to(btnEl, {
     rotation: "+=180",
     duration: 0.25,
     ease: "power2.inOut",
   })
 
-  // ขยับ block เข้าหากัน
   tl.to(leftEl, {
     x: 40,
     scale: 0.97,
@@ -152,15 +207,17 @@ const swap = () => {
     ease: "power2.in",
   }, "<")
 
-  // สลับค่าตรงกลาง animation
   tl.add(() => {
+
     const tmp = source.value
     source.value = target.value
     target.value = tmp
-    updateRoute()
+
+    if (source.value !== "la" && target.value !== "la") {
+      target.value = "la"
+    }
   })
 
-  // กลับที่ พร้อม bounce นิด ๆ
   tl.to(leftEl, {
     x: 0,
     scale: 1,
@@ -178,11 +235,40 @@ const swap = () => {
   }, "<")
 }
 
-// ถ้าอยากให้เปลี่ยน path ตอนเปลี่ยนจาก dropdown ด้วย -> ใช้ watch นี้
-watch([source, target], () => {
-  updateRoute()
+
+onMounted(() => {
+  const path = router.currentRoute.value.path // /crossborder/kh-la
+  const parts = path.split("/")
+  const last = parts[parts.length - 1] || ""
+  const [src, tgt] = last.split("-")
+
+  if (isValidCode(src) && isValidCode(tgt)) {
+
+    if (src === "la" && tgt !== "la") {
+      source.value = "la"
+      target.value = tgt
+    } else if (tgt === "la" && src !== "la") {
+      source.value = src
+      target.value = "la"
+    } else if (src !== "la" && tgt !== "la") {
+
+      source.value = src
+      target.value = "la"
+    } else {
+     
+      source.value = "la"
+      const firstNonLa = languages.find(l => l.code !== "la")
+      target.value = firstNonLa ? firstNonLa.code : "kh"
+    }
+  } else {
+
+    source.value = "kh"
+    target.value = "la"
+    updateRoute()
+  }
 })
 </script>
+
 
 
 <style scoped>

@@ -4,8 +4,7 @@ import {
     ref
 } from 'vue'
 import gsap from 'gsap'
-import vdoproductcrossborderTH_LA from './components/vdoproductbg/crossborder/vdoproductcrossborderTH_LA.vue'
-import vdoproductcrossborderLA_TH from './components/vdoproductbg/crossborder/vdoproductcrossborderLA_TH.vue'
+import vdoproductcrossborderVN_LA from './components/vdoproductbg/crossborder/vdoproductcrossborderVN_LA.vue'
 
 const overlay = ref(null)
 
@@ -49,13 +48,16 @@ const leave = (el, done) => {
 </script>
 
 <template>
-<div id="app">
+<!-- <div id="app">
     <transition @before-enter="beforeEnter" @enter="enter" @leave="leave" mode="out-in">
         <router-view />
     </transition>
 
     <div ref="overlay" class="overlay"></div>
-</div>
+</div> -->
+<vdoproductcrossborderVN_LA></vdoproductcrossborderVN_LA>
+
+
 </template>
 
 <style scoped>
