@@ -7,7 +7,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
 import floating_action from '../../components/floatingicon/floating_action.vue';
 import tablefee from '../../components/table/tablefee.vue';
 import techproduct4 from '../../components/Landingage/techproduct4.vue';
-import Testcomponent from '../../components/Landingage/Testcomponent.vue';
+
 
 import { onMounted } from 'vue'
 
@@ -19,21 +19,7 @@ onMounted(() => {
         behavior: 'smooth'
     })
 })
-interface Props {
-    brandName?: string
-    headline?: string
-    phone?: string
-    email?: string
-    address?: string
-}
 
-const props = withDefaults(defineProps<Props>(), {
-    brandName: 'Lunaris',
-    headline: "Let’s work together to be the best banking platform in the world",
-    phone: '+123 456 7891',
-    email: 'lunaris@gmail.com',
-    address: '123 Dartmouth Street Boston, United States',
-})
 </script>
 
 
