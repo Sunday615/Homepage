@@ -31,6 +31,7 @@ import gsap from "gsap";
 // Your images
 const images = ref([
   
+  "/swiper/1.png",
   "/swiper/2.png",
   "/swiper/3.png",
   "/swiper/4.png",

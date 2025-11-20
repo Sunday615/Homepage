@@ -29,8 +29,23 @@ const openMap = () => {
 <template>
     <navbarview2></navbarview2>
     <div class="navigatorcontact">
+        <div class="titlenavigator">
+            <div class="bigheader">
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="titleinfowebsite">
+                <div class="leftbox">
+                    <p>wwww.lapnet.com.la</p>
+                </div>
+                <div class="rightbox"></div>
 
-        <img src="../../assets/Contact/contactnav.png" alt="">
+            </div>
+            <div class="descriptionlapnet">
+                <p>Any Where Anytime <br> Payment Chanel</p>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="containercontact">
@@ -42,7 +57,7 @@ const openMap = () => {
                         <p>Contact Us</p>
                     </div>
                     <div class="headercontact">
-                 
+
                         <h1>Anywhere Anytime <br> Any Payment Chanel</h1>
                     </div>
                     <div class="infoboxcontainer">
@@ -133,6 +148,67 @@ const openMap = () => {
 
 
 <style scoped>
+.descriptionlapnet p{
+    font-size: 40px;
+    font-weight: 500;
+    
+}
+.descriptionlapnet{
+    width: 100%;
+    margin-top: 20px;
+    height: 150px;
+    
+}
+.leftbox p {
+    font-size: 23px;
+    font-family: "Inter";
+    color: #fff;
+    font-weight: 300;
+    margin-top: 68px;
+}
+
+.rightbox {
+    width: 30%;
+   
+    border-bottom: 2px solid #fff;
+    height: 100%;
+}
+
+.leftbox {
+    width: 40%;
+    height: 100%;
+
+    
+}
+
+.titleinfowebsite {
+    display: flex;
+    width: 100%;
+    height: 90px;
+
+}
+
+.bigheader h1 {
+    padding-top: 30px;
+    font-size: 110px;
+    font-weight: 900;
+    font-family: "Inter";
+    color: #fff;
+}
+
+.bigheader {
+    width: 100%;
+    height: 190px;
+
+}
+
+.titlenavigator {
+    width: 50%;
+    height: 100%;
+
+    float: right;
+}
+
 .maps {
     margin-top: 100px;
     width: 100%;
@@ -399,6 +475,9 @@ const openMap = () => {
 .navigatorcontact {
     width: 100%;
     height: 450px;
+    background-image: url(../../assets/Contact/contactnav.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 

@@ -4,7 +4,7 @@ import {
     ref
 } from 'vue'
 import gsap from 'gsap'
-
+import Testcomponent from './components/Landingage/Testcomponent.vue'
 const overlay = ref(null)
 
 // Called before new page enters
@@ -54,6 +54,8 @@ const leave = (el, done) => {
 
     <div ref="overlay" class="overlay"></div>
 </div>
+
+
 
 
 

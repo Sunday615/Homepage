@@ -7,6 +7,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
 import floating_action from '../../components/floatingicon/floating_action.vue';
 import tablefee from '../../components/table/tablefee.vue';
 import techproduct4 from '../../components/Landingage/techproduct4.vue';
+import Testcomponent from '../../components/Landingage/Testcomponent.vue';
 
 import { onMounted } from 'vue'
 
@@ -92,8 +93,9 @@ const props = withDefaults(defineProps<Props>(), {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <techproduct4></techproduct4>
-
+       
+         <techproduct4></techproduct4>
+     
     </div>
     <div class="condition">
         <div class="leftconditioncontainer">

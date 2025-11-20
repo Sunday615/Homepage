@@ -146,9 +146,7 @@ watch(
         <vdoproduct6></vdoproduct6>
     </div>
     <div class="infomationcorss-border">
-        <div class="infocrossborder">
-            <img src="/swiper/1.png" alt="">
-        </div>
+     
         <div class="swiperinfo">
             <crossborder></crossborder>
         </div>
