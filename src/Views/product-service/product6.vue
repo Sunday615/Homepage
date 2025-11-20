@@ -10,12 +10,14 @@ import crossborder from "../../components/Swipercrossborder/crossborder.vue";
 import routerbuttonarea from "../../components/Router Navigation/routerbuttonarea.vue";
 
 
+
 import vdoproductcrossborderKH_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderKH_LA.vue";
 import vdoproductcrossborderLA_KH from "../../components/vdoproductbg/crossborder/vdoproductcrossborderLA_KH.vue";
 import vdoproductcrossborderTH_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderTH_LA.vue";
 import vdoproductcrossborderLA_TH from "../../components/vdoproductbg/crossborder/vdoproductcrossborderLA_TH.vue";
 import vdoproductcrossborderVN_LA from "../../components/vdoproductbg/crossborder/vdoproductcrossborderVN_LA.vue";
 import vdoproductcrossborderCN_LA from '../../components/vdoproductbg/crossborder/vdoproductcrossborderCN_LA.vue'
+import Techproduct6 from "../../components/Landingage/techproduct6.vue";
 
 
 
@@ -144,6 +146,9 @@ watch(
         <vdoproduct6></vdoproduct6>
     </div>
     <div class="infomationcorss-border">
+        <div class="infocrossborder">
+            <img src="/swiper/1.png" alt="">
+        </div>
         <div class="swiperinfo">
             <crossborder></crossborder>
         </div>
@@ -159,7 +164,7 @@ watch(
             <component :is="currentVideoComponent" :key="$route.path" />
         </div>
         <div class="descriptionforcustomer">
-            
+            <Techproduct6></Techproduct6>
         </div>
     </div>
 
@@ -175,7 +180,7 @@ watch(
     height: 800px;
 
     border: 1px solid red;
-    margin-top: 50px;
+  
 
 }
 
@@ -218,7 +223,11 @@ watch(
     width: 100%;
     height: auto;
 }
-
+.infocrossborder{
+    width: 100%;
+    height: 600px;
+    border: 1 px solid red;
+}
 .swiperinfo {
     width: 100%;
     height: 600px;
