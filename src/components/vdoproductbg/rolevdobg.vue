@@ -11,36 +11,33 @@
 
         <!-- Center Content -->
         <div class="content">
-            <div class="inforole">
- 
-        <div class="gradient-border" id="box">
-            <div class="titlebox">
-                <h1>ພາລະບົດບາດ</h1>
-            </div>
-
-            <div class="inforolep">
-                <p>ບໍລິສັດ ລາວເນ ເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ (LAPNet) ເຊິ່ງບໍລິສັດ LAPNet ເປັນຜູ້ໃຫ້ບໍລິການລະບົບ
-                    ການຊໍາລະທຸລະກໍາຍ່ອຍ ຕາມທີ່ໄດ້ກໍານົດໄວ້ໃນກົດໝາຍວ່າດ້ວຍລະບົບ ການຊໍາລະ. ຊຶ່ງເຮັດໜ້າທີ່ເປັນໂຕກາງໃນການ
-                    ເຊື່ອມໂຍງກັບທຸກຂະແໜງການຊຳລະທີ່ເປັນທະນາຄານ, ສະຖາບັນການເງິນ ແລະ ຜູ້ໃຫ້ບໍລິການ ການຊຳລະແຫ່ງດຽວໃນ ສປປ
-                    ລາວ;</p>
-                <p>ເພື່ອອໍານວຍຄວາມສະດວກໃຫ້ລູກຄ້າຂອງບັນດາທະນາຄານທີ່ເຂົ້າມາເປັນສະມາຊິກສາມາດນໍາໃຊ້ບັດສິນເຊື່ອ, ບັດເງິນຝາກ
-                    ແລະ ບັດ ATM ໃນ ການເຮັດທຸລະກໍາດ້ານການເງິນຜ່ານຕູ້ ATM ແລະ ເຄື່ອງ (POS) ຮ່ວມກັນລະຫວ່າງທະນາຄານ,
-                    ໄດ້ຢ່າງສະດວກ ທຸກທີ່ ທຸກເວລາ.</p>
-            </div>
-
-            <div class="productreview">
-                <div class="headerproduct">
-                    <h1>ຜະລິດຕະພັນການໃຫ້ບໍລິການມີດັ່ງນີ້:</h1>
-                </div>
-                <div class="productlist">
-                    <ul>
-                        <typing></typing>
-                    </ul>
-
+            <div class="glass-card">
+                <div class="containerinblur">
+                    <div class="headerrow">
+                        <h1>ພາລະບົດບາດຂອງ LAPNet
+                        </h1>
+                        <img style="margin-left:10px" src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
+                    </div>
+                    <div class="descriptionrole">
+                        <p>ບໍລິສັດ ລາວເນ ເຊີນນໍ ເພເມັ້ນ ເນັດເວີກ ຈຳກັດ (LAPNet) ເຊິ່ງບໍລິສັດ LAPNet
+                            ເປັນຜູ້ໃຫ້ບໍລິການລະບົບ ການຊໍາລະທຸລະກໍາຍ່ອຍ ຕາມທີ່ໄດ້ກໍານົດໄວ້ໃນກົດໝາຍວ່າດ້ວຍລະບົບ ການຊໍາລະ.
+                            ຊຶ່ງເຮັດໜ້າທີ່ເປັນໂຕກາງໃນການ ເຊື່ອມໂຍງກັບທຸກຂະແໜງການຊຳລະທີ່ເປັນທະນາຄານ, ສະຖາບັນການເງິນ ແລະ
+                            ຜູ້ໃຫ້ບໍລິການ ການຊຳລະແຫ່ງດຽວໃນ ສປປ ລາວ;</p>
+                        <p>ເພື່ອອໍານວຍຄວາມສະດວກໃຫ້ລູກຄ້າຂອງບັນດາທະນາຄານທີ່ເຂົ້າມາເປັນສະມາຊິກສາມາດນໍາໃຊ້ບັດສິນເຊື່ອ,
+                            ບັດເງິນຝາກ ແລະ ບັດ ATM ໃນ ການເຮັດທຸລະກໍາດ້ານການເງິນຜ່ານຕູ້ ATM ແລະ ເຄື່ອງ (POS)
+                            ຮ່ວມກັນລະຫວ່າງທະນາຄານ, ໄດ້ຢ່າງສະດວກ ທຸກທີ່ ທຸກເວລາ.</p>
+                    </div>
+                    <div class="productlist">
+                        <div class="headerproductlist">
+                            <h1>ຜະລິດຕະພັນການໃຫ້ບໍລິການມີດັ່ງນີ້ :</h1>
+                        </div>
+                        <div class="typingfuc">
+                            <typing></typing>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+
         </div>
     </div>
 </template>
@@ -77,153 +74,109 @@ function playAnimation() {
 </script>
 
 <style scoped>
-.inforole {
+.typingfuc{
     width: 100%;
-    height: 950px;
-
-    display: flex;
-    align-items: center;
-
-    justify-content: center;
-
-
+    height: 500px ;
+ 
 }
-
-.productlist ul {
-    margin-top: 20px;
+.headerproductlist h1{
+        font-weight: bold;
+        font-size: 25px;
 }
+.headerproductlist{
+width: 100%;
+height: auto;
+margin-bottom: 5px;
 
-.productlist ul li {
-    font-family: "Noto Sans Lao", sans-serif;
-    font-size: 27px;
-    margin-bottom: 20px;
+
+ 
 }
-
-.productlist {
-    width: 100%;
-    height: 430px;
-
-}
-
-.headerproduct h1 {
-    font-size: 35px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-}
-
-.headerproduct {
-    width: 100%;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-}
-
-.productreview {
-    width: 60%;
-    height: 500px;
-
-    margin-top: 30px;
-    margin-left: 5%;
-
-}
-
-.inforolep p {
-    font-size: 23px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-bottom: 40px;
-}
-
-.inforolep {
-    width: 90%;
-
-    height: 200px;
-
+.productlist{
+     width: 80%;
     margin: 0 auto;
-
+    height: 380px;
+    margin-top: 70px;
+  
+   
+}
+.descriptionrole p{
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+.descriptionrole {
+    width: 80%;
+    margin: 0 auto;
+    height: 190px;
+    margin-top: 50px;
+    
 }
 
-.titlebox h1 {
+.headerrow h1 {
     font-size: 60px;
-    font-family: "Noto Sans Lao", sans-serif;
     font-weight: bold;
     text-align: center;
-
-
 }
 
-.titlebox {
-    margin-top: 10px;
+.headerrow {
     width: 100%;
-    height: 100px;
-
-    margin-bottom: 30px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
 
 }
 
-#box {
-    font-family: "Noto Sans Lao", sans-serif;
+.containerinblur {
     width: 95%;
     height: 90%;
-    color: white;
-    font-family: 'Raleway';
-    font-size: 2.5rem;
+
 }
 
-.gradient-border {
-    --borderWidth: 3px;
-    background: #000000;
-    
+.glass-card {
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
     position: relative;
-    border-radius: var(--borderWidth);
+    overflow: hidden;
 }
 
-.gradient-border:after {
+
+.glass-card::before {
     content: '';
     position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    -webkit-animation: animatedgradient 3s ease alternate infinite;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.8),
+            transparent);
 }
 
-
-@-webkit-keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.8),
+            transparent,
+            rgba(255, 255, 255, 0.3));
 }
-
-
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-
 
 .boxtitle {
     width: 95%;

@@ -93,7 +93,7 @@
                             </div>
                         </div>
 
-                        <!-- PAGE 2 : การ์ดใหม่ 3 ใบ -->
+                        <!-- PAGE 2 : New 3 card-->
                         <div class="slider-page">
                             <div class="features">
                                 <div class="card feature-card feature-card--qr">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
 
-                        <!-- PAGE 3 : การ์ดใหม่ 3 ใบ -->
+                        <!-- PAGE 3 : New 3 card  -->
                         <div class="slider-page">
                             <div class="features">
                                 <div class="card feature-card feature-card--qr">
@@ -232,7 +232,7 @@ import { gsap } from "gsap"
 
 const section = ref(null)
 const currentPage = ref(0)
-const totalPages = 3 // มี 3 หน้า (3x3 = 9 การ์ด)
+const totalPages = 3 // Total page 3x3
 
 let autoTimer = null
 
@@ -254,7 +254,7 @@ const startAuto = () => {
     stopAuto()
     autoTimer = setInterval(() => {
         nextPage()
-    }, 99999) // auto scroll ทุก 6 วิ
+    }, 8000) // auto scroll about 8 sec
 }
 
 const handleNext = () => {

@@ -43,7 +43,7 @@ onMounted(() => {
 <style scoped>
 .typing-container {
   font-family: "Noto Sans Lao", sans-serif;
-  font-size: 29px;
+  font-size: 23px;
   line-height: 2.0;
   color: #ffffff;
   white-space: pre-line;
