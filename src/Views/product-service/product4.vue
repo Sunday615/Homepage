@@ -61,8 +61,8 @@ onMounted(() => {
                         <br>ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນ<br>ເງິນຂ້າມທະນາຄານໄດ້.
                     </p>
                 </div>
-                <div class="btnproduct">
-                    <div data-aos="fade-up" data-aos-duration="1000">
+               <div class="btnproduct">
+                    <div data-aos="fade-up" data-aos-once="true" data-aos-duration="800">
                         <button class="button-66" role="button"> <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ
                             ການບໍລິການ</button>
                     </div>
@@ -116,6 +116,48 @@ onMounted(() => {
 
 
 <style scoped>
+.btnproduct button {
+    font-family: "Noto Sans Lao", sans-serif;
+    margin-top: 100px;
+}
+
+.button-66 {
+    font-family: "Noto Sans Lao", sans-serif;
+    background-color: #433bff;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(1, 60, 136, .5) 0 -1px 3px 0 inset, rgba(0, 44, 97, .1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inherit;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    min-height: 70px;
+    min-width: 820px;
+    padding: 50px 30px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+.button-66:hover {
+    background-color: #514bff;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .button-66 {
+        padding: 16px 44px;
+        min-width: 150px;
+    }
+}
 .contentproduct1-page2 {
     width: 100%;
     height: 650px;
@@ -262,9 +304,9 @@ onMounted(() => {
 
 #mobile {
     width: 400px;
-    height: 600px;
+    height: 550px;
     position: relative;
-    bottom: 400px;
+    bottom: 340px;
     right: 100px;
 
 }
@@ -273,6 +315,7 @@ onMounted(() => {
     height: 600px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     top: -100px;
+    margin-left: 160px;
 }
 
 .boxpadding {
