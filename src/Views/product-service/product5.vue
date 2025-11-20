@@ -80,7 +80,7 @@ onMounted(() => {
 
         </div>
         <div class="memberservice">
-            <img id="bgmember" src="../../assets/products/product5/product5-bg-2.png" alt="">
+        
             <div data-aos="zoom-out-up" data-aos-duration="1000">
                 <h1>ທະນາຄານທີ່ເປັນສະມາຊິກຂອງການບໍລິການ<br>ຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ LAPNet QR Payment</h1>
             </div>
@@ -267,17 +267,13 @@ onMounted(() => {
     padding-top: 70px;
 }
 
-#bgmember {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}
 
 .memberservice {
     width: 100%;
     height: 960px;
-
+    background-image: url(../../assets/Products/product5/product5-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .boxpadding {

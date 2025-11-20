@@ -132,7 +132,7 @@ const props = withDefaults(defineProps<Props>(), {
 <style scoped>
 .contentproduct1-page2 {
     width: 100%;
-    height: 500px;
+    height: 650px;
  
 }
 
