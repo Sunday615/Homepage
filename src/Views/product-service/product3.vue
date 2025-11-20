@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
 import vdoproduct3 from '../../components/vdoproductbg/vdoproduct3.vue'
@@ -6,13 +6,13 @@ import infinitescrolling from '../../components/Infinitescrolling/infinitescroll
 import tablefee from '../../components/table/tablefee.vue';
 import { onMounted } from 'vue'
 import footer_memberservice_product3 from '../../components/memberfooter/footer_memberservice_product3.vue';
-
+import stepwork from '../../components/Typingfunction/stepwork.vue';
 onMounted(() => {
- 
+
     window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth' 
+        behavior: 'smooth'
     })
 })
 </script>
@@ -73,7 +73,7 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-       <vdoproduct3></vdoproduct3>
+        <vdoproduct3></vdoproduct3>
 
     </div>
     <div class="condition">
@@ -99,50 +99,24 @@ onMounted(() => {
 
     </div>
     <div class="feeforservice">
-        <img src="../../assets/products/product3/feeservice-bg.png" alt="">
+        <div class="atmmockup">
+            <img src="../../assets/Products/Product3/ATM.webp" alt="">
+        </div>
+        <div class="titlefeeservice">
+            <div class="headerfeeservice">
+                <h1>ຄ່າທຳນຽມໂອນເງິນ <br>ຂ້າມທະນາຄານຜ່ານ<br>ຕູ້ ATM</h1>
+                <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ທີ່ມີສັນຍາລັກ LAPNet <br>
+                <i class="fa-solid fa-window-minimize"></i> ຄ່າບໍລິການເລີ່ມຕົ້ນພຽງ 1,000 ກີບ
+                </p>
+            </div>
+   
+        </div>
     </div>
     <div class="tablefee">
         <tablefee></tablefee>
     </div>
     <div class="step">
-        <img id="stepbg" src="../../assets/products/Product3/Blue Gradient Futuristic Tech Company Presentation-2.png"
-            alt="">
-        <div class="titlestep">
-            <div class="header-step">
-                <h1>ຂັ້ນຕອນການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM </h1>
-            </div>
-            <div class="imagestep">
-                <img style="width: 100%; height:100% ;object-fit: cover;border-radius: 15px;"
-                    src="../../assets/products/Product3/lapnetproduct3-2.png" alt="">
-            </div>
-        </div>
-        <div class="infostep">
-            <div class="line1">
-                <h1><i class="fa-solid fa-circle-check"></i> ຂັ້ນຕອນທີ 1 ຈຸດໃຫ້ບໍລິການ</h1>
-                <p>
-                    ການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ສາມາດເຮັດທຸລະກຳການໂອນໄດ້ທີ່ຕູ້ ATM ດັ່ງລຸ່ມນີ້:
-                <ul>
-                    <li>1. ບັດ ATM ຂອງທະນາຄານ (A) ສາມາດນຳໃຊ້ຕູ້ຂອງທະນາຄານ (A) ເພື່ອໂອນຫາຜູ້ຮັບປາຍທາງ ທີ່ທະນາຄານ (B)</li>
-                    <li>2. ບັດທະນາຄານ (A) ສາມາດນຳໃຊ້ຕູ້ຂອງທະນາຄານ (B) ເພື່ອໂອນຫາຜູ້ຮັບປາຍທາງທີ່ທະນາຄານ (C)</li>
-                </ul>
-                </p>
-            </div>
-            <div class="line2">
-                <h1><i class="fa-solid fa-circle-check"></i> ຂັ້ນຕອນທີ 2 ສະມາຊິກທີ່ໃຫ້ບໍລິການ</h1>
-                <p>ສາມາດເລືອກໃຊ້ຕູ້ ATM ໃດກໍ່ໄດ້ ພາຍໃນ 16 ທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet</p>
-            </div>
-            <div class="line3">
-                <h1><i class="fa-solid fa-circle-check"></i> ຂັ້ນຕອນທີ 3 ການເຮັດທຸລະກຳ</h1>
-                <p>
-                <ul>
-                    <li>1. ນຳບັດ ATM ປ່ອນເຂົ້າຕູ້ ATM ເຮັດຕາມຂັ້ນຕອນການໂອນເງິນ ແລະ ປ້ອນເລກໜ້າບັດ 16 ໂຕເລກຂອງຜູ້ຮັບປາຍທາງ
-                        ກົດຈຳນວນເງິນ ແລ້ວຢືນຢັນ.</li>
-                    <li>2. ຜູ້ຮັບປາຍທາງຈະໄດ້ຮັບເງິນໂອນທັນທີ ຫຼັງຈາກທຸລະກຳການໂອນເງິນສຳເລັດ.
-                    </li>
-                </ul>
-                </p>
-            </div>
-        </div>
+        <stepwork></stepwork>
     </div>
     <footer_memberservice_product3></footer_memberservice_product3>
     <mainfooter></mainfooter>
@@ -152,6 +126,44 @@ onMounted(() => {
 
 
 <style scoped>
+.headerfeeservice p{
+    font-size: 30px;
+    color : #fff;
+    margin-top: 30px;
+}
+.headerfeeservice h1{
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+}
+.headerfeeservice {
+    width: 85%;
+    height: 500px;
+    
+  
+}
+
+.atmmockup img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.titlefeeservice {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+  
+}
+
+.atmmockup {
+    width: 60%;
+    height: 100%;
+
+}
+
 .imagestep {
     width: 600px;
     height: 350px;
@@ -275,10 +287,6 @@ p {
     position: absolute;
     z-index: -1;
 }
-
-
-
-
 .tablefee {
     width: 100%;
     height: 1100px;
@@ -288,14 +296,16 @@ p {
 
 }
 
-.feeforservice img {
-    width: 100%;
-    height: 100%;
-}
 
 .feeforservice {
+    overflow: hidden;
     width: 100%;
+    display: flex;
     height: 850px;
+    background-image: url(../../assets/Products/Product3/bgatmpd3.png);
+    background-size: cover;
+    border: 1px solid blue;
+    background-repeat: no-repeat;
 
 }
 

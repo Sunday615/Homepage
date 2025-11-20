@@ -17,7 +17,21 @@ onMounted(() => {
         behavior: 'smooth'
     })
 })
+interface Props {
+  brandName?: string
+  headline?: string
+  phone?: string
+  email?: string
+  address?: string
+}
 
+const props = withDefaults(defineProps<Props>(), {
+  brandName: 'Lunaris',
+  headline: "Let’s work together to be the best banking platform in the world",
+  phone: '+123 456 7891',
+  email: 'lunaris@gmail.com',
+  address: '123 Dartmouth Street Boston, United States',
+})
 </script>
 
 
@@ -76,29 +90,24 @@ onMounted(() => {
         </div>
     </div>
     <div class="contentproduct1-page2">
-        <img id="bgpd1-page2" src="../../assets/products/product4/Product4benetfit-2.png" alt="">
-        <div class="headerpage2-box1">
-            <div data-aos="zoom-in-down" data-aos-duration="1000">
-                <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
-                <p>ຊ່ວຍຫຼຸດຜ່ອນຕົ້ນທຶນທາງດ້ານບຸກຄະລາກອນທີ່ໃຫ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານໜ່ວຍງານບໍລິການ ຫຼື ຕູ້ ATM
-                    ຂອງແຕ່ລະ<br>ທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ນັ້ນ, ໃຫ້ລູກຄ້າຫັນມານຳໃຊ້
-                    ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື ໃນການດຳເນີນທຸລະກຳ.
+          <section class="landing-container">
+    <div class="contact-card">
+      <div class="brand">
+        <div class="brand-icon"></div>
+        <span class="brand-name">{{ brandName }}</span>
+      </div>
 
-                </p>
-            </div>
-        </div>
-        <div class="headerpage2-box1">
-            <div data-aos-duration="1000" data-aos="zoom-in-down">
-                <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
-                <p>ຜະລິດຕະພັນ ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນີ້
-                    ຈະຊ່ວຍອຳນວຍຄວາມສະດວກໃຫ້ແກ່ມວນຊົນໃນການດຳເນີນທຸລະກຳທາງການເງິນ<br>ຢູ່ເທິງມືຖືໄດ້ງ່າຍ ແລະ ວ່ອງໄວຂື້ນ
-                    ໂດຍນຳໃຊ້ Applications ຂອງແຕ່ລະທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet,<br>
-                    ຕາມຄຳຂວັນທີ່ກ່າວໄວ້ວ່າ: “ ທຸກທີ່ ທຸກເວລາ ທຸກຊ່ອງທາງການຊຳລະ”
+      <h1 class="headline">
+        {{ headline }}
+      </h1>
 
-                </p>
-            </div>
-        </div>
+      <div class="details">
+        <p v-if="phone">{{ phone }}</p>
+        <p v-if="email">{{ email }}</p>
+        <p v-if="address">{{ address }}</p>
+      </div>
+    </div>
+  </section>
 
     </div>
     <div class="condition">
@@ -134,6 +143,122 @@ onMounted(() => {
 
 
 <style scoped>
+/* Full-page section */
+.landing-container {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+
+  /* Space / stars background */
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.18) 0, transparent 45%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.12) 0, transparent 40%),
+    radial-gradient(circle at 10% 80%, rgba(0, 80, 255, 0.6) 0, #000814 60%);
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Star field hint */
+.landing-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(255, 255, 255, 0.7) 0, transparent 50%),
+    radial-gradient(1px 1px at 30% 80%, rgba(255, 255, 255, 0.4) 0, transparent 50%),
+    radial-gradient(1px 1px at 70% 30%, rgba(255, 255, 255, 0.5) 0, transparent 50%),
+    radial-gradient(1px 1px at 90% 60%, rgba(255, 255, 255, 0.6) 0, transparent 50%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Main card */
+.contact-card {
+  position: relative;
+  max-width: 960px;
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  border-radius: 32px;
+  padding: 72px 64px;
+  box-sizing: border-box;
+  text-align: center;
+
+  background: radial-gradient(circle at bottom, #274bff 0, #050914 55%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 0 60px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(70, 120, 255, 0.7);
+  backdrop-filter: blur(26px);
+}
+
+/* Brand row */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.brand-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.brand-name {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* Headline */
+.headline {
+  max-width: 640px;
+  margin: 0 auto 56px;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Contact details */
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.details p {
+  margin: 0;
+}
+
+/* Simple responsiveness */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 48px 24px;
+    max-height: none;
+  }
+
+  .headline {
+    font-size: 24px;
+  }
+}
+.contentproduct1-page2{
+    width: 100%;
+    height: 800px;
+    border: 1px solid red;
+}
 .containerfee {
     width: 100%;
     height: 1100px;
@@ -271,55 +396,6 @@ onMounted(() => {
 
 }
 
-#bgpd1-page2 {
-    width: 100%;
-    height: 820px;
-    position: absolute;
-    z-index: -1;
-
-}
-
-.headerpage2-box1 {
-    width: 64%;
-    height: 390px;
-    padding-top: 40px;
-
-
-}
-
-.headerpage2-box1 h2 {
-    color: #fff;
-    font-size: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.headerpage2-box1 p {
-    color: #fff;
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
-    line-height: 2.0;
-    padding-top: 70px;
-
-}
-
-.headerpage2-box1 h1 {
-    font-size: 60px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-
-
-}
-
-.contentproduct1-page2 {
-    width: 100%;
-    height: 800px;
-    margin-bottom: 20px;
-
-}
 
 #mobile {
     width: 400px;

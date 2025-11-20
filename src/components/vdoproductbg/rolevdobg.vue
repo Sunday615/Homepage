@@ -121,6 +121,7 @@ margin-bottom: 5px;
     width: 100%;
     height: 70px;
     display: flex;
+
     justify-content: center;
 
 }
