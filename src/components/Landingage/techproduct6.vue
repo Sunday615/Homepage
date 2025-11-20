@@ -146,12 +146,24 @@
 
 
                                 <div class="card feature-card feature-card--exchange">
-                                    <h3>ລາຍງານທຸລະກໍາ</h3>
+                                    <h3>ວິທີການຊຳລະ ໄທ🇹🇭 ສະແກນຊຳລະ ລາວ🇱🇦</h3>
                                     <p>
-                                        ສາມາດເບິ່ງປະຫວັດການຊຳລະຂ້າມແດນ ແບບລະອຽດ
-                                        ເພື່ອຊ່ວຍໃນການບໍລິຫານທຸລະກິດ.
+                                        ນັກທ່ອງທ່ຽວໄທໃຊ້ Mobile Banking App ຂອງທະນາຄານໄທທີ່ເຂົ້າຮ່ວມ ສະແກນ LAO QR
+                                        ທີ່ຮ້ານຄ້າໃນລາວ.
                                     </p>
+
+                                    <div class="feature-icon">
+                                        <span>
+                                            <img style="border-radius: 5px; width:75px;"
+                                                src="../../assets/Logomember- retangle/LAOQR.png" alt="" />
+
+
+                                        </span>
+                                    </div>
+
+
                                 </div>
+
                             </div>
                         </div>
 
@@ -159,27 +171,46 @@
                         <div class="slider-page">
                             <div class="features">
                                 <div class="card feature-card feature-card--qr">
-                                    <h3>ສະດວກສຳລັບນັກທ່ອງທ່ຽວ</h3>
+                                    <h3>ວິທີການຊຳລະ ລາວ🇱🇦 ສະແກນຊຳລະ ໄທ🇹🇭</h3>
                                     <p>
-                                        ນັກທ່ອງທ່ຽວບໍ່ຈໍາເປັນຕ້ອງແລກເງິນສົດ
-                                        ສາມາດຈ່າຍຜ່ານ Mobile Banking ຂອງຕົນເອງໄດ້ເລີຍ.
+                                        ນັກທ່ອງທ່ຽວລາວໃຊ້ Mobile Banking App ຂອງທະນາຄານລາວທີ່ເຂົ້າຮ່ວມ ສະແກນ Thai QR
+                                        ຢູ່ຮ້ານຄ້າໃນໄທ.
                                     </p>
+                                    <div class="feature-icon">
+                                        <span>
+                                            <img style="border-radius: 5px; width:75px;"
+                                                src="../../assets/Logomember- retangle/Thaiqrnew.png" alt="" />
+
+                                        </span>
+                                    </div>
                                 </div>
 
                                 <div class="card feature-card feature-card--fx">
-                                    <h3>ຊອບພອດສຳລັບຮ້ານຄ້າ</h3>
+                                    <h3>ວິທີການຊຳລະ ຫວຽດນາມ🇻🇳 ສະແກນຊຳລະ ລາວ🇱🇦</h3>
                                     <p>
-                                        ຮ້ານຄ້າໄດ້ຮັບເງິນເຂົ້າບັນຊີ LAK
-                                        ໂດຍອັດຕະໂນມັດ ແລະສາມາດກວດສອບລາຍຮັບຍ້ອນຫຼັງໄດ້.
+                                        ນັກທ່ອງທ່ຽວຫວຽດນາມໃຊ້ Mobile Banking App ຂອງທະນາຄານຫວຽດນາມທີ່ເຂົ້າຮ່ວມ ສະແກນ LAO QR ທີ່ຮ້ານຄ້າໃນລາວ.
                                     </p>
+                                     <div class="feature-icon">
+                                        <span>
+                                            <img style="border-radius: 5px; width:75px;"
+                                                src="../../assets/Logomember- retangle/LAOQR.png" alt="" />
+
+                                        </span>
+                                    </div>
                                 </div>
 
                                 <div class="card feature-card feature-card--exchange">
-                                    <h3>ພ້ອມຂະຫຍາຍໃນອະນາຄົດ</h3>
+                                    <h3>ວິທີການຊຳລະ ຈີນ🇨🇳 ສະແກນຊຳລະ ລາວ🇱🇦</h3>
                                     <p>
-                                        ອອກແບບເພື່ອຮອງຮັບການເຊື່ອມຕໍ່ກັບປະເທດໃໝ່ໆ
-                                        ແລະຟັງຊັນດ້ານການເງິນທີ່ຫຼາກຫຼາຍຂຶ້ນ.
+                                       ນັກທ່ອງທ່ຽວໃຊ້ Mobile App ຂອງເຄືອຂ່າຍທີ່ເຊື່ອມຕໍ່ກັບ UnionPay ຫຼື ຜູ້ໃຫ້ບໍລິການທີ່ກ່າວມາຂ້າງເທິງ ສະແກນ LAO QR ທີ່ຮ້ານຄ້າໃນລາວ.
                                     </p>
+                                    <div class="upitolaoqr">
+                                            <div class="logocontainer">
+                                                <img style=" width: 75px; height:75px; box-shadow: 0 0 25px #3b82f6e6;" src="../../assets/Logomember- retangle/UPIwithbg.png" alt="">
+                                                <i class="fa-solid fa-right-long"></i>
+                                                <img style="width: 75px; height:75px;  box-shadow: 0 0 25px #3b82f6e6;" src="../../assets/Logomember- retangle/LAOQR.png" alt="">
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -262,13 +293,40 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.logocontainer img{
+    width: 75px;
+    height: 50px;
+
+ 
+
+}
+.logocontainer i {
+    font-size: 23px;
+}
+.logocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+  
+    margin: 0 auto;
+    height: auto;
+
+}
+.upitolaoqr{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 150px;
+
+}
 .flexicon {
-    width: 50%;
+    width: 100%;
     height: 70px;
     margin: 0 auto;
     display: flex;
 
-    justify-content: space-between;
+
 
 
 }
@@ -487,14 +545,14 @@ onBeforeUnmount(() => {
     width: 70px;
     height: 70px;
 
-
+    margin-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #020617;
     font-weight: 700;
     font-size: 20px;
-    box-shadow: 0 0 25px rgba(59, 130, 246, 0.9);
+    box-shadow: 0 0 25px #3b82f6e6;
     position: relative;
     z-index: 1;
 }

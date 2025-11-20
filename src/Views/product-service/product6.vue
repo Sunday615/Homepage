@@ -179,7 +179,7 @@ watch(
     width: 100%;
     height: 800px;
 
-    border: 1px solid red;
+ 
   
 
 }
@@ -226,7 +226,7 @@ watch(
 .infocrossborder{
     width: 100%;
     height: 600px;
-    border: 1 px solid red;
+    
 }
 .swiperinfo {
     width: 100%;
@@ -247,7 +247,7 @@ watch(
     width: 100%;
     height: auto;
 
-    border: 1px solid rgb(0, 13, 255);
+ 
 
 }
 
@@ -289,7 +289,7 @@ watch(
     text-align: center;
 }
 
-.contentproduct1-page2 img {}
+
 
 .contentproduct1-page2 {
     width: 100%;

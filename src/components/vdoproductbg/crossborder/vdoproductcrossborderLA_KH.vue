@@ -32,7 +32,7 @@
                             <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
             
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
+                           
                             <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
                         </div>
                     </div>
@@ -75,12 +75,14 @@
 .row1 img {
     width: 120px;
     height: 120px;
+    margin-right: 10px;
 }
 
 .row1 {
     display: flex;
-    width: 50%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: center;
+
     align-items: center;
     height: auto;
     
