@@ -6,6 +6,7 @@ import footer_memberservice_product4 from '../../components/memberfooter/footer_
 import mainfooter from '../../components/footer/mainfooter.vue';
 import floating_action from '../../components/floatingicon/floating_action.vue';
 import tablefee from '../../components/table/tablefee.vue';
+import techproduct4 from '../../components/Landingage/techproduct4.vue';
 
 import { onMounted } from 'vue'
 
@@ -18,19 +19,19 @@ onMounted(() => {
     })
 })
 interface Props {
-  brandName?: string
-  headline?: string
-  phone?: string
-  email?: string
-  address?: string
+    brandName?: string
+    headline?: string
+    phone?: string
+    email?: string
+    address?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  brandName: 'Lunaris',
-  headline: "Let’s work together to be the best banking platform in the world",
-  phone: '+123 456 7891',
-  email: 'lunaris@gmail.com',
-  address: '123 Dartmouth Street Boston, United States',
+    brandName: 'Lunaris',
+    headline: "Let’s work together to be the best banking platform in the world",
+    phone: '+123 456 7891',
+    email: 'lunaris@gmail.com',
+    address: '123 Dartmouth Street Boston, United States',
 })
 </script>
 
@@ -70,7 +71,8 @@ const props = withDefaults(defineProps<Props>(), {
                 <div class="titleinfopage1">
                     <p>ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື (Fund Transfer via Mobile <br> Application) ໂດຍນຳໃຊ້ລະບົບ LMPS
                         ໃນການເຊື່ອມໂຍງຜ່ານ <br>Applications ຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງບໍລິສັດລາວ
-                        <br>ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນ<br>ເງິນຂ້າມທະນາຄານໄດ້.</p>
+                        <br>ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການດຳເນີນທຸລະກຳໂອນ<br>ເງິນຂ້າມທະນາຄານໄດ້.
+                    </p>
                 </div>
                 <div class="btnproduct">
                     <div data-aos="fade-up" data-aos-duration="1000">
@@ -90,24 +92,7 @@ const props = withDefaults(defineProps<Props>(), {
         </div>
     </div>
     <div class="contentproduct1-page2">
-          <section class="landing-container">
-    <div class="contact-card">
-      <div class="brand">
-        <div class="brand-icon"></div>
-        <span class="brand-name">{{ brandName }}</span>
-      </div>
-
-      <h1 class="headline">
-        {{ headline }}
-      </h1>
-
-      <div class="details">
-        <p v-if="phone">{{ phone }}</p>
-        <p v-if="email">{{ email }}</p>
-        <p v-if="address">{{ address }}</p>
-      </div>
-    </div>
-  </section>
+        <techproduct4></techproduct4>
 
     </div>
     <div class="condition">
@@ -143,128 +128,18 @@ const props = withDefaults(defineProps<Props>(), {
 
 
 <style scoped>
-/* Full-page section */
-.landing-container {
-  width: 100%;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  box-sizing: border-box;
-
-  /* Space / stars background */
-  background:
-    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.18) 0, transparent 45%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.12) 0, transparent 40%),
-    radial-gradient(circle at 10% 80%, rgba(0, 80, 255, 0.6) 0, #000814 60%);
-  position: relative;
-  color: #ffffff;
-  overflow: hidden;
-}
-
-/* Star field hint */
-.landing-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(1px 1px at 10% 20%, rgba(255, 255, 255, 0.7) 0, transparent 50%),
-    radial-gradient(1px 1px at 30% 80%, rgba(255, 255, 255, 0.4) 0, transparent 50%),
-    radial-gradient(1px 1px at 70% 30%, rgba(255, 255, 255, 0.5) 0, transparent 50%),
-    radial-gradient(1px 1px at 90% 60%, rgba(255, 255, 255, 0.6) 0, transparent 50%);
-  opacity: 0.35;
-  pointer-events: none;
-}
-
-/* Main card */
-.contact-card {
-  position: relative;
-  max-width: 960px;
-  width: 100%;
-  height: 100%;
-  max-height: 520px;
-  border-radius: 32px;
-  padding: 72px 64px;
-  box-sizing: border-box;
-  text-align: center;
-
-  background: radial-gradient(circle at bottom, #274bff 0, #050914 55%);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow:
-    0 0 60px rgba(0, 0, 0, 0.8),
-    0 0 40px rgba(70, 120, 255, 0.7);
-  backdrop-filter: blur(26px);
-}
-
-/* Brand row */
-.brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 40px;
-}
-
-.brand-icon {
-  width: 18px;
-  height: 18px;
-  border-radius: 999px;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
-
-.brand-name {
-  font-size: 14px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  opacity: 0.85;
-}
-
-/* Headline */
-.headline {
-  max-width: 640px;
-  margin: 0 auto 56px;
-  font-size: 32px;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-/* Contact details */
-.details {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-.details p {
-  margin: 0;
-}
-
-/* Simple responsiveness */
-@media (max-width: 768px) {
-  .contact-card {
-    padding: 48px 24px;
-    max-height: none;
-  }
-
-  .headline {
-    font-size: 24px;
-  }
-}
-.contentproduct1-page2{
+.contentproduct1-page2 {
     width: 100%;
-    height: 800px;
-    border: 1px solid red;
+    height: 500px;
+ 
 }
+
 .containerfee {
     width: 100%;
     height: 1100px;
     display: flex;
     align-items: center;
-  
+
 
 }
 

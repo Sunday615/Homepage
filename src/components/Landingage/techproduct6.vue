@@ -206,9 +206,9 @@
                                     </p>
                                     <div class="upitolaoqr">
                                             <div class="logocontainer">
-                                                <img style=" width: 75px; height:75px; box-shadow: 0 0 25px #3b82f6e6;" src="../../assets/Logomember- retangle/UPIwithbg.png" alt="">
+                                                <img style=" width: 75px; height:75px; box-shadow: 0 0 25px #3b82f6e6; border-radius: 5px;" src="../../assets/Logomember- retangle/UPIwithbg.png" alt="">
                                                 <i class="fa-solid fa-right-long"></i>
-                                                <img style="width: 75px; height:75px;  box-shadow: 0 0 25px #3b82f6e6;" src="../../assets/Logomember- retangle/LAOQR.png" alt="">
+                                                <img style="width: 75px; height:75px;  box-shadow: 0 0 25px #3b82f6e6; border-radius: 5px;" src="../../assets/Logomember- retangle/LAOQR.png" alt="">
                                             </div>
                                     </div>
                                 </div>

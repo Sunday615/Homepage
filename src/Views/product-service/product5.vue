@@ -2,7 +2,7 @@
 
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
-
+import techproduct5 from '../../components/Landingage/techproduct5.vue'
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -76,30 +76,7 @@ onMounted(() => {
             </div>
         </div>
         <div class="contentproduct1-page2">
-            <img id="bgpd1-page2" src="../../assets/products/product5/modernnew.png" alt="">
-            <div class="headerpage2-box1">
-                <div data-aos-duration="1000" data-aos="zoom-in-down">
-                    <h1>ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ</h1>
-                    <h2>ດ້ານທະນາຄານສະມາຊິກ</h2>
-                    <p>ຊ່ວຍຫຼຸດຜ່ອນຕົ້ນທຶນທາງດ້ານບຸກຄະລາກອນທີ່ໃຫ້ບໍລິການໂອນເງິນຂ້າມທະນາຄານຜ່ານໜ່ວຍງານບໍລິການ ຫຼື ຕູ້ ATM
-                        ຂອງແຕ່ລະ<br>ທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet ນັ້ນ, ໃຫ້ລູກຄ້າຫັນມານຳໃຊ້
-                        ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື ໃນການ<br>ດຳເນີນທຸລະກຳ.
-
-                    </p>
-                </div>
-            </div>
-            <div class="headerpage2-box1">
-                <div data-aos-duration="1000" data-aos="zoom-in-down">
-                    <h2>ດ້ານລູກຄ້າຂອງທະນາຄານ</h2>
-                    <p>ຜະລິດຕະພັນ ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນີ້
-                        ຈະຊ່ວຍອຳນວຍຄວາມສະດວກໃຫ້ແກ່ມວນຊົນໃນການດຳເນີນທຸລະກຳທາງການເງິນ<br>ຢູ່ເທິງມືຖືໄດ້ງ່າຍ ແລະ ວ່ອງໄວຂື້ນ
-                        ໂດຍນຳໃຊ້ Applications ຂອງແຕ່ລະທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet,<br>
-                        ຕາມຄຳຂວັນທີ່ກ່າວໄວ້ວ່າ:
-                        “ ທຸກທີ່ ທຸກເວລາ ທຸກຊ່ອງທາງການຊຳລະ”
-
-                    </p>
-                </div>
-            </div>
+           <techproduct5></techproduct5>
 
         </div>
         <div class="memberservice">
@@ -308,44 +285,12 @@ onMounted(() => {
     height: 100px;
 }
 
-.headerpage2-box1 {
-    width: 57%;
-    height: 390px;
 
-
-    padding-top: 80px;
-}
-
-.headerpage2-box1 h2 {
-    color: #fff;
-    font-size: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.headerpage2-box1 p {
-    color: #fff;
-    font-size: 19px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-top: 70px;
-    text-align: center;
-}
-
-.headerpage2-box1 h1 {
-    font-size: 60px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-
-    text-align: center;
-
-}
 
 .contentproduct1-page2 {
     width: 100%;
-    height: 900px;
+    height: 800px;
+    background-color: red;
 
 
 
