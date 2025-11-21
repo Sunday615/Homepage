@@ -54,7 +54,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   position: relative;
   display: inline-block;
   font-family: "Inter";
-
 }
 
 /* Button styling */
@@ -67,7 +66,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   cursor: pointer;
   width: 430px;
   height: 70px;
-
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -84,7 +82,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   font-size: 10px;
   transition: transform 0.2s ease;
 }
-
 .arrow.open {
   transform: rotate(180deg);
 }
@@ -114,5 +111,30 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
 
 .dropdown-item:hover {
   background-color: #f0f0f0;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media (max-width: 1200px) {
+  .dropdown-btn {
+    width: 360px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dropdown-btn {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+    height: 60px;
+  }
 }
 </style>

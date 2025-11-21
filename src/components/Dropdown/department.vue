@@ -50,21 +50,20 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
 </script>
 
 <style scoped>
-
-*{
-      font-family: "Inter";
+* {
+  font-family: "Inter";
 }
+
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
-   font-family: "Inter";
-  
+  font-family: "Inter";
 }
 
 /* Button styling */
 .dropdown-btn {
-    margin-top: 5px;
+  margin-top: 5px;
   font-family: "Inter";
   border: 1px solid #00000082;
   padding: 10px 16px;
@@ -72,7 +71,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   cursor: pointer;
   width: 430px;
   height: 70px;
-
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -118,5 +116,30 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
 
 .dropdown-item:hover {
   background-color: #f0f0f0;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media (max-width: 1200px) {
+  .dropdown-btn {
+    width: 360px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dropdown-btn {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown-btn {
+    width: 100%;
+    height: 60px;
+  }
 }
 </style>

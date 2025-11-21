@@ -113,289 +113,491 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
     <mainfooter></mainfooter>
 
 </template>
-
-
 <style scoped>
 .dropdowncontent {
-    width: 80%;
-
-    height: 200px;
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  width: 80%;
+  height: 200px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .headerposition h1 {
-    font-size: 90px;
-        font-family: "Inter";
-    font-weight: bold;
-    color: #2855bf;
-    background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+  font-size: 90px;
+  font-family: "Inter";
+  font-weight: bold;
+  color: #2855bf;
+  background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .headerposition {
-
-    width: 100%;
-    height: 210px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .position {
-    width: 100%;
-    height: 1000px;
-    margin-top: 1000px;
-
-
+  width: 100%;
+  height: 1000px;
+  margin-top: 1000px;
 }
 
 .positioncontainer {
-    width: 100%;
-    height: 900px;
-
-
-
+  width: 100%;
+  height: 900px;
 }
 
 .flexdisplaypreview {
-    display: flex;
-
+  display: flex;
 }
 
 .swiperdotpreview {
-    width: 1090px;
-    height: 1900px;
-    position: relative;
-    left: 262px;
-    top: -120px;
-
+  width: 1090px;
+  height: 1900px;
+  position: relative;
+  left: 262px;
+  top: -120px;
 }
 
 .headerswiper p {
-        font-family: "Inter";
-    color: #2855bf;
-    background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+  font-family: "Inter";
+  color: #2855bf;
+  background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .headerswiper {
-        font-family: "Inter";
-    padding-top: 50px;
-    width: 350px;
-    height: 300px;
-    line-height: 1.2;
-    margin-left: 50px;
-    margin-top: 165px;
-
-
-}
-
-.headerswiper {
-    font-size: 80px;
-    font-weight: bold;
-
+  font-family: "Inter";
+  padding-top: 50px;
+  width: 350px;
+  height: 300px;
+  line-height: 1.2;
+  margin-left: 50px;
+  margin-top: 165px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 .lifeatlapnetlogo p {
-    font-size: 30px;
-    color: #fff;
-        font-family: "Inter";
+  font-size: 30px;
+  color: #fff;
+  font-family: "Inter";
 }
 
 .lifeatlapnetlogo img {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
 
 .lifeatlapnetlogo {
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    height: 120px;
-
-    display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 120px;
+  display: flex;
 }
 
 .leftboxinfo {
-    width: 45%;
-    height: 800px;
-
-
+  width: 45%;
+  height: 800px;
 }
 
 #swiperbackground {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .swipercontainer {
-    width: 100%;
-    height: 930px;
-
-    margin-top: 130px;
+  width: 100%;
+  height: 930px;
+  margin-top: 130px;
 }
 
 .website p {
-    font-size: 25px;
-    margin-left: 10px;
+  font-size: 25px;
+  margin-left: 10px;
 }
 
 .website i {
-    font-size: 35px;
-    color: rgb(28, 0, 213);
+  font-size: 35px;
+  color: rgb(28, 0, 213);
 }
 
 .facebook p {
-    font-size: 25px;
-    margin-left: 10px;
+  font-size: 25px;
+  margin-left: 10px;
 }
 
 .facebook i {
-    font-size: 35px;
-    color: rgb(28, 0, 213);
+  font-size: 35px;
+  color: rgb(28, 0, 213);
 }
 
 .facebook {
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
 }
 
 .website {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .contact {
-    width: 100%;
-    height: 170px;
-    font-family: "Inter";
-    margin-top: 60px;
+  width: 100%;
+  height: 170px;
+  font-family: "Inter";
+  margin-top: 60px;
 }
 
 .title p {
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
-    line-height: 2.2;
-
+  font-size: 20px;
+  font-family: "Noto Sans Lao", sans-serif;
+  line-height: 2.2;
 }
 
 .title {
-    width: 100%;
-    height: 300px;
-
+  width: 100%;
+  height: 300px;
 }
 
 .header h1 {
-    font-size: 100px;
-    font-weight: bold;
-    font-family: "Inter";
-    font-weight: bold;
-
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Inter";
 }
 
 .header {
-    width: 100%;
-    height: 170px;
-    margin-top: 50px;
-
+  width: 100%;
+  height: 170px;
+  margin-top: 50px;
 }
 
 .logo p {
-    font-size: 25px;
-    font-weight: bold;
-    font-family: "Inter";
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Inter";
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 .logo {
-    width: 20%;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-
+  width: 20%;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .infotitle {
-    width: 53%;
-    height: 90%;
-    margin-top: 50px;
-    margin-left: 130px;
-
+  width: 53%;
+  height: 90%;
+  margin-top: 50px;
+  margin-left: 130px;
 }
 
 #whyusbg {
-    position: absolute;
-    z-index: -2;
+  position: absolute;
+  z-index: -2;
 }
 
 .whyuscontainer {
-    width: 100%;
-    height: 900px;
-
-
-
+  width: 100%;
+  height: 900px;
 }
 
 .navigatorcontent {
-    width: 100%;
-    height: 470px;
-
-
+  width: 100%;
+  height: 470px;
 }
 
 .navigator-info-container {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  width: 1000px;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #navigator-img {
-    width: 100%;
-    height: 470px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 .titlenavigator p {
-    font-size: 70px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
+  font-size: 70px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  padding-bottom: 70px;
 }
 
 .navigatorlink p {
-    color: #fff;
-    font-size: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Noto Sans Lao", sans-serif;
+}
 
-    font-family: "Noto Sans Lao", sans-serif;
+/* -------------------- RESPONSIVE -------------------- */
+
+/* จอ <= 1200px (โน๊ตบุ๊ก / แท็บเล็ตแนวนอน) */
+@media (max-width: 1200px) {
+  .infotitle {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .header h1 {
+    font-size: 70px;
+  }
+
+  .title p {
+    font-size: 18px;
+  }
+
+  .swipercontainer {
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .leftboxinfo {
+    width: 60%;
+    height: auto;
+  }
+
+  .flexdisplaypreview {
+    flex-direction: column;
+  }
+
+  .headerswiper {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 60px;
+  }
+
+  .swiperdotpreview {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .position {
+    margin-top: 400px;
+    height: auto;
+  }
+
+  .dropdowncontent {
+    height: auto;
+  }
+}
+
+/* จอ <= 992px (แท็บเล็ต) */
+@media (max-width: 992px) {
+  .navigator-info-container {
+    width: 90%;
+  }
+
+  .titlenavigator p {
+    font-size: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .infotitle {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lifeatlapnetlogo {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+
+  .leftboxinfo {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .headerswiper {
+    margin-top: 24px;
+    margin-left: 0;
+    font-size: 42px;
+    width: 100%;
+  }
+
+  .swiperdotpreview {
+    margin-top: 24px;
+  }
+
+  .dropdowncontent {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .headerposition h1 {
+    font-size: 60px;
+  }
+
+  .position {
+    margin-top: 250px;
+  }
+}
+
+/* จอ <= 768px (มือถือแนวตั้ง) */
+@media (max-width: 768px) {
+  .navigatorcontent {
+    height: 360px;
+  }
+
+  #navigator-img {
+    height: 360px;
+  }
+
+  .titlenavigator p {
+    font-size: 34px;
+    padding-bottom: 24px;
+  }
+
+  .navigatorlink p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .whyuscontainer {
+    height: auto;
+    padding: 40px 16px;
+  }
+
+  .infotitle {
+    width: 100%;
+    margin: 0;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo p {
+    font-size: 20px;
+  }
+
+  .header {
+    height: auto;
+    margin-top: 24px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .title {
+    height: auto;
+    margin-top: 16px;
+  }
+
+  .title p {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .contact {
+    margin-top: 32px;
+  }
+
+  .facebook p,
+  .website p {
+    font-size: 18px;
+  }
+
+  .facebook i,
+  .website i {
+    font-size: 26px;
+  }
+
+  .swipercontainer {
+    height: auto;
+    margin-top: 64px;
+  }
+
+  .leftboxinfo {
+    height: auto;
+  }
+
+  .lifeatlapnetlogo p {
+    font-size: 20px;
+  }
+
+  .headerswiper {
+    font-size: 32px;
+    padding-top: 16px;
+    height: auto;
+  }
+
+  .dropdowncontent {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    margin-top: 24px;
+  }
+
+  .headerposition {
+    height: auto;
+    padding: 32px 0 8px;
+  }
+
+  .headerposition h1 {
+    font-size: 40px;
+  }
+
+  .position {
+    margin-top: 120px;
+    height: auto;
+    padding-bottom: 40px;
+  }
 }
 </style>

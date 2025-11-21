@@ -66,6 +66,7 @@ const onSlideChange = () => {
 };
 </script>
 
+
 <style scoped>
 .image-swiper {
   width: 100%;
@@ -101,5 +102,32 @@ const onSlideChange = () => {
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 14px;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+
+@media (max-width: 1200px) {
+  .image-swiper {
+    height: 520px;
+  }
+}
+
+@media (max-width: 992px) {
+  .image-swiper {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-swiper {
+    height: 260px;
+  }
+
+  .indicator {
+    bottom: 10px;
+    right: 16px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }
 </style>

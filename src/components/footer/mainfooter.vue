@@ -148,336 +148,420 @@ function goTop() {
 
 <style scoped>
 .copyright {
-    width: 80%;
-    height: 130px;
-    border-top: 0.1px solid rgb(118, 118, 118);
-    margin: 0 auto;
-
-
+  width: 80%;
+  height: 130px;
+  border-top: 0.1px solid rgb(118, 118, 118);
+  margin: 0 auto;
 }
 
 .copyright p {
-    font-size: 20px;
-    color: rgb(118, 118, 118);
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-
+  font-size: 20px;
+  color: rgb(118, 118, 118);
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
 }
 
 .menufootercenter {
-    width: 400px;
-    height: 540px;
-    margin-top: 30px;
-
-
-
+  width: 400px;
+  height: 540px;
+  margin-top: 30px;
 }
 
 .menuboxnonline p {
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-size: 20px;
-    margin-left: 20px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .menuboxnonline i {
-    font-size: 30px;
-    color: #fff;
+  font-size: 30px;
+  color: #fff;
 }
-.menuboxnonline:hover{
-     background: rgba(255, 255, 255, 0.08);
-     
+
+.menuboxnonline:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .menuboxnonline {
-    width: 350px;
-    height: 90px;
-
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
+  width: 350px;
+  height: 90px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .menubox {
-    width: 350px;
-    height: 90px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    border-bottom: 1px solid #bebebe;
-
+  width: 350px;
+  height: 90px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #bebebe;
 }
-.menubox:hover{
-     background: rgba(255, 255, 255, 0.08);
-     
+
+.menubox:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .menubox span p {
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-size: 20px;
-    margin-left: 20px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .menubox i {
-    font-size: 30px;
-    color: #fff;
-
+  font-size: 30px;
+  color: #fff;
 }
 
 .titlecenter p {
-    font-size: 40px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-
-
+  font-size: 40px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
 }
 
 .infofright {
-    width: 600px;
-    height: 600px;
-
-    padding-left: 90px;
-    margin-top: 100px;
-
+  width: 600px;
+  height: 600px;
+  padding-left: 90px;
+  margin-top: 100px;
 }
 
 .infocenter {
-    width: 600px;
-    height: 600px;
-    margin-top: 100px;
-    padding-left: 50px;
-
-
+  width: 600px;
+  height: 600px;
+  margin-top: 100px;
+  padding-left: 50px;
 }
 
 .facebookbtnfooter {
-    margin-top: 30px;
-    width: 320px;
-    height: 50px;
-    font-family: "Inter";
-    border: 1px solid #fff;
-    border-radius: 40px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    cursor: pointer;
-
-
+  margin-top: 30px;
+  width: 320px;
+  height: 50px;
+  font-family: "Inter";
+  border: 1px solid #fff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
 }
 
 .facebookbtnfooter i {
-    font-size: 40px;
-
-    color: #fff;
+  font-size: 40px;
+  color: #fff;
 }
 
 .facebookbtnfooter span a {
-    color: #fff;
-    font-size: 17px;
+  color: #fff;
+  font-size: 17px;
 }
 
 .titlefooterleft p {
-    color: #fff;
-   font-family: "Noto Sans Lao", sans-serif;
-   font-weight: bold;
-    font-size: 40px;
-    padding-bottom: 60px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 60px;
 }
 
 .infofooterleft ul {
-    color: #fff;
-   font-family: "Noto Sans Lao", sans-serif;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
 }
 
 .infofooterleft ul li {
-    margin-bottom: 15px;
-    font-size: 20px;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .infoftleft {
-    width: 600px;
-    height: 600px;
-    margin-top: 100px;
-
-    padding-left: 140px;
-
-
-
+  width: 600px;
+  height: 600px;
+  margin-top: 100px;
+  padding-left: 140px;
 }
 
 .footercontainer {
-    width: 100%;
-    height: 1100px;
-
-
+  width: 100%;
+  height: 1100px;
 }
 
 .logofooterimg img {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-
-
+  width: 150px;
+  height: 150px;
+  position: absolute;
 }
 
 .bg {
-    width: 100%;
-    height: 150px;
-    display: flex;
+  width: 100%;
+  height: 150px;
+  display: flex;
 }
 
 .bg img {
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    z-index: -1;
-
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  z-index: -1;
 }
 
 .leftsideft {
-    width: 35%;
-    height: 120px;
-
+  width: 35%;
+  height: 120px;
 }
 
 .rightsideft {
-    width: 65%;
-    height: 120px;
-
+  width: 65%;
+  height: 120px;
 }
 
 .logoft {
-    width: 32%;
-    height: 150px;
-
-    display: flex;
-    justify-content: end;
+  width: 32%;
+  height: 150px;
+  display: flex;
+  justify-content: end;
 }
 
 .logoft img {
-    width: 140px;
-    margin-top: 3px;
-    position: relative;
-    height: 140px;
-
+  width: 140px;
+  margin-top: 3px;
+  position: relative;
+  height: 140px;
 }
 
 .infoft {
-
-    width: 68%;
-    height: 150px;
-    display: flex;
-    margin-left: 150px;
-    justify-content: space-around;
-    align-items: center;
-
-
+  width: 68%;
+  height: 150px;
+  display: flex;
+  margin-left: 150px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .block1 {
-    width: 300px;
-    height: 100px;
-    display: flex;
-
-    align-items: center;
-
-
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
-.iconphone {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -15px -15px 3px 0px #000;
+.iconphone,
+.iconemail,
+.iconlocation {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -15px -15px 3px 0px #000;
 }
 
-.iconphone i {
-    font-size: 60px;
-    color: #433bff;
+.iconphone i,
+.iconemail i,
+.iconlocation i {
+  font-size: 60px;
+  color: #433bff;
 }
 
 .titlephone {
-    margin-left: 10px;
-    font-size: 23px;
-    color: #fff;
-   
-    font-family: 'Inter';
-}
-
-.iconemail {
-
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -15px -15px 3px 0px #000;
-    font-family: 'Inter';
-}
-
-.iconemail i {
-    font-size: 60px;
-    color: #433bff;
+  margin-left: 10px;
+  font-size: 23px;
+  color: #fff;
+  font-family: "Inter";
 }
 
 .titleemail p {
-    font-size: 23px;
-     font-family: 'Inter';
-    margin-left: 10px;
-    color: white;
-}
-
-.iconlocation {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -15px -15px 3px 0px #000;
-}
-
-.iconlocation i {
-    font-size: 60px;
-    color: #433bff;
+  font-size: 23px;
+  font-family: "Inter";
+  margin-left: 10px;
+  color: white;
 }
 
 .titlelocation p {
-    font-size: 20px;
-    margin-left: 10px;
-     font-family: 'Inter';
-    color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Inter";
+  color: white;
 }
 
 .infofooter {
-    width: 100%;
-    height:960px;
-    display: flex;
-    justify-content: space-evenly;
-    
-
-
-
-
+  width: 100%;
+  height: 960px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .infofooter img {
-    width: 100%;
-    height: 1100px;
-    position: absolute;
-    z-index: -1;
-    
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  z-index: -1;
+}
 
+/* -------------------- RESPONSIVE -------------------- */
+
+/* <= 1200px */
+@media (max-width: 1200px) {
+  .infoftleft {
+    padding-left: 60px;
+    width: 480px;
+  }
+
+  .infocenter,
+  .infofright {
+    width: 480px;
+  }
+
+  .menufootercenter {
+    width: 340px;
+  }
+
+  .menubox,
+  .menuboxnonline {
+    width: 320px;
+  }
+
+  .infoft {
+    margin-left: 80px;
+  }
+}
+
+/* <= 992px (แท็บเล็ต) */
+@media (max-width: 992px) {
+  .footercontainer {
+    height: auto;
+  }
+
+  .infoft {
+    flex-wrap: wrap;
+    height: auto;
+    margin-left: 20px;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .block1 {
+    width: auto;
+  }
+
+  .infofooter {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 220px;
+    gap: 40px;
+  }
+
+  .infoftleft,
+  .infocenter,
+  .infofright {
+    width: 90%;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  .menufootercenter {
+    width: 100%;
+  }
+
+  .menubox,
+  .menuboxnonline {
+    width: 100%;
+  }
+
+  .copyright {
+    width: 90%;
+  }
+
+  .infofooter img {
+    height: 1400px;
+  }
+}
+
+/* <= 768px (มือถือ) */
+@media (max-width: 768px) {
+  .bg img {
+    height: 200px;
+  }
+
+  .logofooterimg img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .infoft {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 16px;
+    padding-top: 40px;
+  }
+
+  .block1 {
+    width: 100%;
+  }
+
+  .iconphone,
+  .iconemail,
+  .iconlocation {
+    width: 70px;
+    height: 70px;
+  }
+
+  .iconphone i,
+  .iconemail i,
+  .iconlocation i {
+    font-size: 36px;
+  }
+
+  .titlephone,
+  .titleemail p,
+  .titlelocation p {
+    font-size: 16px;
+  }
+
+  .infofooter {
+    padding-top: 220px;
+    gap: 24px;
+  }
+
+  .titlefooterleft p,
+  .titlecenter p {
+    font-size: 28px;
+  }
+
+  .infofooterleft ul li {
+    font-size: 16px;
+  }
+
+  .facebookbtnfooter {
+    width: 100%;
+  }
+
+  .menubox span p,
+  .menuboxnonline p {
+    font-size: 16px;
+  }
+
+  .copyright {
+    height: auto;
+    padding: 16px 0 32px;
+  }
+
+  .copyright p {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .infofooter img {
+    height: 1600px;
+  }
 }
 </style>
