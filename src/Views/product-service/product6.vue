@@ -175,7 +175,7 @@ watch(
 
 .descriptionforcustomer {
     width: 100%;
-    height: 800px;
+    height: 860px;
 
  
   

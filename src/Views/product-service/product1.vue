@@ -92,24 +92,24 @@ onMounted(() => {
             <div class="memberservice">
                 <div class="memberrow">
                     <img src="../../assets/logomember-circle/BCEL.png" alt="" />
-                    <img src="../../assets//logomember-circle/LDB.PNG" alt="" />
-                    <img src="../../assets//logomember-circle/APBB.PNG" alt="" />
-                    <img src="../../assets//logomember-circle/JDB.png" alt="" />
-                    <img src="../../assets//logomember-circle/Maruhan.png" alt="" />
+                    <img src="../../assets/logomember-circle/LDB.PNG" alt="" />
+                    <img src="../../assets/logomember-circle/APBB.PNG" alt="" />
+                    <img src="../../assets/logomember-circle/JDB.png" alt="" />
+                    <img src="../../assets/logomember-circle/Maruhan.png" alt="" />
                     <img src="../../assets/logomember-circle/LVB.PNG" alt="" />
                 </div>
                 <div class="memberrow">
-                    <img src="../../assets//logomember-circle/ICBC.png" alt="" />
-                    <img src="../../assets//logomember-circle/BOC.png" alt="" />
-                    <img src="../../assets//logomember-circle/VTB.png" alt="" />
-                    <img src="../../assets//logomember-circle/IB.png" alt="" />
+                    <img src="../../assets/logomember-circle/ICBC.png" alt="" />
+                    <img src="../../assets/logomember-circle/BOC.png" alt="" />
+                    <img src="../../assets/logomember-circle/VTB.png" alt="" />
+                    <img src="../../assets/logomember-circle/IB.png" alt="" />
                     <img src="../../assets/logomember-circle/ACLB.png" alt="" />
-                    <img src="../../assets//logomember-circle/BIC.png" alt="" />
+                    <img src="../../assets/logomember-circle/BIC.png" alt="" />
                 </div>
                 <div class="memberrow">
-                    <img src="../../assets//logomember-circle/scb.PNG" alt="" />
-                    <img src="../../assets//logomember-circle/STB.PNG" alt="" />
-                    <img src="../../assets//logomember-circle/Kasikorn.png" alt="" />
+                    <img src="../../assets/logomember-circle/SACOM.PNG" alt="" />
+                    <img src="../../assets/logomember-circle/STB.PNG" alt="" />
+                    <img src="../../assets/logomember-circle/Kasikorn.png" alt="" />
                     <img src="../../assets/logomember-circle/PUB.png" alt="" />
                 </div>
             </div>
@@ -211,7 +211,7 @@ onMounted(() => {
     padding-top: 50px;
     background: #008cff;
     background: linear-gradient(to right, #008cff 0%, #0019fe 100%);
-    -webkit-background-clip: text;
+  
     -webkit-text-fill-color: transparent;
 }
 

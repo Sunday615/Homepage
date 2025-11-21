@@ -18,32 +18,30 @@ onMounted(() => {
   });
 });
 
-// 🔍 state สำหรับ Search ชื่อธนาคาร
+
 const searchTerm = ref('');
 
-// 🧩 ประเภทผลิตภัณฑ์ (ตั้ง id ไว้ใช้ร่วมกันทุกหน้า)
+
 type ProductId =
   | 'atm_inquiry'      // ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
   | 'atm_withdraw'     // ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM
   | 'atm_transfer'     // ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-  | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-  | 'qr_payment'       // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-  | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
 
-// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
+// ຊຳລະຂ້າມແດນຜ່ານ QR Code
+
+
 const productOptions: { id: ProductId; label: string }[] = [
   { id: 'atm_inquiry',     label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
   { id: 'atm_withdraw',    label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
   { id: 'atm_transfer',    label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-  { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
-  { id: 'qr_payment',      label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-  { id: 'qr_crossborder',  label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+
+ 
 ];
 
-// ✅ product ที่ผู้ใช้ติ๊กอยู่
+
 const selectedProducts = ref<ProductId[]>([]);
 
-// helper function
+
 const toggleProduct = (id: ProductId) => {
   const index = selectedProducts.value.indexOf(id);
   if (index === -1) {
@@ -56,58 +54,73 @@ const toggleProduct = (id: ProductId) => {
 const isProductSelected = (id: ProductId) =>
   selectedProducts.value.includes(id);
 
-const clearProducts = () => {
-  selectedProducts.value = [];
+
+
+
+const allProductIds = productOptions.map((p) => p.id);
+
+const isAllSelected = computed(
+  () =>
+    selectedProducts.value.length === allProductIds.length &&
+    allProductIds.every((id) => selectedProducts.value.includes(id))
+);
+
+const toggleAll = () => {
+  if (isAllSelected.value) {
+
+    selectedProducts.value = [];
+  } else {
+
+    selectedProducts.value = [...allProductIds];
+  }
 };
 
-const isAllSelected = computed(() => selectedProducts.value.length === 0);
 
-// 🔁 config ธนาคารทั้งหมดบนหน้านี้
 interface Member {
   id: string;
-  name: string;          // ใช้ค้นหา
+  name: string;         
   component: Component;
   image: string;
   link1?: string;
   link2?: string;
   aosDuration: number;
-  products: ProductId[]; // ✅ ระบุว่าธนาคารนี้มีผลิตภัณฑ์อะไรบ้าง
+  products: ProductId[]; 
 }
 
 const members = ref<Member[]>([
   {
     id: 'sacom',
-    name: 'Sacombank Lao',
+    name: 'ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ Saigon Thuong Tin Commercial Joint Stock Bank (SACOM)',
     component: boxmembersacom,
     image: '/Logomember/sacom.png',
     link1: 'https://www.facebook.com/SacombankLao',
     link2: 'https://www.sacombank.com.la',
     aosDuration: 600,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', ]
   },
   {
     id: 'stb',
-    name: 'ST Bank Laos',
+    name: 'ທະນາຄານ ເອັສທີ ຈຳກັດ ST Bank Limited (STB)',
     component: boxmemberstb,
     image: '/Logomember/STB.jpg',
     link1: 'https://www.facebook.com/STBankLaos',
     link2: 'https://www.stbanklaos.la',
     aosDuration: 800,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'mobile_transfer']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', ]
   },
   {
     id: 'kbank',
-    name: 'KBank Laos',
+    name: 'ທະນາຄານ ກະສິກອນໄທ ຈຳກັດ KASIKORNBANK Public Company Limited (KBANK)',
     component: boxmemberkbank,
     image: '/Logomember/kbank.jpg',
     link1: 'https://www.facebook.com/KBankLaos/',
     link2: 'https://www.kasikornbank.com.la',
     aosDuration: 900,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment', 'qr_crossborder']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',  ]
   },
   {
     id: 'pub',
-    name: 'Public Bank Lao',
+    name: 'ທະນາຄານ ພາບລິກ PUBLIC Bank (PUB)',
     component: boxmemberpub,
     image: '/Logomember/public-bank.svg',
     link1: 'https://www.facebook.com/p/Public-Bank-Lao-61566020099587/',
@@ -117,7 +130,7 @@ const members = ref<Member[]>([
   }
 ]);
 
-// ✅ filter ตาม search + checkbox
+
 const filteredMembers = computed(() => {
   const keyword = searchTerm.value.trim().toLowerCase();
   let list = members.value;
@@ -126,7 +139,11 @@ const filteredMembers = computed(() => {
     list = list.filter((m) => m.name.toLowerCase().includes(keyword));
   }
 
-  if (selectedProducts.value.length > 0) {
+
+  const shouldFilterByProduct =
+    selectedProducts.value.length > 0 && !isAllSelected.value;
+
+  if (shouldFilterByProduct) {
     list = list.filter((m) =>
       selectedProducts.value.every((p) => m.products.includes(p))
     );
@@ -166,7 +183,7 @@ const filteredMembers = computed(() => {
     </div>
 
     <div class="cardviewcontainer">
-      <!-- 🔹 ฝั่งซ้าย: ใช้ filteredMembers -->
+     
       <div class="leftsidecontainer">
         <div
           v-for="member in filteredMembers"
@@ -190,7 +207,7 @@ const filteredMembers = computed(() => {
         </div>
       </div>
 
-      <!-- 🔹 ฝั่งขวา: Search + checkbox filter -->
+    
       <div class="rightsidecontainer">
         <div class="searchbar">
           <div class="searchblog">
@@ -209,8 +226,13 @@ const filteredMembers = computed(() => {
             <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
           </div>
           <div class="checkboxshort">
-            <!-- All -->
-          
+            <!-- ✅ All -->
+            <div class="checkbox1" @click="toggleAll">
+              <div class="boxcheck" :class="{ active: isAllSelected }">
+                <i class="fa-solid fa-check check-icon"></i>
+              </div>
+              <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
+            </div>
 
             <!-- options -->
             <div
@@ -288,7 +310,7 @@ const filteredMembers = computed(() => {
   margin-bottom: 30px;
 }
 
-/* ✅ checkbox + animation เหมือนหน้าอื่นๆ */
+/* ✅ checkbox + animation */
 .boxcheck {
   width: 30px;
   height: 30px;
@@ -449,196 +471,9 @@ const filteredMembers = computed(() => {
   height: 35%;
 }
 
-/* ==== card style ของแต่ละ bank (เหมือนเดิม) ==== */
 
-.nameofbank-sacom {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#18479e, #232299) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
 
-.logobox-sacom img {
-  width: 300px;
-  height: 60px;
-}
 
-.logobox-sacom {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.cardmember-sacom {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/* STB */
-.nameofbank-stb {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#0903ff, #010098) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-stb img {
-  width: 300px;
-  height: 250px;
-}
-
-.logobox-stb {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.cardmember-stb {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/* KBANK */
-.nameofbank-kbank {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#00a850, #006530) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-kbank img {
-  width: 250px;
-  height: 250px;
-}
-
-.logobox-kbank {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #01a952;
-  border-radius: 10px;
-}
-
-.cardmember-kbank {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/* PUBLIC BANK */
-.nameofbank-pub {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#f32b24, #c32c2c) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-pub img {
-  width: 300px;
-  height: 300px;
-}
-
-.logobox-pub {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.cardmember-pub {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.cardnamestyle {
-  line-height: 1.7;
-}
-
-.cardnamestyle p {
-  font-size: 20px;
-  color: #fff;
-  font-weight: bold;
-  padding-left: 143px;
-}
-
-.cardnamestyle h1 {
-  padding-left: 140px;
-  font-size: 30px;
-  margin-top: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* layout ซ้าย-ขวา */
 .rightsidecontainer {
   width: 38%;
   height: 1400px;

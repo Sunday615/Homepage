@@ -719,7 +719,7 @@ mark {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: #0000;
-    -webkit-box-decoration-break: clone;
+    
 }
 
 .card__description {

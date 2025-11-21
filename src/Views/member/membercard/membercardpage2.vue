@@ -19,32 +19,30 @@ onMounted(() => {
   });
 });
 
-// 🔍 state สำหรับ Search ชื่อธนาคาร
+// 🔍 state for Search banks member
 const searchTerm = ref('');
 
-// 🧩 ประเภทผลิตภัณฑ์ (ตั้ง id ไว้ใช้ร่วมกัน)
+// 🧩 Product (for assign id for use with state)
 type ProductId =
   | 'atm_inquiry'      // ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
   | 'atm_withdraw'     // ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM
   | 'atm_transfer'     // ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-  | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-  | 'qr_payment'       // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-  | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
 
-// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
+
+
+// 🗂 information checkbox right container
 const productOptions: { id: ProductId; label: string }[] = [
   { id: 'atm_inquiry',     label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
   { id: 'atm_withdraw',    label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
   { id: 'atm_transfer',    label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-  { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
-  { id: 'qr_payment',      label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-  { id: 'qr_crossborder',  label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+
+ 
 ];
 
-// ✅ product ที่ผู้ใช้ติ๊กอยู่
+// ✅ product checkbox selected
 const selectedProducts = ref<ProductId[]>([]);
 
-// helper function
+
 const toggleProduct = (id: ProductId) => {
   const index = selectedProducts.value.indexOf(id);
   if (index === -1) {
@@ -57,88 +55,103 @@ const toggleProduct = (id: ProductId) => {
 const isProductSelected = (id: ProductId) =>
   selectedProducts.value.includes(id);
 
-const clearProducts = () => {
-  selectedProducts.value = [];
+
+
+// ✅ All checkbox logic
+const allProductIds = productOptions.map((p) => p.id);
+
+const isAllSelected = computed(
+  () =>
+    selectedProducts.value.length === allProductIds.length &&
+    allProductIds.every((id) => selectedProducts.value.includes(id))
+);
+
+const toggleAll = () => {
+  if (isAllSelected.value) {
+
+    selectedProducts.value = [];
+  } else {
+   
+    selectedProducts.value = [...allProductIds];
+  }
 };
 
-const isAllSelected = computed(() => selectedProducts.value.length === 0);
-
-// 🔁 config ธนาคารทั้งหมด (ของหน้า ICBC / BOC / VTB / IB / ACLEDA / BIC)
+// 🔁 config banks member (page ICBC / BOC / VTB / IB / ACLEDA / BIC)
 interface Member {
   id: string;
-  name: string;          // ใช้ค้นหา
+  name: string;          // use name for search lowercase
   component: Component;
   image: string;
   link1?: string;
   link2?: string;
   aosDuration: number;
-  products: ProductId[]; // ✅ ระบุว่าธนาคารนี้มีผลิตภัณฑ์อะไรบ้าง
+  products: ProductId[]; // ✅ checkbox filter check tick selected
 }
 
 const members = ref<Member[]>([
   {
     id: 'icbc',
-    name: 'ICBC Industrial and Commercial Bank of China',
+    name: 'ທະນາຄານ ອຸດສະຫະກໍາ ແລະ ການຄ້າຈີນ ຈຳກັດ Industrial and Commercial Bank of China Limited (ICBC)',
     component: boxmembericbc,
     image: '/Logomember/ICBC.png',
     link1: 'https://www.facebook.com/icbcglobal/',
     link2: 'https://vientiane.icbc.com.cn/en/column/1438058341816746015.html',
     aosDuration: 200,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',  ]
   },
   {
     id: 'boc',
-    name: 'Bank of China (BOC)',
+    name: 'ທະນາຄານແຫ່ງ ປະເທດຈີນ ຈຳກັດ Bank of China (BOC)',
     component: boxmemberboc,
     image: '/Logomember/bboc.png',
     link1: 'https://www.facebook.com/profile.php?id=100066833677650',
     link2: 'https://www.boc.cn/en/',
     aosDuration: 400,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'mobile_transfer']
+    products: ['atm_inquiry', 'atm_withdraw',  ]
   },
   {
     id: 'vtb',
-    name: 'VTB VietinBank Lao',
+    name: 'ທະນາຄານ ຫວຽດຕິນ ລາວ ຈຳກັດ VietinBank LAO (VTB)',
     component: boxmembervtb,
     image: '/Logomember/vtb.png',
     link1: 'https://www.facebook.com/vtblao',
     link2: 'https://laoefast.vietinbank.com.la',
     aosDuration: 500,
-    products: ['atm_inquiry', 'atm_transfer', 'mobile_transfer', 'qr_payment']
+    products: ['atm_inquiry', 'atm_withdraw',  ]
   },
   {
     id: 'ib',
-    name: 'Indochina Bank (IB)',
+    name: 'ທະນາຄານ ອິນໂດຈີນ ຈຳກັດ Indochina Bank (IB)',
     component: boxmemberib,
     image: '/Logomember/IBbankk.JPG',
     link1: 'https://www.facebook.com/indochina.bank.page',
     link2: 'https://iblaos.com',
     aosDuration: 700,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',  ]
   },
   {
     id: 'acleda',
-    name: 'ACLEDA Bank Lao',
+    name: 'ທະນາຄານ ເອຊີລີດາລາວ ຈໍາກັດ ACLEDA BANK LAO (ACLEDA)',
     component: boxmemberaceleda,
     image: '/Logomember/ACL-bg.png',
     link1: 'https://www.facebook.com/acledabanklao',
     link2: 'https://www.acledabank.com.la/la/lao/',
     aosDuration: 900,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',  ]
   },
   {
     id: 'bic',
-    name: 'BIC Bank Lao',
+    name: 'ທະນາຄານ ບີໄອຊີ ລາວ ຈໍາກັດ BIC Bank Lao (BIC) ',
     component: boxmemberbic,
     image: '/Logomember/BIC.png',
     link1: 'https://www.facebook.com/BICBANKLAO',
     link2: 'https://www.biclaos.com',
     aosDuration: 1100,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment', 'qr_crossborder']
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',   ]
   }
 ]);
 
-// ✅ filter ตาม search + checkbox
+
 const filteredMembers = computed(() => {
   const keyword = searchTerm.value.trim().toLowerCase();
   let list = members.value;
@@ -147,7 +160,10 @@ const filteredMembers = computed(() => {
     list = list.filter((m) => m.name.toLowerCase().includes(keyword));
   }
 
-  if (selectedProducts.value.length > 0) {
+  const shouldFilterByProduct =
+    selectedProducts.value.length > 0 && !isAllSelected.value;
+
+  if (shouldFilterByProduct) {
     list = list.filter((m) =>
       selectedProducts.value.every((p) => m.products.includes(p))
     );
@@ -187,7 +203,7 @@ const filteredMembers = computed(() => {
     </div>
 
     <div class="cardviewcontainer">
-      <!-- 🔹 ซ้าย: รายการธนาคาร (ใช้ filteredMembers) -->
+   
       <div class="leftsidecontainer">
         <div
           v-for="member in filteredMembers"
@@ -211,9 +227,9 @@ const filteredMembers = computed(() => {
         </div>
       </div>
 
-      <!-- 🔹 ขวา: Search + Checkbox Filter -->
+ 
       <div class="rightsidecontainer">
-        <!-- 🔎 Search -->
+        
         <div class="searchbar">
           <div class="searchblog">
             <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
@@ -232,8 +248,13 @@ const filteredMembers = computed(() => {
             <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
           </div>
           <div class="checkboxshort">
-            <!-- All -->
-         
+            <!-- ✅ All -->
+            <div class="checkbox1" @click="toggleAll">
+              <div class="boxcheck" :class="{ active: isAllSelected }">
+                <i class="fa-solid fa-check check-icon"></i>
+              </div>
+              <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
+            </div>
 
             <!-- options -->
             <div
@@ -311,7 +332,7 @@ const filteredMembers = computed(() => {
   height: 300px;
 }
 
-/* ===== checkbox + animation (เหมือน Code ที่ 1) ===== */
+/* ===== checkbox + animation ===== */
 
 .boxcheck {
   width: 30px;
@@ -409,7 +430,7 @@ const filteredMembers = computed(() => {
 
 .groupshortmember {
   width: 100%;
-  height: 900px;
+  height: 600px;
   background-color: #ebebeb;
   margin-top: 60px;
   border-radius: 15px;
@@ -476,282 +497,10 @@ const filteredMembers = computed(() => {
   height: 35%;
 }
 
-/* ===== เดิมของหน้า (card style แต่ละ bank) ===== */
 
-.nameofbank-icbc {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#cb0202, #a71f33) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
 
-.logobox-icbc img {
-  width: 300px;
-  height: 300px;
-}
 
-.logobox-icbc {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #1c4691;
-  border-radius: 10px;
-}
 
-.cardmember-icbc {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/*######## BOC ########*/
-
-.nameofbank-boc {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#eb1c24, #6d0302) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-boc img {
-  width: 300px;
-  height: 300px;
-}
-
-.logobox-boc {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.cardmember-boc {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/*######## VTB ########*/
-
-.nameofbank-vtb {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#0086e7, #0c51d1) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-vtb img {
-  width: 300px;
-  height: 90px;
-}
-
-.logobox-vtb {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border: 1px solid #00000025;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.cardmember-vtb {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/*######## IB ########*/
-
-.nameofbank-ib {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#8828d1, #430076) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-ib img {
-  width: 300px;
-  height: 300px;
-}
-
-.logobox-ib {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  border-radius: 10px;
-}
-
-.cardmember-ib {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.cardnamestyle {
-  line-height: 1.7;
-}
-
-.cardnamestyle p {
-  font-size: 20px;
-  color: #fff;
-  font-weight: bold;
-  padding-left: 143px;
-}
-
-.cardnamestyle h1 {
-  padding-left: 140px;
-  font-size: 30px;
-  margin-top: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
-  font-weight: bold;
-  color: #fff;
-}
-
-/*######## ACLEDA ########*/
-
-.nameofbank-acl {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#2c5195, #1c335f) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-acl img {
-  width: 300px;
-  height: 90px;
-}
-
-.logobox-acl {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  justify-content: center;
-  position: absolute;
-  z-index: 0;
-  background-color: #fff;
-  border: 1px solid #00000025;
-  border-radius: 10px;
-}
-
-.cardmember-acl {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/*######## BIC ########*/
-
-.nameofbank-bic {
-  width: 750px;
-  height: 200px;
-  background: linear-gradient(#4867aa, #213051) 50% 50%/calc(100% - 15px)
-      calc(100% - 15px) no-repeat,
-    linear-gradient(321deg, transparent 0%, #b88a44 100%),
-    linear-gradient(26deg, transparent 0%, #faf398 100%),
-    linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-    linear-gradient(270deg, transparent 0%, #f9f295 100%);
-  padding: 23px;
-  box-sizing: border-box;
-  margin-left: 200px;
-}
-
-.logobox-bic img {
-  width: 300px;
-  height: 300px;
-}
-
-.logobox-bic {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  background-color: red;
-  border-radius: 10px;
-}
-
-.cardmember-bic {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-/* ===== layout ซ้าย-ขวา ===== */
 .rightsidecontainer {
   width: 38%;
   height: 1400px;

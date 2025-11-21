@@ -19,32 +19,31 @@ onMounted(() => {
     });
 });
 
-// 🔍 state สำหรับ Search ชื่อธนาคาร
+// 🔍 search
 const searchTerm = ref('');
 
-// 🧩 ประเภทผลิตภัณฑ์ (ตั้ง id ไว้ใช้ร่วมกัน)
+// product id
 type ProductId =
-    | 'atm_inquiry'      // ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-    | 'atm_withdraw'     // ถອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-    | 'atm_transfer'     // ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-    | 'qr_payment'       // ຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-    | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
+    | 'atm_inquiry'
+    | 'atm_withdraw'
+    | 'mobile_transfer_to_atm'
+    | 'atm_transfer'
 
-// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
+
+
+// information checkbox right container
 const productOptions: { id: ProductId; label: string }[] = [
     { id: 'atm_inquiry', label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-    { id: 'atm_withdraw', label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
     { id: 'atm_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-    { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
-    { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-    { id: 'qr_crossborder', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+    { id: 'mobile_transfer_to_atm', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານໂທລະສັບດ້ວຍເລກໜ້າບັດ' },
+    { id: 'atm_withdraw', label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
+
 ];
 
-// ✅ product ที่ผู้ใช้ติ๊กอยู่
+// ✅ product selected
 const selectedProducts = ref<ProductId[]>([]);
 
-// helper function
+// toggle checkbox toggle select once checkbox
 const toggleProduct = (id: ProductId) => {
     const index = selectedProducts.value.indexOf(id);
     if (index === -1) {
@@ -54,104 +53,129 @@ const toggleProduct = (id: ProductId) => {
     }
 };
 
+// check product ture or false
 const isProductSelected = (id: ProductId) =>
     selectedProducts.value.includes(id);
 
-const clearProducts = () => {
-    selectedProducts.value = [];
+// ✅ All checkbox: slected / clear all
+const allProductIds = productOptions.map((p) => p.id);
+
+const isAllSelected = computed(
+    () =>
+        selectedProducts.value.length === allProductIds.length &&
+        allProductIds.every((id) => selectedProducts.value.includes(id))
+);
+
+const toggleAll = () => {
+    if (isAllSelected.value) {
+        // if checkbox all อยู่ → clear all checkbox
+        selectedProducts.value = [];
+    } else {
+        // if not  all → selected
+        selectedProducts.value = [...allProductIds];
+    }
 };
 
-const isAllSelected = computed(() => selectedProducts.value.length === 0);
+// clear from other side
 
-// 🔁 config ธนาคารทั้งหมด
+
+// 🔁 config all banks member
 interface Member {
     id: string;
-    name: string;          // ใช้ค้นหา
+    name: string;
     component: Component;
     image: string;
     link1?: string;
     link2?: string;
     aosDuration: number;
-    products: ProductId[]; // ✅ ระบุว่าธนาคารนี้มีผลิตภัณฑ์อะไรบ้าง
+    products: ProductId[];
 }
 
 const members = ref<Member[]>([
     {
         id: 'bcel',
-        name: 'BCEL ທະນາຄານ ການຄ້າຕ່າງປະເທດລາວ ມະຫາຊົນ',
+        name: 'ທະນາຄານ ການຄ້າຕ່າງປະເທດລາວ ມະຫາຊົນ Banque Pour Le Commerce Exterieur Lao Public (BCEL)',
         component: boxmemberbcel,
         image: '/Logomember/bcelretangle.png',
         link1: 'https://www.facebook.com/BCEL.Bank',
         link2: 'https://www.bcel.com.la',
-        aosDuration: 800,
-        // ⬇ ตัวอย่าง: มีเฉพาะ product 1–3
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer']
+        aosDuration: 500,
+
+        products: [
+            'atm_inquiry',
+            'atm_withdraw',
+            'mobile_transfer_to_atm',
+            'atm_transfer',
+
+        ]
     },
     {
         id: 'ldb',
-        name: 'LDB Lao Development Bank ທະນາຄານພັດທະນາລາວ',
+        name: 'ທະນາຄານ ພັດທະນາລາວ ຈຳກັດ Lao Development Bank (LDB)',
         component: boxmemberldb,
         image: '/Logomember/ldb-gold.png',
         link1: 'https://www.facebook.com/ldblao',
         link2: 'https://www.ldblao.la/',
-        aosDuration: 400,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'mobile_transfer']
+        aosDuration: 600,
+        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'mobile_transfer_to_atm']
     },
     {
         id: 'apb',
-        name: 'APB Agricultural Promotion Bank ທະນາຄານສົ່ງເສີມການເກດຕະກຳ',
+        name: 'ທະນາຄານ ສົ່ງເສີມກະສິກໍາ ຈຳກັດ Agricultural Promotion Bank (APB)',
         component: boxmemberapb,
         image: '/Logomember/APBB.PNG',
         link1: 'https://www.facebook.com/APB.Bank/?locale=th_TH',
         link2: 'https://www.apb.com.la',
-        aosDuration: 500,
-        products: ['atm_inquiry', 'atm_withdraw', 'qr_payment']
+        aosDuration: 700,
+        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
     },
     {
         id: 'jdb',
-        name: 'JDB Joint Development Bank',
+        name: 'ທະນາຄານ ຮ່ວມພັດທະນາ Joint Development Bank (JDB)',
         component: boxmemberjdb,
         image: '/Logomember/JDBbank.png',
         link1: 'https://www.facebook.com/jdbbanklaos',
         link2: 'https://www.jdbbank.com.la/',
-        aosDuration: 700,
-        products: ['atm_inquiry', 'atm_transfer', 'mobile_transfer', 'qr_payment']
+        aosDuration: 800,
+        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
     },
     {
         id: 'maru',
-        name: 'Maruhan Japan Bank Lao',
+        name: 'ທະນາຄານ ມາຣູຮານ ເຈແປນ ລາວ ຈຳກັດ MARUHAN Japan Bank Lao (MJBL)',
         component: boxmembermaru,
         image: '/Logomember/MARU.jpg',
         link1: 'https://www.facebook.com/MaruhanJapanBankLao/',
         link2: 'https://maruhanjapanbanklao.com',
         aosDuration: 900,
-        products: ['atm_inquiry', 'atm_withdraw']
+        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
     },
     {
         id: 'lvb',
-        name: 'LVB Lao Viet Bank',
+        name: 'ທະນາຄານ ຮ່ວມທຸລະກິດ ລາວ-ຫວຽດ Laos - Vietnam Joint Venture Bank (LVB)',
         component: boxmemberlvb,
         image: '/Logomember/LVB.png',
         link1: 'https://www.facebook.com/LaoVietBank',
         link2: 'https://www.laovietbank.com.la/la/',
         aosDuration: 1100,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'qr_payment', 'qr_crossborder']
+        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
     }
 ]);
 
-// ✅ filter ตาม search + checkbox
+// ✅ filter follow search + checkbox
 const filteredMembers = computed(() => {
     const keyword = searchTerm.value.trim().toLowerCase();
 
     let list = members.value;
 
-    // filter ตามคำค้นหา
     if (keyword) {
         list = list.filter((m) => m.name.toLowerCase().includes(keyword));
     }
 
-    // filter ตาม product (ต้องมีครบทุกอันที่เลือก)
-    if (selectedProducts.value.length > 0) {
+    // if selected All (checkbox up side) → not have filter follow product
+    const shouldFilterByProduct =
+        selectedProducts.value.length > 0 && !isAllSelected.value;
+
+    if (shouldFilterByProduct) {
         list = list.filter((m) =>
             selectedProducts.value.every((p) => m.products.includes(p))
         );
@@ -161,7 +185,6 @@ const filteredMembers = computed(() => {
 });
 </script>
 
-
 <template>
     <navbarview2></navbarview2>
     <div class="containerhiden">
@@ -170,7 +193,7 @@ const filteredMembers = computed(() => {
             <div class="navigator-info-container">
                 <div class="titlenavigator">
                     <div data-aos="zoom-in-down" data-aos-duration="1000">
-                        <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວວມກັນ</p>
+                        <p>ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</p>
                     </div>
                 </div>
                 <div class="navigatorlink">
@@ -192,7 +215,7 @@ const filteredMembers = computed(() => {
         </div>
 
         <div class="cardviewcontainer">
-            <!-- 🔹 ฝั่งซ้าย: รายการธนาคาร (ผูกกับ filteredMembers) -->
+       
             <div class="leftsidecontainer">
                 <div v-for="member in filteredMembers" :key="member.id" data-aos="fade-right"
                     :data-aos-duration="member.aosDuration">
@@ -206,10 +229,9 @@ const filteredMembers = computed(() => {
                 </div>
             </div>
 
-
-            <!-- 🔹 ฝั่งขวา: Search + หมวดหมู่ -->
+            <!-- 🔹 Right container: Search + Checkbox -->
             <div class="rightsidecontainer">
-                <!-- 🔎 Search -->
+                <!-- Search -->
                 <div class="searchbar">
                     <div class="searchblog">
                         <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
@@ -222,15 +244,21 @@ const filteredMembers = computed(() => {
                     </div>
                 </div>
 
-                <!-- ✅ Checkbox filter -->
+                <!-- Checkbox -->
                 <div class="groupshortmember">
                     <div class="title-group">
                         <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
                     </div>
                     <div class="checkboxshort">
+                        <!-- ✅ All up side  -->
+                        <div class="checkbox1" @click="toggleAll">
+                            <div class="boxcheck" :class="{ active: isAllSelected }">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </div>
+                            <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
+                        </div>
 
-
-
+                        <!-- if select other checkbox -->
                         <div v-for="option in productOptions" :key="option.id" class="checkbox1"
                             @click="toggleProduct(option.id)">
                             <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
@@ -242,9 +270,7 @@ const filteredMembers = computed(() => {
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
 
         <div class="pagination">
@@ -256,7 +282,6 @@ const filteredMembers = computed(() => {
 </template>
 
 <style scoped>
-/* style ของคุณ เหมือนเดิมทั้งหมด ไม่ได้เปลี่ยนอะไร */
 .boxcheck.active {
     background-color: #433bff;
 }
@@ -264,6 +289,8 @@ const filteredMembers = computed(() => {
 .checkbox1 p.active {
     color: #433bff;
 }
+
+
 
 .containerhiden {
     width: 100%;
@@ -312,6 +339,7 @@ const filteredMembers = computed(() => {
     height: 300px;
 }
 
+/* animation checkbox */
 .boxcheck.active {
     background: #433bff;
     border-color: #433bff;
@@ -319,19 +347,16 @@ const filteredMembers = computed(() => {
     transform: translateY(-1px) scale(1.02);
 }
 
-/* icon โผล่มาพร้อม zoom นิดๆ */
 .boxcheck.active .check-icon {
     opacity: 1;
     transform: scale(1);
 }
 
-/* ข้อความเวลาติ๊กแล้วให้สีชัดขึ้น */
 .checkbox1 p.active {
     color: #433bff;
     font-weight: 600;
 }
 
-/* ถ้าอยากให้ทั้งแถวคลิกง่าย ใช้ hover เพิ่ม feedback หน่อย */
 .checkbox1 {
     width: 470px;
     margin-left: 50px;
@@ -339,7 +364,7 @@ const filteredMembers = computed(() => {
     align-items: center;
     background-color: #fff;
     height: 80px;
-    font-family: "Noto Sans Lao", sans-serif;
+    font-family: 'Noto Sans Lao', sans-serif;
     border-radius: 7px;
     margin-bottom: 30px;
     cursor: pointer;
@@ -351,11 +376,9 @@ const filteredMembers = computed(() => {
     transform: translateY(-1px);
 }
 
-/* icon ด้านใน */
 .check-icon {
     font-size: 18px;
     color: #ffffff;
-
     opacity: 0;
     transform: scale(0.3);
     transition:
@@ -369,15 +392,11 @@ const filteredMembers = computed(() => {
     border: 1px solid #433bff;
     border-radius: 5px;
     margin-left: 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #fff;
     cursor: pointer;
-
-    /* 🎬 smooth animation */
     transition:
         background-color 0.2s ease,
         transform 0.15s ease,
@@ -389,18 +408,6 @@ const filteredMembers = computed(() => {
     padding-left: 20px;
     font-size: 22px;
     color: #0000009c;
-}
-
-.checkbox1 {
-    width: 470px;
-    margin-left: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    height: 80px;
-    font-family: 'Noto Sans Lao', sans-serif;
-    border-radius: 7px;
-    margin-bottom: 30px;
 }
 
 .checkboxshort {
@@ -427,7 +434,7 @@ const filteredMembers = computed(() => {
 
 .groupshortmember {
     width: 100%;
-    height: 900px;
+    height: 700px;
     background-color: #ebebeb;
     margin-top: 60px;
     border-radius: 15px;
@@ -455,13 +462,13 @@ const filteredMembers = computed(() => {
     align-items: center;
     border-bottom-right-radius: 20px;
 }
-.inputsearchblog input{
+
+.inputsearchblog input {
     padding-left: 30px;
     font-size: 20px;
 }
-.inputsearchblog input::placeholder {
 
-   
+.inputsearchblog input::placeholder {
     font-size: 20px;
 }
 
@@ -495,48 +502,7 @@ const filteredMembers = computed(() => {
     height: 35%;
 }
 
-/* ด้านล่างยังคง style เดิมของคุณทั้งหมด (ตัดมาจากโค้ดเดิม) */
-.nameofbank-lvb {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#18479e, #232299) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
 
-.logobox-lvb img {
-    width: 300px;
-    height: 300px;
-}
-
-.logobox-lvb {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #1c4691;
-    border-radius: 10px;
-}
-
-.cardmember-lvb {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/* ... (style อื่น ๆ จากโค้ดเดิมของคุณต่อเหมือนเดิม) ... */
 
 .rightsidecontainer {
     width: 38%;
