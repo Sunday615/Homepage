@@ -2,60 +2,89 @@
   <div class="dropdown" ref="dropdownRef">
     <!-- Button -->
     <button class="dropdown-btn" @click="toggleDropdown">
-      {{ selected || "ເລືອກເດືອນ" }}
+      {{ selectedLabel || "ເລືອກເດືອນ" }}
       <span class="arrow" :class="{ open: isOpen }">▼</span>
     </button>
 
     <!-- Menu -->
     <ul v-if="isOpen" class="dropdown-menu">
-      <li v-for="(country, index) in countries" :key="index" class="dropdown-item" @click="selectCountry(country)">
-        {{ country }}
+      <li
+        v-for="option in options"
+        :key="option.value ?? 'all'"
+        class="dropdown-item"
+        @click="selectOption(option)"
+      >
+        {{ option.label }}
       </li>
     </ul>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 
-const countries = ["ເດືອນ 1", "ເດືອນ 2", "ເດືອນ 3", "ເດືອນ 4", "ເດືອນ 5", "ເດືອນ 6", "ເດືອນ 7", "ເດືອນ 8", "ເດືອນ 9", "ເດືອນ 10", "ເດືອນ 11", "ເດືອນ 12",];
+const props = defineProps<{
+  modelValue: string | null
+}>()
 
-const isOpen = ref(false);
-const selected = ref("");
-const dropdownRef = ref<HTMLElement | null>(null);
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: string | null): void
+}>()
+
+// แสดงเป็น "ເດືອນ 1" แต่ value ใช้ชื่อเดือนภาษาอังกฤษ
+const options = [
+  { label: 'ທັງໝົດ', value: 'all' },
+  { label: 'ເດືອນ 1', value: 'January' },
+  { label: 'ເດືອນ 2', value: 'February' },
+  { label: 'ເດືອນ 3', value: 'March' },
+  { label: 'ເດືອນ 4', value: 'April' },
+  { label: 'ເດືອນ 5', value: 'May' },
+  { label: 'ເດືອນ 6', value: 'June' },
+  { label: 'ເດືອນ 7', value: 'July' },
+  { label: 'ເດືອນ 8', value: 'August' },
+  { label: 'ເດືອນ 9', value: 'September' },
+  { label: 'ເດືອນ 10', value: 'October' },
+  { label: 'ເດືອນ 11', value: 'November' },
+  { label: 'ເດືອນ 12', value: 'December' }
+]
+
+const isOpen = ref(false)
+const dropdownRef = ref<HTMLElement | null>(null)
+
+const selectedLabel = computed(() => {
+  if (!props.modelValue || props.modelValue === 'all') return ''
+  const found = options.find(o => o.value === props.modelValue)
+  return found ? found.label : ''
+})
 
 function toggleDropdown() {
-  isOpen.value = !isOpen.value;
+  isOpen.value = !isOpen.value
 }
 
-function selectCountry(country: string) {
-  selected.value = country;
-  isOpen.value = false;
+function selectOption(option: { label: string; value: string | null }) {
+  emit('update:modelValue', option.value)
+  isOpen.value = false
 }
 
-// Close dropdown when clicking outside
 function handleClickOutside(event: MouseEvent) {
   if (dropdownRef.value && !dropdownRef.value.contains(event.target as Node)) {
-    isOpen.value = false;
+    isOpen.value = false
   }
 }
 
-onMounted(() => document.addEventListener("click", handleClickOutside));
-onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside));
+onMounted(() => document.addEventListener('click', handleClickOutside))
+onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
 </script>
 
 <style scoped>
 * {
   font-family: "Noto Sans Lao", sans-serif;
-
 }
 
 /* Dropdown container */
 .dropdown {
   position: relative;
   display: inline-block;
-
-
 }
 
 /* Button styling */
@@ -81,7 +110,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   background-color: #e6e6e6;
 }
 
-/* Arrow icon */
 .arrow {
   font-size: 10px;
   transition: transform 0.2s ease;
@@ -91,7 +119,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   transform: rotate(180deg);
 }
 
-/* Dropdown menu */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -107,7 +134,6 @@ onBeforeUnmount(() => document.removeEventListener("click", handleClickOutside))
   z-index: 1000;
 }
 
-/* Menu item */
 .dropdown-item {
   padding: 10px 16px;
   cursor: pointer;

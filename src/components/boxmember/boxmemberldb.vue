@@ -41,9 +41,11 @@ onMounted(() => {
         { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: "back.out(1.7)" },
         "-=0.2"
     )
+    
 
     card.value.addEventListener("mouseenter", () => tl.play())
     card.value.addEventListener("mouseleave", () => tl.reverse())
+    
 })
 </script>
 
