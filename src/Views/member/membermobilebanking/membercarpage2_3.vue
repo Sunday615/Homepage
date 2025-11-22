@@ -179,7 +179,7 @@ const members = ref<Member[]>([
             'qr_crossborder',
 
         ]
-    }
+    },
 ]);
 
 // ✅ filter ตาม search + checkbox

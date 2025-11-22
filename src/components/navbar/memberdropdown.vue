@@ -6,6 +6,7 @@
     <ul v-if="isOpen" class="dropdown-menu">
       <li> <router-link to="/membercard/member1">{{ products[0] }} </router-link> </li>
       <li> <router-link to="/membermobilebanking/member2_1">{{ products[1] }} </router-link> </li>
+      <li> <router-link to="/membercrossborder/member3_1">{{ products[2] }} </router-link> </li>
     </ul>
   </div>
 </template>
@@ -21,6 +22,7 @@ export default defineComponent({
     const products = ref<string[]>([
       'ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ',
       'ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື',
+        'ສະມາຊິກລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງປະເທດ',
       
     ]);
 
@@ -68,7 +70,7 @@ export default defineComponent({
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  min-width: 350px;
+  min-width: 450px;
   margin-top: 5px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   list-style: none;

@@ -4,7 +4,7 @@
 import navbarview2 from '../../components/navbar/navbarview2.vue';
 import footer_memberservice_product4 from '../../components/memberfooter/footer_memberservice_product4.vue';
 import mainfooter from '../../components/footer/mainfooter.vue';
-import floating_action from '../../components/floatingicon/floating_action.vue';
+import newfloatingicon from '../../components/floatingicon/newfloatingicon.vue';
 import tablefee from '../../components/table/tablefee.vue';
 import techproduct4 from '../../components/Landingage/techproduct4.vue';
 
@@ -101,7 +101,7 @@ onMounted(() => {
         <div class="rightconditioncontainer">
 
 
-            <floating_action></floating_action>
+            <newfloatingicon></newfloatingicon>
 
         </div>
     </div>

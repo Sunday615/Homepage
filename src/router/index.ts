@@ -82,6 +82,10 @@ import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
 import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
 import Gridblogtheme3 from '../Views/Blog/gridblog_column/gridblogtheme3.vue'
 import Gridblogtheme4 from '../Views/Blog/gridblog_column/gridblogtheme4.vue'
+import Membercardpage3_1 from '../Views/member/membercrossborder/membercardpage3_1.vue'
+import Membercardpage3_2 from '../Views/member/membercrossborder/membercardpage3_2.vue'
+import Membercardpage3_3 from '../Views/member/membercrossborder/membercardpage3_3.vue'
+
 
 
 
@@ -114,6 +118,12 @@ const router = createRouter({
     { path: '/membermobilebanking/member2_1', name: 'mobilebanking2_1', component: Membercardpage2_1 },
     { path: '/membermobilebanking/member2_2', name: 'mobilebanking2_2', component: Membercardpage2_2 },
     { path: '/membermobilebanking/member2_3', name: 'mobilebanking2_3', component: membercardpage2_3 },
+    
+    { path: '/membercrossborder/member3_1', name: 'mobilebanking3_1', component: Membercardpage3_1 },
+    { path: '/membercrossborder/member3_2', name: 'mobilebanking3_2', component: Membercardpage3_2 },
+    { path: '/membercrossborder/member3_3', name: 'mobilebanking3_3', component: Membercardpage3_3 },
+    
+    
     //######################## Contact Us ###########################
     { path: '/contact', name: 'contact', component: Contact },
 
@@ -151,7 +161,7 @@ const router = createRouter({
     // { path: '/page/9', name: 'gridblogpage9', component: gridblogpage9 },
     // { path: '/page/10', name: 'gridblogpage10', component: gridblogpage10 },
 
-
+  
 
 
 

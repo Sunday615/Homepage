@@ -5,6 +5,7 @@ import {
 } from 'vue'
 import gsap from 'gsap'
 import Testcomponent from './components/Landingage/Testcomponent.vue'
+
 const overlay = ref(null)
 
 // Called before new page enters
