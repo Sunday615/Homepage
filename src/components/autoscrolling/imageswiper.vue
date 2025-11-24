@@ -1,133 +1,263 @@
 <template>
-  <div class="image-swiper">
-    <Swiper
-      :modules="[Autoplay, EffectFade, Navigation]"
-      effect="fade"
-      :speed="transitionSpeed"
-      :autoplay="{ delay: delayTime, disableOnInteraction: false }"
-      navigation
-      loop
-      @swiper="onSwiper"
-      @slideChange="onSlideChange"
-      class="mySwiper"
-    >
-      <SwiperSlide v-for="(img, index) in images" :key="index">
-        <img :src="img" class="slide-image" />
-      </SwiperSlide>
-    </Swiper>
+  <section class="swiper-section">
+    <div class="swiper-inner">
+      <div class="swiper-header">
+        <h2>LIFE AT LAPNet</h2>
+        <p>ກິດຈະກຳຕ່າງໆຂອງບໍລິສັດ Lao National Payment Network.</p>
+      </div>
 
-    <!-- 🔹 แสดงสถานะภาพ -->
-    <div class="indicator">
-      {{ currentSlide + 1 }} / {{ totalSlides }}
+      <Swiper
+        :modules="modules"
+        :loop="true"
+        :autoplay="{ delay: 2500, disableOnInteraction: false }"
+        :slides-per-view="2.2"
+        :centered-slides="true"
+        :space-between="24"
+        :breakpoints="swiperBreakpoints"
+        :speed="800"
+        :navigation="true"
+        class="image-swiper"
+      >
+        <SwiperSlide v-for="(image, index) in images" :key="index">
+          <div class="slide-card">
+            <img :src="image.src" :alt="image.alt" />
+            <div class="slide-caption">
+              <h3>{{ image.title }}</h3>
+              <p>{{ image.caption }}</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay, EffectFade, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay, Navigation } from 'swiper/modules';
 
-// ✅ ต้อง import CSS เหล่านี้
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-// 🔹 ใส่ภาพของคุณเองใน assets/
-import img1 from "../../assets/ImageSwiper/1.png";
-import img2 from "../../assets/ImageSwiper/2.png";
-import img3 from "../../assets/ImageSwiper/3.png";
-import img4 from "../../assets/ImageSwiper/4.png";
-import img5 from "../../assets/ImageSwiper/5.png";
-import img6 from "../../assets/ImageSwiper/6.png";
-import img7 from "../../assets/ImageSwiper/7.png";
+const modules = [Autoplay, Navigation];
 
+const images = [
+  {
+    src: '/joinusswiper/swiper1.jpeg',
+    alt: 'Image 1',
+    title: 'ງານລ້ຽງ',
+    caption: 'ງານລ້ຽງປີໃໝ່ລາວປີ 2025 ຂອງບໍລິສັດ LAPNet.',
+  },
+  {
+    src: '/joinusswiper/swiper2.jpeg',
+    alt: 'Image 2',
+    title: 'ທ່ອງທ່ຽວ',
+    caption: 'LAPNet ທ່ອງທ່ຽວທີ່ນະຄອນຫຼວງພະບາງປະຈຳປີ 2025.',
+  },
+  {
+    src: '/joinusswiper/swiper3.jpeg',
+    alt: 'Image 3',
+    title: 'ທ່ອງທ່ຽວ',
+    caption: 'LAPNet ທ່ອງທ່ຽວທີ່ນະຄອນຫຼວງພະບາງປະຈຳປີ 2025.',
+  },
+  {
+    src: '/joinusswiper/swiper4.jpeg',
+    alt: 'Image 4',
+    title: 'ທ່ອງທ່ຽວ',
+    caption: 'LAPNet ທ່ອງທ່ຽວທີ່ນະຄອນຫຼວງພະບາງປະຈຳປີ 2025.',
+  },
+  {
+    src: '/joinusswiper/swiper5.jpeg',
+    alt: 'Image 5',
+    title: 'ທ່ອງທ່ຽວ',
+    caption: 'LAPNet ທ່ອງທ່ຽວທີ່ນະຄອນຫຼວງພະບາງປະຈຳປີ 2025.',
+  },
+  {
+    src: '/joinusswiper/swiper6.jpeg',
+    alt: 'Image 6',
+    title: 'ທ່ອງທ່ຽວ',
+    caption: 'LAPNet ທ່ອງທ່ຽວທີ່ວັງວຽງປະຈຳປີ 2023.',
+  },
+];
 
-
-
-const images = [img1, img2, img3 , img4 , img5 , img6 , img7 ];
-
-// 🔹 ปรับค่าความเร็ว
-const delayTime = 3000;
-const transitionSpeed = 1000;
-
-// 🔹 เก็บข้อมูล Swiper
-const swiperInstance = ref(null);
-const currentSlide = ref(0);
-const totalSlides = images.length;
-
-const onSwiper = (swiper) => {
-  swiperInstance.value = swiper;
-};
-const onSlideChange = () => {
-  if (swiperInstance.value) {
-    currentSlide.value = swiperInstance.value.realIndex;
-  }
+const swiperBreakpoints = {
+  0: {
+    slidesPerView: 1,
+    centeredSlides: true,
+  },
+  640: {
+    slidesPerView: 1.4,
+    centeredSlides: true,
+  },
+  1024: {
+    slidesPerView: 2.2,
+    centeredSlides: true,
+  },
 };
 </script>
 
-
 <style scoped>
-.image-swiper {
+.swiper-section {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
+  padding: 40px 6vw;
+  box-sizing: border-box;
+  background: radial-gradient(circle at top left, #2657b5 0, rgb(11, 27, 98) 55%, #00133e 100%);
+  display: flex;
+  justify-content: center;
 }
 
-.slide-image {
+.swiper-inner {
+  width: 100%;
+  max-width: 1280px;
+  color: #e5e7eb;
+}
+
+.swiper-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.swiper-header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.swiper-header p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.image-swiper {
+  width: 100%;
+  max-width: 1400px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  position: relative;
+}
+
+.slide-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #020617;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.9);
+  transform: translateY(0);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.slide-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.95);
+  transition: transform 0.6s ease, filter 0.3s ease;
 }
 
-/* ปุ่ม Next / Prev */
-.swiper-button-next,
-.swiper-button-prev {
-  color: white;
-  transition: opacity 0.3s;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 0.7;
+.slide-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 1);
 }
 
-/* ตัวเลขสถานะ */
-.indicator {
+.slide-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+/* Small overlay for description */
+.slide-caption {
   position: absolute;
-  bottom: 20px;
-  right: 30px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 14px;
+  left: 50%;
+  bottom: 14px;
+  transform: translateX(-50%);
+  max-width: 90%;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  pointer-events: none; /* don’t block clicks/drags */
 }
 
-/* -------------------- RESPONSIVE -------------------- */
-
-@media (max-width: 1200px) {
-  .image-swiper {
-    height: 520px;
-  }
+.slide-caption h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e5e7eb;
 }
 
-@media (max-width: 992px) {
-  .image-swiper {
-    height: 420px;
-  }
+.slide-caption p {
+  font-size: 0.75rem;
+  color: #cbd5f5;
 }
 
+/* ==== MINIMAL NAV BUTTONS ==== */
+.image-swiper :deep(.swiper-button-next),
+.image-swiper :deep(.swiper-button-prev) {
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #e5e7eb;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.image-swiper :deep(.swiper-button-next) {
+  right: 10px;
+}
+
+.image-swiper :deep(.swiper-button-prev) {
+  left: 10px;
+}
+
+.image-swiper :deep(.swiper-button-next::after),
+.image-swiper :deep(.swiper-button-prev::after) {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.image-swiper :deep(.swiper-button-next:hover),
+.image-swiper :deep(.swiper-button-prev:hover) {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .image-swiper {
-    height: 260px;
+  .swiper-section {
+    padding-inline: 16px;
   }
 
-  .indicator {
+  .image-swiper {
+    height: 380px;
+  }
+
+  .swiper-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .slide-caption {
     bottom: 10px;
-    right: 16px;
-    font-size: 12px;
-    padding: 4px 8px;
+    padding: 6px 10px;
+  }
+
+  .slide-caption h3 {
+    font-size: 0.8rem;
+  }
+
+  .slide-caption p {
+    font-size: 0.7rem;
   }
 }
 </style>
