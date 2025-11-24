@@ -87,6 +87,7 @@ import Membercardpage3_2 from '../Views/member/membercrossborder/membercardpage3
 import Membercardpage3_3 from '../Views/member/membercrossborder/membercardpage3_3.vue'
 
 import membercardpage2_4 from '../Views/member/membermobilebanking/membercarpage2_4.vue'
+import Testcomponent from '../components/Landingage/Testcomponent.vue'
 
 
 
@@ -234,6 +235,7 @@ const router = createRouter({
   
   { path: "/crossborder/la-vn", name: "/crossborder/la-vn", component: Product6 },
   { path: "/crossborder/la-ch", name: "/crossborder/la-ch", component: Product6 },
+  { path: "/test", name: "/crossborder/la-ch", component: Testcomponent },
 
      
   ],
