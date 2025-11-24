@@ -1,17 +1,14 @@
 <script setup lang="ts">
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
-import pagination from '../../../components/pagination/paginationmember3.vue'
 import mainfooter from '../../../components/footer/mainfooter.vue';
+import paginationmember2 from '../../../components/pagination/paginationmember2.vue';
+import footerLogoMember2 from '../../../components/footer/memberfooter/footer-logo-member2.vue';
 
-import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
+
+import boxmembermmoney from '../../../components/boxmember/boxmembermmoney.vue';
+import boxmemberumonry from '../../../components/boxmember/boxmemberumonry.vue';
 
 import { onMounted, ref, computed, type Component } from 'vue';
-import Boxmembervtb from '../../../components/boxmember/boxmembervtb.vue';
-import Boxmemberib from '../../../components/boxmember/boxmemberib.vue';
-import Boxmemberaceleda from '../../../components/boxmember/boxmemberaceleda.vue';
-import Boxmemberbic from '../../../components/boxmember/boxmemberbic.vue';
-import Boxmembersacom from '../../../components/boxmember/boxmembersacom.vue';
-import Boxmemberstb from '../../../components/boxmember/boxmemberstb.vue';
 
 onMounted(() => {
     window.scrollTo({
@@ -20,76 +17,31 @@ onMounted(() => {
     });
 });
 
-// 🔍 search
+
 const searchTerm = ref('');
 
-// product id
+
 type ProductId =
-    | 'cross_border_payment_KHLA'
-    | 'cross_border_payment_LAKH'
-    | 'cross_border_payment_THLA'
-    | 'cross_border_payment_LATH'
-    | 'cross_border_payment_VNLA'
-    | 'cross_border_payment_CHLA';
 
-// country code สำหรับ FlagCDN
-type CountryCode = 'kh' | 'la' | 'th' | 'vn' | 'cn';
+    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ
+    | 'tranfer_qr'       // ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code 
+    | 'qr_payment';  // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
 
-// option type
-type ProductOption = {
-    id: ProductId;
-    label: string;
-    from: CountryCode; // ประเทศต้นทาง
-    to: CountryCode;   // ประเทศปลายทาง
-};
 
-// helper สร้าง URL ธงจาก FlagCDN
-const flagUrl = (code: CountryCode) => `https://flagcdn.com/w40/${code}.png`;
+const productOptions: { id: ProductId; label: string }[] = [
 
-// information checkbox right container
-const productOptions: ProductOption[] = [
-    {
-        id: 'cross_border_payment_KHLA',
-        label: 'ກຳປູເຈຍ ສະແກນຊຳລະ ລາວ',
-        from: 'kh', // 🇰🇭
-        to: 'la'    // 🇱🇦
-    },
-    {
-        id: 'cross_border_payment_LAKH',
-        label: 'ລາວ ສະແກນຊຳລະ ກຳປູເຈຍ',
-        from: 'la', // 🇱🇦
-        to: 'kh'    // 🇰🇭
-    },
-    {
-        id: 'cross_border_payment_THLA',
-        label: 'ໄທ ສະແກນຊຳລະ ລາວ',
-        from: 'th', // 🇹🇭
-        to: 'la'    // 🇱🇦
-    },
-    {
-        id: 'cross_border_payment_LATH',
-        label: 'ລາວ ສະແກນຊຳລະ ໄທ',
-        from: 'la', // 🇱🇦
-        to: 'th'    // 🇹🇭
-    },
-    {
-        id: 'cross_border_payment_VNLA',
-        label: 'ຫວຽດນາມ ສະແກນຊຳລະ ລາວ',
-        from: 'vn', // 🇻🇳
-        to: 'la'    // 🇱🇦
-    },
-    {
-        id: 'cross_border_payment_CHLA',
-        label: 'ຈີນ ສະແກນຊຳລະ ລາວ',
-        from: 'cn', // 🇨🇳
-        to: 'la'    // 🇱🇦
-    }
+    { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ' },
+    { id: 'tranfer_qr', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code' },
+    { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
 ];
 
-// ✅ product selected
+
+
 const selectedProducts = ref<ProductId[]>([]);
 
-// toggle checkbox toggle select once checkbox
+const isProductSelected = (id: ProductId) =>
+    selectedProducts.value.includes(id);
+
 const toggleProduct = (id: ProductId) => {
     const index = selectedProducts.value.indexOf(id);
     if (index === -1) {
@@ -99,11 +51,7 @@ const toggleProduct = (id: ProductId) => {
     }
 };
 
-// check product ture or false
-const isProductSelected = (id: ProductId) =>
-    selectedProducts.value.includes(id);
 
-// ✅ All checkbox: slected / clear all
 const allProductIds = productOptions.map((p) => p.id);
 
 const isAllSelected = computed(
@@ -114,15 +62,13 @@ const isAllSelected = computed(
 
 const toggleAll = () => {
     if (isAllSelected.value) {
-        // if checkbox all อยู่ → clear all checkbox
         selectedProducts.value = [];
     } else {
-        // if not  all → selected
         selectedProducts.value = [...allProductIds];
     }
 };
 
-// 🔁 config all banks member
+
 interface Member {
     id: string;
     name: string;
@@ -135,90 +81,51 @@ interface Member {
 }
 
 const members = ref<Member[]>([
-    {
-        id: 'vtb',
-        name: 'ທະນາຄານ ຫວຽດຕິນ ລາວ ຈຳກັດ VietinBank LAO (VTB)',
-        component: Boxmembervtb,
-        image: '/Logomember/vtb.png',
-        link1: 'https://www.facebook.com/vtblao',
-        link2: 'https://laoefast.vietinbank.com.la',
-        aosDuration: 500,
-        products: ['cross_border_payment_VNLA']
+    
+     {
+        id: 'mn',
+        name: 'ບໍລິສັດ ລາວໂມບາຍມັນນີ ຈຳກັດຜູ້ດຽວ (MmoneyX) ',
+        component: boxmembermmoney,
+        image: '/Logomember/mmoney.png',
+        link1: 'https://www.facebook.com/laomobilemoney',
+        link2: 'https://www.mmoney.la',
+        aosDuration: 1500,
 
-    },
-    {
-        id: 'ib',
-        name: 'ທະນາຄານ ອິນໂດຈີນ ຈຳກັດ Indochina Bank (IB)',
-        component: Boxmemberib,
-        image: '/Logomember/IBbankk.JPG',
-        link1: 'https://www.facebook.com/indochina.bank.page',
-        link2: 'https://iblaos.com',
-        aosDuration: 600,
-        products: ['cross_border_payment_KHLA' , 'cross_border_payment_THLA','cross_border_payment_LATH' , 'cross_border_payment_VNLA']
-    },
-
-    {
-        id: 'acleda',
-        name: 'ທະນາຄານ ເອຊີລີດາລາວ ຈໍາກັດ ACLEDA BANK LAO (ACLEDA)',
-        component: Boxmemberaceleda,
-        image: '/Logomember/ACL-bg.png',
-        link1: 'https://www.facebook.com/acledabanklao',
-        link2: 'https://www.acledabank.com.la/la/lao/',
-        aosDuration: 700,
-        products: ['cross_border_payment_KHLA' , 'cross_border_payment_LAKH' , 'cross_border_payment_THLA' , 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
-    },
-
-    {
-        id: 'bic',
-        name: 'ທະນາຄານ ບີໄອຊີ ລາວ ຈໍາກັດ BIC Bank Lao (BIC)',
-        component: Boxmemberbic,
-        image: '/Logomember/BIC.png',
-        link1: 'https://www.facebook.com/BICBANKLAO',
-        link2: 'https://www.biclaos.com',
-        aosDuration: 800,
-        products: ['cross_border_payment_KHLA' , 'cross_border_payment_THLA' ,'cross_border_payment_LATH' , 'cross_border_payment_VNLA']
-    },
+        products: [
      
+            'qr_payment',
+    
 
-
-
-    {
-        id: 'sacom',
-        name: 'ທະນາຄານ ໄຊງ່ອນເທືອງຕິ່ນ ລາວ Saigon Thuong Tin Commercial Joint Stock Bank (SACOM)',
-        component: Boxmembersacom,
-        image: '/Logomember/sacom.png',
-        link1: 'https://www.facebook.com/SacombankLao',
-        link2: 'https://www.sacombank.com.la',
-        aosDuration: 900,
-        products: ['cross_border_payment_KHLA' , 'cross_border_payment_LAKH' , 'cross_border_payment_THLA' , 'cross_border_payment_LATH' , 'cross_border_payment_VNLA']
+        ]
     },
-
-
     {
-        id: 'stb',
-        name: 'ທະນາຄານ ເອັສທີ ຈຳກັດ ST Bank Limited (STB)',
-        component: Boxmemberstb,
-        image: '/Logomember/STB.jpg',
-        link1: 'https://www.facebook.com/STBankLaos',
-        link2: 'https://www.stbanklaos.la',
-        aosDuration: 1100,
-        products: ['cross_border_payment_KHLA' ,'cross_border_payment_THLA' , 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' ,'cross_border_payment_CHLA']
-    }
+        id: 'un',
+        name: 'ບໍລິສັດ ສະຕາຟິນເທັກ ຈຳກັດຜູ້ດຽວ (Umoney) ',
+        component: boxmemberumonry,
+        image: '/Logomember/umoney.png',
+        link1: 'https://www.facebook.com/umoney.unitel.la',
+        link2: 'https://u-money.com.la',
+        aosDuration: 1600,
 
+     
+        products: [
+            'mobile_transfer',
+            'qr_payment',
+            'tranfer_qr',
 
+        ]
+    },
 ]);
 
-// ✅ filter follow search + checkbox
+
 const filteredMembers = computed(() => {
     const keyword = searchTerm.value.trim().toLowerCase();
-
     let list = members.value;
 
     if (keyword) {
         list = list.filter((m) => m.name.toLowerCase().includes(keyword));
     }
 
-    // if selected All (checkbox up side) → not have filter follow product
     const shouldFilterByProduct =
         selectedProducts.value.length > 0 && !isAllSelected.value;
 
@@ -236,25 +143,25 @@ const filteredMembers = computed(() => {
     <navbarview2 />
     <div class="containerhiden">
         <div class="navigatorcontent">
-            <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="" />
+            <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
             <div class="navigator-info-container">
                 <div class="titlenavigator">
                     <div data-aos="zoom-in-down" data-aos-duration="1000">
-                        <p>ສະມາຊິກລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງປະເທດ</p>
+                        <p>ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື</p>
                     </div>
                 </div>
                 <div class="navigatorlink">
                     <div data-aos="zoom-out-up" data-aos-duration="1000">
                         <p>
                             ໜ້າຫຼັກ
-                            <span style="padding-right: 40px; padding-left: 40px">
+                            <span style="padding-right: 40px; padding-left: 40px;">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </span>
                             ສະມາຊິກ
-                            <span style="padding-right: 40px; padding-left: 40px">
+                            <span style="padding-right: 40px; padding-left: 40px;">
                                 <i class="fa-solid fa-chevron-right"></i>
                             </span>
-                            ສະມາຊິກລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງປະເທດ
+                            ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ
                         </p>
                     </div>
                 </div>
@@ -262,7 +169,7 @@ const filteredMembers = computed(() => {
         </div>
 
         <div class="cardviewcontainer">
-
+        
             <div class="leftsidecontainer">
                 <div v-for="member in filteredMembers" :key="member.id" data-aos="fade-right"
                     :data-aos-duration="member.aosDuration">
@@ -276,52 +183,42 @@ const filteredMembers = computed(() => {
                 </div>
             </div>
 
-
+       
             <div class="rightsidecontainer">
-
                 <div class="searchbar">
                     <div class="searchblog">
                         <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
                     </div>
                     <div class="inputsearchblog">
-                        <input type="text" placeholder="Search" v-model="searchTerm" />
+                        <input type="text" placeholder="Search" v-model="searchTerm">
                         <div class="btnsubmit" @click.prevent>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- ✅ Checkbox filter -->
                 <div class="groupshortmember">
                     <div class="title-group">
                         <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
                     </div>
                     <div class="checkboxshort">
-                        <!-- ✅ All up side  -->
+                        <!-- ✅ All -->
                         <div class="checkbox1" @click="toggleAll">
                             <div class="boxcheck" :class="{ active: isAllSelected }">
                                 <i class="fa-solid fa-check check-icon"></i>
                             </div>
-                            <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
+                            <p :class="{ active: isAllSelected }">All</p>
                         </div>
 
-                        <!-- if select other checkbox -->
+                        <!-- options -->
                         <div v-for="option in productOptions" :key="option.id" class="checkbox1"
                             @click="toggleProduct(option.id)">
                             <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
                                 <i class="fa-solid fa-check check-icon"></i>
                             </div>
-
                             <p :class="{ active: isProductSelected(option.id) }">
                                 {{ option.label }}
                             </p>
-
-
-                            <div class="flag-pair">
-                                <img class="flag-icon" :src="flagUrl(option.from)" :alt="option.from + ' flag'" />
-                                <i class="fa-solid fa-right-long"></i>
-                                <img class="flag-icon" :src="flagUrl(option.to)" :alt="option.to + ' flag'" />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -329,86 +226,26 @@ const filteredMembers = computed(() => {
         </div>
 
         <div class="pagination">
-            <pagination />
+            <paginationmember2 />
         </div>
-        <footerLogoMember1 />
+        <footerLogoMember2 />
         <mainfooter />
     </div>
 </template>
 
 <style scoped>
-.flag-pair {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 15px;
-    gap: 8px;
-}
-
-.flag-icon {
-    width: 36px;
-    height: 24px;
-    object-fit: cover;
-    border-radius: 3px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
-}
-
-.flag-arrow {
-    font-size: 16px;
-    color: #777;
-}
-
 .containerhiden {
     width: 100%;
     height: auto;
+ 
     overflow: hidden;
 }
 
-.navigatorcontent {
-    width: 100%;
-    height: 470px;
-}
-
-.navigator-info-container {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#navigator-img {
-    width: 100%;
-    height: 470px;
-    position: absolute;
-    z-index: -1;
-    object-fit: cover;
-}
-
 .titlenavigator p {
-    font-size: 70px;
-    text-align: center;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
-}
-
-.navigatorlink p {
-    color: #fff;
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
-}
-
-.pagination {
-    width: 100%;
-    height: 300px;
+    font-size: 65px;
 }
 
 /* ===== checkbox + animation ===== */
-
 .boxcheck {
     width: 30px;
     height: 30px;
@@ -434,7 +271,6 @@ const filteredMembers = computed(() => {
     transform: translateY(-1px) scale(1.02);
 }
 
-/* icon ด้านใน */
 .check-icon {
     font-size: 18px;
     color: #ffffff;
@@ -461,7 +297,6 @@ const filteredMembers = computed(() => {
     font-weight: 600;
 }
 
-/* แถว checkbox */
 .checkbox1 {
     width: 470px;
     margin-left: 50px;
@@ -505,14 +340,13 @@ const filteredMembers = computed(() => {
 
 .groupshortmember {
     width: 100%;
-    height: 1000px;
+    height: 600px;
     background-color: #ebebeb;
     margin-top: 60px;
     border-radius: 15px;
 }
 
-/* ===== search bar ===== */
-
+/* Search bar */
 .searchbar {
     width: 100%;
     height: 240px;
@@ -536,6 +370,10 @@ const filteredMembers = computed(() => {
     border-bottom-right-radius: 20px;
 }
 
+.inputsearchblog input::placeholder {
+    font-size: 20px;
+}
+
 .inputsearchblog input {
     width: 500px;
     height: 100%;
@@ -543,10 +381,6 @@ const filteredMembers = computed(() => {
     border-top-left-radius: 7px;
     background-color: #fff;
     padding-left: 30px;
-    font-size: 20px;
-}
-
-.inputsearchblog input::placeholder {
     font-size: 20px;
 }
 
@@ -572,13 +406,13 @@ const filteredMembers = computed(() => {
     height: 35%;
 }
 
+/* ==== card style เดิม ๆ (bank แต่ละเจ้า) ==== */
 
 
-
-
+/* layout ซ้าย-ขวา */
 .rightsidecontainer {
     width: 38%;
-    height: 1400px;
+    height: auto;
     margin-left: 2%;
     margin-top: 100px;
 }
@@ -587,12 +421,15 @@ const filteredMembers = computed(() => {
     width: 60%;
     height: auto;
     margin-top: 100px;
+    padding-bottom: 300px;
 }
 
 .cardviewcontainer {
     width: 90%;
     display: flex;
+    height: auto;
+
     margin: 0 auto;
-    height: 2000px;
+  
 }
 </style>

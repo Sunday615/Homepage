@@ -18,6 +18,10 @@
         :class="{ active: $route.path === '/membermobilebanking/member2_3' }">
         Page 3
       </router-link>
+      <router-link to="/membermobilebanking/member2_4" class="btn"
+        :class="{ active: $route.path === '/membermobilebanking/member2_4' }">
+        Page 4
+      </router-link>
     </div>
 
     <button class="nav-btn" @click="nextPage">Next</button>
@@ -31,7 +35,7 @@ const router = useRouter()
 const route = useRoute()
 
 
-const pages = ['/membermobilebanking/member2_1', '/membermobilebanking/member2_2', '/membermobilebanking/member2_3']
+const pages = ['/membermobilebanking/member2_1', '/membermobilebanking/member2_2', '/membermobilebanking/member2_3','/membermobilebanking/member2_4']
 
 
 function nextPage() {

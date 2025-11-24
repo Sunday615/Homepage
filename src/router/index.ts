@@ -86,7 +86,7 @@ import Membercardpage3_1 from '../Views/member/membercrossborder/membercardpage3
 import Membercardpage3_2 from '../Views/member/membercrossborder/membercardpage3_2.vue'
 import Membercardpage3_3 from '../Views/member/membercrossborder/membercardpage3_3.vue'
 
-
+import membercardpage2_4 from '../Views/member/membermobilebanking/membercarpage2_4.vue'
 
 
 
@@ -118,6 +118,7 @@ const router = createRouter({
     { path: '/membermobilebanking/member2_1', name: 'mobilebanking2_1', component: Membercardpage2_1 },
     { path: '/membermobilebanking/member2_2', name: 'mobilebanking2_2', component: Membercardpage2_2 },
     { path: '/membermobilebanking/member2_3', name: 'mobilebanking2_3', component: membercardpage2_3 },
+    { path: '/membermobilebanking/member2_4', name: 'mobilebanking2_4', component: membercardpage2_4 },
     
     { path: '/membercrossborder/member3_1', name: 'mobilebanking3_1', component: Membercardpage3_1 },
     { path: '/membercrossborder/member3_2', name: 'mobilebanking3_2', component: Membercardpage3_2 },

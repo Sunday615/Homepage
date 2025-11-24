@@ -26,18 +26,17 @@ const searchTerm = ref('');
 
 type ProductId =
 
-    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-    | 'qr_payment'       // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-    | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
+    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ
+    | 'tranfer_qr'       // ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code 
+    | 'qr_payment';  // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
 
-
+// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
 const productOptions: { id: ProductId; label: string }[] = [
 
     { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
     { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-    { id: 'qr_crossborder', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+    { id: 'tranfer_qr', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
 ];
-
 
 const selectedProducts = ref<ProductId[]>([]);
 
@@ -97,7 +96,7 @@ const members = ref<Member[]>([
            products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   },
@@ -109,10 +108,10 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/profile.php?id=100066833677650',
     link2: 'https://www.boc.cn/en/',
     aosDuration: 400,
-           products: [
+               products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   },
@@ -124,10 +123,10 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/vtblao',
     link2: 'https://laoefast.vietinbank.com.la',
     aosDuration: 500,
-           products: [
+               products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   },
@@ -139,10 +138,10 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/indochina.bank.page',
     link2: 'https://iblaos.com',
     aosDuration: 700,
-           products: [
+               products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   },
@@ -154,10 +153,10 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/acledabanklao',
     link2: 'https://www.acledabank.com.la/la/lao/',
     aosDuration: 900,
-           products: [
+               products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   },
@@ -169,10 +168,10 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/BICBANKLAO',
     link2: 'https://www.biclaos.com',
     aosDuration: 1100,
-           products: [
+               products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'qr_payment',
 
         ]
   }

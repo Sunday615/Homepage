@@ -2,12 +2,7 @@
 import navbarview2 from '../../../components/navbar/navbarview2.vue';
 import pagination from '../../../components/pagination/paginationmember3.vue'
 import mainfooter from '../../../components/footer/mainfooter.vue';
-import boxmemberbcel from '../../../components/boxmember/boxmemberbcel.vue';
-import boxmemberldb from '../../../components/boxmember/boxmemberldb.vue';
-import boxmemberapb from '../../../components/boxmember/boxmemberapb.vue';
-import boxmemberjdb from '../../../components/boxmember/boxmemberjdb.vue';
-import boxmembermaru from '../../../components/boxmember/boxmembermaru.vue';
-import boxmemberlvb from '../../../components/boxmember/boxmemberlvb.vue';
+
 import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
 
 import { onMounted, ref, computed, type Component } from 'vue';
@@ -145,7 +140,7 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/KBankLaos/',
     link2: 'https://www.kasikornbank.com.la',
     aosDuration: 500,
-    products: ['cross_border_payment_KHLA']
+    products: ['cross_border_payment_KHLA' , 'cross_border_payment_THLA','cross_border_payment_LATH' ,'cross_border_payment_VNLA']
   },
   {
         id: 'psvb',
@@ -156,7 +151,7 @@ const members = ref<Member[]>([
         link2: 'https://www.phongsavanhbank.com',
         aosDuration: 1200,
 
-         products: ['cross_border_payment_KHLA']
+         products: ['cross_border_payment_KHLA' ,'cross_border_payment_THLA' , 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'mb',
@@ -167,7 +162,7 @@ const members = ref<Member[]>([
         link2: 'https://mbbank.com.la',
         aosDuration: 1400,
 
-              products: ['cross_border_payment_KHLA']
+              products: ['cross_border_payment_LAKH' , 'cross_border_payment_VNLA' ,'cross_border_payment_CHLA']
     },
   
 ]);

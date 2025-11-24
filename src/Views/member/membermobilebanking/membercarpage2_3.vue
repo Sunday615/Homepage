@@ -11,6 +11,7 @@ import boxmemberbfl from '../../../components/boxmember/boxmemberbfl.vue';
 import boxmemberpsvb from '../../../components/boxmember/boxmemberpsvb.vue';
 import boxmembermb from '../../../components/boxmember/boxmembermb.vue';
 
+
 import { onMounted, ref, computed, type Component } from 'vue';
 
 onMounted(() => {
@@ -26,16 +27,16 @@ const searchTerm = ref('');
 // 🧩 ประเภทผลิตภัณฑ์
 type ProductId =
 
-    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-    | 'qr_payment'       // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-    | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
+    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ
+    | 'tranfer_qr'       // ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code 
+    | 'qr_payment';  // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
 
 // 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
 const productOptions: { id: ProductId; label: string }[] = [
 
     { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
     { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-    { id: 'qr_crossborder', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+    { id: 'tranfer_qr', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
 ];
 
 
@@ -96,7 +97,7 @@ const members = ref<Member[]>([
         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -109,10 +110,10 @@ const members = ref<Member[]>([
         link2: 'https://www.stbanklaos.la',
         aosDuration: 800,
 
-        products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -125,10 +126,10 @@ const members = ref<Member[]>([
         link2: 'https://www.kasikornbank.com.la',
         aosDuration: 900,
 
-        products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -141,10 +142,10 @@ const members = ref<Member[]>([
         link2: 'https://bfl-bred.com',
         aosDuration: 1000,
 
-        products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -157,10 +158,10 @@ const members = ref<Member[]>([
         link2: 'https://www.phongsavanhbank.com',
         aosDuration: 1200,
 
-        products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -173,13 +174,14 @@ const members = ref<Member[]>([
         link2: 'https://mbbank.com.la',
         aosDuration: 1400,
 
-        products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
+    
 ]);
 
 // ✅ filter ตาม search + checkbox
@@ -472,277 +474,7 @@ const filteredMembers = computed(() => {
 
 /* ==== card style เดิม ๆ (bank แต่ละเจ้า) ==== */
 
-.nameofbank-bfl {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#006dbd, #183a67) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
 
-.logobox-bfl img {
-    width: 300px;
-    height: 300px;
-}
-
-.logobox-bfl {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    border-radius: 10px;
-}
-
-.cardmember-bfl {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/*##########################*/
-.nameofbank-psvb {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#04ca63, #0b9444) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
-.logobox-psvb img {
-    width: 300px;
-    height: 300px;
-}
-
-.logobox-psvb {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.cardmember-psvb {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/*##########################*/
-.nameofbank-mb {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#004e92, #000428) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
-.logobox-mb img {
-    width: 300px;
-    height: 120px;
-}
-
-.logobox-mb {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.cardmember-mb {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/*##########################*/
-
-.pagination {
-    width: 100%;
-    height: 190px;
-    margin-bottom: 30px;
-}
-
-.nameofbank-sacom {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#18479e, #232299) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
-.logobox-sacom img {
-    width: 300px;
-    height: 60px;
-}
-
-.logobox-sacom {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.cardmember-sacom {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/*##########################*/
-
-.nameofbank-stb {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#0903ff, #010098) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
-.logobox-stb img {
-    width: 300px;
-    height: 300px;
-}
-
-.logobox-stb {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.cardmember-stb {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-/*###################################*/
-.nameofbank-kbank {
-    width: 750px;
-    height: 200px;
-    background: linear-gradient(#00a850, #006530) 50% 50%/calc(100% - 15px) calc(100% - 15px) no-repeat,
-        linear-gradient(321deg, transparent 0%, #b88a44 100%),
-        linear-gradient(26deg, transparent 0%, #faf398 100%),
-        linear-gradient(172deg, transparent 0%, #e0aa4e 100%),
-        linear-gradient(270deg, transparent 0%, #f9f295 100%);
-    padding: 23px;
-    box-sizing: border-box;
-    margin-left: 200px;
-}
-
-.logobox-kbank img {
-    width: 250px;
-    height: 250px;
-}
-
-.logobox-kbank {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    position: absolute;
-    z-index: 0;
-    border: 1px solid #00000025;
-    background-color: #01a952;
-    border-radius: 10px;
-}
-
-.cardmember-kbank {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.cardnamestyle {
-    line-height: 1.7;
-}
-
-.cardnamestyle p {
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    padding-left: 143px;
-}
-
-.cardnamestyle h1 {
-    padding-left: 140px;
-    font-size: 30px;
-    margin-top: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    color: #fff;
-}
 
 /* layout ซ้าย-ขวา */
 .rightsidecontainer {

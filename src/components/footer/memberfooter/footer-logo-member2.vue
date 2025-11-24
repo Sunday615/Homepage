@@ -2,7 +2,7 @@
 
 <template>
     <div class="logo-box">
-        <img id="bg" src="../../../assets/footer/footerasset.png" alt="">
+
         <div class="title">
                   <div data-aos="zoom-out-up" data-aos-duration="1000">
             <h1>ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື</h1></div>
@@ -65,6 +65,16 @@
                 </div>
               
             </div>
+            <div class="row1">
+                <div class="boxlogo13">
+                    <img style="width:190px" src="../../../assets/Logomember- retangle/umoney.png" alt="">
+                </div>
+                <div class="boxlogo14">
+                    <img style="width:150px" src="../../../assets/Logomember- retangle/mmoney.png" alt="">
+                </div>
+              
+              
+            </div>
         </div>
     </div>
 </template>
@@ -102,12 +112,14 @@
  
 }
 .title h1{
+    padding-top: 50px;
     font-size: 80px;
     font-family: "Noto Sans Lao", sans-serif;
     font-weight: bold;
     text-align: center;
 }
 .logo{
+    
     width: 100%;
     height: 75%;
     padding-top: 80px;
@@ -122,7 +134,8 @@
 }
 .logo-box{
     width: 100%;
-    height: 920px;
+    height: 1200px;
+    background-image: url("../../../assets/footer/footerasset.png");
   
 }
 

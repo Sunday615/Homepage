@@ -26,16 +26,16 @@ const searchTerm = ref('');
 
 type ProductId =
 
-    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື
-    | 'qr_payment'       // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
-    | 'qr_crossborder';  // ຊຳລະຂ້າມແດນຜ່ານ QR Code
+    | 'mobile_transfer'  // ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ
+    | 'tranfer_qr'       // ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code 
+    | 'qr_payment';  // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
 
-
+// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
 const productOptions: { id: ProductId; label: string }[] = [
 
     { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
     { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-    { id: 'qr_crossborder', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
+    { id: 'tranfer_qr', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
 ];
 
 
@@ -98,7 +98,7 @@ const members = ref<Member[]>([
         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -110,10 +110,10 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/ldblao',
         link2: 'https://www.ldblao.la/',
         aosDuration: 600,
-       products: [
+          products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -125,10 +125,10 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/APB.Bank/?locale=th_TH',
         link2: 'https://www.apb.com.la',
         aosDuration: 700,
-      products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -140,10 +140,10 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/jdbbanklaos',
         link2: 'https://www.jdbbank.com.la/',
         aosDuration: 800,
-       products: [
+          products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -155,10 +155,10 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/MaruhanJapanBankLao/',
         link2: 'https://maruhanjapanbanklao.com',
         aosDuration: 900,
-      products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     },
@@ -170,10 +170,10 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/LaoVietBank',
         link2: 'https://www.laovietbank.com.la/la/',
         aosDuration: 1100,
-      products: [
+         products: [
             'mobile_transfer',
             'qr_payment',
-            'qr_crossborder',
+            'tranfer_qr',
 
         ]
     }

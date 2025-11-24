@@ -142,7 +142,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/BCEL.Bank',
         link2: 'https://www.bcel.com.la',
         aosDuration: 500,
-        products: ['cross_border_payment_KHLA']
+        products: ['cross_border_payment_KHLA' , 'cross_border_payment_LAKH' ,'cross_border_payment_THLA' , 'cross_border_payment_LATH',  'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'ldb',
@@ -152,7 +152,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/ldblao',
         link2: 'https://www.ldblao.la/',
         aosDuration: 600,
-        products: ['cross_border_payment_KHLA']
+        products: ['cross_border_payment_KHLA' , 'cross_border_payment_THLA' ,'cross_border_payment_LATH'  , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'apb',
@@ -162,7 +162,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/APB.Bank/?locale=th_TH',
         link2: 'https://www.apb.com.la',
         aosDuration: 700,
-        products: ['cross_border_payment_KHLA']
+        products: ['cross_border_payment_KHLA' , 'cross_border_payment_LAKH' , 'cross_border_payment_THLA', 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'jdb',
@@ -172,7 +172,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/jdbbanklaos',
         link2: 'https://www.jdbbank.com.la/',
         aosDuration: 800,
-        products: ['cross_border_payment_KHLA']
+        products: ['cross_border_payment_KHLA' ,  'cross_border_payment_THLA', 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'maru',
@@ -182,7 +182,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/MaruhanJapanBankLao/',
         link2: 'https://maruhanjapanbanklao.com',
         aosDuration: 900,
-        products: ['cross_border_payment_KHLA']
+         products: [  'cross_border_payment_THLA','cross_border_payment_LATH', 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     },
     {
         id: 'lvb',
@@ -192,7 +192,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/LaoVietBank',
         link2: 'https://www.laovietbank.com.la/la/',
         aosDuration: 1100,
-        products: ['cross_border_payment_KHLA']
+        products: [  'cross_border_payment_KHLA', 'cross_border_payment_THLA' , 'cross_border_payment_LATH' ,'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
     }
 ]);
 
