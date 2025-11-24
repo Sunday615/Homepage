@@ -1,134 +1,120 @@
 <script setup lang="ts">
-import navbarview2 from '../../../components/navbar/navbarview2.vue';
+import navbarview2 from '../../../components/navbar/navbarview2.vue'
 import pagination from '../../../components/pagination/paginationmember3.vue'
-import mainfooter from '../../../components/footer/mainfooter.vue';
+import mainfooter from '../../../components/footer/mainfooter.vue'
+import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue'
 
-import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
-
-import { onMounted, ref, computed, type Component } from 'vue';
-import Boxmemberkbank from '../../../components/boxmember/boxmemberkbank.vue';
-import Boxmemberpsvb from '../../../components/boxmember/boxmemberpsvb.vue';
-import Boxmembermb from '../../../components/boxmember/boxmembermb.vue';
+import { onMounted, ref, computed, type Component } from 'vue'
+import Boxmemberkbank from '../../../components/boxmember/boxmemberkbank.vue'
+import Boxmemberpsvb from '../../../components/boxmember/boxmemberpsvb.vue'
+import Boxmembermb from '../../../components/boxmember/boxmembermb.vue'
 
 onMounted(() => {
   window.scrollTo({
     top: 660,
-    behavior: 'smooth'
-  });
-});
+    behavior: 'smooth',
+  })
+})
 
-// 🔍 search
-const searchTerm = ref('');
+const searchTerm = ref('')
 
-// product id
 type ProductId =
   | 'cross_border_payment_KHLA'
   | 'cross_border_payment_LAKH'
   | 'cross_border_payment_THLA'
   | 'cross_border_payment_LATH'
   | 'cross_border_payment_VNLA'
-  | 'cross_border_payment_CHLA';
+  | 'cross_border_payment_CHLA'
 
-// country code สำหรับ FlagCDN
-type CountryCode = 'kh' | 'la' | 'th' | 'vn' | 'cn';
+type CountryCode = 'kh' | 'la' | 'th' | 'vn' | 'cn'
 
-// option type
 type ProductOption = {
-  id: ProductId;
-  label: string;
-  from: CountryCode; // ประเทศต้นทาง
-  to: CountryCode;   // ประเทศปลายทาง
-};
+  id: ProductId
+  label: string
+  from: CountryCode
+  to: CountryCode
+}
 
-// helper สร้าง URL ธงจาก FlagCDN
-const flagUrl = (code: CountryCode) => `https://flagcdn.com/w40/${code}.png`;
+const flagUrl = (code: CountryCode) => `https://flagcdn.com/w40/${code}.png`
 
-// information checkbox right container
 const productOptions: ProductOption[] = [
   {
     id: 'cross_border_payment_KHLA',
     label: 'ກຳປູເຈຍ ສະແກນຊຳລະ ລາວ',
-    from: 'kh', // 🇰🇭
-    to: 'la'    // 🇱🇦
+    from: 'kh',
+    to: 'la',
   },
   {
     id: 'cross_border_payment_LAKH',
     label: 'ລາວ ສະແກນຊຳລະ ກຳປູເຈຍ',
-    from: 'la', // 🇱🇦
-    to: 'kh'    // 🇰🇭
+    from: 'la',
+    to: 'kh',
   },
   {
     id: 'cross_border_payment_THLA',
     label: 'ໄທ ສະແກນຊຳລະ ລາວ',
-    from: 'th', // 🇹🇭
-    to: 'la'    // 🇱🇦
+    from: 'th',
+    to: 'la',
   },
   {
     id: 'cross_border_payment_LATH',
     label: 'ລາວ ສະແກນຊຳລະ ໄທ',
-    from: 'la', // 🇱🇦
-    to: 'th'    // 🇹🇭
+    from: 'la',
+    to: 'th',
   },
   {
     id: 'cross_border_payment_VNLA',
     label: 'ຫວຽດນາມ ສະແກນຊຳລະ ລາວ',
-    from: 'vn', // 🇻🇳
-    to: 'la'    // 🇱🇦
+    from: 'vn',
+    to: 'la',
   },
   {
     id: 'cross_border_payment_CHLA',
     label: 'ຈີນ ສະແກນຊຳລະ ລາວ',
-    from: 'cn', // 🇨🇳
-    to: 'la'    // 🇱🇦
-  }
-];
+    from: 'cn',
+    to: 'la',
+  },
+]
 
-// ✅ product selected
-const selectedProducts = ref<ProductId[]>([]);
+const selectedProducts = ref<ProductId[]>([])
 
-// toggle checkbox toggle select once checkbox
 const toggleProduct = (id: ProductId) => {
-  const index = selectedProducts.value.indexOf(id);
+  const index = selectedProducts.value.indexOf(id)
   if (index === -1) {
-    selectedProducts.value.push(id);
+    selectedProducts.value.push(id)
   } else {
-    selectedProducts.value.splice(index, 1);
+    selectedProducts.value.splice(index, 1)
   }
-};
+}
 
-// check product ture or false
 const isProductSelected = (id: ProductId) =>
-  selectedProducts.value.includes(id);
+  selectedProducts.value.includes(id)
 
-// ✅ All checkbox: slected / clear all
-const allProductIds = productOptions.map((p) => p.id);
+const allProductIds = productOptions.map((p) => p.id)
 
 const isAllSelected = computed(
   () =>
     selectedProducts.value.length === allProductIds.length &&
-    allProductIds.every((id) => selectedProducts.value.includes(id))
-);
+    allProductIds.every((id) => selectedProducts.value.includes(id)),
+)
 
 const toggleAll = () => {
   if (isAllSelected.value) {
-    // if checkbox all อยู่ → clear all checkbox
-    selectedProducts.value = [];
+    selectedProducts.value = []
   } else {
-    // if not  all → selected
-    selectedProducts.value = [...allProductIds];
+    selectedProducts.value = [...allProductIds]
   }
-};
+}
 
-// 🔁 config all banks member
 interface Member {
-  id: string;
-  name: string;
-  component: Component;
-  image: string;
-  link1?: string;
-  link2?: string;
-  aosDuration: number;
-  products: ProductId[];
+  id: string
+  name: string
+  component: Component
+  image: string
+  link1?: string
+  link2?: string
+  aosDuration: number
+  products: ProductId[]
 }
 
 const members = ref<Member[]>([
@@ -140,55 +126,64 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/KBankLaos/',
     link2: 'https://www.kasikornbank.com.la',
     aosDuration: 500,
-    products: ['cross_border_payment_KHLA' , 'cross_border_payment_THLA','cross_border_payment_LATH' ,'cross_border_payment_VNLA']
+    products: [
+      'cross_border_payment_KHLA',
+      'cross_border_payment_THLA',
+      'cross_border_payment_LATH',
+      'cross_border_payment_VNLA',
+    ],
   },
   {
-        id: 'psvb',
-        name: 'ທະນາຄານ ພົງສະຫວັນ ຈໍາກັດ Phongsavanh Bank (PSVB)',
-        component: Boxmemberpsvb,
-        image: '/Logomember/psvb.PNG',
-        link1: 'https://www.facebook.com/phongsavanhbankltd',
-        link2: 'https://www.phongsavanhbank.com',
-        aosDuration: 1200,
+    id: 'psvb',
+    name: 'ທະນາຄານ ພົງສະຫວັນ ຈໍາກັດ Phongsavanh Bank (PSVB)',
+    component: Boxmemberpsvb,
+    image: '/Logomember/psvb.PNG',
+    link1: 'https://www.facebook.com/phongsavanhbankltd',
+    link2: 'https://www.phongsavanhbank.com',
+    aosDuration: 1200,
+    products: [
+      'cross_border_payment_KHLA',
+      'cross_border_payment_THLA',
+      'cross_border_payment_LATH',
+      'cross_border_payment_VNLA',
+      'cross_border_payment_CHLA',
+    ],
+  },
+  {
+    id: 'mb',
+    name: 'ທະນາຄານ ຫຸ້ນສ່ວນການຄ້າທະຫານ ສາຂາລາວ Military Commercial Joint Stock Bank (MB)',
+    component: Boxmembermb,
+    image: '/Logomember/mbbgblue.jpg',
+    link1: 'https://www.facebook.com/MBBANKLAOS',
+    link2: 'https://mbbank.com.la',
+    aosDuration: 1400,
+    products: [
+      'cross_border_payment_LAKH',
+      'cross_border_payment_VNLA',
+      'cross_border_payment_CHLA',
+    ],
+  },
+])
 
-         products: ['cross_border_payment_KHLA' ,'cross_border_payment_THLA' , 'cross_border_payment_LATH' , 'cross_border_payment_VNLA' , 'cross_border_payment_CHLA']
-    },
-    {
-        id: 'mb',
-        name: 'ທະນາຄານ ຫຸ້ນສ່ວນການຄ້າທະຫານ ສາຂາລາວ Military Commercial Joint Stock Bank (MB) ',
-        component: Boxmembermb,
-        image: '/Logomember/mbbgblue.jpg',
-        link1: 'https://www.facebook.com/MBBANKLAOS',
-        link2: 'https://mbbank.com.la',
-        aosDuration: 1400,
-
-              products: ['cross_border_payment_LAKH' , 'cross_border_payment_VNLA' ,'cross_border_payment_CHLA']
-    },
-  
-]);
-
-// ✅ filter follow search + checkbox
 const filteredMembers = computed(() => {
-  const keyword = searchTerm.value.trim().toLowerCase();
-
-  let list = members.value;
+  const keyword = searchTerm.value.trim().toLowerCase()
+  let list = members.value
 
   if (keyword) {
-    list = list.filter((m) => m.name.toLowerCase().includes(keyword));
+    list = list.filter((m) => m.name.toLowerCase().includes(keyword))
   }
 
-  // if selected All (checkbox up side) → not have filter follow product
   const shouldFilterByProduct =
-    selectedProducts.value.length > 0 && !isAllSelected.value;
+    selectedProducts.value.length > 0 && !isAllSelected.value
 
   if (shouldFilterByProduct) {
     list = list.filter((m) =>
-      selectedProducts.value.every((p) => m.products.includes(p))
-    );
+      selectedProducts.value.every((p) => m.products.includes(p)),
+    )
   }
 
-  return list;
-});
+  return list
+})
 </script>
 
 <template>
@@ -221,68 +216,85 @@ const filteredMembers = computed(() => {
     </div>
 
     <div class="cardviewcontainer">
-
       <div class="leftsidecontainer">
-        <div v-for="member in filteredMembers" :key="member.id" data-aos="fade-right"
-          :data-aos-duration="member.aosDuration">
-          <component :is="member.component" :image="member.image" :link1="member.link1" :link2="member.link2" />
+        <div
+          v-for="member in filteredMembers"
+          :key="member.id"
+          data-aos="fade-right"
+          :data-aos-duration="member.aosDuration"
+        >
+          <component
+            :is="member.component"
+            :image="member.image"
+            :link1="member.link1"
+            :link2="member.link2"
+          />
         </div>
 
-        <div v-if="filteredMembers.length === 0" style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif;">
+        <div
+          v-if="filteredMembers.length === 0"
+          style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif"
+        >
           ບໍ່ພົບທະນາຄານທີ່ກົງກັບຄຳຄົ້ນຫາ / ການເລືອກບໍລິການ
         </div>
       </div>
 
-
       <div class="rightsidecontainer">
-
-                <div class="searchbar">
-                    <div class="searchblog">
-                        <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
-                    </div>
-                    <div class="inputsearchblog">
-                        <input type="text" placeholder="Search" v-model="searchTerm" />
-                        <div class="btnsubmit" @click.prevent>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ✅ Checkbox filter -->
-                <div class="groupshortmember">
-                    <div class="title-group">
-                        <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
-                    </div>
-                    <div class="checkboxshort">
-                        <!-- ✅ All up side  -->
-                        <div class="checkbox1" @click="toggleAll">
-                            <div class="boxcheck" :class="{ active: isAllSelected }">
-                                <i class="fa-solid fa-check check-icon"></i>
-                            </div>
-                            <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
-                        </div>
-
-                        <!-- if select other checkbox -->
-                        <div v-for="option in productOptions" :key="option.id" class="checkbox1"
-                            @click="toggleProduct(option.id)">
-                            <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
-                                <i class="fa-solid fa-check check-icon"></i>
-                            </div>
-
-                            <p :class="{ active: isProductSelected(option.id) }">
-                                {{ option.label }}
-                            </p>
-
-
-                            <div class="flag-pair">
-                                <img class="flag-icon" :src="flagUrl(option.from)" :alt="option.from + ' flag'" />
-                                <i class="fa-solid fa-right-long"></i>
-                                <img class="flag-icon" :src="flagUrl(option.to)" :alt="option.to + ' flag'" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="searchbar">
+          <div class="searchblog">
+            <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
+          </div>
+          <div class="inputsearchblog">
+            <input type="text" placeholder="Search" v-model="searchTerm" />
+            <div class="btnsubmit" @click.prevent>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+          </div>
+        </div>
+
+        <div class="groupshortmember">
+          <div class="title-group">
+            <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
+          </div>
+          <div class="checkboxshort">
+            <div class="checkbox1" @click="toggleAll">
+              <div class="boxcheck" :class="{ active: isAllSelected }">
+                <i class="fa-solid fa-check check-icon"></i>
+              </div>
+              <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
+            </div>
+
+            <div
+              v-for="option in productOptions"
+              :key="option.id"
+              class="checkbox1"
+              @click="toggleProduct(option.id)"
+            >
+              <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
+                <i class="fa-solid fa-check check-icon"></i>
+              </div>
+
+              <p :class="{ active: isProductSelected(option.id) }">
+                {{ option.label }}
+              </p>
+
+              <div class="flag-pair">
+                <img
+                  class="flag-icon"
+                  :src="flagUrl(option.from)"
+                  :alt="option.from + ' flag'"
+                />
+                <i class="fa-solid fa-right-long flag-arrow"></i>
+                <img
+                  class="flag-icon"
+                  :src="flagUrl(option.to)"
+                  :alt="option.to + ' flag'"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="pagination">
@@ -295,24 +307,24 @@ const filteredMembers = computed(() => {
 
 <style scoped>
 .flag-pair {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 15px;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 15px;
+  gap: 8px;
 }
 
 .flag-icon {
-    width: 36px;
-    height: 24px;
-    object-fit: cover;
-    border-radius: 3px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  width: 36px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .flag-arrow {
-    font-size: 16px;
-    color: #777;
+  font-size: 16px;
+  color: #777;
 }
 
 .containerhiden {
@@ -348,7 +360,7 @@ const filteredMembers = computed(() => {
   font-size: 70px;
   text-align: center;
   color: #fff;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-bottom: 70px;
 }
@@ -356,15 +368,13 @@ const filteredMembers = computed(() => {
 .navigatorlink p {
   color: #fff;
   font-size: 20px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
 }
 
 .pagination {
   width: 100%;
   height: 300px;
 }
-
-/* ===== checkbox + animation ===== */
 
 .boxcheck {
   width: 30px;
@@ -391,7 +401,6 @@ const filteredMembers = computed(() => {
   transform: translateY(-1px) scale(1.02);
 }
 
-/* icon ด้านใน */
 .check-icon {
   font-size: 18px;
   color: #ffffff;
@@ -418,7 +427,6 @@ const filteredMembers = computed(() => {
   font-weight: 600;
 }
 
-/* แถว checkbox */
 .checkbox1 {
   width: 470px;
   margin-left: 50px;
@@ -426,7 +434,7 @@ const filteredMembers = computed(() => {
   align-items: center;
   background-color: #fff;
   height: 80px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   border-radius: 7px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -447,7 +455,7 @@ const filteredMembers = computed(() => {
 
 .title-group h1 {
   font-size: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-left: 40px;
   padding-top: 30px;
@@ -467,8 +475,6 @@ const filteredMembers = computed(() => {
   margin-top: 60px;
   border-radius: 15px;
 }
-
-/* ===== search bar ===== */
 
 .searchbar {
   width: 100%;
@@ -517,7 +523,7 @@ const filteredMembers = computed(() => {
 
 .searchblog h4 {
   font-size: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-top: 30px;
   padding-left: 40px;
@@ -528,10 +534,6 @@ const filteredMembers = computed(() => {
   width: 100%;
   height: 35%;
 }
-
-
-
-
 
 .rightsidecontainer {
   width: 38%;

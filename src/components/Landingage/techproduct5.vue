@@ -1,18 +1,18 @@
 <template>
   <section ref="sectionRef" class="tech-section">
-    <!-- พื้นหลังแสง -->
+    <!-- Glowing background -->
     <div class="orb orb-main"></div>
     <div class="orb orb-left"></div>
     <div class="orb orb-right"></div>
 
     <div class="section-inner">
-      <!-- หัวข้อใหญ่ -->
+      <!-- Main heading -->
       <h1 class="hero-title">
         ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ<br />
         <span>​ແລະ ເງື່ອນໄຂການໃຊ້ບໍລິການ</span>
       </h1>
 
-      <!-- Card 2 ใบ (2 แถว 1 คอลัมน์) -->
+      <!-- Two cards (2 rows, 1 column) -->
       <div class="card-row">
         <article
           class="big-card"
@@ -87,11 +87,9 @@ const cards = [
     text: 'ຜະລິດຕະພັນ ການໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນີ້ ຈະຊ່ວຍອຳນວຍຄວາມສະດວກໃຫ້ແກ່ມວນຊົນໃນການດຳເນີນທຸລະກຳທາງການເງິນຢູ່ເທິງມືຖືໄດ້ງ່າຍ ແລະ ວ່ອງໄວຂື້ນ ໂດຍນຳໃຊ້ Applications ຂອງແຕ່ລະທະນາຄານທຸລະກິດທີ່ເປັນສະມາຊິກຂອງບໍລິສັດ LAPNet, ຕາມຄຳຂວັນທີ່ກ່າວໄວ້ວ່າ: “ ທຸກທີ່ ທຸກເວລາ ທຸກຊ່ອງທາງການຊຳລະ”.',
   },
   {
-   
     icon: 'fa-solid fa-border-all',
     title: '​ເງື່ອນໄຂການໃຊ້ບໍລິການ',
     text: 'ລຸກຄ້ານຳໃຊ້ Application ຂອງທະນາຄານ ທີ່ຕົນເອງມີ ດຳເນີນທຸລະກຳການຊໍາລະຄ່າສິນຄ້າ - ບໍລິການ ຫຼື ອື່ນໆຂ້າມທະນາຄານໄດ້ ດ້ວຍການສະແກນ QR Code ທີ່ຮ້ານຄ້າ ທີ່ມີສັນຍາລັກ ປ້າຍທີ່ລະບຸວ່າ ຊໍາລະຂ້າມທະນາຄານຜ່ານ LAPNet QR Pay.'
-
   },
 ]
 
@@ -159,7 +157,7 @@ onMounted(() => {
       .from('.card-row', { y: 40, opacity: 0 }, '-=0.4')
       .from('.big-card', { y: 30, opacity: 0, stagger: 0.2 }, '-=0.4')
 
-    // อนิเมชันลอยของวงแสง
+    // Floating animation for light orbs
     gsap.to('.orb-main', {
       y: -20,
       duration: 6,
@@ -203,7 +201,7 @@ onMounted(() => {
     'Inter', sans-serif;
 }
 
-/* วงแสงพื้นหลัง */
+/* Background light orbs */
 .orb {
   position: absolute;
   border-radius: 999px;
@@ -234,7 +232,7 @@ onMounted(() => {
   background: radial-gradient(circle, rgba(0, 119, 255, 0.9), transparent 70%);
 }
 
-/* เนื้อหาด้านใน */
+/* Inner content */
 .section-inner {
   position: relative;
   z-index: 1;
@@ -249,7 +247,7 @@ onMounted(() => {
   gap: 32px;
 }
 
-/* หัวข้อใหญ่ */
+/* Main heading */
 .hero-title {
   font-size: clamp(2.6rem, 3.8vw, 3.4rem);
   line-height: 1.4;
@@ -263,14 +261,14 @@ onMounted(() => {
   color: transparent;
 }
 
-/* แถว card: 1 คอลัมน์ 2 แถว */
+/* Card row: 1 column, 2 rows */
 .card-row {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-/* Card ใหญ่ */
+/* Large card */
 .big-card {
   width: 100%;
   background: radial-gradient(circle at top left, #202956, #050818);
@@ -330,7 +328,7 @@ onMounted(() => {
   color: rgba(214, 227, 255, 0.95);
 }
 
-/* badge footer (เผื่อใช้ในอนาคต) */
+/* Badge footer (reserved for future use) */
 .big-card-footer {
   position: relative;
   display: flex;
@@ -369,7 +367,7 @@ onMounted(() => {
   color: #eef4ff;
 }
 
-/* ปุ่มปิด */
+/* Close button */
 .overlay-close {
   position: absolute;
   top: 14px;
@@ -391,7 +389,7 @@ onMounted(() => {
   transform: scale(1.06);
 }
 
-/* icon ใน overlay */
+/* Icon in overlay */
 .overlay-icon {
   width: 60px;
   height: 60px;

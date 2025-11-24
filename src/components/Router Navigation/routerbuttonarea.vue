@@ -1,7 +1,6 @@
 <template>
   <div class="lang-container">
     <div class="lang-box">
-
       <!-- BLOCK 1 -->
       <div class="select-wrap" ref="leftBlock">
         <div class="selected" @click="open1 = !open1">
@@ -9,7 +8,11 @@
           <span>{{ getName(source) }}</span>
         </div>
         <ul v-if="open1" class="dropdown-list">
-          <li v-for="lang in filteredSource" :key="lang.code" @click="selectSource(lang.code)">
+          <li
+            v-for="lang in filteredSource"
+            :key="lang.code"
+            @click="selectSource(lang.code)"
+          >
             <img :src="lang.flag" class="flag" />
             <span>{{ lang.name }}</span>
           </li>
@@ -17,8 +20,13 @@
       </div>
 
       <!-- Swap -->
-      <button @click="swap" class="swap-btn" ref="swapBtn" :class="{ 'swap-disabled': isSwapLocked }"
-        :disabled="isSwapLocked">
+      <button
+        @click="swap"
+        class="swap-btn"
+        ref="swapBtn"
+        :class="{ 'swap-disabled': isSwapLocked }"
+        :disabled="isSwapLocked"
+      >
         <i class="fa-solid fa-repeat"></i>
       </button>
 
@@ -29,7 +37,11 @@
           <span>{{ getName(target) }}</span>
         </div>
         <ul v-if="open2" class="dropdown-list">
-          <li v-for="lang in filteredTarget" :key="lang.code" @click="selectTarget(lang.code)">
+          <li
+            v-for="lang in filteredTarget"
+            :key="lang.code"
+            @click="selectTarget(lang.code)"
+          >
             <img :src="lang.flag" class="flag" />
             <span>{{ lang.name }}</span>
           </li>
@@ -55,7 +67,7 @@ const languages = [
   { code: "ch", name: "ຈີນ", flag: "https://flagcdn.com/cn.svg" },
 ]
 
-// default เริ่มต้น
+// default initial pair
 const source = ref("kh")
 const target = ref("la")
 
@@ -70,10 +82,10 @@ const isValidCode = (code) => languages.some(l => l.code === code)
 const getFlag = (code) => languages.find(l => l.code === code)?.flag || ""
 const getName = (code) => languages.find(l => l.code === code)?.name || ""
 
-// filter รายการให้ตรงกับ rule:
-// - ต้องมี la ฝั่งใดฝั่งหนึ่งเสมอ
-// - ถ้าอีกฝั่งเป็น la → ฝั่งนี้เลือกได้ทุกประเทศยกเว้น la
-// - ถ้าอีกฝั่งไม่ใช่ la → ฝั่งนี้ต้องเป็น la เท่านั้น
+// filter lists based on rules:
+// - One side must always be "la"
+// - If the other side is "la" → this side can select any country except "la"
+// - If the other side is NOT "la" → this side must be "la"
 const filteredSource = computed(() => {
   if (target.value === "la") {
     return languages.filter(l => l.code !== "la")
@@ -90,7 +102,7 @@ const filteredTarget = computed(() => {
   }
 })
 
-// เคสพิเศษ: vn-la และ ch-la → ห้าม swap
+// special case: vn-la and ch-la → swap is disabled
 const isSwapLocked = computed(() => {
   return (
     target.value === "la" &&
@@ -98,20 +110,20 @@ const isSwapLocked = computed(() => {
   )
 })
 
-// เลือกจาก BLOCK 1 (ซ้าย)
+// select from BLOCK 1 (left)
 const selectSource = (code) => {
   if (!isValidCode(code)) return
 
   if (code === "la") {
-    // ถ้าเลือก la ฝั่งซ้าย
+    // if selecting "la" on the left
     source.value = "la"
-    // กันไม่ให้เป็น la-la
+    // prevent la-la
     if (target.value === "la") {
       const firstNonLa = languages.find(l => l.code !== "la")
       if (firstNonLa) target.value = firstNonLa.code
     }
   } else {
-    // เลือกประเทศที่ไม่ใช่ la → ฝั่งขวาเป็น la auto
+    // if selecting non-"la" on the left → right side becomes "la" automatically
     source.value = code
     target.value = "la"
   }
@@ -119,20 +131,20 @@ const selectSource = (code) => {
   open1.value = false
 }
 
-// เลือกจาก BLOCK 2 (ขวา)
+// select from BLOCK 2 (right)
 const selectTarget = (code) => {
   if (!isValidCode(code)) return
 
   if (code === "la") {
-    // ถ้าเลือก la ฝั่งขวา
+    // if selecting "la" on the right
     target.value = "la"
-    // กันไม่ให้เป็น la-la
+    // prevent la-la
     if (source.value === "la") {
       const firstNonLa = languages.find(l => l.code !== "la")
       if (firstNonLa) source.value = firstNonLa.code
     }
   } else {
-    // เลือกประเทศที่ไม่ใช่ la → ฝั่งซ้ายเป็น la auto
+    // if selecting non-"la" on the right → left side becomes "la" automatically
     target.value = code
     source.value = "la"
   }
@@ -140,7 +152,7 @@ const selectTarget = (code) => {
   open2.value = false
 }
 
-// อัปเดต route ให้ตาม pair ปัจจุบัน
+// update route based on current pair
 const updateRoute = () => {
   const path = `/crossborder/${source.value}-${target.value}`
 
@@ -153,7 +165,7 @@ const updateRoute = () => {
   })
 }
 
-// sync state จาก path (ให้ตรง rule: ต้องมี la, ห้าม la-la เป็นต้น)
+// sync state from route path (enforce rules: must include "la", no la-la, etc.)
 const syncStateFromRoute = (path) => {
   const match = path.match(/\/crossborder\/([a-z]+)-([a-z]+)/)
   if (!match) {
@@ -171,24 +183,24 @@ const syncStateFromRoute = (path) => {
     return
   }
 
-  // la-la → บังคับไม่ให้ la ทั้งคู่
+  // la-la → force only one side to be "la"
   if (src === "la" && tgt === "la") {
     src = "la"
     const firstNonLa = languages.find(l => l.code !== "la")?.code || "kh"
     tgt = firstNonLa
   }
-  // ทั้งสองไม่ใช่ la → บังคับให้ฝั่งขวาเป็น la
+  // both sides are not "la" → force right side to "la"
   else if (src !== "la" && tgt !== "la") {
-    // ให้เก็บ src เดิม แล้วบังคับให้ tgt = la
+    // keep src, set tgt = "la"
     tgt = "la"
   }
 
-  // วางค่าเข้า state
+  // set state
   source.value = src
   target.value = tgt
 }
 
-// redirect เคส la-vn → vn-la, la-ch → ch-la
+// redirect special cases: la-vn → vn-la, la-ch → ch-la
 const fixWrongOrder = (path) => {
   const clean = path.replace("/crossborder/", "")
 
@@ -205,30 +217,30 @@ const fixWrongOrder = (path) => {
   return false
 }
 
-// watch path: จัดการ redirect + sync state
+// watch path: handle redirect + sync state
 watch(
   () => router.currentRoute.value.path,
   (newPath, oldPath) => {
     if (newPath === oldPath) return
 
-    // ถ้าเป็น la-vn หรือ la-ch → redirect แล้วยังไม่ต้อง sync
+    // if la-vn or la-ch → redirect and skip sync
     const redirected = fixWrongOrder(newPath)
     if (redirected) return
 
-    // ไม่ใช่เคส redirect → sync state ตาม path
+    // normal case → sync state from path
     syncStateFromRoute(newPath)
   },
   { immediate: true }
 )
 
-// watch state → อัปเดต path ให้ตรง state
+// watch state → update route to match state
 watch([source, target], () => {
   updateRoute()
 })
 
 // GSAP animated swap
 const swap = () => {
-  // คู่ vn-la / ch-la → ห้าม swap
+  // vn-la / ch-la → do not allow swap
   if (isSwapLocked.value) return
 
   const leftEl = leftBlock.value
@@ -239,18 +251,18 @@ const swap = () => {
     let src = source.value
     let tgt = target.value
 
-    // สลับค่า
+    // swap values
     const tmp = src
     src = tgt
     tgt = tmp
 
-    // enforce rule: ต้องมี la ฝั่งใดฝั่งหนึ่ง และห้าม la-la
+    // enforce rule: one side must be "la" and no la-la
     if (src !== "la" && tgt !== "la") {
-      // ถ้าหลังสลับไม่มี la เลย → บังคับให้ฝั่งขวาเป็น la
+      // if no "la" after swap → force right side to "la"
       tgt = "la"
     }
     if (src === "la" && tgt === "la") {
-      // ถ้า la-la → ให้ฝั่งขวาเป็นประเทศแรกที่ไม่ใช่ la
+      // if la-la → set right side to first non-"la"
       const firstNonLa = languages.find(l => l.code !== "la")?.code || "kh"
       tgt = firstNonLa
     }
@@ -259,6 +271,7 @@ const swap = () => {
     target.value = tgt
   }
 
+  // if elements not ready → skip animation, just do logic
   if (!leftEl || !rightEl || !btnEl) {
     doSwapLogic()
     return

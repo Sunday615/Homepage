@@ -31,12 +31,12 @@ type ProductId =
     | 'tranfer_qr'       // ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code 
     | 'qr_payment';  // ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR
 
-// 🗂 ข้อมูลตัวเลือก checkbox ด้านขวา
+
 const productOptions: { id: ProductId; label: string }[] = [
 
-    { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື' },
+    { id: 'mobile_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖືນຳໃຊ້ເລກບັນຊີ' },
+    { id: 'tranfer_qr', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານ QR Code' },
     { id: 'qr_payment', label: 'ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR' },
-    { id: 'tranfer_qr', label: 'ຊຳລະຂ້າມແດນຜ່ານ QR Code' }
 ];
 
 

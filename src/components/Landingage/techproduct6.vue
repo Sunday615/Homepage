@@ -300,7 +300,7 @@
       <div class="overlay-card" ref="overlayCard">
         <button class="overlay-close" @click="closeOverlay">×</button>
 
-        <!-- ใช้ activeCardId แยกแต่ละการ์ด -->
+        <!-- Use activeCardId to switch overlay content -->
         <div v-if="activeCardId === 'qrUsed'" class="overlay-body">
           <h2 class="overlay-title">QR Code ທີ່ໃຊ້:</h2>
           <p class="overlay-text">
@@ -609,7 +609,7 @@ const onKeyDown = (e) => {
 
 onMounted(() => {
   gsapCtx = gsap.context(() => {
-    // animation เข้า section
+    // section enter animation
     gsap.from(section.value, {
       opacity: 0,
       y: 40,
@@ -619,7 +619,7 @@ onMounted(() => {
 
     const cards = gsap.utils.toArray(".card")
 
-    // entry animation card style stagger
+    // card entry animation with stagger
     gsap.from(cards, {
       opacity: 0,
       y: 35,
@@ -630,7 +630,7 @@ onMounted(() => {
       ease: "power3.out"
     })
 
-    // hover animation by GSAP
+    // card hover animation by GSAP
     cards.forEach((card) => {
       const tl = gsap.timeline({ paused: true })
       tl.to(card, {
@@ -645,7 +645,7 @@ onMounted(() => {
       card.addEventListener("mouseleave", () => tl.reverse())
     })
 
-    // เวลาเปลี่ยนหน้า slider ให้ animate การ์ดหน้าใหม่อีกที
+    // when slider page changes, animate cards in the newly visible page
     watch(
       currentPage,
       () => {
@@ -775,7 +775,7 @@ onBeforeUnmount(() => {
 
 .kicker {
   font-size: 14px;
-  color: #9ca3af;
+  color: #ffffff;
   margin-bottom: 6px;
 }
 
@@ -848,7 +848,7 @@ onBeforeUnmount(() => {
 
 /* BASE CARD */
 .card {
-  height: 360px; /* 👈 ทำการ์ดให้ใหญ่ขึ้น */
+  height: 360px;
   border-radius: 20px;
   padding: 20px 20px 22px;
   background: radial-gradient(

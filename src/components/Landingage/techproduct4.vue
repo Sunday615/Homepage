@@ -1,18 +1,18 @@
 <template>
   <section ref="sectionRef" class="tech-section">
-    <!-- พื้นหลังแสง -->
+    <!-- Glowing background -->
     <div class="orb orb-main"></div>
     <div class="orb orb-left"></div>
     <div class="orb orb-right"></div>
 
     <div class="section-inner">
-      <!-- หัวข้อใหญ่ -->
+      <!-- Main heading -->
       <h1 class="hero-title">
         ຜົນປະໂຫຍດທີ່ໄດ້ຮັບ<br />
         <span style="font-size: 40px;">ດ້ານທະນາຄານສະມາຊິກ ແລະ ດ້ານລູກຄ້າຂອງທະນາຄານ.</span>
       </h1>
 
-      <!-- Card ใหญ่ 2 ใบ -->
+      <!-- Two large cards -->
       <div class="card-row">
         <article
           class="big-card"
@@ -95,7 +95,7 @@ const openCard = (card) => {
       { opacity: 1, duration: 0.25, ease: 'power2.out' }
     )
 
-    // pop-up modal: เด้งขึ้นมาพร้อมขยายตัว
+    // pop-up modal: animate in with slight scale-up
     gsap.fromTo(
       '.overlay-modal',
       { y: 40, opacity: 0, scale: 0.85 },
@@ -147,7 +147,7 @@ onMounted(() => {
       .from('.card-row', { y: 40, opacity: 0 }, '-=0.4')
       .from('.big-card', { y: 30, opacity: 0, stagger: 0.2 }, '-=0.4')
 
-    // อนิเมชันลอยของวงแสง
+    // Floating animation for light orbs
     gsap.to('.orb-main', {
       y: -20,
       duration: 6,
@@ -182,7 +182,7 @@ onMounted(() => {
 <style scoped>
 .tech-section {
   width: 100%;
-  height: 650px; /* เพิ่มความสูงนิดหน่อย ให้ card ใหญ่ขึ้นไม่โดนตัด */
+  height: 650px; /* Slightly increased height so large cards are not clipped */
   position: relative;
   overflow: hidden;
   color: #f7fbff;
@@ -191,7 +191,7 @@ onMounted(() => {
     'Inter', sans-serif;
 }
 
-/* วงแสงพื้นหลัง */
+/* Background light orbs */
 .orb {
   position: absolute;
   border-radius: 999px;
@@ -222,7 +222,7 @@ onMounted(() => {
   background: radial-gradient(circle, rgba(0, 119, 255, 0.9), transparent 70%);
 }
 
-/* เนื้อหาด้านใน */
+/* Inner content */
 .section-inner {
   position: relative;
   z-index: 1;
@@ -237,7 +237,7 @@ onMounted(() => {
   gap: 40px;
 }
 
-/* หัวข้อใหญ่ */
+/* Main heading */
 .hero-title {
   font-size: clamp(2.7rem, 4vw, 3.6rem);
   line-height: 1.15;
@@ -251,14 +251,14 @@ onMounted(() => {
   color: transparent;
 }
 
-/* แถว card */
+/* Card row */
 .card-row {
   display: flex;
   gap: 28px;
   flex-wrap: wrap;
 }
 
-/* Card ใหญ่ - ขยายให้ใหญ่ขึ้น */
+/* Large cards - slightly enlarged */
 .big-card {
   flex: 1;
   min-width: 320px;
@@ -333,7 +333,7 @@ onMounted(() => {
 
 .overlay-modal {
   position: relative;
-  width: min(780px, 94vw); /* ทำให้ใหญ่ขึ้นกว่าเดิม */
+  width: min(780px, 94vw); /* Make overlay a bit larger */
   padding: 32px 32px 26px;
   border-radius: 26px;
   background: radial-gradient(circle at top left, #24305a, #050816);
@@ -342,7 +342,7 @@ onMounted(() => {
   color: #eef4ff;
 }
 
-/* ปุ่มปิด */
+/* Close button */
 .overlay-close {
   position: absolute;
   top: 14px;
@@ -364,7 +364,7 @@ onMounted(() => {
   transform: scale(1.06);
 }
 
-/* icon ขยายใหญ่ขึ้น */
+/* Larger icon */
 .overlay-icon {
   width: 60px;
   height: 60px;

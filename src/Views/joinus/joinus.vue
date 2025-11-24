@@ -1,117 +1,102 @@
 <script setup lang="ts">
-import navbarview2 from '../../components/navbar/navbarview2.vue';
-import mainfooter from '../../components/footer/mainfooter.vue';
-import positionDropdown from '../../components/Dropdown/position-dropdown.vue';
-import department from '../../components/Dropdown/department.vue';
-import levels from '../../components/Dropdown/levels.vue';
-import imageswiper from '../../components/autoscrolling/imageswiper.vue';
+import navbarview2 from '../../components/navbar/navbarview2.vue'
+import mainfooter from '../../components/footer/mainfooter.vue'
+import positionDropdown from '../../components/Dropdown/position-dropdown.vue'
+import department from '../../components/Dropdown/department.vue'
+import levels from '../../components/Dropdown/levels.vue'
+import imageswiper from '../../components/autoscrolling/imageswiper.vue'
 </script>
 
-
 <template>
-    <navbarview2></navbarview2>
-    <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/joinus/navigatorjoinus.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ຮ່ວມງານກັບພວກເຮົາ</p>
-                </div>
-            </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ຮ່ວມງານກັບພວກເຮົາ
-                    </p>
-                </div>
-            </div>
-        </div>
+  <navbarview2 />
+
+  <!-- Navigator -->
+  <div class="navigatorcontent">
+    <img id="navigator-img" src="../../assets/joinus/navigatorjoinus.png" alt="" />
+    <div class="navigator-info-container">
+      <div class="titlenavigator" data-aos="zoom-in-down" data-aos-duration="1000">
+        <p>ຮ່ວມງານກັບພວກເຮົາ</p>
+      </div>
+      <div class="navigatorlink" data-aos="zoom-out-up" data-aos-duration="1000">
+        <p>
+          ໜ້າຫຼັກ
+          <span style="padding-right: 40px; padding-left: 40px">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          ຮ່ວມງານກັບພວກເຮົາ
+        </p>
+      </div>
     </div>
-    <div class="whyuscontainer">
-       
-        <div class="infotitle">
-            <div class="logo">
-                <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
-                <p>LAPNet</p>
-            </div>
-            <div class="header">
-                <div data-aos="fade-right" data-aos-duration="1000">
-                    <h1> WHY US?</h1>
-                </div>
-            </div>
-            <div class="title">
-                <div data-aos="fade-up" data-aos-duration="1200">
+  </div>
 
-                    <p>
-                        ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ, ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
-                        ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ
-                        ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
-                        ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
-                        ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
-                        ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
-                        ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
-                        ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.
-                    </p>
-                </div>
+  <!-- WHY US -->
+  <div class="whyuscontainer">
+    <div class="infotitle">
+      <div class="logo">
+        <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="" />
+        <p>LAPNet</p>
+      </div>
 
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1200">
-                <div class="contact">
-                    <div class="facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                        <a href="https://www.facebook.com/laonationalpaymentnetwork"> <p>Lao National Payment Network</p></a>
-                       
-                    </div>
-                    <div class="website">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <a href="https://www.lapnet.com.la">
-                            <p>www.lapnet.com.la</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="header" data-aos="fade-right" data-aos-duration="1000">
+        <h1>WHY US?</h1>
+      </div>
+
+      <div class="title" data-aos="fade-up" data-aos-duration="1200">
+        <p>
+          ພັດທະນາລະບົບການຊໍາລະໃຫ້ມີຄວາມຫຼາກຫຼາຍ, ທັນສະໄໝ, ຕອບຮັບໄດ້ທຸກຊ່ອງທາງການຊໍາລະທີ່ເກີດຂື້ນ,
+          ເຕົ້າໂຮມເອົາບັນດາທະນາຄານທຸລະກິດ, ສະຖາບັນການເງິນ ແລະ ບໍລິສັດ Fintech ທີ່ເປັນຜູ້ໃຫ້ບໍລິການຊໍາລະ
+          ໃຫ້ເຂົ້າມາເປັນສະມາຊີກຂອງບໍລິສັດ ເພື່ອພ້ອມກັນໃຫ້ບໍລິການລະບົບການຊໍາລະແກ່ສັງຄົມ,
+          ຫັນເອົາການເຊື່ອມຕໍ່ສາກົນທີ່ມີລັກສະນະກະແຈກກະຈາຍລວມສູນເຂົ້າມາເຊື່ອມຕໍ່ເປັນຮູບແບບລະບົບປະຕູດຽວເພື່ອຫຼຸດຜ່ອນຕົ້ນທືນລວມຂອງທົ່ວລະບົບ,
+          ເສີມຂະຫຍາຍຄວາມຮູ້-ເຂົ້າໃຈໃຫ້ແກ່ມວນຊົນໄດ້ຮັບຮູ້ເຖິງຄວາມສຳຄັນ ແລະ
+          ປະໂຫຍກຂອງການນຳໃຊ້ລະບົບການຊໍາລະເອເລັກໂຕຣນິກຢ່າງຖ່ອງແທ້
+          ເພື່ອເຮັດໃຫ້ມວນຊົນໄດ້ນຳໃຊ້ລະບົບການຊໍາລະຢ່າງຖືກຕ້ອງ ແລະ ປອດໄພ
+          ເປັນການເສີມສ້າງຄວາມໝັ້ນໃຈໃຫ້ແກ່ມວນຊົນ.
+        </p>
+      </div>
+
+      <div class="contact" data-aos="fade-up" data-aos-duration="1200">
+        <div class="facebook">
+          <i class="fa-brands fa-facebook"></i>
+          <a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank" rel="noreferrer">
+            <p>Lao National Payment Network</p>
+          </a>
         </div>
-        <div class="paddingbox" style="height: 90px;"></div>
-            <imageswiper></imageswiper>
-
-    </div>
-    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-
-        <div class="position">
-            <div class="headerposition">
-                <h1> POSITION</h1>
-            </div>
-            <div class="dropdowncontent">
-                <position-dropdown></position-dropdown>
-                <department></department>
-                <levels></levels>
-            </div>
+        <div class="website">
+          <i class="fa-solid fa-earth-americas"></i>
+          <a href="https://www.lapnet.com.la" target="_blank" rel="noreferrer">
+            <p>www.lapnet.com.la</p>
+          </a>
         </div>
+      </div>
     </div>
-    <mainfooter></mainfooter>
 
+    <div class="paddingbox"></div>
+    <imageswiper />
+  </div>
+
+  <!-- POSITION -->
+  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="position">
+      <div class="headerposition">
+        <h1>POSITION</h1>
+      </div>
+      <div class="dropdowncontent">
+        <position-dropdown />
+        <department />
+        <levels />
+      </div>
+    </div>
+  </div>
+
+  <mainfooter />
 </template>
-<style scoped>
-.dropdowncontent {
-  width: 80%;
-  height: 200px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-}
 
-.headerposition h1 {
-  font-size: 90px;
-  font-family: "Inter";
-  font-weight: bold;
-  color: #2855bf;
-  background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+<style scoped>
+/* ---------- Layout: Position section ---------- */
+.position {
+  width: 100%;
+  height: 1000px;
+  margin-top: 800px;
 }
 
 .headerposition {
@@ -122,34 +107,10 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   align-items: center;
 }
 
-.position {
-  width: 100%;
-  height: 1000px;
-  margin-top: 800px;
-}
-
-.positioncontainer {
-  width: 100%;
-  height: 900px;
-}
-
-.flexdisplaypreview {
-  display: flex;
-  height: 100%;
-  
-  border: 1px solid red;
-}
-
-.swiperdotpreview {
-  width: 1090px;
-  height: 100%;
-
-
-
-}
-
-.headerswiper p {
-  font-family: "Inter";
+.headerposition h1 {
+  font-size: 90px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
   color: #2855bf;
   background-image: linear-gradient(45deg, #2855bf, #416bd0 50%);
   background-clip: text;
@@ -158,134 +119,22 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   display: inline-block;
 }
 
-.headerswiper {
-  font-family: "Inter";
-  padding-top: 50px;
-  width: 350px;
-  height: 300px;
-  line-height: 1.2;
-  margin-left: 50px;
-  margin-top: 165px;
-  font-size: 80px;
-  font-weight: bold;
-}
-
-.lifeatlapnetlogo p {
-  font-size: 30px;
-  color: #fff;
-  font-family: "Inter";
-}
-
-.lifeatlapnetlogo img {
-  width: 80px;
-  height: 80px;
-}
-
-.lifeatlapnetlogo {
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  height: 120px;
+.dropdowncontent {
+  width: 80%;
+  height: 200px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px auto 0;
 }
 
-.leftboxinfo {
-  width: 45%;
-  height: 800px;
-}
-
-
-
-.swipercontainer {
+/* ---------- WHY US section ---------- */
+.whyuscontainer {
   width: 100%;
-  height: 930px;
-  border: 1px solid red;
-  overflow-wrap: hidden;
-  background-image: url("../../assets/joinus/swiper.png");
+  height: 900px;
+  background-image: url('../../assets/joinus/bcakgroundcontent1.png');
   background-size: cover;
   background-repeat: no-repeat;
- 
-}
-
-.website p {
-  font-size: 25px;
-  margin-left: 10px;
-}
-
-.website i {
-  font-size: 35px;
-  color: rgb(28, 0, 213);
-}
-
-.facebook p {
-  font-size: 25px;
-  margin-left: 10px;
-}
-
-.facebook i {
-  font-size: 35px;
-  color: rgb(28, 0, 213);
-}
-
-.facebook {
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-}
-
-.website {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.contact {
-  width: 100%;
-  height: 170px;
-  font-family: "Inter";
-  margin-top: 60px;
-}
-
-.title p {
-  font-size: 20px;
-  font-family: "Noto Sans Lao", sans-serif;
-  line-height: 2.2;
-}
-
-.title {
-  width: 100%;
-  height: 300px;
-}
-
-.header h1 {
-  font-size: 100px;
-  font-weight: bold;
-  font-family: "Inter";
-}
-
-.header {
-  width: 100%;
-  height: 170px;
-  margin-top: 50px;
-}
-
-.logo p {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Inter";
-}
-
-.logo img {
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-}
-
-.logo {
-  width: 20%;
-  height: 60px;
-  display: flex;
-  align-items: center;
 }
 
 .infotitle {
@@ -295,16 +144,91 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   margin-left: 130px;
 }
 
-
-
-.whyuscontainer {
-  width: 100%;
-  height: 900px;
-  background-image: url("../../assets/joinus/bcakgroundcontent1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.logo {
+  width: 20%;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.logo p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+  margin-top: 50px;
+}
+
+.header h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.title {
+  width: 100%;
+  height: 300px;
+}
+
+.title p {
+  font-size: 20px;
+  font-family: 'Noto Sans Lao', sans-serif;
+  line-height: 2.2;
+}
+
+.contact {
+  width: 100%;
+  height: 170px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 60px;
+}
+
+.facebook,
+.website {
+  display: flex;
+  align-items: center;
+}
+
+.facebook {
+  padding-top: 40px;
+}
+
+.website {
+  margin-top: 20px;
+}
+
+.facebook i,
+.website i {
+  font-size: 35px;
+  color: rgb(28, 0, 213);
+}
+
+.facebook p,
+.website p {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.paddingbox {
+  height: 90px;
+}
+
+/* ---------- Navigator ---------- */
 .navigatorcontent {
   width: 100%;
   height: 470px;
@@ -331,7 +255,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .titlenavigator p {
   font-size: 70px;
   color: #fff;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-bottom: 70px;
 }
@@ -339,17 +263,16 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 .navigatorlink p {
   color: #fff;
   font-size: 20px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
 }
 
 /* -------------------- RESPONSIVE -------------------- */
 
-/* จอ <= 1200px (โน๊ตบุ๊ก / แท็บเล็ตแนวนอน) */
+/* <= 1200px */
 @media (max-width: 1200px) {
   .infotitle {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto 0;
   }
 
   .logo {
@@ -366,33 +289,6 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
     font-size: 18px;
   }
 
-  .swipercontainer {
-    height: auto;
-    margin-top: 80px;
-  }
-
-  .leftboxinfo {
-    width: 60%;
-    height: auto;
-  }
-
-  .flexdisplaypreview {
-    flex-direction: column;
-  }
-
-  .headerswiper {
-    margin-top: 40px;
-    margin-left: 20px;
-    font-size: 60px;
-  }
-
-  .swiperdotpreview {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 40px;
-  }
-
   .position {
     margin-top: 400px;
     height: auto;
@@ -403,7 +299,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   }
 }
 
-/* จอ <= 992px (แท็บเล็ต) */
+/* <= 992px */
 @media (max-width: 992px) {
   .navigator-info-container {
     width: 90%;
@@ -421,30 +317,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
 
   .infotitle {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .lifeatlapnetlogo {
-    width: 100%;
-    justify-content: flex-start;
-    padding-left: 16px;
-  }
-
-  .leftboxinfo {
-    width: 100%;
-    padding: 0 16px;
-  }
-
-  .headerswiper {
-    margin-top: 24px;
-    margin-left: 0;
-    font-size: 42px;
-    width: 100%;
-  }
-
-  .swiperdotpreview {
-    margin-top: 24px;
+    margin: 40px auto 0;
   }
 
   .dropdowncontent {
@@ -463,7 +336,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   }
 }
 
-/* จอ <= 768px (มือถือแนวตั้ง) */
+/* <= 768px */
 @media (max-width: 768px) {
   .navigatorcontent {
     height: 360px;
@@ -540,25 +413,6 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
     font-size: 26px;
   }
 
-  .swipercontainer {
-    height: auto;
-    margin-top: 64px;
-  }
-
-  .leftboxinfo {
-    height: auto;
-  }
-
-  .lifeatlapnetlogo p {
-    font-size: 20px;
-  }
-
-  .headerswiper {
-    font-size: 32px;
-    padding-top: 16px;
-    height: auto;
-  }
-
   .dropdowncontent {
     flex-direction: column;
     width: 100%;
@@ -582,4 +436,3 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue';
   }
 }
 </style>
-

@@ -1,243 +1,216 @@
 <script setup lang="ts">
-import navbarview2 from '../../components/navbar/navbarview2.vue';
-import mainfooter from '../../components/footer/mainfooter.vue';
-
-import rolevdobg from '../../components/vdoproductbg/rolevdobg.vue';
-
-
+import navbarview2 from '../../components/navbar/navbarview2.vue'
+import mainfooter from '../../components/footer/mainfooter.vue'
+import rolevdobg from '../../components/vdoproductbg/rolevdobg.vue'
 </script>
 
-
 <template>
+  <navbarview2 />
 
-    <navbarview2></navbarview2>
-    <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/Aboutus/Role/navigatormission-bg.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ພາລະບົດບາດ</p>
-                </div>
-
-            </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ກ່ຽວກັບພວກເຮົາ <span
-                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                        </span> ພາລະບົດບາດ</p>
-                </div>
-            </div>
+  <div class="navigatorcontent">
+    <img id="navigator-img" src="../../assets/Aboutus/Role/navigatormission-bg.png" alt="Role Navigator" />
+    <div class="navigator-info-container">
+      <div class="titlenavigator">
+        <div data-aos="zoom-in-down" data-aos-duration="1000">
+          <p>ພາລະບົດບາດ</p>
         </div>
-    </div>
-   <rolevdobg></rolevdobg>
-    <mainfooter></mainfooter>
-</template>
+      </div>
 
+      <div class="navigatorlink">
+        <div data-aos="zoom-out-up" data-aos-duration="1000">
+          <p>
+            ໜ້າຫຼັກ
+            <span style="padding-right: 40px; padding-left: 40px">
+              <i class="fa-solid fa-chevron-right" />
+            </span>
+            ກ່ຽວກັບພວກເຮົາ
+            <span style="padding-right: 40px; padding-left: 40px">
+              <i class="fa-solid fa-chevron-right" />
+            </span>
+            ພາລະບົດບາດ
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <rolevdobg />
+
+  <mainfooter />
+</template>
 
 <style lang="css" scoped>
 .productlist ul {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .productlist ul li {
-    font-family: "Noto Sans Lao", sans-serif;
-    font-size: 27px;
-    margin-bottom: 20px;
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-size: 27px;
+  margin-bottom: 20px;
 }
 
 .productlist {
-    width: 100%;
-    height: 430px;
-
+  width: 100%;
+  height: 430px;
 }
 
 .headerproduct h1 {
-    font-size: 35px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
+  font-size: 35px;
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: bold;
 }
 
 .headerproduct {
-    width: 100%;
-    height: 70px;
-
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .productreview {
-    width: 60%;
-    height: 500px;
-
-    margin-top: 30px;
-    margin-left: 5%;
-
+  width: 60%;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 5%;
 }
 
 .inforolep p {
-    font-size: 23px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-bottom: 40px;
+  font-size: 23px;
+  font-family: 'Noto Sans Lao', sans-serif;
+  padding-bottom: 40px;
 }
 
 .inforolep {
-    width: 90%;
-
-    height: 200px;
-
-    margin: 0 auto;
-
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
 }
 
 .titlebox h1 {
-    font-size: 60px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    text-align: center;
-
-
+  font-size: 60px;
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: bold;
+  text-align: center;
 }
 
 .titlebox {
-    margin-top: 10px;
-    width: 100%;
-    height: 100px;
-
-    margin-bottom: 30px;
-
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
 }
 
 #box {
-    font-family: "Noto Sans Lao", sans-serif;
-    width: 95%;
-    height: 90%;
-    color: white;
-    font-family: 'Raleway';
-    font-size: 2.5rem;
+  font-family: 'Noto Sans Lao', sans-serif;
+  width: 95%;
+  height: 90%;
+  color: #fff;
+  font-size: 2.5rem;
 }
 
 .gradient-border {
-    --borderWidth: 3px;
-    background: #000000;
-
-    position: relative;
-    border-radius: var(--borderWidth);
+  --borderWidth: 3px;
+  background: #000;
+  position: relative;
+  border-radius: var(--borderWidth);
 }
 
 .gradient-border:after {
-    content: '';
-    position: absolute;
-    top: calc(-1 * var(--borderWidth));
-    left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
-    width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    border-radius: calc(2 * var(--borderWidth));
-    z-index: -1;
-    -webkit-animation: animatedgradient 3s ease alternate infinite;
-    animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
-
-
-@-webkit-keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 @keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
-
 .boxtitle {
-    width: 95%;
-    height: 90%;
-    background-color: #000;
-    opacity: 0.4;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 204, 255);
+  width: 95%;
+  height: 90%;
+  background-color: #000;
+  opacity: 0.4;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 204, 255);
 }
 
 #bg-role {
-    width: 1920px;
-    height: 950px;
-    position: absolute;
-    z-index: -1;
-
-
+  width: 1920px;
+  height: 950px;
+  position: absolute;
+  z-index: -1;
 }
 
 .inforole {
-    width: 100%;
-    height: 950px;
-
-    display: flex;
-    align-items: center;
-
-    justify-content: center;
-
-
+  width: 100%;
+  height: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigatorcontent {
-    width: 100%;
-    height: 470px;
-
-
+  width: 100%;
+  height: 470px;
 }
 
 .navigator-info-container {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  width: 1000px;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #navigator-img {
-    width: 100%;
-    height: 470px;
-    position: absolute;
-    z-index: -1;
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  z-index: -1;
 }
 
 .titlenavigator p {
-    font-size: 80px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
+  font-size: 80px;
+  color: #fff;
+  font-family: 'Noto Sans Lao', sans-serif;
+  font-weight: bold;
+  padding-bottom: 70px;
 }
 
 .navigatorlink p {
-    color: #fff;
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Noto Sans Lao', sans-serif;
 }
 </style>

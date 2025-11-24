@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-// ไม่ต้อง import useRouter/useRoute เพราะใช้ router-link แล้ว
+
 </script>
 
 <style scoped>
@@ -70,7 +70,7 @@ nav {
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* ตั้งชื่อ class ให้ router-link */
+
 .nav-link {
   position: relative;
   text-decoration: none;
@@ -82,7 +82,7 @@ nav {
   font-family: "Noto Sans Lao", sans-serif;
 }
 
-/* เส้น gradient ด้านล่าง */
+
 .nav-link::after {
   content: '';
   position: absolute;

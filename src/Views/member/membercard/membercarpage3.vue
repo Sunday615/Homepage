@@ -1,90 +1,72 @@
 <script setup lang="ts">
-import navbarview2 from '../../../components/navbar/navbarview2.vue';
-import mainfooter from '../../../components/footer/mainfooter.vue';
-import pagination from '../../../components/pagination/paginationmember1.vue';
-import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue';
+import navbarview2 from '../../../components/navbar/navbarview2.vue'
+import mainfooter from '../../../components/footer/mainfooter.vue'
+import pagination from '../../../components/pagination/paginationmember1.vue'
+import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue'
 
-import boxmembersacom from '../../../components/boxmember/boxmembersacom.vue';
-import boxmemberstb from '../../../components/boxmember/boxmemberstb.vue';
-import boxmemberkbank from '../../../components/boxmember/boxmemberkbank.vue';
-import boxmemberpub from '../../../components/boxmember/boxmemberpub.vue';
+import boxmembersacom from '../../../components/boxmember/boxmembersacom.vue'
+import boxmemberstb from '../../../components/boxmember/boxmemberstb.vue'
+import boxmemberkbank from '../../../components/boxmember/boxmemberkbank.vue'
+import boxmemberpub from '../../../components/boxmember/boxmemberpub.vue'
 
-import { onMounted, ref, computed, type Component } from 'vue';
+import { onMounted, ref, computed, type Component } from 'vue'
 
 onMounted(() => {
   window.scrollTo({
     top: 660,
-    behavior: 'smooth'
-  });
-});
+    behavior: 'smooth',
+  })
+})
 
+const searchTerm = ref('')
 
-const searchTerm = ref('');
-
-
-type ProductId =
-  | 'atm_inquiry'      // ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-  | 'atm_withdraw'     // ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-  | 'atm_transfer'     // ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-
-// ຊຳລະຂ້າມແດນຜ່ານ QR Code
-
+type ProductId = 'atm_inquiry' | 'atm_withdraw' | 'atm_transfer'
 
 const productOptions: { id: ProductId; label: string }[] = [
-  { id: 'atm_inquiry',     label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-  { id: 'atm_withdraw',    label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-  { id: 'atm_transfer',    label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
+  { id: 'atm_inquiry', label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
+  { id: 'atm_withdraw', label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
+  { id: 'atm_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
+]
 
- 
-];
-
-
-const selectedProducts = ref<ProductId[]>([]);
-
+const selectedProducts = ref<ProductId[]>([])
 
 const toggleProduct = (id: ProductId) => {
-  const index = selectedProducts.value.indexOf(id);
+  const index = selectedProducts.value.indexOf(id)
   if (index === -1) {
-    selectedProducts.value.push(id);
+    selectedProducts.value.push(id)
   } else {
-    selectedProducts.value.splice(index, 1);
+    selectedProducts.value.splice(index, 1)
   }
-};
+}
 
 const isProductSelected = (id: ProductId) =>
-  selectedProducts.value.includes(id);
+  selectedProducts.value.includes(id)
 
-
-
-
-const allProductIds = productOptions.map((p) => p.id);
+const allProductIds = productOptions.map((p) => p.id)
 
 const isAllSelected = computed(
   () =>
     selectedProducts.value.length === allProductIds.length &&
-    allProductIds.every((id) => selectedProducts.value.includes(id))
-);
+    allProductIds.every((id) => selectedProducts.value.includes(id)),
+)
 
 const toggleAll = () => {
   if (isAllSelected.value) {
-
-    selectedProducts.value = [];
+    selectedProducts.value = []
   } else {
-
-    selectedProducts.value = [...allProductIds];
+    selectedProducts.value = [...allProductIds]
   }
-};
-
+}
 
 interface Member {
-  id: string;
-  name: string;         
-  component: Component;
-  image: string;
-  link1?: string;
-  link2?: string;
-  aosDuration: number;
-  products: ProductId[]; 
+  id: string
+  name: string
+  component: Component
+  image: string
+  link1?: string
+  link2?: string
+  aosDuration: number
+  products: ProductId[]
 }
 
 const members = ref<Member[]>([
@@ -96,7 +78,7 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/SacombankLao',
     link2: 'https://www.sacombank.com.la',
     aosDuration: 600,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', ]
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer'],
   },
   {
     id: 'stb',
@@ -106,7 +88,7 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/STBankLaos',
     link2: 'https://www.stbanklaos.la',
     aosDuration: 800,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', ]
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer'],
   },
   {
     id: 'kbank',
@@ -116,7 +98,7 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/KBankLaos/',
     link2: 'https://www.kasikornbank.com.la',
     aosDuration: 900,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',  ]
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer'],
   },
   {
     id: 'pub',
@@ -126,38 +108,36 @@ const members = ref<Member[]>([
     link1: 'https://www.facebook.com/p/Public-Bank-Lao-61566020099587/',
     link2: 'https://www.publicbank.com.la',
     aosDuration: 1000,
-    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer']
-  }
-]);
-
+    products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer'],
+  },
+])
 
 const filteredMembers = computed(() => {
-  const keyword = searchTerm.value.trim().toLowerCase();
-  let list = members.value;
+  const keyword = searchTerm.value.trim().toLowerCase()
+  let list = members.value
 
   if (keyword) {
-    list = list.filter((m) => m.name.toLowerCase().includes(keyword));
+    list = list.filter((m) => m.name.toLowerCase().includes(keyword))
   }
 
-
   const shouldFilterByProduct =
-    selectedProducts.value.length > 0 && !isAllSelected.value;
+    selectedProducts.value.length > 0 && !isAllSelected.value
 
   if (shouldFilterByProduct) {
     list = list.filter((m) =>
-      selectedProducts.value.every((p) => m.products.includes(p))
-    );
+      selectedProducts.value.every((p) => m.products.includes(p)),
+    )
   }
 
-  return list;
-});
+  return list
+})
 </script>
 
 <template>
   <navbarview2 />
   <div class="containerhiden">
     <div class="navigatorcontent">
-      <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="">
+      <img id="navigator-img" src="../../../assets/Member/membercrd-2.png" alt="" />
       <div class="navigator-info-container">
         <div class="titlenavigator">
           <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -168,11 +148,11 @@ const filteredMembers = computed(() => {
           <div data-aos="zoom-out-up" data-aos-duration="1000">
             <p>
               ໜ້າຫຼັກ
-              <span style="padding-right: 40px; padding-left: 40px;">
+              <span style="padding-right: 40px; padding-left: 40px">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
               ສະມາຊິກ
-              <span style="padding-right: 40px; padding-left: 40px;">
+              <span style="padding-right: 40px; padding-left: 40px">
                 <i class="fa-solid fa-chevron-right"></i>
               </span>
               ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ
@@ -183,7 +163,6 @@ const filteredMembers = computed(() => {
     </div>
 
     <div class="cardviewcontainer">
-     
       <div class="leftsidecontainer">
         <div
           v-for="member in filteredMembers"
@@ -201,20 +180,19 @@ const filteredMembers = computed(() => {
 
         <div
           v-if="filteredMembers.length === 0"
-          style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif;"
+          style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif"
         >
           ບໍ່ພົບທະນາຄານທີ່ກົງກັບຄຳຄົ້ນຫາ / ການເລືອກບໍລິການ
         </div>
       </div>
 
-    
       <div class="rightsidecontainer">
         <div class="searchbar">
           <div class="searchblog">
             <h4>ຄົ້ນຫາຂໍ້ມູນຂ່າວສານ</h4>
           </div>
           <div class="inputsearchblog">
-            <input type="text" placeholder="Search" v-model="searchTerm">
+            <input type="text" placeholder="Search" v-model="searchTerm" />
             <div class="btnsubmit" @click.prevent>
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
@@ -226,7 +204,6 @@ const filteredMembers = computed(() => {
             <h1>ໝວດໝູ່ທະນາຄານສະມາຊິກ</h1>
           </div>
           <div class="checkboxshort">
-            <!-- ✅ All -->
             <div class="checkbox1" @click="toggleAll">
               <div class="boxcheck" :class="{ active: isAllSelected }">
                 <i class="fa-solid fa-check check-icon"></i>
@@ -234,7 +211,6 @@ const filteredMembers = computed(() => {
               <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
             </div>
 
-            <!-- options -->
             <div
               v-for="option in productOptions"
               :key="option.id"
@@ -293,7 +269,7 @@ const filteredMembers = computed(() => {
 .titlenavigator p {
   font-size: 70px;
   color: #fff;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-bottom: 70px;
 }
@@ -301,7 +277,7 @@ const filteredMembers = computed(() => {
 .navigatorlink p {
   color: #fff;
   font-size: 20px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
 }
 
 .pagination {
@@ -310,7 +286,6 @@ const filteredMembers = computed(() => {
   margin-bottom: 30px;
 }
 
-/* ✅ checkbox + animation */
 .boxcheck {
   width: 30px;
   height: 30px;
@@ -369,7 +344,7 @@ const filteredMembers = computed(() => {
   align-items: center;
   background-color: #fff;
   height: 80px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   border-radius: 7px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -390,7 +365,7 @@ const filteredMembers = computed(() => {
 
 .title-group h1 {
   font-size: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-left: 40px;
   padding-top: 30px;
@@ -411,7 +386,6 @@ const filteredMembers = computed(() => {
   border-radius: 15px;
 }
 
-/* Search bar */
 .searchbar {
   width: 100%;
   height: 240px;
@@ -459,7 +433,7 @@ const filteredMembers = computed(() => {
 
 .searchblog h4 {
   font-size: 30px;
-  font-family: "Noto Sans Lao", sans-serif;
+  font-family: 'Noto Sans Lao', sans-serif;
   font-weight: bold;
   padding-top: 30px;
   padding-left: 40px;
@@ -470,9 +444,6 @@ const filteredMembers = computed(() => {
   width: 100%;
   height: 35%;
 }
-
-
-
 
 .rightsidecontainer {
   width: 38%;

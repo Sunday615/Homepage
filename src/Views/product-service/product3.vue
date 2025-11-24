@@ -1,574 +1,415 @@
-<script setup >
-import navbarview2 from '../../components/navbar/navbarview2.vue';
-import mainfooter from '../../components/footer/mainfooter.vue';
+<!-- Product3.vue -->
+<script setup>
+import navbarview2 from '../../components/navbar/navbarview2.vue'
+import mainfooter from '../../components/footer/mainfooter.vue'
 import vdoproduct3 from '../../components/vdoproductbg/vdoproduct3.vue'
-import infinitescrolling from '../../components/Infinitescrolling/infinitescrolling.vue';
-import tablefee from '../../components/table/tablefee.vue';
+import infinitescrolling from '../../components/Infinitescrolling/infinitescrolling.vue'
+import tablefee from '../../components/table/tablefee.vue'
+import footer_memberservice_product3 from '../../components/memberfooter/footer_memberservice_product3.vue'
+import stepwork from '../../components/Typingfunction/stepwork.vue'
 import { onMounted } from 'vue'
-import footer_memberservice_product3 from '../../components/memberfooter/footer_memberservice_product3.vue';
-import stepwork from '../../components/Typingfunction/stepwork.vue';
-onMounted(() => {
 
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    })
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  })
 })
 </script>
 
-
-
-
 <template>
-    <navbarview2></navbarview2>
-    <div class="navigatorcontent">
-        <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="">
-        <div class="navigator-info-container">
-            <div class="titlenavigator">
-                <div data-aos="zoom-in-down" data-aos-duration="1000">
-                    <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
-                </div>
-            </div>
-            <div class="navigatorlink">
-                <div data-aos="zoom-out-up" data-aos-duration="1000">
-                    <p>ໜ້າຫຼັກ <span style="padding-right: 40px; padding-left: 40px;"><i
-                                class="fa-solid fa-chevron-right"></i></span> ຜະລິດຕະພັນ ແລະ ການບໍລິການ <span
-                            style="padding-right: 40px; padding-left: 40px;"><i class="fa-solid fa-chevron-right"></i>
-                        </span> ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="boxpadding"></div>
-    <div class="conatinerproduct1-page1">
-        <img id="bgproductpage1" src="../../assets/products/product3/bgtempleteproduct3-1.png" alt="">
-        <div class="containerframe1">
-            <div class="leftcontentpage1">
-                <div class="producttitlepage1">
-                    <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
-                </div>
-                <div class="headerproductpage1">
-                    <p> ໂອນເງິນຂ້າມທະນາຄານ<br>ຜ່ານຕູ້ ATM</p>
-                </div>
-                <div class="titleinfopage1">
-                    <p>ການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
-                        ແມ່ນນຳໃຊ້ລະບົບແລັບ<br>ໃນການເຊື່ອມໂຍງຕູ້ເອທີເອັມຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງ<br>ບໍລິສັດລາວ
-                        ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການໂອນເງິນ<br>ຂ້າມທະນາຄານໄດ້.</p>
-                </div>
-                <div class="btnproduct">
-                    <button class="button-66" role="button"> <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ
-                        ການບໍລິການ</button>
-                </div>
-            </div>
-            <div class="rightcontentpage1">
-                <div data-aos-duration="1400" data-aos="fade-left">
-                    <img id="topbg" src="../../assets/products/product3/alexandros-giannakakis-Pl9feRmi3qE-unsplash.jpg"
-                        alt="">
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1200">
-                    <img id="atmmachine" src="../../assets/products/product3/ATMpd3.webp" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contentproduct1-page2">
-        <vdoproduct3></vdoproduct3>
+  <navbarview2 />
 
-    </div>
-    <div class="condition">
-        <div class="cardswiper">
-            <infinitescrolling></infinitescrolling>
+  <div class="navigatorcontent">
+    <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="" />
+    <div class="navigator-info-container">
+      <div class="titlenavigator">
+        <div data-aos="zoom-in-down" data-aos-duration="1000">
+          <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
         </div>
-        <div class="titlecondition">
-            <h1>ເງື່ອນໄຂການບໍລິການ</h1>
-            <p style="font-size: 27px;">ລູກຄ້າທີ່ມີບັດ ATM ຂອງທະນາຄານທີ່ເປັນສະມາຊິກຂອງ LAPNet
-                ສາມາດ<br>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ຂອງທະນາຄານສະມາຊິກ. <br> <span>
-                    <p style="font-size: 27px; color:blue;">
-                        ຂອບເຂດການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ເອທີເອັມ ແມ່ນສາມາດໂອນເງິນແຕ່ 1.000 ກີບ ຫາ 200.000.000
-                        ກີບ/ຄັ້ງ. ໂດຍຈະຄິດໄລ່ຄ່າບໍລິການຕາມມູນຄ່າການໂອນດັ່ງນີ້:</p>
-                </span></p>
+      </div>
+      <div class="navigatorlink">
+        <div data-aos="zoom-out-up" data-aos-duration="1000">
+          <p>
+            ໜ້າຫຼັກ
+            <span style="padding-right: 40px; padding-left: 40px">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+            ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+            <span style="padding-right: 40px; padding-left: 40px">
+              <i class="fa-solid fa-chevron-right"></i>
+            </span>
+            ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-            <div class="btnproduct">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <button class="button-66" role="button"> <i class="fa-solid fa-caret-right"></i> ຜະລິດຕະພັນ ແລະ
-                        ການບໍລິການ</button>
-                </div>
-            </div>
-        </div>
+  <div class="boxpadding"></div>
 
-    </div>
-    <div class="feeforservice">
-        <div class="atmmockup">
-            <img src="../../assets/Products/Product3/ATM.webp" alt="">
+  <div class="conatinerproduct1-page1">
+    <img id="bgproductpage1" src="../../assets/products/product3/bgtempleteproduct3-1.png" alt="" />
+    <div class="containerframe1">
+      <div class="leftcontentpage1">
+        <div class="producttitlepage1">
+          <p>ຜະລິດຕະພັນ ແລະ ການບໍລີການ</p>
         </div>
-        <div class="titlefeeservice">
-            <div class="headerfeeservice">
-                <h1>ຄ່າທຳນຽມໂອນເງິນ <br>ຂ້າມທະນາຄານຜ່ານ<br>ຕູ້ ATM</h1>
-                <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ທີ່ມີສັນຍາລັກ LAPNet <br>
-                <i class="fa-solid fa-window-minimize"></i> ຄ່າບໍລິການເລີ່ມຕົ້ນພຽງ 1,000 ກີບ
-                </p>
-            </div>
-   
+        <div class="headerproductpage1">
+          <p>
+            ໂອນເງິນຂ້າມທະນາຄານ<br />
+            ຜ່ານຕູ້ ATM
+          </p>
         </div>
-    </div>
-    <div class="tablefee">
-        <tablefee></tablefee>
-    </div>
-    <div class="step">
-        <stepwork></stepwork>
-    </div>
-    <footer_memberservice_product3></footer_memberservice_product3>
-    <mainfooter></mainfooter>
+        <div class="titleinfopage1">
+          <p>
+            ການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ແມ່ນນຳໃຊ້ລະບົບແລັບ<br />
+            ໃນການເຊື່ອມໂຍງຕູ້ເອທີເອັມຂອງແຕ່ລະທະນາຄານທີ່ເປັນສະມາຊິກຂອງ<br />
+            ບໍລິສັດລາວ ເນເຊີນນໍເພເມັ້ນ ເນັດເວີກ ໃຫ້ສາມາດໃຊ້ຟັງຊັ່ນການໂອນເງິນ<br />
+            ຂ້າມທະນາຄານໄດ້.
+          </p>
+        </div>
+        <div class="btnproduct">
+          <button class="button-66" role="button">
+            <i class="fa-solid fa-caret-right"></i>
+            ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+          </button>
+        </div>
+      </div>
 
+      <div class="rightcontentpage1">
+        <div data-aos-duration="1400" data-aos="fade-left">
+          <img
+            id="topbg"
+            src="../../assets/products/product3/alexandros-giannakakis-Pl9feRmi3qE-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1200">
+          <img id="atmmachine" src="../../assets/products/product3/ATMpd3.webp" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentproduct1-page2">
+    <vdoproduct3 />
+  </div>
+
+  <div class="condition">
+    <div class="cardswiper">
+      <infinitescrolling />
+    </div>
+
+    <div class="titlecondition">
+      <h1>ເງື່ອນໄຂການບໍລິການ</h1>
+      <p style="font-size: 27px">
+        ລູກຄ້າທີ່ມີບັດ ATM ຂອງທະນາຄານທີ່ເປັນສະມາຊິກຂອງ LAPNet
+        ສາມາດ<br />
+        ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ຂອງທະນາຄານສະມາຊິກ.<br />
+        <span style="color: blue">
+          ຂອບເຂດການໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ເອທີເອັມ ແມ່ນສາມາດໂອນເງິນແຕ່ 1.000 ກີບ
+          ຫາ 200.000.000 ກີບ/ຄັ້ງ. ໂດຍຈະຄິດໄລ່ຄ່າບໍລິການຕາມມູນຄ່າການໂອນດັ່ງນີ້:
+        </span>
+      </p>
+
+      <div class="btnproduct">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <button class="button-66" role="button">
+            <i class="fa-solid fa-caret-right"></i>
+            ຜະລິດຕະພັນ ແລະ ການບໍລິການ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feeforservice">
+    <div class="atmmockup">
+      <img src="../../assets/Products/Product3/ATM.webp" alt="" />
+    </div>
+    <div class="titlefeeservice">
+      <div class="headerfeeservice">
+        <h1>
+          ຄ່າທຳນຽມໂອນເງິນ<br />
+          ຂ້າມທະນາຄານຜ່ານ<br />
+          ຕູ້ ATM
+        </h1>
+        <p>
+          ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM ທີ່ມີສັນຍາລັກ LAPNet<br />
+          <i class="fa-solid fa-window-minimize"></i>
+          ຄ່າບໍລິການເລີ່ມຕົ້ນພຽງ 1,000 ກີບ
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tablefee">
+    <tablefee />
+  </div>
+
+  <div class="step">
+    <stepwork />
+  </div>
+
+  <footer_memberservice_product3 />
+  <mainfooter />
 </template>
 
-
-
 <style scoped>
-.headerfeeservice p{
-    font-size: 30px;
-    color : #fff;
-    margin-top: 30px;
+.headerfeeservice p {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 30px;
 }
-.headerfeeservice h1{
-    font-size: 90px;
-    font-weight: bold;
-    line-height: 1.2;
-    color: #fff;
+
+.headerfeeservice h1 {
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #fff;
 }
+
 .headerfeeservice {
-    width: 85%;
-    height: 500px;
-    
-  
+  width: 85%;
+  height: 500px;
 }
 
 .atmmockup img {
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
 .titlefeeservice {
-    display: flex;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-  
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 100%;
 }
 
 .atmmockup {
-    width: 60%;
-    height: 100%;
-
-}
-
-.imagestep {
-    width: 600px;
-    height: 350px;
-    background-color: #433bff;
-    margin-left: 180px;
-    margin-top: 100px;
-    border-radius: 30px;
-
-}
-
-.line3 ul li {
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-top: 20px;
-}
-
-.line3 h1 {
-
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    color: #ffeb65;
-    font-size: 30px;
-    padding-top: 40px;
-}
-
-.line2 p {
-    font-size: 20px;
-    font-family: "Noto Sans Lao", sans-serif;
-}
-
-.line2 h1 {
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    color: #ffeb65;
-    font-size: 30px;
-
-}
-
-.line1 ul li,
-p {
-    font-size: 20px;
-    padding-top: 20px;
-}
-
-.line1 h1 {
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    color: #ffeb65;
-    font-size: 30px;
-}
-
-.line1 {
-    padding-top: 70px;
-    width: 100%;
-    height: 360px;
-
-    font-family: "Noto Sans Lao", sans-serif;
-    color: #fff;
-
-}
-
-.line2 {
-    width: 100%;
-    height: 230px;
-    padding-top: 15px;
-
-    color: #fff;
-}
-
-.line3 {
-    width: 100%;
-    height: 350px;
-
-    color: #fff;
-}
-
-.infostep {
-    width: 45%;
-    height: 100%;
-
-
-
-}
-
-.titlestep h1 {
-    width: 550px;
-    height: 150px;
-    font-size: 55px;
-
-    color: #fff;
-    margin-left: 210px;
-    margin-top: 130px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-
-}
-
-.titlestep {
-    width: 58%;
-    height: 100%;
-
-
+  width: 60%;
+  height: 100%;
 }
 
 .step {
-    width: 100%;
-    height: 940px;
-    display: flex;
-
+  width: 100%;
+  height: 940px;
+  display: flex;
 }
 
-.menberlapnet {
-    width: 100%;
-    height: 900px;
-    background-color: navy;
-}
-
-#stepbg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-}
 .tablefee {
-    width: 100%;
-    height: 1100px;
-    display: flex;
-    align-items: center;
-
-
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  align-items: center;
 }
-
 
 .feeforservice {
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    height: 850px;
-    background-image: url(../../assets/Products/Product3/bgatmpd3.png);
-    background-size: cover;
-    border: 1px solid blue;
-    background-repeat: no-repeat;
-
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  height: 850px;
+  background-image: url(../../assets/Products/Product3/bgatmpd3.png);
+  background-size: cover;
+  border: 1px solid blue;
+  background-repeat: no-repeat;
 }
 
 .titlecondition h1 {
-    font-size: 70px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    color: #000;
-    padding-bottom: 60px;
+  font-size: 70px;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 60px;
 }
 
 .cardswiper {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .titlecondition {
-    width: 60%;
-    height: 100%;
-    font-family: "Noto Sans Lao", sans-serif;
-
-    padding-left: 50px;
-    padding-top: 90px;
-}
-
-.infocondition {
-    width: 60%;
-    height: 100%;
-    padding-left: 140px;
-    padding-top: 60px;
-
+  width: 60%;
+  height: 100%;
+  font-family: "Noto Sans Lao", sans-serif;
+  padding-left: 50px;
+  padding-top: 90px;
 }
 
 .condition {
-
-    width: 100%;
-    display: flex;
-    margin-top: 20px;
-    height: 800px;
-
-
-}
-
-#bgpd1-page2 {
-    width: 100%;
-    height: 820px;
-    position: absolute;
-    z-index: -1;
-
-}
-
-.headerpage2-box1 {
-    width: 100%;
-    height: 390px;
-
-    padding-top: 80px;
-}
-
-.headerpage2-box1 h2 {
-    color: #fff;
-    font-size: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    margin-top: 40px;
-    text-align: center;
-}
-
-.headerpage2-box1 p {
-    color: #fff;
-    font-size: 23px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-top: 70px;
-    text-align: center;
-}
-
-.headerpage2-box1 h1 {
-    font-size: 60px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    text-align: center;
-
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  height: 800px;
 }
 
 .contentproduct1-page2 {
-    width: 100%;
-    height: 900px;
-
+  width: 100%;
+  height: 900px;
 }
 
 .boxpadding {
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
 }
 
 #atmmachine {
-    width: 700px;
-    height: 700px;
-    position: relative;
-    z-index: 1;
-    bottom: 280px;
-    right: 220px;
-
+  width: 700px;
+  height: 700px;
+  position: relative;
+  z-index: 1;
+  bottom: 280px;
+  right: 220px;
 }
 
 #topbg {
-    width: 550px;
-    height: 460px;
-    border-radius: 10px;
-    position: relative;
-    top: 30px;
-    right: -150px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  width: 550px;
+  height: 460px;
+  border-radius: 10px;
+  position: relative;
+  top: 30px;
+  right: -150px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .titleinfopage1 p {
-    font-size: 30px;
-    font-family: "Noto Sans Lao", sans-serif;
-    padding-top: 70px;
+  font-size: 30px;
+  font-family: "Noto Sans Lao", sans-serif;
+  padding-top: 70px;
 }
 
 .producttitlepage1 p {
-    font-size: 27px;
-    color: #433bff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    padding-top: 50px;
-
+  font-size: 27px;
+  color: #433bff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  padding-top: 50px;
 }
 
 .headerproductpage1 p {
-    padding-top: 70px;
-    font-size: 83px;
-    color: #000;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
+  padding-top: 70px;
+  font-size: 83px;
+  color: #000;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 .leftcontentpage1 {
-    width: 50%;
-    height: 100%;
-
-    margin-left: 40px;
+  width: 50%;
+  height: 100%;
+  margin-left: 40px;
 }
 
 .rightcontentpage1 {
-    width: 45%;
-    height: 100%;
-
-    margin-left: 90px;
+  width: 45%;
+  height: 100%;
+  margin-left: 90px;
 }
 
 #bgproductpage1 {
-    width: 100%;
-    height: 1100px;
-    position: absolute;
-    z-index: -1;
-
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  z-index: -1;
 }
 
 .containerframe1 {
-    width: 95%;
-    height: 1000px;
-
-    margin: 0 auto;
-    display: flex;
-
-
+  width: 95%;
+  height: 1000px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .conatinerproduct1-page1 {
-    width: 100%;
-    height: 1100px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  align-items: center;
 }
 
 .navigatorcontent {
-    width: 100%;
-    height: 470px;
-
-
+  width: 100%;
+  height: 470px;
 }
 
 .navigator-info-container {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  width: 1000px;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #navigator-img {
-    width: 100%;
-    height: 470px;
-    position: absolute;
-    z-index: -1;
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  z-index: -1;
 }
 
 .titlenavigator p {
-    font-size: 70px;
-    color: #fff;
-    font-family: "Noto Sans Lao", sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
+  font-size: 70px;
+  color: #fff;
+  font-family: "Noto Sans Lao", sans-serif;
+  font-weight: bold;
+  padding-bottom: 70px;
 }
 
 .navigatorlink p {
-    color: #fff;
-    font-size: 20px;
-
-    font-family: "Noto Sans Lao", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Noto Sans Lao", sans-serif;
 }
 
 .btnproduct button {
-    font-family: "Noto Sans Lao", sans-serif;
-    margin-top: 100px;
+  font-family: "Noto Sans Lao", sans-serif;
+  margin-top: 100px;
 }
 
 .button-66 {
-    font-family: "Noto Sans Lao", sans-serif;
-    background-color: #433bff;
-    border-radius: 10px;
-    border: 0;
-    box-shadow: rgba(1, 60, 136, .5) 0 -1px 3px 0 inset, rgba(0, 44, 97, .1) 0 3px 6px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inherit;
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 24px;
-    margin: 0;
-    min-height: 70px;
-    min-width: 820px;
-    padding: 50px 30px;
-    position: relative;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  font-family: "Noto Sans Lao", sans-serif;
+  background-color: #433bff;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  min-height: 70px;
+  min-width: 820px;
+  padding: 50px 30px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .button-66:hover {
-    background-color: #514bff;
-    transform: translateY(-2px);
+  background-color: #514bff;
+  transform: translateY(-2px);
 }
 
 @media (min-width: 768px) {
-    .button-66 {
-        padding: 16px 44px;
-        min-width: 150px;
-    }
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
 }
 </style>

@@ -1,36 +1,62 @@
 import { createRouter, createWebHistory } from 'vue-router'
+
+// ========== Core ==========
 import homepage from '../Views/homepage/homepage.vue'
+
+// ========== Products ==========
 import product1 from '../Views/product-service/product1.vue'
 import product2 from '../Views/product-service/product2.vue'
 import product3 from '../Views/product-service/product3.vue'
 import Product4 from '../Views/product-service/product4.vue'
 import Product5 from '../Views/product-service/product5.vue'
 import Product6 from '../Views/product-service/product6.vue'
+
+// ========== Members (ATM / Card) ==========
 import Membercardpage1 from '../Views/member/membercard/membercardpage1.vue'
 import Membercardpage2 from '../Views/member/membercard/membercardpage2.vue'
 import Membercardpage3 from '../Views/member/membercard/membercarpage3.vue'
-import Contact from '../Views/Contact/contact.vue'
+
+// ========== Members (Mobile Banking) ==========
 import Membercardpage2_1 from '../Views/member/membermobilebanking/membercardpage2_1.vue'
 import Membercardpage2_2 from '../Views/member/membermobilebanking/membercardpage2_2.vue'
 import membercardpage2_3 from '../Views/member/membermobilebanking/membercarpage2_3.vue'
+import membercardpage2_4 from '../Views/member/membermobilebanking/membercarpage2_4.vue'
+
+// ========== Members (Cross Border) ==========
+import Membercardpage3_1 from '../Views/member/membercrossborder/membercardpage3_1.vue'
+import Membercardpage3_2 from '../Views/member/membercrossborder/membercardpage3_2.vue'
+import Membercardpage3_3 from '../Views/member/membercrossborder/membercardpage3_3.vue'
+
+// ========== Contact / Join us ==========
+import Contact from '../Views/Contact/contact.vue'
 import Joinus from '../Views/joinus/joinus.vue'
+
+// ========== About us ==========
 import Vision_mission from '../Views/About-us/vision_mission.vue'
 import Role from '../Views/About-us/Role.vue'
-
-import Board_of_director from '../Views/About-us/board_director/board_of_director.vue'
 import History from '../Views/About-us/History.vue'
-import companystructure from '../Views/About-us/companystructure/companystructure.vue'
-// import gridblogpage1 from '../Views/Blog/gridblog/gridblogpage1.vue'
+import Board_of_director from '../Views/About-us/board_director/board_of_director.vue'
+import board_of_director1 from '../Views/About-us/board_director/board_of_director1.vue'
+import board_of_director2 from '../Views/About-us/board_director/board_of_director2.vue'
+import board_of_director3 from '../Views/About-us/board_director/board_of_director3.vue'
+import board_of_director4 from '../Views/About-us/board_director/board_of_director4.vue'
 
-// import gridblogpage2 from '../Views/Blog/gridblog/gridblogpage2.vue'
-// import gridblogpage3 from '../Views/Blog/gridblog/gridblogpage3.vue'
-// import gridblogpage4 from '../Views/Blog/gridblog/gridblogpage4.vue'
-// import gridblogpage5 from '../Views/Blog/gridblog/gridblogpage5.vue'
-// import gridblogpage6 from '../Views/Blog/gridblog/gridblogpage6.vue'
-// import gridblogpage7 from '../Views/Blog/gridblog/gridblogpage7.vue'
-// import gridblogpage8 from '../Views/Blog/gridblog/gridblogpage8.vue'
-// import gridblogpage9 from '../Views/Blog/gridblog/gridblogpage9.vue'
-// import gridblogpage10 from '../Views/Blog/gridblog/gridblogpage10.vue'
+// ========== Company Structure ==========
+import companystructure from '../Views/About-us/companystructure/companystructure.vue'
+import Companystructure_office from '../Views/About-us/companystructure/companystructure_office.vue'
+import Companystructure_finance from '../Views/About-us/companystructure/companystructure_finance.vue'
+import Companystructure_it from '../Views/About-us/companystructure/companystructure_it.vue'
+import Companystructure_operation from '../Views/About-us/companystructure/companystructure_operation.vue'
+import Companystructure_audit from '../Views/About-us/companystructure/companystructure_audit.vue'
+import Companystructure_ceo from '../Views/About-us/companystructure/companystructure_ceo.vue'
+
+// ========== Blog: Grid Themes ==========
+import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
+import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
+import Gridblogtheme3 from '../Views/Blog/gridblog_column/gridblogtheme3.vue'
+import Gridblogtheme4 from '../Views/Blog/gridblog_column/gridblogtheme4.vue'
+
+// ========== Blog: Details (Main) ==========
 import Blogdetail1 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail1.vue'
 import Blogdetail2 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail2.vue'
 import Blogdetail3 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail3.vue'
@@ -60,6 +86,7 @@ import Blogdetail26 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail26.v
 import Blogdetail27 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail27.vue'
 import Blogdetail28 from '../Views/Blog/blogdetailpage/blogdetail/blogdetail28.vue'
 
+// ========== Blog: Details from homepage ==========
 import blogdetail1 from '../Views/Blog/fromhomepage/blogdetail1.vue'
 import blogdetail2 from '../Views/Blog/fromhomepage/blogdetail2.vue'
 import blogdetail3 from '../Views/Blog/fromhomepage/blogdetail3.vue'
@@ -67,40 +94,13 @@ import blogdetail4 from '../Views/Blog/fromhomepage/blogdetail4.vue'
 import blogdetail5 from '../Views/Blog/fromhomepage/blogdetail5.vue'
 import blogdetail6 from '../Views/Blog/fromhomepage/blogdetail6.vue'
 
-
-import board_of_director1 from '../Views/About-us/board_director/board_of_director1.vue'
-import board_of_director2 from '../Views/About-us/board_director/board_of_director2.vue'
-import board_of_director3 from '../Views/About-us/board_director/board_of_director3.vue'
-import board_of_director4 from '../Views/About-us/board_director/board_of_director4.vue'
-import Companystructure_office from '../Views/About-us/companystructure/companystructure_office.vue'
-import Companystructure_finance from '../Views/About-us/companystructure/companystructure_finance.vue'
-import Companystructure_it from '../Views/About-us/companystructure/companystructure_it.vue'
-import Companystructure_operation from '../Views/About-us/companystructure/companystructure_operation.vue'
-import Companystructure_audit from '../Views/About-us/companystructure/companystructure_audit.vue'
-import Companystructure_ceo from '../Views/About-us/companystructure/companystructure_ceo.vue'
-import Gridblogtheme1 from '../Views/Blog/gridblog_column/gridblogtheme1.vue'
-import Gridblogtheme2 from '../Views/Blog/gridblog_column/gridblogtheme2.vue'
-import Gridblogtheme3 from '../Views/Blog/gridblog_column/gridblogtheme3.vue'
-import Gridblogtheme4 from '../Views/Blog/gridblog_column/gridblogtheme4.vue'
-import Membercardpage3_1 from '../Views/member/membercrossborder/membercardpage3_1.vue'
-import Membercardpage3_2 from '../Views/member/membercrossborder/membercardpage3_2.vue'
-import Membercardpage3_3 from '../Views/member/membercrossborder/membercardpage3_3.vue'
-
-import membercardpage2_4 from '../Views/member/membermobilebanking/membercarpage2_4.vue'
+// ========== Test / Misc ==========
 import Testcomponent from '../components/Landingage/Testcomponent.vue'
-
-
-
-
-
-
-
-// #######################
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    //#################### Products Path #####################
+    // =================== Products ===================
     { path: '/', name: 'Home', component: homepage },
 
     { path: '/products-service/products-1', name: 'product1', component: product1 },
@@ -110,64 +110,101 @@ const router = createRouter({
     { path: '/products-service/products-5', name: 'product5', component: Product5 },
     { path: '/products-service/products-6', name: 'product6', component: Product6 },
 
-
-    //######################## Member Path ###########################
+    // =================== Member (ATM / Card) ===================
     { path: '/membercard/member1', name: 'member1', component: Membercardpage1 },
     { path: '/membercard/member2', name: 'member2', component: Membercardpage2 },
     { path: '/membercard/member3', name: 'member3', component: Membercardpage3 },
 
-    { path: '/membermobilebanking/member2_1', name: 'mobilebanking2_1', component: Membercardpage2_1 },
-    { path: '/membermobilebanking/member2_2', name: 'mobilebanking2_2', component: Membercardpage2_2 },
-    { path: '/membermobilebanking/member2_3', name: 'mobilebanking2_3', component: membercardpage2_3 },
-    { path: '/membermobilebanking/member2_4', name: 'mobilebanking2_4', component: membercardpage2_4 },
-    
-    { path: '/membercrossborder/member3_1', name: 'mobilebanking3_1', component: Membercardpage3_1 },
-    { path: '/membercrossborder/member3_2', name: 'mobilebanking3_2', component: Membercardpage3_2 },
-    { path: '/membercrossborder/member3_3', name: 'mobilebanking3_3', component: Membercardpage3_3 },
-    
-    
-    //######################## Contact Us ###########################
+    // =================== Member (Mobile banking) ===================
+    {
+      path: '/membermobilebanking/member2_1',
+      name: 'mobilebanking2_1',
+      component: Membercardpage2_1
+    },
+    {
+      path: '/membermobilebanking/member2_2',
+      name: 'mobilebanking2_2',
+      component: Membercardpage2_2
+    },
+    {
+      path: '/membermobilebanking/member2_3',
+      name: 'mobilebanking2_3',
+      component: membercardpage2_3
+    },
+    {
+      path: '/membermobilebanking/member2_4',
+      name: 'mobilebanking2_4',
+      component: membercardpage2_4
+    },
+
+    // =================== Member (Cross Border) ===================
+    {
+      path: '/membercrossborder/member3_1',
+      name: 'mobilebanking3_1',
+      component: Membercardpage3_1
+    },
+    {
+      path: '/membercrossborder/member3_2',
+      name: 'mobilebanking3_2',
+      component: Membercardpage3_2
+    },
+    {
+      path: '/membercrossborder/member3_3',
+      name: 'mobilebanking3_3',
+      component: Membercardpage3_3
+    },
+
+    // =================== Contact & Join us ===================
     { path: '/contact', name: 'contact', component: Contact },
-
-
-    //######################## Join Us ###########################
     { path: '/joinus', name: 'joinus', component: Joinus },
 
-
-    //######################## About Us ###########################
+    // =================== About Us ===================
     { path: '/vision_mission', name: 'vision_mission', component: Vision_mission },
     { path: '/role', name: 'role', component: Role },
     { path: '/History', name: 'History', component: History },
 
-    { path: '/board_of_director', name: 'history', component: Board_of_director },
+    { path: '/board_of_director', name: 'board_of_director', component: Board_of_director },
+
+    // =================== Company Structure ===================
     { path: '/companystructure', name: 'company', component: companystructure },
+    {
+      path: '/companystructure/office',
+      name: 'companystructure-office',
+      component: Companystructure_office
+    },
+    {
+      path: '/companystructure/finance',
+      name: 'companystructure-finance',
+      component: Companystructure_finance
+    },
+    {
+      path: '/companystructure/it',
+      name: 'companystructure-it',
+      component: Companystructure_it
+    },
+    {
+      path: '/companystructure/operation',
+      name: 'companystructure-operation',
+      component: Companystructure_operation
+    },
+    {
+      path: '/companystructure/audit',
+      name: 'companystructure-audit',
+      component: Companystructure_audit
+    },
+    {
+      path: '/companystructure/ceo-coo',
+      name: 'companystructure-ceo-coo',
+      component: Companystructure_ceo
+    },
 
-
-
-    //######################## BlogNews Grid ###########################
-
-
+    // =================== Blog Grid (Pages) ===================
     { path: '/page/1', name: 'gridblogpage1', component: Gridblogtheme1 },
     { path: '/page/2', name: 'gridblogpage2', component: Gridblogtheme2 },
     { path: '/page/3', name: 'gridblogpage3', component: Gridblogtheme3 },
     { path: '/page/4', name: 'gridblogpage4', component: Gridblogtheme4 },
 
-
-    // { path: '/page/2', name: 'gridblogpage2', component: gridblogpage2 },
-    // { path: '/page/3', name: 'gridblogpage3', component: gridblogpage3 },
-    // { path: '/page/4', name: 'gridblogpage4', component: gridblogpage4 },
-    // { path: '/page/5', name: 'gridblogpage5', component: gridblogpage5 },
-    // { path: '/page/6', name: 'gridblogpage6', component: gridblogpage6 },
-    // { path: '/page/7', name: 'gridblogpage7', component: gridblogpage7 },
-    // { path: '/page/8', name: 'gridblogpage8', component: gridblogpage8 },
-    // { path: '/page/9', name: 'gridblogpage9', component: gridblogpage9 },
-    // { path: '/page/10', name: 'gridblogpage10', component: gridblogpage10 },
-
-  
-
-
-
-    //######################## BlogNews Detail ###########################
+    // =================== Blog Detail (Main) ===================
     { path: '/blogdetail1', name: 'blogdetail1', component: Blogdetail1 },
     { path: '/blogdetail2', name: 'blogdetail2', component: Blogdetail2 },
     { path: '/blogdetail3', name: 'blogdetail3', component: Blogdetail3 },
@@ -197,7 +234,7 @@ const router = createRouter({
     { path: '/blogdetail27', name: 'blogdetail27', component: Blogdetail27 },
     { path: '/blogdetail28', name: 'blogdetail28', component: Blogdetail28 },
 
-    //######################## BlogNews Detail From homepage ###########################
+    // =================== Blog Detail (From homepage) ===================
     { path: '/homepage/blogdetail1', name: 'bloghomepage1', component: blogdetail1 },
     { path: '/homepage/blogdetail2', name: 'bloghomepage2', component: blogdetail2 },
     { path: '/homepage/blogdetail3', name: 'bloghomepage3', component: blogdetail3 },
@@ -205,45 +242,41 @@ const router = createRouter({
     { path: '/homepage/blogdetail5', name: 'bloghomepage5', component: blogdetail5 },
     { path: '/homepage/blogdetail6', name: 'bloghomepage6', component: blogdetail6 },
 
+    // =================== Board of director members ===================
+    {
+      path: '/board_of_director/member1',
+      name: 'board_of_director_member1',
+      component: board_of_director1
+    },
+    {
+      path: '/board_of_director/member2',
+      name: 'board_of_director_member2',
+      component: board_of_director2
+    },
+    {
+      path: '/board_of_director/member3',
+      name: 'board_of_director_member3',
+      component: board_of_director3
+    },
+    {
+      path: '/board_of_director/member4',
+      name: 'board_of_director_member4',
+      component: board_of_director4
+    },
 
+    // =================== Cross Border (Products 6 reuse) ===================
+    { path: '/crossborder/kh-la', name: 'crossborder-kh-la', component: Product6 },
+    { path: '/crossborder/la-kh', name: 'crossborder-la-kh', component: Product6 },
+    { path: '/crossborder/th-la', name: 'crossborder-th-la', component: Product6 },
+    { path: '/crossborder/la-th', name: 'crossborder-la-th', component: Product6 },
+    { path: '/crossborder/vn-la', name: 'crossborder-vn-la', component: Product6 },
+    { path: '/crossborder/ch-la', name: 'crossborder-ch-la', component: Product6 },
+    { path: '/crossborder/la-vn', name: 'crossborder-la-vn', component: Product6 },
+    { path: '/crossborder/la-ch', name: 'crossborder-la-ch', component: Product6 },
 
-    //######################## BlogNews Detail From homepage ###########################
-    { path: '/board_of_director/member1', name: 'board_of_director/member1', component: board_of_director1 },
-    { path: '/board_of_director/member2', name: 'board_of_director/member2', component: board_of_director2 },
-    { path: '/board_of_director/member3', name: 'board_of_director/member3', component: board_of_director3 },
-    { path: '/board_of_director/member4', name: 'board_of_director/member4', component: board_of_director4 },
-
-
-    //######################## Company Structure ###########################
-
-    { path: '/companystructure/office', name: '/companystructure/office', component: Companystructure_office },
-    { path: '/companystructure/finance', name: '/companystructure/finance', component: Companystructure_finance },
-    { path: '/companystructure/it', name: '/companystructure/it', component: Companystructure_it },
-    { path: '/companystructure/operation', name: '/companystructure/operation', component: Companystructure_operation },
-    { path: '/companystructure/audit', name: '/companystructure/audit', component: Companystructure_audit },
-    { path: '/companystructure/ceo-coo', name: '/companystructure/ceo-coo', component: Companystructure_ceo },
-     //######################## Cross Border ###########################
-     { path: "/crossborder/kh-la", name: "crossborder-kh-la", component: Product6 },
-  { path: "/crossborder/la-kh", name: "crossborder-la-kh", component: Product6 },
-
-  { path: "/crossborder/th-la", name: "crossborder-th-la", component: Product6 },
-  { path: "/crossborder/la-th", name: "crossborder-la-th", component: Product6 },
-
-  { path: "/crossborder/vn-la", name: "/crossborder/vn-la", component: Product6 },
-  
-  { path: "/crossborder/ch-la", name: "/crossborder/ch-la", component: Product6 },
-  
-  { path: "/crossborder/la-vn", name: "/crossborder/la-vn", component: Product6 },
-  { path: "/crossborder/la-ch", name: "/crossborder/la-ch", component: Product6 },
-  { path: "/test", name: "/crossborder/la-ch", component: Testcomponent },
-
-     
-  ],
-
-
-
-
-
+    // =================== Test ===================
+    { path: '/test', name: 'test', component: Testcomponent }
+  ]
 })
 
 export default router
