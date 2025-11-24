@@ -24,20 +24,65 @@ const searchTerm = ref('');
 
 // product id
 type ProductId =
-    | 'atm_inquiry'
-    | 'atm_withdraw'
-    | 'mobile_transfer_to_atm'
-    | 'atm_transfer'
+    | 'cross_border_payment_KHLA'
+    | 'cross_border_payment_LAKH'
+    | 'cross_border_payment_THLA'
+    | 'cross_border_payment_LATH'
+    | 'cross_border_payment_VNLA'
+    | 'cross_border_payment_CHLA';
 
+// country code สำหรับ FlagCDN
+type CountryCode = 'kh' | 'la' | 'th' | 'vn' | 'cn';
 
+// option type
+type ProductOption = {
+    id: ProductId;
+    label: string;
+    from: CountryCode; // ประเทศต้นทาง
+    to: CountryCode;   // ประเทศปลายทาง
+};
+
+// helper สร้าง URL ธงจาก FlagCDN
+const flagUrl = (code: CountryCode) => `https://flagcdn.com/w40/${code}.png`;
 
 // information checkbox right container
-const productOptions: { id: ProductId; label: string }[] = [
-    { id: 'atm_inquiry', label: 'ກວດສອບຍອດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-    { id: 'atm_transfer', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-    { id: 'mobile_transfer_to_atm', label: 'ໂອນເງິນຂ້າມທະນາຄານຜ່ານໂທລະສັບດ້ວຍເລກໜ້າບັດ' },
-    { id: 'atm_withdraw', label: 'ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM' },
-
+const productOptions: ProductOption[] = [
+    {
+        id: 'cross_border_payment_KHLA',
+        label: 'ກຳປູເຈຍ ສະແກນຊຳລະ ລາວ',
+        from: 'kh', // 🇰🇭
+        to: 'la'    // 🇱🇦
+    },
+    {
+        id: 'cross_border_payment_LAKH',
+        label: 'ລາວ ສະແກນຊຳລະ ກຳປູເຈຍ',
+        from: 'la', // 🇱🇦
+        to: 'kh'    // 🇰🇭
+    },
+    {
+        id: 'cross_border_payment_THLA',
+        label: 'ໄທ ສະແກນຊຳລະ ລາວ',
+        from: 'th', // 🇹🇭
+        to: 'la'    // 🇱🇦
+    },
+    {
+        id: 'cross_border_payment_LATH',
+        label: 'ລາວ ສະແກນຊຳລະ ໄທ',
+        from: 'la', // 🇱🇦
+        to: 'th'    // 🇹🇭
+    },
+    {
+        id: 'cross_border_payment_VNLA',
+        label: 'ຫວຽດນາມ ສະແກນຊຳລະ ລາວ',
+        from: 'vn', // 🇻🇳
+        to: 'la'    // 🇱🇦
+    },
+    {
+        id: 'cross_border_payment_CHLA',
+        label: 'ຈີນ ສະແກນຊຳລະ ລາວ',
+        from: 'cn', // 🇨🇳
+        to: 'la'    // 🇱🇦
+    }
 ];
 
 // ✅ product selected
@@ -76,9 +121,6 @@ const toggleAll = () => {
     }
 };
 
-// clear from other side
-
-
 // 🔁 config all banks member
 interface Member {
     id: string;
@@ -100,14 +142,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/BCEL.Bank',
         link2: 'https://www.bcel.com.la',
         aosDuration: 500,
-
-        products: [
-            'atm_inquiry',
-            'atm_withdraw',
-            'mobile_transfer_to_atm',
-            'atm_transfer',
-
-        ]
+        products: ['cross_border_payment_KHLA']
     },
     {
         id: 'ldb',
@@ -117,7 +152,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/ldblao',
         link2: 'https://www.ldblao.la/',
         aosDuration: 600,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer', 'mobile_transfer_to_atm']
+        products: ['cross_border_payment_KHLA']
     },
     {
         id: 'apb',
@@ -127,7 +162,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/APB.Bank/?locale=th_TH',
         link2: 'https://www.apb.com.la',
         aosDuration: 700,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
+        products: ['cross_border_payment_KHLA']
     },
     {
         id: 'jdb',
@@ -137,7 +172,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/jdbbanklaos',
         link2: 'https://www.jdbbank.com.la/',
         aosDuration: 800,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
+        products: ['cross_border_payment_KHLA']
     },
     {
         id: 'maru',
@@ -147,7 +182,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/MaruhanJapanBankLao/',
         link2: 'https://maruhanjapanbanklao.com',
         aosDuration: 900,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
+        products: ['cross_border_payment_KHLA']
     },
     {
         id: 'lvb',
@@ -157,7 +192,7 @@ const members = ref<Member[]>([
         link1: 'https://www.facebook.com/LaoVietBank',
         link2: 'https://www.laovietbank.com.la/la/',
         aosDuration: 1100,
-        products: ['atm_inquiry', 'atm_withdraw', 'atm_transfer',]
+        products: ['cross_border_payment_KHLA']
     }
 ]);
 
@@ -215,16 +250,25 @@ const filteredMembers = computed(() => {
         </div>
 
         <div class="cardviewcontainer">
-       
             <div class="leftsidecontainer">
-                <div v-for="member in filteredMembers" :key="member.id" data-aos="fade-right"
-                    :data-aos-duration="member.aosDuration">
-                    <component :is="member.component" :image="member.image" :link1="member.link1"
-                        :link2="member.link2" />
+                <div
+                    v-for="member in filteredMembers"
+                    :key="member.id"
+                    data-aos="fade-right"
+                    :data-aos-duration="member.aosDuration"
+                >
+                    <component
+                        :is="member.component"
+                        :image="member.image"
+                        :link1="member.link1"
+                        :link2="member.link2"
+                    />
                 </div>
 
-                <div v-if="filteredMembers.length === 0"
-                    style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif;">
+                <div
+                    v-if="filteredMembers.length === 0"
+                    style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif;"
+                >
                     ບໍ່ພົບທະນາຄານທີ່ກົງກັບຄຳຄົ້ນຫາ / ການເລືອກບໍລິການ
                 </div>
             </div>
@@ -259,14 +303,34 @@ const filteredMembers = computed(() => {
                         </div>
 
                         <!-- if select other checkbox -->
-                        <div v-for="option in productOptions" :key="option.id" class="checkbox1"
-                            @click="toggleProduct(option.id)">
+                        <div
+                            v-for="option in productOptions"
+                            :key="option.id"
+                            class="checkbox1"
+                            @click="toggleProduct(option.id)"
+                        >
                             <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
                                 <i class="fa-solid fa-check check-icon"></i>
                             </div>
+
                             <p :class="{ active: isProductSelected(option.id) }">
                                 {{ option.label }}
                             </p>
+
+                    
+                            <div class="flag-pair">
+                                <img
+                                    class="flag-icon"
+                                    :src="flagUrl(option.from)"
+                                    :alt="option.from + ' flag'"
+                                />
+                            <i class="fa-solid fa-right-long"></i>
+                                <img
+                                    class="flag-icon"
+                                    :src="flagUrl(option.to)"
+                                    :alt="option.to + ' flag'"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -289,8 +353,6 @@ const filteredMembers = computed(() => {
 .checkbox1 p.active {
     color: #433bff;
 }
-
-
 
 .containerhiden {
     width: 100%;
@@ -370,6 +432,7 @@ const filteredMembers = computed(() => {
     margin-bottom: 30px;
     cursor: pointer;
     transition: background-color 0.15s ease, transform 0.1s ease;
+    padding-right: 16px;
 }
 
 .checkbox1:hover {
@@ -411,6 +474,27 @@ const filteredMembers = computed(() => {
     color: #0000009c;
 }
 
+/* คู่ธง + arrow */
+.flag-pair {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+}
+
+.flag-icon {
+    width: 36px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.flag-arrow {
+    font-size: 16px;
+    color: #777;
+}
+
 .checkboxshort {
     width: 100%;
     height: 800px;
@@ -435,7 +519,7 @@ const filteredMembers = computed(() => {
 
 .groupshortmember {
     width: 100%;
-    height: 700px;
+    height: 1000px;
     background-color: #ebebeb;
     margin-top: 60px;
     border-radius: 15px;
@@ -502,8 +586,6 @@ const filteredMembers = computed(() => {
     width: 100%;
     height: 35%;
 }
-
-
 
 .rightsidecontainer {
     width: 38%;

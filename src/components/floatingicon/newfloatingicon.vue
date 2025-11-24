@@ -49,27 +49,27 @@ onMounted(() => {
   const logoHeight = 110;
   const total = items.length;
 
-  // กันไม่ให้โลโก้ชนกันแนวตั้ง
-  const spacing = logoHeight * 1.4;       // ยิ่งมากยิ่งห่าง
+
+  const spacing = logoHeight * 1.9;      
   const distance = spacing * total;
 
-  const startY = containerHeight + logoHeight; // เริ่มล่าง container
-  const endY = startY - distance;              // จบเหนือ container ตามจำนวนโลโก้
+  const startY = containerHeight + logoHeight; 
+  const endY = startY - distance;              
 
-  const travelDuration = 30;                   // ลอยช้า ๆ
-  const slot = travelDuration / total;         // เวลาห่างกันของแต่ละโลโก้
+  const travelDuration = 30;               
+  const slot = travelDuration / total;         
 
   items.forEach((el, i) => {
     const delay = i * slot;
 
-    // เริ่มใต้ container มองเห็นเลย
+    
     gsap.set(el, {
       y: startY,
       opacity: 1,
       x: 0,
     });
 
-    // ลอยขึ้นตรง ๆ เป็นระเบียบ (แกน Y)
+  
     gsap.to(el, {
       y: endY,
       duration: travelDuration,
@@ -79,18 +79,17 @@ onMounted(() => {
       repeatDelay: 0,
     });
 
-    // 🎈 effect wave ตอนลอยขึ้น (แกน X)
+
     gsap.to(el, {
-      x: i % 2 === 0 ? "+=40" : "-=40", // ซ้าย–ขวาสลับกัน
+      x: i % 2 === 0 ? "+=70" : "-=70", 
       duration: 4,
       yoyo: true,
       repeat: -1,
       ease: "sine.inOut",
-      delay: delay * 0.3, // เลื่อนเฟส wave นิดหน่อยให้ไม่ขยับพร้อมกันหมด
+      delay: delay * 0.3, 
     });
   });
 
-  // PATTERN ของ container (ยังเหมือนเดิม)
   const container = containerRef.value;
 
   if (container) {
