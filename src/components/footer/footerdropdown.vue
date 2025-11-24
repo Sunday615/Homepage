@@ -2,7 +2,7 @@
     <div class="menu-container">
 
      
-        <router-link to="/newsgridpage1">
+        <router-link to="/page/1">
             <div class="menu-section">
                 <div class="menu-header" @click="goTop()">
                     <span>ຂ່າວສານ ແລະ ກິດຈະກຳ</span>
@@ -20,8 +20,9 @@
 
             <transition name="slide">
                 <div v-show="open2" class="dropdown-content" @click="goTop()">
-                    <router-link to="/member1" class="menu-item" >ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</router-link>
-                    <router-link to="/member2_1" class="menu-item">ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື</router-link>
+                    <router-link to="/membercard/member1" class="menu-item" >ສະມາຊິກລະບົບບັດທະນາຄານຮ່ວມກັນ</router-link>
+                    <router-link to="/membermobilebanking/member2_1" class="menu-item">ສະມາຊິກລະບົບຊຳລະຂ້າມທະນາຄານເທິງມືຖື</router-link>
+                    <router-link to="/membercrossborder/member3_1" class="menu-item">ສະມາຊິກລະບົບຊຳລະຂ້າມແດນໃນຮູບແບບ QR Code ລະຫວ່າງປະເທດ</router-link>
 
                 </div>
             </transition>
