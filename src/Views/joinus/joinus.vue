@@ -1,71 +1,47 @@
 <template>
-  <navbarview2></navbarview2>
-  <div class="navigatorcontent">
-            <img id="navigator-img" src="../../assets/joinus/navigatorjoinus.png" alt="" />
-            <div class="navigator-info-container">
-                <div class="titlenavigator">
-                    <div data-aos="zoom-in-down" data-aos-duration="1000">
-                        <p>ຮ່ວມງານກັບເຮົາ</p>
-                    </div>
-                </div>
-                <div class="navigatorlink">
-                    <div data-aos="zoom-out-up" data-aos-duration="1000">
-                        <p>
-                            ໜ້າຫຼັກ
-                            <span style="padding-right: 40px; padding-left: 40px">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                            ສະມາຊິກ
-                            <span style="padding-right: 40px; padding-left: 40px">
-                                <i class="fa-solid fa-chevron-right"></i>
-                            </span>
-                            ຮ່ວມງານກັບເຮົາ
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
   <div class="page-wrapper">
     <!-- PART 1: DESCRIPTION / HERO -->
     <section class="section-hero">
+      <div class="hero-grid-overlay"></div>
       <div class="hero-inner">
         <div>
           <div class="hero-eyebrow">Why choose us</div>
           <h1 class="hero-title">
-            Build with a partner that’s
-            <span class="hero-highlight">fast, reliable, and clear</span>.
+            Power your product with
+            <span class="hero-highlight">future-ready technology</span>.
           </h1>
           <p class="hero-text">
-            We combine modern design, clean code, and human-centered thinking to
-            deliver digital experiences your customers actually enjoy using.
-            No noise, no clutter—just results.
+            We blend human insight with next-generation engineering to build
+            digital experiences that feel one step ahead. From concept to
+            launch, every screen is optimized for speed, clarity, and trust.
           </p>
 
           <div class="hero-points">
             <div class="hero-point">
-              <div class="hero-point-label">Efficiency</div>
-              <div class="hero-point-title">Fewer revisions, faster launch</div>
+              <div class="hero-point-label">Neural workflow</div>
+              <div class="hero-point-title">AI-assisted delivery</div>
               <p class="hero-point-text">
-                A refined process that keeps you in the loop while avoiding
-                endless back-and-forth.
+                Smart pipelines that automate the busywork so your team can
+                focus on high-impact decisions.
               </p>
             </div>
             <div class="hero-point">
-              <div class="hero-point-label">Clarity</div>
-              <div class="hero-point-title">Focused on what matters</div>
+              <div class="hero-point-label">Realtime insights</div>
+              <div class="hero-point-title">Data-driven UX</div>
               <p class="hero-point-text">
-                We strip away the unnecessary and highlight exactly what your
-                audience needs to see.
+                Interfaces that adapt to behavior patterns, not assumptions,
+                creating smoother journeys for every user.
               </p>
             </div>
           </div>
         </div>
 
         <div class="hero-badge">
-          <div class="hero-badge-number">98%</div>
-          <div class="hero-badge-label">Client satisfaction score</div>
+          <div class="hero-badge-chip">Live metrics</div>
+          <div class="hero-badge-number">99.9%</div>
+          <div class="hero-badge-label">Uptime across deployments</div>
           <div class="hero-badge-footnote">
-            Based on delivery, communication, and long-term performance.
+            Monitored, self-healing infrastructure with proactive alerting.
           </div>
         </div>
       </div>
@@ -73,19 +49,21 @@
 
     <!-- PART 2: IMAGE SWIPER (6 IMAGES) -->
     <section class="section-gallery">
+      <div class="gallery-glow"></div>
+
       <div class="gallery-header">
         <div class="gallery-title-block">
-          <div class="gallery-tag">Visual proof</div>
-          <h2>See how our work feels in motion.</h2>
+          <div class="gallery-tag">Interface pipeline</div>
+          <h2>See our future-tech design system in motion.</h2>
           <p>
-            A clean, minimal blue-driven aesthetic that stays out of the way and
-            lets your product shine. These slides showcase recent layouts and
-            components.
+            High-contrast surfaces, holographic accents, and precise typography
+            create a UI layer that feels like it was built for tomorrow’s
+            products.
           </p>
         </div>
         <div class="gallery-meta">
           Auto-scrolling gallery powered by SwiperJS.<br />
-          Plug in your 6 images and you’re live.
+          Connect your six showcase screens and ship.
         </div>
       </div>
 
@@ -95,11 +73,12 @@
             <!-- Slide 1 -->
             <div class="swiper-slide">
               <img src="/slides/slide1.png" alt="Project preview 1" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Dashboard</div>
-                <div class="slide-title">Clean analytics layout</div>
+                <div class="slide-tag">Monitoring</div>
+                <div class="slide-title">Realtime systems dashboard</div>
                 <div class="slide-text">
-                  Minimal blue gradients, soft cards, and clear hierarchy.
+                  Futuristic telemetry views with depth, glow, and precise data groupings.
                 </div>
               </div>
             </div>
@@ -107,12 +86,12 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <img src="/slides/slide2.png" alt="Project preview 2" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Landing page</div>
-                <div class="slide-title">Conversion-focused hero</div>
+                <div class="slide-tag">Landing core</div>
+                <div class="slide-title">Conversion-ready hero blocks</div>
                 <div class="slide-text">
-                  Bold typography with quiet background visuals to keep
-                  attention on your primary CTA.
+                  Bold, tech-driven layouts that keep the eye locked on your primary actions.
                 </div>
               </div>
             </div>
@@ -120,11 +99,12 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <img src="/slides/slide3.png" alt="Project preview 3" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Mobile</div>
-                <div class="slide-title">Responsive blue UI kit</div>
+                <div class="slide-tag">Mobile shell</div>
+                <div class="slide-title">Edge-to-edge experiences</div>
                 <div class="slide-text">
-                  Components built to adapt elegantly to any screen size.
+                  Compact, neon-accented UI kits crafted for mobile-first products.
                 </div>
               </div>
             </div>
@@ -132,12 +112,12 @@
             <!-- Slide 4 -->
             <div class="swiper-slide">
               <img src="/slides/slide4.png" alt="Project preview 4" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Brand</div>
-                <div class="slide-title">Consistent visual language</div>
+                <div class="slide-tag">Brand system</div>
+                <div class="slide-title">Unified visual language</div>
                 <div class="slide-text">
-                  Iconography and layout rules that keep your brand recognizable
-                  everywhere.
+                  Iconography and motion design aligned to your core product narrative.
                 </div>
               </div>
             </div>
@@ -145,12 +125,12 @@
             <!-- Slide 5 -->
             <div class="swiper-slide">
               <img src="/slides/slide5.png" alt="Project preview 5" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Product</div>
-                <div class="slide-title">Feature-driven storytelling</div>
+                <div class="slide-tag">Product surface</div>
+                <div class="slide-title">Feature-first storytelling</div>
                 <div class="slide-text">
-                  Show your strongest moments with considered spacing and clean
-                  labels.
+                  Narrative-driven modules that highlight the technology, not the noise.
                 </div>
               </div>
             </div>
@@ -158,12 +138,12 @@
             <!-- Slide 6 -->
             <div class="swiper-slide">
               <img src="/slides/slide6.png" alt="Project preview 6" />
+              <div class="slide-overlay"></div>
               <div class="slide-content">
-                <div class="slide-tag">Experience</div>
-                <div class="slide-title">Calm, confident interface</div>
+                <div class="slide-tag">Trust layer</div>
+                <div class="slide-title">Calm, confident UI state</div>
                 <div class="slide-text">
-                  A quiet blue palette and micro-interactions that make the UI
-                  feel trustworthy.
+                  Dark surfaces with subtle glow and motion to make every action feel secure.
                 </div>
               </div>
             </div>
@@ -179,60 +159,65 @@
     <section class="section-reasons">
       <div class="reasons-inner">
         <div class="reasons-header">
-          <span>What makes us different</span>
-          <h2>Three reasons teams keep choosing us.</h2>
+          <span>Future-ready advantage</span>
+          <h2>Three pillars behind our technology-driven approach.</h2>
           <p>
-            From the first idea to launch day and beyond, we stay focused on
-            clarity, speed, and reliability—so your product doesn’t just look
-            good, it performs.
+            We don’t just design screens. We architect systems that scale, learn,
+            and respond — giving your product the same calm confidence under load
+            as it has on launch day.
           </p>
         </div>
 
         <div class="reasons-grid">
           <div class="reason-card">
-            <div class="reason-icon">⚡</div>
-            <div class="reason-title">Fast, structured delivery</div>
+            <div class="reason-icon">
+              <span class="reason-icon-glow"></span>
+              ⚙️
+            </div>
+            <div class="reason-title">Composable architectures</div>
             <p class="reason-text">
-              Clear milestones, transparent timelines, and smooth communication.
-              You always know what’s next.
+              We build from modular components and shared patterns, making every
+              new feature faster, safer, and easier to evolve.
             </p>
-            <div class="reason-meta">Process</div>
+            <div class="reason-meta">Systems</div>
           </div>
 
           <div class="reason-card">
-            <div class="reason-icon">🎯</div>
-            <div class="reason-title">Designs that convert</div>
+            <div class="reason-icon">
+              <span class="reason-icon-glow"></span>
+              📡
+            </div>
+            <div class="reason-title">Telemetry by default</div>
             <p class="reason-text">
-              Minimal, blue-driven visuals optimized for readability, clicks,
-              and long-term engagement.
+              Metrics, tracing, and insight hooks are wired in from day one —
+              not bolted on at the end.
             </p>
-            <div class="reason-meta">Impact</div>
+            <div class="reason-meta">Observability</div>
           </div>
 
           <div class="reason-card">
-            <div class="reason-icon">🤝</div>
-            <div class="reason-title">Long-term partnership</div>
+            <div class="reason-icon">
+              <span class="reason-icon-glow"></span>
+              🤖
+            </div>
+            <div class="reason-title">Human + AI collaboration</div>
             <p class="reason-text">
-              We don’t disappear after launch. We iterate, refine, and grow with
-              your product.
+              Workflows shaped around both your team and your models, keeping
+              humans in control while AI accelerates the path to impact.
             </p>
-            <div class="reason-meta">Support</div>
+            <div class="reason-meta">Intelligence</div>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <mainfooter></mainfooter>
 </template>
 
 <script setup>
 import { onMounted } from "vue";
 
-// core Swiper class
+// Swiper core + modules (for v9+ / v11+)
 import Swiper from "swiper";
-import navbarview2 from "../../components/navbar/navbarview2.vue";
-import mainfooter from "../../components/footer/mainfooter.vue";
-// Swiper modules (v9+ / v11+)
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
 // Swiper styles
@@ -242,13 +227,11 @@ import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
 onMounted(() => {
-  // init Swiper
-  const swiper = new Swiper(".mySwiper", {
-    // register modules here
+  // Attach modules inside options (no Swiper.use needed)
+  new Swiper(".mySwiper", {
     modules: [Autoplay, FreeMode, Pagination],
-
     loop: true,
-    speed: 6000, // smoother continuous motion
+    speed: 6000,
     slidesPerView: "auto",
     spaceBetween: 28,
     centeredSlides: true,
@@ -282,63 +265,28 @@ onMounted(() => {
 });
 </script>
 
-
 <style scoped>
-.navigatorcontent {
-    width: 100%;
-    height: 470px;
-}
-
-.navigator-info-container {
-    width: 1000px;
-    height: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#navigator-img {
-    width: 100%;
-    height: 470px;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-}
-
-.titlenavigator p {
-    font-size: 70px;
-    color: #fff;
-    font-family: 'Noto Sans Lao', sans-serif;
-    font-weight: bold;
-    padding-bottom: 70px;
-}
-
-.navigatorlink p {
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Noto Sans Lao', sans-serif;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* global body styling inside scoped block */
 :global(body) {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: #f5f7fb;
-  color: #0b1b3b;
+  background: radial-gradient(circle at top, #02071a 0%, #02030b 60%, #000 100%);
+  color: #e5f0ff;
   line-height: 1.6;
 }
 
 .page-wrapper {
   width: 100%;
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(0, 255, 255, 0.08), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(0, 120, 255, 0.16), transparent 60%),
+    #02040d;
 }
 
 /* --------------------
@@ -346,109 +294,187 @@ onMounted(() => {
    -------------------- */
 .section-hero {
   width: 100%;
-  height: 900px; /* as requested */
-  background: radial-gradient(circle at top left, #e5f0ff, #f5f7fb);
+  height: 900px; /* keep spec */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 5%;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+.hero-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(40, 70, 120, 0.35) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(40, 70, 120, 0.35) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+  opacity: 0.08;
+  pointer-events: none;
 }
 
 .hero-inner {
+  position: relative;
   max-width: 1200px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3.5rem;
   align-items: center;
+  z-index: 1;
 }
 
 .hero-eyebrow {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  color: #4a7dff;
+  font-size: 0.78rem;
+  letter-spacing: 0.3em;
+  color: #4fd4ff;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.85;
 }
 
 .hero-title {
-  font-size: 3rem;
-  line-height: 1.1;
+  font-size: 3.1rem;
+  line-height: 1.12;
   margin-bottom: 1.5rem;
-  color: #0a1650;
+  color: #f5f8ff;
+  text-shadow: 0 0 22px rgba(0, 247, 255, 0.2);
 }
 
 .hero-highlight {
-  color: #2962ff;
+  color: #58ddff;
+  position: relative;
+}
+
+.hero-highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00e5ff, #7c4dff);
+  opacity: 0.7;
 }
 
 .hero-text {
-  font-size: 1.05rem;
-  max-width: 540px;
-  color: #44506b;
-  margin-bottom: 2rem;
+  font-size: 1.02rem;
+  max-width: 560px;
+  color: #9fb1ff;
+  margin-bottom: 2.2rem;
 }
 
 .hero-points {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.6rem;
 }
 
 .hero-point {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 1.25rem 1.5rem;
-  box-shadow: 0 18px 35px rgba(15, 35, 90, 0.06);
-  border: 1px solid rgba(41, 98, 255, 0.08);
+  background: radial-gradient(circle at top left, rgba(0, 255, 255, 0.12), transparent 55%),
+    rgba(5, 16, 45, 0.88);
+  border-radius: 20px;
+  padding: 1.3rem 1.45rem;
+  box-shadow: 0 22px 50px rgba(5, 17, 50, 0.7);
+  border: 1px solid rgba(88, 221, 255, 0.35);
+  backdrop-filter: blur(18px);
 }
 
 .hero-point-label {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #7b8ab5;
-  margin-bottom: 0.35rem;
+  letter-spacing: 0.16em;
+  color: #66e4ff;
+  margin-bottom: 0.4rem;
 }
 
 .hero-point-title {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: #12224f;
+  margin-bottom: 0.3rem;
+  color: #f2f4ff;
 }
 
 .hero-point-text {
   font-size: 0.9rem;
-  color: #66728f;
+  color: #a2b5ff;
 }
 
 .hero-badge {
   justify-self: flex-end;
   align-self: center;
-  background: linear-gradient(145deg, #2962ff, #4f8dff);
+  background: radial-gradient(circle at top, rgba(123, 255, 245, 0.45), transparent 60%),
+    linear-gradient(145deg, rgba(6, 21, 58, 0.9), rgba(16, 42, 104, 0.9));
   color: #ffffff;
-  border-radius: 22px;
-  padding: 1.25rem 1.75rem;
+  border-radius: 24px;
+  padding: 1.4rem 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  box-shadow: 0 18px 35px rgba(16, 47, 138, 0.35);
+  gap: 0.5rem;
+  box-shadow:
+    0 0 45px rgba(0, 255, 255, 0.45),
+    0 24px 60px rgba(3, 9, 30, 0.9);
+  border: 1px solid rgba(100, 255, 255, 0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-badge::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: conic-gradient(
+    from 180deg,
+    rgba(0, 255, 255, 0.1),
+    transparent,
+    rgba(124, 77, 255, 0.18),
+    transparent
+  );
+  opacity: 0.7;
+  mix-blend-mode: screen;
+  animation: rotateGlow 14s linear infinite;
+}
+
+.hero-badge > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge-chip {
+  align-self: flex-start;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.32rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(177, 255, 255, 0.7);
+  color: #c8f8ff;
+  background: rgba(1, 8, 26, 0.7);
 }
 
 .hero-badge-number {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 700;
 }
 
 .hero-badge-label {
-  font-size: 0.85rem;
-  opacity: 0.9;
+  font-size: 0.9rem;
+  opacity: 0.95;
 }
 
 .hero-badge-footnote {
-  font-size: 0.75rem;
-  opacity: 0.75;
+  font-size: 0.78rem;
+  opacity: 0.8;
+  color: #d2e5ff;
 }
 
 /* --------------------
@@ -456,68 +482,87 @@ onMounted(() => {
    -------------------- */
 .section-gallery {
   width: 100%;
-  height: 930px; /* as requested */
-  background: #0f1b3e;
-  padding: 4rem 5%;
+  height: 930px; /* keep spec */
+  position: relative;
+  background: radial-gradient(circle at top, #050d24 0%, #02030a 55%, #000 100%);
+  padding: 4.2rem 6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2.8rem;
   color: #e4ecff;
+  overflow: hidden;
+}
+
+.gallery-glow {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(0, 243, 255, 0.18), transparent 55%),
+    radial-gradient(circle at 85% 100%, rgba(99, 102, 241, 0.35), transparent 60%);
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .gallery-header {
-  max-width: 1100px;
+  position: relative;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2.5rem;
+  z-index: 1;
 }
 
 .gallery-title-block h2 {
-  font-size: 2.1rem;
-  margin-bottom: 0.75rem;
-  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  color: #f7fbff;
 }
 
 .gallery-title-block p {
-  max-width: 480px;
-  font-size: 0.98rem;
-  color: #b7c4ff;
+  max-width: 520px;
+  font-size: 0.96rem;
+  color: #b6c7ff;
 }
 
 .gallery-tag {
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #96b4ff;
-  margin-bottom: 0.6rem;
+  letter-spacing: 0.22em;
+  color: #62f0ff;
+  margin-bottom: 0.7rem;
 }
 
 .gallery-meta {
-  font-size: 0.85rem;
-  color: #97a7ff;
+  font-size: 0.88rem;
+  color: #9cb4ff;
+  max-width: 260px;
+  text-align: right;
 }
 
 .swiper-container {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
 
 .swiper {
   width: 100%;
-  padding: 1.5rem 0 2rem;
+  padding: 1.8rem 0 2.3rem;
 }
 
 .swiper-slide {
-  width: 320px; /* fixed width for continuous scroll */
+  width: 320px;
   height: 420px;
-  border-radius: 24px;
+  border-radius: 26px;
   overflow: hidden;
-  background: linear-gradient(145deg, #1b2750, #111836);
-  box-shadow: 0 18px 40px rgba(1, 10, 31, 0.7);
+  background: radial-gradient(circle at top left, rgba(96, 236, 255, 0.22), rgba(4, 13, 40, 1));
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.9),
+    0 0 35px rgba(0, 248, 255, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -531,60 +576,60 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.9;
-  transform: scale(1.02);
-  transition: transform 0.7s ease, opacity 0.7s ease;
-  z-index: -1;
+  opacity: 0.85;
+  transform: scale(1.06);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  z-index: -2;
 }
 
-.swiper-slide::after {
-  content: "";
+.slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(6, 13, 39, 0.95),
-    rgba(5, 10, 32, 0.1)
-  );
+  background:
+    linear-gradient(to top, rgba(1, 6, 25, 0.96), rgba(3, 17, 49, 0.1)),
+    radial-gradient(circle at top, rgba(0, 255, 255, 0.18), transparent 55%);
+  mix-blend-mode: soft-light;
   z-index: -1;
 }
 
 .slide-content {
-  padding: 1.4rem 1.5rem;
-  color: #ffffff;
+  padding: 1.5rem 1.6rem 1.5rem;
+  color: #f5f9ff;
 }
 
 .slide-tag {
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  opacity: 0.7;
-  margin-bottom: 0.3rem;
+  letter-spacing: 0.18em;
+  opacity: 0.8;
+  margin-bottom: 0.4rem;
+  color: #78f5ff;
 }
 
 .slide-title {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
 }
 
 .slide-text {
-  font-size: 0.85rem;
-  color: #c5d0ff;
+  font-size: 0.86rem;
+  color: #c3d3ff;
 }
 
 .swiper-slide:hover img {
-  transform: scale(1.07);
+  transform: scale(1.1);
   opacity: 1;
 }
 
 .swiper-pagination-bullet {
-  background: #5f83ff;
-  opacity: 0.4;
+  background: #69dfff;
+  opacity: 0.35;
 }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.9);
 }
 
 /* --------------------
@@ -592,8 +637,8 @@ onMounted(() => {
    -------------------- */
 .section-reasons {
   width: 100%;
-  padding: 5rem 5% 6rem;
-  background: #f7f9ff;
+  padding: 5.2rem 6% 6rem;
+  background: radial-gradient(circle at bottom, #020614 0%, #010208 60%, #000 100%);
   display: flex;
   justify-content: center;
 }
@@ -605,75 +650,106 @@ onMounted(() => {
 
 .reasons-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3.1rem;
 }
 
 .reasons-header span {
   font-size: 0.8rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #6284ff;
+  color: #66e7ff;
   font-weight: 600;
 }
 
 .reasons-header h2 {
   font-size: 2rem;
   margin-top: 0.75rem;
-  color: #0a174a;
+  color: #f5f7ff;
 }
 
 .reasons-header p {
-  max-width: 540px;
-  margin: 0.85rem auto 0;
-  color: #707ea6;
-  font-size: 0.98rem;
+  max-width: 560px;
+  margin: 0.9rem auto 0;
+  color: #a0b2ff;
+  font-size: 0.96rem;
 }
 
 .reasons-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.8rem;
+  gap: 1.9rem;
 }
 
 .reason-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 1.75rem 1.5rem;
-  border: 1px solid rgba(101, 135, 255, 0.12);
-  box-shadow: 0 16px 30px rgba(112, 139, 255, 0.08);
+  position: relative;
+  background: linear-gradient(145deg, rgba(5, 16, 45, 0.96), rgba(9, 25, 65, 0.98));
+  border-radius: 22px;
+  padding: 1.9rem 1.7rem;
+  border: 1px solid rgba(108, 235, 255, 0.4);
+  box-shadow:
+    0 22px 48px rgba(0, 0, 0, 0.76),
+    0 0 26px rgba(0, 249, 255, 0.28);
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.95rem;
+  overflow: hidden;
+}
+
+.reason-card::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(circle at top, rgba(87, 223, 255, 0.25), transparent 60%);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .reason-icon {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 999px;
-  border: 2px solid rgba(48, 100, 255, 0.2);
+  border: 1px solid rgba(155, 255, 255, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  position: relative;
+  overflow: hidden;
+  background: rgba(4, 15, 40, 0.95);
+}
+
+.reason-icon-glow {
+  position: absolute;
+  inset: -40%;
+  background: conic-gradient(
+    from 180deg,
+    rgba(0, 234, 255, 0.6),
+    transparent,
+    rgba(123, 97, 255, 0.7),
+    transparent
+  );
+  opacity: 0.6;
+  filter: blur(4px);
+  animation: rotateGlow 14s linear infinite;
 }
 
 .reason-title {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
-  color: #15245a;
+  color: #f1f4ff;
 }
 
 .reason-text {
-  font-size: 0.95rem;
-  color: #6b7696;
+  font-size: 0.94rem;
+  color: #b5c7ff;
 }
 
 .reason-meta {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #9aa5c4;
-  margin-top: 0.3rem;
+  letter-spacing: 0.22em;
+  color: #88f1ff;
+  margin-top: 0.4rem;
 }
 
 /* --------------------
@@ -686,36 +762,40 @@ onMounted(() => {
 
   .hero-badge {
     justify-self: flex-start;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
   }
 
   .section-hero {
     height: auto;
-    padding: 4rem 6% 4.5rem;
+    padding: 4.3rem 7% 4.7rem;
   }
 
   .section-gallery {
     height: auto;
-    padding: 3.5rem 6%;
+    padding: 3.7rem 7%;
   }
 
   .reasons-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-points {
-    grid-template-columns: 1fr;
-  }
 
   .gallery-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .gallery-meta {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-points {
+    grid-template-columns: 1fr;
   }
 
   .reasons-grid {
@@ -727,5 +807,16 @@ onMounted(() => {
     height: 360px;
   }
 }
-</style>
 
+/* --------------------
+   KEYFRAMES
+   -------------------- */
+@keyframes rotateGlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

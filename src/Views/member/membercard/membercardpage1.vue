@@ -521,6 +521,7 @@ const filteredMembers = computed(() => {
     width: 90%;
     display: flex;
     margin: 0 auto;
+
     height: 2000px;
 }
 </style>
