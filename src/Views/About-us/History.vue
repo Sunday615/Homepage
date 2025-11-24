@@ -116,7 +116,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
             <div id="historybox">
                 <div data-aos="fade-up" data-aos-duration="1000">
                     <div class="icon">
-                        <i class="fa-solid fa-arrows-spin"></i>
+            <i class="fa-solid fa-arrows-rotate"></i>
                     </div>
                 </div>
                 <div class="description">
@@ -224,7 +224,7 @@ import mainfooter from '../../components/footer/mainfooter.vue';
                         <h1>ບໍລິສັດ ຢູນຽນເພ ສາກົນ ຈຳກັດ </h1>
                     </div>
                     <div class="logo">
-                        <img style="width: 110px;" src="../../assets/Logomember- retangle/unoinpay.png" alt="">
+                        <img style="width: 110px;" src="../../assets/Logomember- retangle/UnionPay_logo.svg.png" alt="">
                     </div>
                 </div>
             </div>

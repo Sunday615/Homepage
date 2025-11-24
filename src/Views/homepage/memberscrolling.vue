@@ -4,7 +4,7 @@
 
     <div class="wrapper">
       <div class="itemLeft item1">
-        <img src="../../assets/Logomember- retangle/BCEL.png" alt="">
+        <img src="../../assets/logomember-circle/BCEL.png" alt="">
       </div>
       <div class="itemLeft item2">
         <img src="../../assets/logomember-circle/LDB.PNG" alt="">

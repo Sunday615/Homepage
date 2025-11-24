@@ -19,13 +19,13 @@
 
       <!-- SLIDER WRAPPER -->
       <div class="slider">
-        <!-- ปุ่มซ้าย -->
+
         <button class="nav-arrow nav-arrow--left" @click="handlePrev">
           ‹
         </button>
 
         <div class="slider-window">
-          <!-- TRACK ที่เลื่อน -->
+  
           <div
             class="slider-track"
             :style="{ transform: `translateX(-${currentPage * 100}%)` }"
@@ -288,7 +288,7 @@
           </div>
         </div>
 
-        <!-- ปุ่มขวา -->
+
         <button class="nav-arrow nav-arrow--right" @click="handleNext">
           ›
         </button>
@@ -619,7 +619,7 @@ onMounted(() => {
 
     const cards = gsap.utils.toArray(".card")
 
-    // entry animation การ์ดแบบ stagger
+    // entry animation card style stagger
     gsap.from(cards, {
       opacity: 0,
       y: 35,
@@ -630,7 +630,7 @@ onMounted(() => {
       ease: "power3.out"
     })
 
-    // hover animation ด้วย GSAP
+    // hover animation by GSAP
     cards.forEach((card) => {
       const tl = gsap.timeline({ paused: true })
       tl.to(card, {
@@ -724,10 +724,10 @@ onBeforeUnmount(() => {
 /* CONTAINER */
 .landing-tech {
   width: 100%;
-  height: 860px; /* สูงขึ้นหน่อยให้การ์ดใหญ่ได้ */
+  height: 860px; 
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
+  background: radial-gradient(circle at top, #1871ff 0, #001261 55%, #000 100%);
   color: #e5edff;
   display: flex;
   justify-content: center;
@@ -748,13 +748,13 @@ onBeforeUnmount(() => {
 }
 
 .glow-top {
-  background: rgba(59, 130, 246, 0.9);
+  background: rgba(0, 62, 220, 0.9);
   top: -160px;
   left: 6%;
 }
 
 .glow-bottom {
-  background: rgba(56, 189, 248, 0.85);
+  background: rgba(0, 81, 255, 0.85);
   bottom: -220px;
   right: 0;
 }
