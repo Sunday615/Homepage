@@ -19,7 +19,7 @@ onMounted(() => {
     <navbarview2 />
 
     <div class="navigatorcontent">
-      <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="" />
+      <img id="navigator-img" src="/navbar/navigatorcontent-bg.png" alt="" />
       <div class="navigator-info-container">
         <div class="titlenavigator">
           <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -47,7 +47,7 @@ onMounted(() => {
     <div class="boxpadding"></div>
 
     <div class="conatinerproduct1-page1">
-      <img id="bgproductpage1" src="../../assets/products/product5/product5bg.png" alt="" />
+      <img id="bgproductpage1" src="/product5/product5bg.png" alt="" />
       <div class="containerframe1">
         <div class="leftcontentpage1">
           <div class="producttitlepage1">
@@ -80,10 +80,10 @@ onMounted(() => {
 
         <div class="rightcontentpage1">
           <div data-aos="fade-left" data-aos-duration="1400">
-            <img id="topbg" src="../../assets/products/product5/toppd5.png" alt="" />
+            <img id="topbg" src="/product5/toppd5.png" alt="" />
           </div>
           <div data-aos="zoom-in" data-aos-duration="1200">
-            <img id="atmmachine" src="../../assets/products/product5/ip16promax.webp" alt="" />
+            <img id="atmmachine" src="/product5/ip16promax.webp" alt="" />
           </div>
         </div>
       </div>

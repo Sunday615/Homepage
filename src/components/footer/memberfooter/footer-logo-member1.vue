@@ -57,7 +57,7 @@
                 <img style="width:150px" src="../../../assets/Logomember- retangle/kbank.jpg" alt="">
             </div>
             <div class="boxlogo16">
-                <img style="width:180px" src="../../../assets/logomember-circle/Pub.png" alt="">
+                <img style="width:180px" src="/Logomember/public-bank.svg" alt="">
             </div>
 
         </div>

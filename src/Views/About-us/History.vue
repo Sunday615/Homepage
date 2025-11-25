@@ -300,7 +300,7 @@ import mainfooter from '../../components/footer/mainfooter.vue'
               <h1>ທະນາຄານ ເອສທີ ຈຳກັດ</h1>
             </div>
             <div class="logo">
-              <img style="width: 105px" src="../../assets/logomember-circle/stb.png" alt="STB" />
+              <img style="width: 105px" src="/Logomember/STB.png" alt="STB" />
             </div>
           </div>
         </div>

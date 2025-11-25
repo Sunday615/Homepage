@@ -3,7 +3,7 @@
 import productdropdown from './product-dropdown.vue'
 import dropdownmember from './memberdropdown.vue'
 import aboutusdropdown from './aboutusdropdown.vue';
-import logo_lapnet from '../../assets/Logo-lapnet/logolapnet.png'
+
 
 function goTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -17,8 +17,8 @@ function goTop() {
       <nav class="navbar">
         <img id="navbar-bg" src="/navbar/navbar-bg.png" alt="">
         <div class="logo">
-            <router-link to="/">  <img :src="logo_lapnet" /></router-link>
-            <router-link to="/">  <img src="../../assets/Logo-lapnet/textlogo.png" alt=""></router-link>
+            <router-link to="/">  <img src="/Logolapnet/logolapnet.PNG"/></router-link>
+            <router-link to="/">  <img src="/Logolapnet/textlogo.PNG" alt=""></router-link>
           
 
         </div>

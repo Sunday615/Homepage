@@ -23,8 +23,8 @@ const sendEmail = () => {
           <img src="../../assets/footer/footer-info.png" alt="">
 
           <div class="logoft">
-            <img src="../../assets/Logo-lapnet/logolapnet.png" alt="">
-            <img src="../../assets/Logo-lapnet/textlogowhite.png" alt="">
+            <img src="/Logolapnet/logolapnet.PNG" alt="">
+            <img src="/Logolapnet/textlogowhite.PNG" alt="">
           </div>
           <div class="infoft">
             <div class="block1">
@@ -44,7 +44,7 @@ const sendEmail = () => {
                 <p>info@lapnet.com.la</p>
               </div>
             </div>
-            <a href="https://maps.app.goo.gl/rvjuo1P5xHBbnZvk8">
+            <a href="https://maps.app.goo.gl/rvjuo1P5xHBbnZvk8" target="_blank">
             <div class="block1">
               <div class="iconlocation">
                 <i class="fa-solid fa-location-dot"></i>
@@ -367,7 +367,7 @@ const sendEmail = () => {
 .iconemail,
 .iconlocation {
   width: 80px;
-  height: 70px;
+  height: 80px;
   background-color: white;
   border-radius: 7px;
   display: flex;

@@ -71,7 +71,7 @@ watch(
   <navbarview2 />
 
   <div class="navigatorcontent">
-    <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="" />
+    <img id="navigator-img" src="/navbar/navigatorcontent-bg.png" alt="" />
     <div class="navigator-info-container">
       <div class="titlenavigator">
         <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -99,7 +99,7 @@ watch(
   <div class="boxpadding"></div>
 
   <div class="conatinerproduct1-page1">
-    <img id="bgproductpage1" src="../../assets/products/product6/product6bg.png" alt="" />
+    <img id="bgproductpage1" src="/product6/product6bg.png" alt="" />
     <div class="containerframe1">
       <div class="leftcontentpage1">
         <div class="producttitlepage1">
@@ -134,10 +134,10 @@ watch(
 
       <div class="rightcontentpage1">
         <div data-aos="fade-left" data-aos-duration="1400">
-          <img id="topbg" src="../../assets/products/product6/topimg.png" alt="" />
+          <img id="topbg" src="/product6/topimg.png" alt="" />
         </div>
         <div data-aos="zoom-in" data-aos-duration="1200">
-          <img id="atmmachine" src="../../assets/products/product6/mbmockup.png" alt="" />
+          <img id="atmmachine" src="/product6/mbmockup.png" alt="" />
         </div>
       </div>
     </div>

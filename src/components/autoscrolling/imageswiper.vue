@@ -119,6 +119,7 @@ const swiperBreakpoints = {
 
 .swiper-header h2 {
   font-size: 4rem;
+  font-family: "Inter";
   font-weight: 700;
   margin-bottom: 6px;
 }

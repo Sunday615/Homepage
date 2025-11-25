@@ -19,7 +19,7 @@ onMounted(() => {
   <navbarview2 />
 
   <div class="navigatorcontent">
-    <img id="navigator-img" src="../../assets/products/navigatorcontent-bg.png" alt="" />
+    <img id="navigator-img" src="/navbar/navigatorcontent-bg.png" alt="" />
     <div class="navigator-info-container">
       <div class="titlenavigator">
         <div data-aos="zoom-in-down" data-aos-duration="1000">
@@ -47,7 +47,7 @@ onMounted(() => {
   <div class="boxpadding"></div>
 
   <div class="conatinerproduct1-page1">
-    <img id="bgproductpage1" src="../../assets/products/product2/bgtemplete-2.png" alt="" />
+    <img id="bgproductpage1" src="/product2/bgtemplete-2.png" alt="" />
     <div class="containerframe1">
       <div class="leftcontentpage1">
         <div class="producttitlepage1">
@@ -81,12 +81,12 @@ onMounted(() => {
         <div data-aos="fade-left" data-aos-duration="1400">
           <img
             id="topbg"
-            src="../../assets/products/product2/jan-antonin-kolar-Sc5HUu4XzTk-unsplash.jpg"
+            src="/product2/jan-antonin-kolar-Sc5HUu4XzTk-unsplash.jpg"
             alt=""
           />
         </div>
         <div data-aos="zoom-in" data-aos-duration="1200">
-          <img id="atmmachine" src="../../assets/products/product2/ATMpd2.webp" alt="" />
+          <img id="atmmachine" src="/product2/ATMpd2.webp" alt="" />
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@ onMounted(() => {
           <img src="../../assets/logomember-circle/APBB.PNG" alt="" />
           <img src="../../assets/logomember-circle/JDB.png" alt="" />
           <img src="../../assets/logomember-circle/Maruhan.png" alt="" />
-          <img src="../../assets/logomember-circle/LVB.PNG" alt="" />
+      <img src="/Logomember/lvb1.PNG" alt="" />
         </div>
         <div class="memberrow">
           <img src="../../assets/logomember-circle/ICBC.png" alt="" />
@@ -153,7 +153,7 @@ onMounted(() => {
         </div>
         <div class="memberrow">
           <img src="../../assets/logomember-circle/SACOM.PNG" alt="" />
-          <img src="../../assets/logomember-circle/STB.PNG" alt="" />
+             <img src="/Logomember/STB.png" alt="" />
           <img src="../../assets/logomember-circle/Kasikorn.png" alt="" />
           <img src="../../assets/logomember-circle/PUB.png" alt="" />
         </div>

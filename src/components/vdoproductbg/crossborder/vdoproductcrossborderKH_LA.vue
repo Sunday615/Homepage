@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <div class="imgqrpayment">
-                        <img src="../../../assets/crossborder/bakong.jpeg" alt="">
+                        <img src="/Logomember/bakong.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -75,14 +75,12 @@
 
 .row1 img {
     width: 120px;
-    height: 120px;
+
         margin-left: 10px;
 }
 
 .row1 {
-
     width: 100%;
-
    display: flex;
    justify-content: center;
     height: auto;

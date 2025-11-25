@@ -8,6 +8,7 @@ import memberdropdown from './navbar-homepage/memberdropdown.vue';
 import aboutusdropdown from './navbar-homepage/aboutusdropdown.vue';
 import vdocontainer4 from './vdocontainer4.vue';
 import homepageproduct from '../../components/autoscrolling/homepageproduct.vue';
+import mainfooter from '../../components/footer/mainfooter.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Autoplay } from 'swiper/modules';
 
@@ -269,141 +270,9 @@ function goTop() {
             <div class="boxcontianer"></div>
 
         </div>
-        <div class="footercontainer">
-            <div class="upfooter">
-                <div class="logofooterimg">
-                    <div class="bg">
-                        <img src="../../assets/footer/footer-info.png" alt="">
-
-                        <div class="logoft">
-                            <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
-                            <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
-                        </div>
-                        <div class="infoft">
-                            <div class="block1">
-                                <div class="iconphone">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div class="titlephone">
-                                    <p>021 417915</p>
-                                </div>
-                            </div>
-                            <div class="block1">
-                                <div class="iconemail">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="titleemail">
-                                    <p>info@lapnet.com.la</p>
-                                </div>
-                            </div>
-                            <div class="block1">
-                                <div class="iconlocation">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="titlelocation">
-                                    <p>XJHH+FFM, Vientiane</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="infofooter">
-                    <img src="../../assets/footer/footerbg.png" alt="">
-                    <div class="infoftleft">
-                        <div class="titlefooterleft">
-                            <p>ກ່ຽວກັບບໍລິສັດ</p>
-                        </div>
-                        <div class="infofooterleft">
-                            <ul>
-                                <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
-                                <li>ເບີໂທ: 030 568 7610</li>
-                                <li>ເບີໂທ: 021 417915</li>
-                                <li>ອີເມວ: info@lapnet.com.la</li>
-
-                            </ul>
-                        </div>
-                        <div class="facebookbtnfooter">
-                            <i class="fa-brands fa-facebook"></i>
-                            <span><a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank">Lao
-                                    National
-                                    Payment Network</a></span>
-                        </div>
-                    </div>
-                    <div class="infocenter">
-                        <div class="titlecenter">
-                            <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
-                        </div>
-                        <div class="menufootercenter">
-                            <router-link to="/products-service/products-1">
-                                <div class="menubox" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ກວດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                            <router-link to="/products-service/products-2">
-                                <div class="menubox" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                            <router-link to="/products-service/products-3">
-                                <div class="menubox" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                            <router-link to="/products-service/products-4">
-                                <div class="menubox" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                            <router-link to="/products-service/products-5">
-                                <div class="menubox" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                            <router-link to="/products-service/products-6">
-                                <div class="menuboxnonline" @click="goTop()">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                    <span>
-                                        <p>ຊຳລະຂ້າມແດນຜ່ານ QR</p>
-                                    </span>
-                                </div>
-                            </router-link>
-                        </div>
-
-
-                    </div>
-                    <div class="infofright">
-                        <div class="titlecenter">
-                            <p>ເມນູ</p>
-                        </div>
-                        <div class="menufootercenter">
-
-                            <footerdropdown></footerdropdown>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    <p>Copright © 2020 LAPNet Co., Ltd.</p>
-                </div>
-            </div>
-        </div>
+       
     </div>
+    <mainfooter></mainfooter>
 </template>
 
 

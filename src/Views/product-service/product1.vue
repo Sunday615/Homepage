@@ -126,7 +126,7 @@ onMounted(() => {
           <img src="../../assets/logomember-circle/APBB.PNG" alt="" />
           <img src="../../assets/logomember-circle/JDB.png" alt="" />
           <img src="../../assets/logomember-circle/Maruhan.png" alt="" />
-          <img src="../../assets/logomember-circle/LVB.PNG" alt="" />
+          <img src="/Logomember/lvb1.PNG" alt="" />
         </div>
         <div class="memberrow">
           <img src="../../assets/logomember-circle/ICBC.png" alt="" />
@@ -138,7 +138,7 @@ onMounted(() => {
         </div>
         <div class="memberrow">
           <img src="../../assets/logomember-circle/SACOM.PNG" alt="" />
-          <img src="../../assets/logomember-circle/STB.PNG" alt="" />
+          <img src="/Logomember/STB.png" alt="" />
           <img src="../../assets/logomember-circle/Kasikorn.png" alt="" />
           <img src="../../assets/logomember-circle/PUB.png" alt="" />
         </div>

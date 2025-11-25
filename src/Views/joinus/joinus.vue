@@ -12,7 +12,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue'
 
   <!-- Navigator -->
   <div class="navigatorcontent">
-    <img id="navigator-img" src="../../assets/joinus/navigatorjoinus.png" alt="" />
+    <img id="navigator-img" src="/Joinus/navigatorjoinus.png" alt="" />
     <div class="navigator-info-container">
       <div class="titlenavigator" data-aos="zoom-in-down" data-aos-duration="1000">
         <p>ຮ່ວມງານກັບພວກເຮົາ</p>
@@ -95,13 +95,16 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue'
 /* ---------- Layout: Position section ---------- */
 .position {
   width: 100%;
-  height: 1000px;
+  height: 800px;
   margin-top: 800px;
+
 }
 
 .headerposition {
   width: 100%;
-  height: 210px;
+  height: 140px;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +127,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue'
   height: 200px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 70px auto 0;
 }
 
@@ -132,7 +135,7 @@ import imageswiper from '../../components/autoscrolling/imageswiper.vue'
 .whyuscontainer {
   width: 100%;
   height: 900px;
-  background-image: url('../../assets/joinus/bcakgroundcontent1.png');
+  background-image: url('/Joinus/bcakgroundcontent1.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
