@@ -249,16 +249,19 @@
 }
 
 .video-background-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    display: flex;
+   position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  padding: 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
     align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
 }
 
 .video-bg {

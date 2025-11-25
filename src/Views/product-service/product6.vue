@@ -162,13 +162,12 @@ watch(
     <div class="videocorssbordershow" ref="videoBox">
       <component :is="currentVideoComponent" :key="$route.path" />
     </div>
-
-    <div class="descriptionforcustomer">
-      <Techproduct6 />
-    </div>
+    
+    
   </div>
+   <Techproduct6 style="margin-top: 170px;"/>
 
-  <mainfooter />
+  <mainfooter ></mainfooter>
 </template>
 
 <style scoped>

@@ -7,7 +7,7 @@
         <img src="../../assets/logomember-circle/BCEL.png" alt="">
       </div>
       <div class="itemLeft item2">
-        <img src="../../assets/logomember-circle/LDB.PNG" alt="">
+        <img src="../../assets/logomember-circle/LDB.png" alt="">
       </div>
       <div class="itemLeft item3">
         <img src="../../assets/Logomember- retangle/APB.jpeg" alt="">

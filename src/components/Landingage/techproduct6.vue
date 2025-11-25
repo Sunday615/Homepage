@@ -723,11 +723,11 @@ onBeforeUnmount(() => {
 
 /* CONTAINER */
 .landing-tech {
+
   width: 100%;
-padding-top: 200px;
+
   height: 960px; 
-  position: relative;
-  z-index: -999;
+
   overflow: hidden;
   background: radial-gradient(circle at top, #1871ff 0, #001261 55%, #000 100%);
   color: #e5edff;

@@ -95,7 +95,7 @@ import blogdetail5 from '../Views/Blog/fromhomepage/blogdetail5.vue'
 import blogdetail6 from '../Views/Blog/fromhomepage/blogdetail6.vue'
 
 // ========== Test / Misc ==========
-import Testcomponent from '../components/Landingage/Testcomponent.vue'
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -275,7 +275,7 @@ const router = createRouter({
     { path: '/crossborder/la-ch', name: 'crossborder-la-ch', component: Product6 },
 
     // =================== Test ===================
-    { path: '/test', name: 'test', component: Testcomponent }
+
   ]
 })
 

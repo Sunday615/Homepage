@@ -1,148 +1,158 @@
 <script setup lang="ts">
-import { RouterLink,  } from 'vue-router';
+import { RouterLink, } from 'vue-router';
 import footerdropdown from '../footer/footerdropdown.vue';
 
 function goTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+const sendEmail = () => {
+  const email = 'info@laonet.com.la'
+  const subject = encodeURIComponent('ສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມ')
+  const body = encodeURIComponent('ສະບາຍດີ ຂ້ອຍຢາກສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມກ່ຽວກັບ...')
+  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+}
 </script>
 
 
 <template>
-    <div class="footercontainer">
-        <div class="upfooter">
-            <div class="logofooterimg">
-                <div class="bg">
-                    <img src="../../assets/footer/footer-info.png" alt="">
+  <div class="footercontainer">
+    <div class="upfooter">
+      <div class="logofooterimg">
+        <div class="bg">
+          <img src="../../assets/footer/footer-info.png" alt="">
 
-                    <div class="logoft">
-                        <img src="../../assets/Logo-lapnet/logolapnet.png" alt="">
-                        <img src="../../assets/Logo-lapnet/textlogowhite.png" alt="">
-                    </div>
-                    <div class="infoft">
-                        <div class="block1">
-                            <div class="iconphone">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="titlephone">
-                                <p>030 568 7610</p>
-                          
-                            </div>
-                        </div>
-                        <div class="block1">
-                            <div class="iconemail">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="titleemail">
-                                <p>info@lapnet.com.la</p>
-                            </div>
-                        </div>
-                        <div class="block1">
-                            <div class="iconlocation">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="titlelocation">
-                                <p>XJHH+FFM, Vientiane</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="logoft">
+            <img src="../../assets/Logo-lapnet/logolapnet.png" alt="">
+            <img src="../../assets/Logo-lapnet/textlogowhite.png" alt="">
+          </div>
+          <div class="infoft">
+            <div class="block1">
+              <div class="iconphone">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="titlephone">
+                <p>030 568 7610</p>
+
+              </div>
             </div>
-            <div class="infofooter">
-                <img src="../../assets/footer/footerbg.png" alt="">
-                <div class="infoftleft">
-                    <div class="titlefooterleft">
-                        <p>ກ່ຽວກັບບໍລິສັດ</p>
-                    </div>
-                    <div class="infofooterleft">
-                        <ul>
-                            <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
-                            <li>ເບີໂທ: 030 568 7610</li>
-                            <li>ເບີໂທ: 021 417 915</li>
-                            <li>ອີເມວ: info@lapnet.com.la</li>
-
-                        </ul>
-                    </div>
-                    <div class="facebookbtnfooter">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span><a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank">Lao National
-                                Payment Network</a></span>
-                    </div>
-                </div>
-                <div class="infocenter">
-                    <div class="titlecenter">
-                        <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
-                    </div>
-                    <div class="menufootercenter">
-                        <router-link to="/products-service/products-1">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ກວດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-2">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-3">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-4">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-5">
-                            <div class="menubox" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
-                                </span>
-                            </div>
-                        </router-link>
-                        <router-link to="/products-service/products-6">
-                            <div class="menuboxnonline" @click="goTop()">
-                                <i class="fa-solid fa-chevron-right"></i>
-                                <span>
-                                    <p>ຊຳລະຂ້າມແດນຜ່ານ QR</p>
-                                </span>
-                            </div>
-                        </router-link>
-                    </div>
-
-
-                </div>
-                <div class="infofright">
-                    <div class="titlecenter">
-                        <p>ເມນູ</p>
-                    </div>
-                    <div class="menufootercenter">
-
-                        <footerdropdown></footerdropdown>
-                    </div>
-
-                </div>
+            <div class="block1" @click="sendEmail" style="cursor: pointer">
+              <div class="iconemail">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="titleemail">
+                <p>info@lapnet.com.la</p>
+              </div>
             </div>
+            <a href="https://maps.app.goo.gl/rvjuo1P5xHBbnZvk8">
+            <div class="block1">
+              <div class="iconlocation">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
 
-            <div class="copyright">
-                <p>Copright © 2020 LAPNet Co., Ltd.</p>
-            </div>
+              <div class="titlelocation">
+                <p>XJHH+FFM, Vientiane</p>
+              </div>
+
+            </div></a>
+          </div>
         </div>
+      </div>
+      <div class="infofooter">
+        <img src="../../assets/footer/footerbg.png" alt="">
+        <div class="infoftleft">
+          <div class="titlefooterleft">
+            <p>ກ່ຽວກັບບໍລິສັດ</p>
+          </div>
+          <div class="infofooterleft">
+            <ul>
+              <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
+              <li>ເບີໂທ: 030 568 7610</li>
+              <li>ເບີໂທ: 021 417 915</li>
+              <li>ອີເມວ: info@lapnet.com.la</li>
+
+            </ul>
+          </div>
+          <div class="facebookbtnfooter">
+            <i class="fa-brands fa-facebook"></i>
+            <span><a href="https://www.facebook.com/laonationalpaymentnetwork" target="_blank">Lao National
+                Payment Network</a></span>
+          </div>
+        </div>
+        <div class="infocenter">
+          <div class="titlecenter">
+            <p>ຜະລິດຕະພັນ ແລະ ການບໍລິການ</p>
+          </div>
+          <div class="menufootercenter">
+            <router-link to="/products-service/products-1">
+              <div class="menubox" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ກວດເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                </span>
+              </div>
+            </router-link>
+            <router-link to="/products-service/products-2">
+              <div class="menubox" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ຖອນເງິນສົດຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                </span>
+              </div>
+            </router-link>
+            <router-link to="/products-service/products-3">
+              <div class="menubox" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ໂອນເງິນຂ້າມທະນາຄານຜ່ານຕູ້ ATM</p>
+                </span>
+              </div>
+            </router-link>
+            <router-link to="/products-service/products-4">
+              <div class="menubox" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ໂອນເງິນຂ້າມທະນາຄານເທິງມືຖື</p>
+                </span>
+              </div>
+            </router-link>
+            <router-link to="/products-service/products-5">
+              <div class="menubox" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ການຊຳລະເງິນຂ້າມທະນາຄານຜ່ານ QR</p>
+                </span>
+              </div>
+            </router-link>
+            <router-link to="/products-service/products-6">
+              <div class="menuboxnonline" @click="goTop()">
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>
+                  <p>ຊຳລະຂ້າມແດນຜ່ານ QR</p>
+                </span>
+              </div>
+            </router-link>
+          </div>
+
+
+        </div>
+        <div class="infofright">
+          <div class="titlecenter">
+            <p>ເມນູ</p>
+          </div>
+          <div class="menufootercenter">
+
+            <footerdropdown></footerdropdown>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copright © 2020 LAPNet Co., Ltd.</p>
+      </div>
     </div>
+  </div>
 </template>
 
 
@@ -289,9 +299,9 @@ function goTop() {
 .footercontainer {
   width: 100%;
   height: 1100px;
-  position: relative;
-  z-index: 9999;
-  }
+
+
+}
 
 .logofooterimg img {
   width: 150px;
@@ -340,7 +350,7 @@ function goTop() {
   width: 68%;
   height: 150px;
   display: flex;
-  margin-left: 150px;
+  margin-left: 200px;
   justify-content: space-around;
   align-items: center;
 }
@@ -349,26 +359,27 @@ function goTop() {
   width: 300px;
   height: 100px;
   display: flex;
+
   align-items: center;
 }
 
 .iconphone,
 .iconemail,
 .iconlocation {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 70px;
   background-color: white;
   border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -15px -15px 3px 0px #000;
+  box-shadow: -12px -12px 2px 0px #000;
 }
 
 .iconphone i,
 .iconemail i,
 .iconlocation i {
-  font-size: 60px;
+  font-size: 30px;
   color: #433bff;
 }
 

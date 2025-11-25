@@ -41,7 +41,7 @@
                         <div class="row2">
                             <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/APB.Png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/APB.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/BICnew.jpeg" alt="" />
@@ -228,16 +228,19 @@
 }
 
 .video-background-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 1000px;
+  padding: 40px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
 }
 
 .video-bg {
