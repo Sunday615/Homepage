@@ -17,8 +17,8 @@ function goTop() {
       <nav class="navbar">
         <img id="navbar-bg" src="../../assets/navbar/navbar-bg.png" alt="">
         <div class="logo">
-            <router-link to="/"><img src="../../assets/Logo-lapnet/logolapnet.PNG" alt=""></img></router-link>
-            <router-link to="/">  <img src="../../assets/Logo-lapnet/textlogo.PNG" alt=""></router-link>
+            <router-link to="/"><img src="../../assets/Logo-lapnet/logolapnet.png" alt=""></img></router-link>
+            <router-link to="/">  <img src="../../assets/Logo-lapnet/textlogo.png" alt=""></router-link>
           
 
         </div>

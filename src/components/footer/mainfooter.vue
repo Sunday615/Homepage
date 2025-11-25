@@ -16,8 +16,8 @@ function goTop() {
                     <img src="../../assets/footer/footer-info.png" alt="">
 
                     <div class="logoft">
-                        <img src="../../assets/Logo-lapnet/logolapnet.PNG" alt="">
-                        <img src="../../assets/Logo-lapnet/textlogowhite.PNG" alt="">
+                        <img src="../../assets/Logo-lapnet/logolapnet.png" alt="">
+                        <img src="../../assets/Logo-lapnet/textlogowhite.png" alt="">
                     </div>
                     <div class="infoft">
                         <div class="block1">
@@ -289,7 +289,9 @@ function goTop() {
 .footercontainer {
   width: 100%;
   height: 1100px;
-}
+  position: relative;
+  z-index: 9999;
+  }
 
 .logofooterimg img {
   width: 150px;

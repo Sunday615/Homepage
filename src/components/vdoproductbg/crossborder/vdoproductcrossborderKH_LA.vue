@@ -40,8 +40,7 @@
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 25px">
-                            ເບື້ອງກຳປູເຈຍ (ສະແກນຊຳລະ) : ຜ່ານເຄືອຂ່າຍ Bakong ປັດຈຸບັນມີ 59 ທະນາຄານ +, ແລະ
-                            ທະນາຄານ ACLEDA (ໃຊ້ Mobile Banking ຂອງຕົນເອງ).
+                            ຜ່ານເຄືອຂ່າຍ Bakong: ທຸກທະນາຄານທີ່ເປັນສະມາຊິກຂອງ Bakong (ປັດຈຸບັນມີ 59 ທະນາຄານ), ແລະ ທະນາຄານ ACLEDA <br>(ໃຊ້ Mobile Banking ຂອງຕົນເອງ).
                         </p>
                     </div>
                     <div class="imgqrpayment">

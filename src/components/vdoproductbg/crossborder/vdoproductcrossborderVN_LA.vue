@@ -20,25 +20,29 @@
                 <div class="centercontainer">
                     <div class="headercondition">
                    
-                        <p>ເບື້ອງຫວຽດນາມ  (ສະແກນຊຳລະ) : 08 ທະນາຄານຫຼັກ.</p>
+                        <p>ເບື້ອງຫວຽດນາມ  (ສະແກນຊຳລະ) : 09 ທະນາຄານຫຼັກ.</p>
                     </div>
                     <div class="logomember">
                         <div class="row1">
                             <img src="../../../assets/Logomember- retangle/VTB.jpg" alt="" />
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/BIDV.jpeg" alt="" />
+                            <img src="../../../assets/Logomember- retangle/VTB.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/TPB.jpeg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/SHB.png" alt="" />
-                            <img  src="../../../assets/Logomember- retangle/NamA.jpeg" alt="" />
                             <img  src="../../../assets/Logomember- retangle/BV.png" alt="" />
+                            <img  src="../../../assets/Logomember- retangle/NamA.jpeg" alt="" />
+                            <img  src="../../../assets/Logomember- retangle/NamA.jpeg" alt="" />
+                             <img  src="../../../assets/Logomember- retangle/NCB.avif" alt="" />
+                  
+                          
+                           
                         </div>
                     </div>
                 </div>
                 <div class="bottomcontainer">
                     <div class="headercondition">
                         <p style="font-size: 29px">
-                            ເບື້ອງລາວ (ຮັບການຊຳລະ) : 15 ທະນາຄານສະມາຊິກ.
+                            ເບື້ອງລາວ (ຮັບການຊຳລະ) : 14 ທະນາຄານສະມາຊິກ.
                         </p>
                     </div>
                      <div class="logomember">
@@ -61,7 +65,7 @@
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
                             <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
+                           
                             <img src="../../../assets/Logomember- retangle/VTB.jpg" alt="" />
                            
                         </div>

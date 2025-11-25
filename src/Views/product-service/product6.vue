@@ -175,6 +175,7 @@ watch(
 .descriptionforcustomer {
   width: 100%;
   height: 860px;
+ 
 }
 
 .videocorssbordershow {

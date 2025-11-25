@@ -42,42 +42,114 @@
                     <div class="headercondition">
                         <p style="font-size: 29px">
                             ເບື້ອງຈີນ/ສາກົນ (ສະແກນຊຳລະ) : ຜ່ານເຄືອຂ່າຍ UnionPay
-
                         </p>
                         <img src="../../../assets/Logomember- retangle/UnionPay_logo.svg.png" alt="">
                     </div>
+
                     <div class="logomember">
-                        <div class="row2">
-                            <img src="../../../assets/Logomember- retangle/BOCB.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/ICBCB.jpeg" alt="" />
-                            <img src="../../../assets/Logomember- retangle/ABC.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/CCB.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/Pingan.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/hanapay.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/KBPAY.png" alt="" />
-
-
+                        <div class="dropdownchoosecountry">
+                            <!-- รับ event จาก dropdown -->
+                            <CHLA_crossborderdropdown @change-country="onChangeCountry" />
                         </div>
-                        <div class="row3" style="margin-top: 10px;">
-                            <img src="../../../assets/Logomember- retangle/Npay.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/Woori.png" alt="" />
 
-                            <img src="../../../assets/Logomember- retangle/Shinhancard.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/DBS.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/boost.webp" alt="" />
-                            <img src="../../../assets/Logomember- retangle/GOPAY.png" alt="" />
+                        <!-- ============ CHINA VIEW ============ -->
+                        <template v-if="selectedCountry === 'china'">
+                            <div class="row2" ref="row2Ref">
+                                <img src="../../../assets/Logomember- retangle/BOCB.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/ICBCB.jpeg" alt="" />
+                                <img src="../../../assets/Logomember- retangle/ABC.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/CCB.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/BOCOM.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/PSBC.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Pingan.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/STP.png" alt="" />
+                                      <img src="../../../assets/Logomember- retangle/CIB.png" alt="" />
+                                                 <img src="../../../assets/Logomember- retangle/CMB.jpeg" alt="" />
+                             
+               
+                            </div>
 
+                            <div class="row3" ref="row3Ref" style="margin-top: 10px;">
+                             
+                                <img src="../../../assets/Logomember- retangle/CCCB.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/CEB.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Shinhancard.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/DBS.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/boost.webp" alt="" />
+                                <img src="../../../assets/Logomember- retangle/GOPAY.png" alt="" />
+                            </div>
+                        </template>
 
-                        </div>
+                        <!-- ============ KOREA VIEW ============ -->
+                        <template v-else-if="selectedCountry === 'korea'">
+                            <div class="row2" ref="row2Ref">
+                                <img src="../../../assets/Logomember- retangle/hanapay.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/KBPAY.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Tmoney.webp" alt="" />
+                                <img src="../../../assets/Logomember- retangle/PAYBOOC.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Npay.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Woori.png" alt="" />
+                                                        <img src="../../../assets/Logomember- retangle/NHPay.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/hyundai.png" alt="" />
+                  
+                            </div>
+
+                            <div class="row3" ref="row3Ref" style="margin-top: 10px;">
+                     
+                                <img src="../../../assets/Logomember- retangle/Shinhancard.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Koreapost.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/IBK.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Lotte.png" alt="" />
+                            </div>
+                        </template>
+
+                        <!-- ============ SEA VIEW ============ -->
+                        <template v-else-if="selectedCountry === 'sea'">
+                            <div class="row2" ref="row2Ref">
+                                <img src="../../../assets/Logomember- retangle/Kplus.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/BBL-Logo-TH.jpg" alt="" />
+                                <img src="../../../assets/Logomember- retangle/KTC.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Bewallet.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Kringthai.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/DBS.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/OCBC.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Aleta.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/boost.webp" alt="" />
+                                <img src="../../../assets/Logomember- retangle/wannapay.png" alt="" />
+                       
+                            </div>
+
+                            <div class="row3" ref="row3Ref" style="margin-top: 10px;">
+                                 <img src="../../../assets/Logomember- retangle/GOPAY.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Spay.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/amk.jpeg" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Bongloy.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/OK$.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/UAB.png" alt="" />
+                                <img src="../../../assets/Logomember- retangle/Omni.png" alt="" />
+                             
+                            </div>
+                        </template>
                     </div>
-
                 </div>
+
+
             </div>
         </div>
     </div>
+   
 </template>
 
 <style scoped>
+.dropdownchoosecountry {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 .imgqrpayment img {
     width: 100%;
     height: 100%;
@@ -152,7 +224,7 @@
 .logomember {
     width: 100%;
     height: auto;
-
+    margin-top: 30px;
 }
 
 .headercondition p {
@@ -252,22 +324,29 @@
 .video-background-container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 1100px;
+  
+    /* ⬅️ changed from 100% to 1100px */
 
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+   
     color: #fff;
     font-family: "Poppins", sans-serif;
+
 }
+
 
 .video-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    /* ✅ already full width */
     height: 100%;
+    /* ✅ will now be 1100px because parent is 1100px */
     object-fit: cover;
     object-position: top;
     filter: brightness(70%);
@@ -276,7 +355,8 @@
 
 .content {
     width: 90%;
-    height: 750px;
+    height: 1000px;
+    /* ⬅️ changed from 750px to 1100px */
 
     position: relative;
     display: flex;
@@ -285,17 +365,60 @@
 }
 </style>
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, watch, nextTick } from "vue";
 import { gsap } from "gsap";
+import CHLA_crossborderdropdown from "../../Dropdown/CHLA_crossborderdropdown.vue";
 
-const videoSrc = "/videos/testcrossborder.mp4"; // change to your video path
+const videoSrc = "/videos/testcrossborder.mp4";
 const videoRef = ref(null);
 const titleRef = ref(null);
 const subtitleRef = ref(null);
 const buttonRef = ref(null);
 
+// country จาก dropdown
+const selectedCountry = ref("china");
+
+// refs สำหรับแถว logo
+const row2Ref = ref(null);
+const row3Ref = ref(null);
+
+const onChangeCountry = (countryId) => {
+    if (selectedCountry.value === countryId) return; // เลือกซ้ำไม่ต้อง animate
+    selectedCountry.value = countryId;
+};
+
+// ฟังก์ชัน GSAP สำหรับ animate row2 / row3
+const animateRows = () => {
+    if (row2Ref.value) {
+        gsap.fromTo(
+            row2Ref.value,
+            { opacity: 0, y: 25 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: "power3.out",
+            }
+        );
+    }
+
+    if (row3Ref.value) {
+        gsap.fromTo(
+            row3Ref.value,
+            { opacity: 0, y: 35 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                ease: "power3.out",
+                delay: 0.08,
+            }
+        );
+    }
+};
+
 onMounted(() => {
-    // GSAP intro animation
+    // GSAP intro animation เดิม
     gsap.from(titleRef.value, { y: -50, opacity: 0, duration: 1, ease: "power3.out" });
     gsap.from(subtitleRef.value, {
         y: 50,
@@ -311,10 +434,18 @@ onMounted(() => {
         delay: 1,
         ease: "back.out(1.7)",
     });
+
+    // animate row ตอนแรก (ค่า default china)
+    animateRows();
+});
+
+// พอประเทศเปลี่ยน → รอ DOM update แล้วค่อย animate
+watch(selectedCountry, async () => {
+    await nextTick();
+    animateRows();
 });
 
 function playAnimation() {
-    // Example GSAP button click animation
     gsap.to(buttonRef.value, {
         scale: 0.9,
         duration: 0.2,

@@ -23,7 +23,6 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount, computed } from 'vue'
 
-// props / emits สำหรับ v-model
 const props = defineProps<{
   modelValue: number | null
 }>()
@@ -32,7 +31,7 @@ const emit = defineEmits<{
   (e: 'update:modelValue', value: number | null): void
 }>()
 
-// ตัวเลือกปี
+
 const options = [
   { label: 'ທັງໝົດ', value: null },
   { label: 'ປີ 2025', value: 2025 },
