@@ -76,7 +76,7 @@
 .row1 img {
     width: 120px;
     height: 120px;
-    margin-right: 5px;
+        margin-left: 10px;
 }
 
 .row1 {

@@ -35,6 +35,7 @@
                             <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
                             <img src="../../../assets/Logomember- retangle/Kbank.webp" alt="" />
                         </div>
+                        
                     </div>
                 </div>
                 <div class="bottomcontainer">
@@ -75,16 +76,18 @@
 .row1 img {
     width: 120px;
     height: 120px;
+        margin-left: 10px;
 }
 
 .row1 {
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-items: center;
+
+    width: 100%;
+
+   display: flex;
+   justify-content: center;
     height: auto;
     
-    margin: 0 auto;
+ 
 }
 
 .logomember {
