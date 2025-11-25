@@ -32,6 +32,7 @@
                             <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
             
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
+                            <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
                            
                             <img src="../../../assets/Logomember- retangle/MB.png" alt="" />
                         </div>

@@ -204,6 +204,7 @@ const members = ref<Member[]>([
     aosDuration: 1100,
     products: [
       'cross_border_payment_KHLA',
+      'cross_border_payment_LAKH',
       'cross_border_payment_THLA',
       'cross_border_payment_LATH',
       'cross_border_payment_VNLA',

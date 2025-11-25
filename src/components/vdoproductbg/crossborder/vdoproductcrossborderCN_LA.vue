@@ -62,18 +62,21 @@
                 <img src="../../../assets/Logomember- retangle/BOCOM.png" alt="" />
                 <img src="../../../assets/Logomember- retangle/PSBC.png" alt="" />
                 <img src="../../../assets/Logomember- retangle/Pingan.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/STP.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/CIB.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/CMB.jpeg" alt="" />
+         
+                       <img src="../../../assets/Logomember- retangle/STP.png" alt="" />
+                       <img src="../../../assets/Logomember- retangle/CIB.png" alt="" />
+                               
+                
+             
+            
               </div>
 
               <div class="row3" ref="row3Ref" style="margin-top: 10px">
-                <img src="../../../assets/Logomember- retangle/CCCB.png" alt="" />
+                <img src="../../../assets/Logomember- retangle/CMB.jpeg" alt="" />
+                   <img src="../../../assets/Logomember- retangle/CCCB.png" alt="" />
                 <img src="../../../assets/Logomember- retangle/CEB.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/Shinhancard.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/DBS.png" alt="" />
-                <img src="../../../assets/Logomember- retangle/boost.webp" alt="" />
-                <img src="../../../assets/Logomember- retangle/GOPAY.png" alt="" />
+                <img src="../../../assets/Logomember- retangle/CDB.jpg" alt="" />
+        
               </div>
             </template>
 
