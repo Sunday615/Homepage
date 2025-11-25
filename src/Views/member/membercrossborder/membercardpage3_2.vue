@@ -142,7 +142,7 @@ const members = ref<Member[]>([
     products: [
       'cross_border_payment_KHLA',
       'cross_border_payment_THLA',
-      'cross_border_payment_LATH',
+     
       'cross_border_payment_VNLA',
     ],
   },
