@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="boxlogo16">
-                    <img style="width:180px" src="../../../assets/Logomember- retangle/psvb.PNG" alt="">
+                    <img style="width:150px" src="../../../assets/Logomember- retangle/psvb.PNG" alt="">
                 </div>
                 <div class="boxlogo16">
                     <img style="width:180px" src="../../../assets/Logomember- retangle/mbbgblue.jpg" alt="">
