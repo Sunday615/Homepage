@@ -74,8 +74,8 @@ const openMap = () => {
                   </div>
                   <div class="infotitle">
                     <h2>Call Us</h2>
-                    <p>030 568 7610</p>
-                    <p>021 417 915</p>
+                    <p>021 417915</p>
+                
                   </div>
                 </div>
               </div>

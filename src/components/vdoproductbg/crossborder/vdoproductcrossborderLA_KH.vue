@@ -45,7 +45,7 @@
                         </p>
                     </div>
                     <div class="imgqrpayment">
-                       <img src="/Logomember/bakong.jpeg" alt="">
+                       <img src="/Logomember/bakong.png" alt="">
                     </div>
                 </div>
             </div>

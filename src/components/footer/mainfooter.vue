@@ -27,11 +27,11 @@ function goTop() {
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="titlephone">
-                <p>030 568 7610</p>
+                <p>021 417915</p>
 
               </div>
             </div>
-            <div class="block1"style="cursor: pointer">
+            <div class="block1">
               <div class="iconemail">
                 <i class="fa-solid fa-envelope"></i>
               </div>
@@ -62,8 +62,8 @@ function goTop() {
           <div class="infofooterleft">
             <ul>
               <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
-              <li>ເບີໂທ: 030 568 7610</li>
-              <li>ເບີໂທ: 021 417 915</li>
+              <li>ເບີໂທ: 021 417915</li>
+ 
               <li>ອີເມວ: info@lapnet.com.la</li>
 
             </ul>
