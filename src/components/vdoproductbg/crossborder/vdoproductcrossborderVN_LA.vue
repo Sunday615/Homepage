@@ -49,7 +49,7 @@
                         <div class="row2">
                             <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/APB.Png" alt="" />
+                            <img src="/Logomember/APB.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/LVBnew.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/BICnew.jpeg" alt="" />
@@ -61,7 +61,7 @@
                             
                             <img src="../../../assets/Logomember- retangle/IBbankk.JPG" alt="" />
                       
-                            <img src="../../../assets/Logomember- retangle/psvb.png" alt="" />
+                            <img src="/Logomember/psvbre.PNG" alt="" />
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
                             <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
                             <img src="../../../assets/Logomember- retangle/MB.png" alt="" />

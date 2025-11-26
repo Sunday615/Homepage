@@ -28,7 +28,7 @@
               <img src="../../../assets/Logomember- retangle/BCEL.png" alt="" />
               <img src="../../../assets/Logomember- retangle/LDBnew.png" alt="" />
               <img src="../../../assets/Logomember- retangle/jdbnew.png" alt="" />
-              <img src="../../../assets/Logomember- retangle/APB.Png" alt="" />
+              <img src="/Logomember/APB.png" alt="" />
               <img src="../../../assets/Logomember- retangle/STB.jpg" alt="" />
               <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
               <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />

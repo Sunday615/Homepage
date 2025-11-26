@@ -53,7 +53,7 @@
                             <img src="../../../assets/Logomember- retangle/ACL.jpg" alt="" />
                              <img src="../../../assets/Logomember- retangle/kbank.jpg" alt="" />
                             <img src="../../../assets/Logomember- retangle/sacom.png" alt="" />
-                            <img src="../../../assets/Logomember- retangle/psvb.png" alt="" />
+                            <img src="/Logomember/psvbre.PNG" alt="" />
                             <img src="../../../assets/Logomember- retangle/mjbl.jpeg" alt="" />
                            
                         </div>
