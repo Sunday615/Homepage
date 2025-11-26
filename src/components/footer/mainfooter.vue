@@ -6,12 +6,7 @@ function goTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
 
-const sendEmail = () => {
-  const email = 'info@laonet.com.la'
-  const subject = encodeURIComponent('ສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມ')
-  const body = encodeURIComponent('ສະບາຍດີ ຂ້ອຍຢາກສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມກ່ຽວກັບ...')
-  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
-}
+
 </script>
 
 
@@ -36,7 +31,7 @@ const sendEmail = () => {
 
               </div>
             </div>
-            <div class="block1" @click="sendEmail" style="cursor: pointer">
+            <div class="block1"style="cursor: pointer">
               <div class="iconemail">
                 <i class="fa-solid fa-envelope"></i>
               </div>
