@@ -2,7 +2,7 @@
 import navbarview2 from '../../../components/navbar/navbarview2.vue'
 import pagination from '../../../components/pagination/paginationmember3.vue'
 import mainfooter from '../../../components/footer/mainfooter.vue'
-import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue'
+import footerLogoMember3 from '../../../components/footer/memberfooter/footer-logo-member3.vue'
 
 import { onMounted, ref, computed, type Component } from 'vue'
 import Boxmembervtb from '../../../components/boxmember/boxmembervtb.vue'
@@ -348,7 +348,7 @@ const filteredMembers = computed(() => {
     <div class="pagination">
       <pagination />
     </div>
-    <footerLogoMember1 />
+    <footerLogoMember3 />
     <mainfooter />
   </div>
 </template>

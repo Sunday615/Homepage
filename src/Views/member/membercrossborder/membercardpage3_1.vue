@@ -8,7 +8,7 @@ import boxmemberapb from '../../../components/boxmember/boxmemberapb.vue'
 import boxmemberjdb from '../../../components/boxmember/boxmemberjdb.vue'
 import boxmembermaru from '../../../components/boxmember/boxmembermaru.vue'
 import boxmemberlvb from '../../../components/boxmember/boxmemberlvb.vue'
-import footerLogoMember1 from '../../../components/footer/memberfooter/footer-logo-member1.vue'
+import footerLogoMember3 from '../../../components/footer/memberfooter/footer-logo-member3.vue'
 
 import { onMounted, ref, computed, type Component } from 'vue'
 
@@ -355,7 +355,7 @@ const filteredMembers = computed(() => {
     <div class="pagination">
       <pagination />
     </div>
-    <footerLogoMember1 />
+    <footerLogoMember3 />
     <mainfooter />
   </div>
 </template>
