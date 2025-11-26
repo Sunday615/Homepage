@@ -2,12 +2,6 @@
 import navbarview2 from '../../components/navbar/navbarview2.vue'
 import mainfooter from '../../components/footer/mainfooter.vue'
 
-const sendEmail = () => {
-  const email = 'info@laonet.com.la'
-  const subject = encodeURIComponent('ສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມ')
-  const body = encodeURIComponent('ສະບາຍດີ ຂ້ອຍຢາກສອບຖາມຂໍ້ມູນເພີ່ມເຕີ່ມກ່ຽວກັບ...')
-  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
-}
 
 const openMap = () => {
   const mapUrl = 'https://maps.app.goo.gl/TzSSbm5NQWCWNsrx7'
@@ -88,7 +82,7 @@ const openMap = () => {
             </div>
 
             <div data-aos="fade-down" data-aos-duration="1300" data-aos-delay="500" data-aos-once="true">
-              <div class="box3" style="cursor: pointer" @click="sendEmail">
+              <div class="box3" style="cursor: pointer" >
                 <div class="flexboxcontainer">
                   <div id="emailicon" class="icon">
                     <i class="fa-solid fa-inbox" />
