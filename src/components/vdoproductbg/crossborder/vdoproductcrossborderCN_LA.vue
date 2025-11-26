@@ -49,7 +49,8 @@
 
                     <div class="logomember">
                         <div class="unoinpaycontainer">
-                          <img src="/Logomember/Unoin.png" alt="">
+                            <img style="width:230px; height:150px;margin-right: 40px;" src="/Logomember/Unoin.png" alt="">
+                          <img src="/Logomember/UPI.webp" alt="">
                         </div>
                     </div>
                 </div>
@@ -129,16 +130,17 @@ watch(selectedCountry, async () => {
 
 <style scoped>
 .unoinpaycontainer img{
-    width: 350px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
 }
 .unoinpaycontainer{
     width: 50%;
-
+    
     margin:0 auto;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 200px;
+    align-items: center;
 
 }
 .dropdownchoosecountry {
@@ -200,6 +202,7 @@ watch(selectedCountry, async () => {
     width: 100%;
     height: auto;
     margin-top: 30px;
+
 }
 
 .headercondition p {

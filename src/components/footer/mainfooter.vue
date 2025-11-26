@@ -61,7 +61,7 @@ function goTop() {
           </div>
           <div class="infofooterleft">
             <ul>
-              <li>ບ້ານໂພນສະອາດ, ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ</li>
+              <li>ບ້ານໂພນສະອາດ, ໄຊເສດຖາ, ນະຄອນຫຼວງວຽງຈັນ</li>
               <li>ເບີໂທ: 021 417915</li>
  
               <li>ອີເມວ: info@lapnet.com.la</li>
