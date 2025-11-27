@@ -136,7 +136,7 @@
                       <span>
                         <img
                           style="border-radius: 5px; width: 75px; height: 75px"
-                          src="../../assets/Logomember- retangle/bakongmbb.png"
+                          src="/Logomember/Bakong1.png"
                           alt=""
                         />
                       </span>
@@ -167,7 +167,7 @@
                       <span>
                         <img
                           style="border-radius: 5px; width: 75px; height: 75px"
-                          src="../../assets/Logomember- retangle/balongqr.png"
+                             src="/Logomember/Bakong1.png"
                           alt=""
                         />
                       </span>
@@ -385,7 +385,7 @@
               <span>
                 <img
                   style="border-radius: 5px; width: 80px; height: 80px"
-                  src="../../assets/Logomember- retangle/bakongmbb.png"
+                  src="/Logomember/Bakong1.png"
                   alt=""
                 />
               </span>
@@ -415,7 +415,7 @@
               <span>
                 <img
                   style="border-radius: 5px; width: 80px; height: 80px"
-                  src="../../assets/Logomember- retangle/balongqr.png"
+                  src="/Logomember/Bakong1.png"
                   alt=""
                 />
               </span>

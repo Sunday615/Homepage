@@ -127,7 +127,7 @@ onMounted(() => {
 
   <div class="feeforservice">
     <div class="atmmockup">
-      <img src="../../assets/Products/Product3/ATM.webp" alt="" />
+      <img src="/product3/ATM.webp" alt="" />
     </div>
     <div class="titlefeeservice">
       <div class="headerfeeservice">
