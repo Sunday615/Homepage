@@ -272,24 +272,12 @@ const filteredMembers = computed(() => {
 
     <div class="cardviewcontainer">
       <div class="leftsidecontainer">
-        <div
-          v-for="member in filteredMembers"
-          :key="member.id"
-          data-aos="fade-right"
-          :data-aos-duration="member.aosDuration"
-        >
-          <component
-            :is="member.component"
-            :image="member.image"
-            :link1="member.link1"
-            :link2="member.link2"
-          />
+        <div v-for="member in filteredMembers" :key="member.id" data-aos="fade-right"
+          :data-aos-duration="member.aosDuration">
+          <component :is="member.component" :image="member.image" :link1="member.link1" :link2="member.link2" />
         </div>
 
-        <div
-          v-if="filteredMembers.length === 0"
-          style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif"
-        >
+        <div v-if="filteredMembers.length === 0" style="margin-top: 20px; font-family: 'Noto Sans Lao', sans-serif">
           ບໍ່ພົບທະນາຄານທີ່ກົງກັບຄຳຄົ້ນຫາ / ການເລືອກບໍລິການ
         </div>
       </div>
@@ -319,12 +307,7 @@ const filteredMembers = computed(() => {
               <p :class="{ active: isAllSelected }">ເລືອກທັງໝົດ</p>
             </div>
 
-            <div
-              v-for="option in productOptions"
-              :key="option.id"
-              class="checkbox1"
-              @click="toggleProduct(option.id)"
-            >
+            <div v-for="option in productOptions" :key="option.id" class="checkbox1" @click="toggleProduct(option.id)">
               <div class="boxcheck" :class="{ active: isProductSelected(option.id) }">
                 <i class="fa-solid fa-check check-icon"></i>
               </div>
@@ -334,17 +317,9 @@ const filteredMembers = computed(() => {
               </p>
 
               <div class="flag-pair">
-                <img
-                  class="flag-icon"
-                  :src="flagUrl(option.from)"
-                  :alt="option.from + ' flag'"
-                />
+                <img class="flag-icon" :src="flagUrl(option.from)" :alt="option.from + ' flag'" />
                 <i class="fa-solid fa-right-long flag-arrow"></i>
-                <img
-                  class="flag-icon"
-                  :src="flagUrl(option.to)"
-                  :alt="option.to + ' flag'"
-                />
+                <img class="flag-icon" :src="flagUrl(option.to)" :alt="option.to + ' flag'" />
               </div>
             </div>
           </div>

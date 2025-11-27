@@ -93,6 +93,7 @@ import blogdetail3 from '../Views/Blog/fromhomepage/blogdetail3.vue'
 import blogdetail4 from '../Views/Blog/fromhomepage/blogdetail4.vue'
 import blogdetail5 from '../Views/Blog/fromhomepage/blogdetail5.vue'
 import blogdetail6 from '../Views/Blog/fromhomepage/blogdetail6.vue'
+import Allproduct from '../Views/product-service/allproduct.vue'
 
 // ========== Test / Misc ==========
 
@@ -109,6 +110,7 @@ const router = createRouter({
     { path: '/products-service/products-4', name: 'product4', component: Product4 },
     { path: '/products-service/products-5', name: 'product5', component: Product5 },
     { path: '/products-service/products-6', name: 'product6', component: Product6 },
+    { path: '/products-service/allproduct', name: 'allproduct', component: Allproduct },
 
     // =================== Member (ATM / Card) ===================
     { path: '/membercard/member1', name: 'member1', component: Membercardpage1 },
