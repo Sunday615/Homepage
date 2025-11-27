@@ -211,9 +211,9 @@ onMounted(() => {
   width: 100%;
   display: flex;
   height: 850px;
-  background-image: url(../../assets/Products/Product3/bgatmpd3.png);
+  background-image: url(/product3/bgatmpd3.png);
   background-size: cover;
-  border: 1px solid blue;
+
   background-repeat: no-repeat;
 }
 
